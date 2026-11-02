@@ -1,0 +1,4994 @@
+{
+ "gameId": "lichess-m45sueue",
+ "pgnFile": "lichess-m45sueue.pgn",
+ "engine": "Stockfish 19 WASM",
+ "depth": 18,
+ "multiPv": 3,
+ "positions": [
+  {
+   "ply": 0,
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "move": null,
+   "legalMoveCount": 20,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d2d4",
+      "d7d5",
+      "c2c4",
+      "e7e6",
+      "g1f3",
+      "g8f6",
+      "g2g3",
+      "c7c5",
+      "f1g2",
+      "d5c4",
+      "d1a4",
+      "c8d7",
+      "a4c4",
+      "d8b6",
+      "e1g1",
+      "d7b5",
+      "c4c2",
+      "b8c6",
+      "b1c3",
+      "c5d4",
+      "c3b5",
+      "b6b5"
+     ],
+     "scoreCp": 31
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g1f3",
+      "g8f6",
+      "c2c4",
+      "c7c5",
+      "b1c3",
+      "e7e6",
+      "e2e4",
+      "b8c6",
+      "d2d4",
+      "c5d4",
+      "f3d4",
+      "f8b4",
+      "d4c6",
+      "b7c6"
+     ],
+     "scoreCp": 29
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e2e4",
+      "e7e5",
+      "g1f3",
+      "b8c6",
+      "f1b5",
+      "a7a6",
+      "b5a4",
+      "g8f6",
+      "e1g1",
+      "f8e7",
+      "f1e1",
+      "b7b5",
+      "a4b3",
+      "d7d6",
+      "a2a4",
+      "c6a5",
+      "b3a2",
+      "e8g8",
+      "d2d4",
+      "e5d4",
+      "f3d4",
+      "c7c5"
+     ],
+     "scoreCp": 24
+    }
+   ]
+  },
+  {
+   "ply": 1,
+   "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+   "move": {
+    "san": "e4",
+    "uci": "e2e4",
+    "from": "e2",
+    "to": "e4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 20,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7e5",
+      "g1f3",
+      "b8c6",
+      "f1c4",
+      "g8f6",
+      "d2d3",
+      "f8c5",
+      "b1c3",
+      "h7h6",
+      "c1e3",
+      "c5e3",
+      "f2e3",
+      "d7d6",
+      "e1g1",
+      "c8e6"
+     ],
+     "scoreCp": -20
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c7c5",
+      "g1f3",
+      "d7d6",
+      "d2d4",
+      "c5d4",
+      "f3d4",
+      "e7e5",
+      "f1b5",
+      "c8d7",
+      "b5d7",
+      "d8d7",
+      "d4b3",
+      "f8e7",
+      "b1c3"
+     ],
+     "scoreCp": -32
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e7e6",
+      "d2d4",
+      "d7d5",
+      "b1c3",
+      "g8f6",
+      "e4e5",
+      "f6d7",
+      "f2f4",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "c1e3",
+      "a7a6",
+      "d1d2",
+      "b7b5",
+      "f1e2",
+      "c8b7",
+      "e1g1"
+     ],
+     "scoreCp": -40
+    }
+   ]
+  },
+  {
+   "ply": 2,
+   "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+   "move": {
+    "san": "e6",
+    "uci": "e7e6",
+    "from": "e7",
+    "to": "e6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 30,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d2d4",
+      "d7d5",
+      "b1c3",
+      "g8f6",
+      "e4e5",
+      "f6d7",
+      "f2f4",
+      "c7c5",
+      "g1f3",
+      "a7a6",
+      "c1e3",
+      "b8c6",
+      "d1d2",
+      "f8e7",
+      "d4c5",
+      "e7c5",
+      "e1c1",
+      "b7b5",
+      "f4f5",
+      "c5e7",
+      "c1b1",
+      "d7e5",
+      "f3e5",
+      "c6e5",
+      "e3d4"
+     ],
+     "scoreCp": 42
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b1c3",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "d2d4",
+      "c5d4",
+      "f3d4",
+      "g8f6",
+      "c1f4",
+      "d7d6",
+      "d4c6",
+      "b7c6",
+      "e4e5",
+      "f6d5",
+      "c3d5",
+      "e6d5",
+      "d1d4",
+      "d8a5",
+      "c2c3"
+     ],
+     "scoreCp": 34
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g1f3",
+      "d7d5",
+      "e4e5",
+      "c7c5",
+      "c2c3",
+      "d5d4",
+      "d2d3",
+      "b8c6",
+      "g2g3",
+      "g8e7",
+      "f1g2",
+      "d4c3",
+      "b2c3",
+      "b7b6",
+      "b1a3",
+      "c8b7"
+     ],
+     "scoreCp": 18
+    }
+   ]
+  },
+  {
+   "ply": 3,
+   "fen": "rnbqkbnr/pppp1ppp/4p3/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+   "move": {
+    "san": "d4",
+    "uci": "d2d4",
+    "from": "d2",
+    "to": "d4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 30,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d7d5",
+      "b1c3",
+      "g8f6",
+      "e4e5",
+      "f6d7",
+      "f2f4",
+      "c7c5",
+      "g1f3",
+      "f8e7",
+      "c1e3",
+      "b8c6",
+      "d1d2",
+      "e8g8",
+      "a2a3",
+      "a7a6",
+      "h2h4",
+      "c6d4"
+     ],
+     "scoreCp": -43
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "a7a6",
+      "b1c3",
+      "d7d5",
+      "g1f3",
+      "g8f6",
+      "e4e5",
+      "f6d7",
+      "c3e2",
+      "c7c5",
+      "c2c3",
+      "d8a5",
+      "a2a3",
+      "c5d4",
+      "b2b4",
+      "a5c7",
+      "c3d4",
+      "d7b6",
+      "c1e3",
+      "c8d7",
+      "a1c1",
+      "b6c4",
+      "e2f4",
+      "b7b5",
+      "f1d3",
+      "b8c6",
+      "e1g1",
+      "h7h6",
+      "c1a1",
+      "c4b2"
+     ],
+     "scoreCp": -54
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "h7h6",
+      "b1c3",
+      "d7d5",
+      "c1e3",
+      "a7a6",
+      "d1f3",
+      "g8f6",
+      "e1c1",
+      "f6e4",
+      "c3e4",
+      "d5e4",
+      "f3e4",
+      "b8d7",
+      "e4f3",
+      "d7f6"
+     ],
+     "scoreCp": -65
+    }
+   ]
+  },
+  {
+   "ply": 4,
+   "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+   "move": {
+    "san": "d5",
+    "uci": "d7d5",
+    "from": "d7",
+    "to": "d5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 38,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b1c3",
+      "g8f6",
+      "e4e5",
+      "f6d7",
+      "f2f4",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "c1e3",
+      "a7a6",
+      "d1d2",
+      "f8e7",
+      "d4c5",
+      "d7c5",
+      "a2a3",
+      "e8g8",
+      "d2f2",
+      "d8a5",
+      "f1d3",
+      "c5d3",
+      "c2d3",
+      "a5d8",
+      "e1g1",
+      "c8d7",
+      "e3b6",
+      "d8e8",
+      "f2e3"
+     ],
+     "scoreCp": 45
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "e4e5",
+      "c7c5",
+      "c2c3",
+      "b8c6",
+      "g1f3",
+      "c8d7",
+      "f1e2",
+      "g8e7",
+      "b1a3",
+      "e7f5",
+      "a3c2",
+      "c5d4",
+      "c3d4",
+      "f8e7",
+      "e1g1",
+      "e8g8",
+      "g1h1",
+      "a8c8",
+      "c1d2",
+      "d7e8",
+      "a1b1",
+      "f7f6"
+     ],
+     "scoreCp": 18
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "b1d2",
+      "c7c5",
+      "g1f3",
+      "c5d4",
+      "e4d5",
+      "d8d5",
+      "f1c4",
+      "d5d6",
+      "d2e4",
+      "d6b4",
+      "f3d2",
+      "b8c6",
+      "a2a3",
+      "b4e7",
+      "e1g1",
+      "g8f6",
+      "f1e1"
+     ],
+     "scoreCp": 18
+    }
+   ]
+  },
+  {
+   "ply": 5,
+   "fen": "rnbqkbnr/ppp2ppp/4p3/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+   "move": {
+    "san": "e5",
+    "uci": "e4e5",
+    "from": "e4",
+    "to": "e5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 32,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c7c5",
+      "c2c3",
+      "c8d7",
+      "g1f3",
+      "b8c6",
+      "f1e2",
+      "g8e7",
+      "b1a3",
+      "e7f5",
+      "a3c2",
+      "c5d4",
+      "c3d4",
+      "f7f6",
+      "e2d3",
+      "f6e5",
+      "f3e5"
+     ],
+     "scoreCp": -23
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c8d7",
+      "c2c3",
+      "c7c5",
+      "g1f3",
+      "b8c6",
+      "f1e2",
+      "g8e7",
+      "e1g1",
+      "e7g6",
+      "g2g3",
+      "f8e7",
+      "h2h4",
+      "e8g8",
+      "c1e3",
+      "f7f6",
+      "h4h5",
+      "c5d4",
+      "c3d4",
+      "g6h8",
+      "h5h6",
+      "g7g5",
+      "e5f6",
+      "e7f6"
+     ],
+     "scoreCp": -31
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g8e7",
+      "c2c3",
+      "c7c5",
+      "b1a3",
+      "c5d4",
+      "c3d4",
+      "e7f5",
+      "a3c2",
+      "b8c6",
+      "g1f3",
+      "f7f6",
+      "f1d3",
+      "f8e7",
+      "e1g1",
+      "f6e5",
+      "f3e5",
+      "e8g8",
+      "c1f4",
+      "a7a5",
+      "d1d2"
+     ],
+     "scoreCp": -37
+    }
+   ]
+  },
+  {
+   "ply": 6,
+   "fen": "rnbqkbnr/pp3ppp/4p3/2ppP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+   "move": {
+    "san": "c5",
+    "uci": "c7c5",
+    "from": "c7",
+    "to": "c5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 37,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c2c3",
+      "b8c6",
+      "g1f3",
+      "c8d7",
+      "f1e2",
+      "g8e7",
+      "e1g1",
+      "e7g6",
+      "b1d2",
+      "f8e7",
+      "d2b3",
+      "c5c4",
+      "b3d2"
+     ],
+     "scoreCp": 24
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b1d2",
+      "b8c6",
+      "g1f3",
+      "c5d4",
+      "d2b3",
+      "f8b4",
+      "c1d2",
+      "b4d2",
+      "d1d2",
+      "d8c7",
+      "f1b5",
+      "g8e7",
+      "b3d4",
+      "e7g6",
+      "d2c3",
+      "c8d7",
+      "d4c6"
+     ],
+     "scoreCp": -6
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g1f3",
+      "c5d4",
+      "f3d4",
+      "g8e7",
+      "f1d3",
+      "e7c6",
+      "d4c6",
+      "b8c6",
+      "d1e2",
+      "d8c7",
+      "f2f4",
+      "c8d7",
+      "e1g1",
+      "c6b4",
+      "c1e3",
+      "f8c5",
+      "e3c5",
+      "c7c5",
+      "e2f2",
+      "c5f2",
+      "g1f2"
+     ],
+     "scoreCp": -10
+    }
+   ]
+  },
+  {
+   "ply": 7,
+   "fen": "rnbqkbnr/pp3ppp/4p3/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4",
+   "move": {
+    "san": "c3",
+    "uci": "c2c3",
+    "from": "c2",
+    "to": "c3",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 32,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b8c6",
+      "g1f3",
+      "c8d7",
+      "a2a3",
+      "g8e7",
+      "f1d3",
+      "c5d4",
+      "c3d4",
+      "d8b6",
+      "d3c2",
+      "e7f5",
+      "c2f5",
+      "e6f5",
+      "b1c3",
+      "d7e6",
+      "c3e2",
+      "f8e7",
+      "h2h4",
+      "e8g8",
+      "e1g1",
+      "h7h6",
+      "e2f4"
+     ],
+     "scoreCp": -23
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c8d7",
+      "g1f3",
+      "b8c6",
+      "a2a3",
+      "g8e7",
+      "b2b4",
+      "c5d4",
+      "c3d4",
+      "e7f5",
+      "c1b2",
+      "d8b6",
+      "g2g4",
+      "f5e7",
+      "b1c3",
+      "h7h5",
+      "c3a4",
+      "b6c7"
+     ],
+     "scoreCp": -23
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g8e7",
+      "b1a3",
+      "c5d4",
+      "c3d4",
+      "e7f5",
+      "a3c2",
+      "b8c6",
+      "g1f3",
+      "f7f6",
+      "f1d3",
+      "f8e7",
+      "e1g1",
+      "e8g8",
+      "e5f6",
+      "e7f6",
+      "f1e1",
+      "f6e7",
+      "a2a3",
+      "a7a5"
+     ],
+     "scoreCp": -31
+    }
+   ]
+  },
+  {
+   "ply": 8,
+   "fen": "rnbqkb1r/pp2nppp/4p3/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR w KQkq - 1 5",
+   "move": {
+    "san": "Ne7",
+    "uci": "g8e7",
+    "from": "g8",
+    "to": "e7",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 38,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g1f3",
+      "c8d7",
+      "f1d3",
+      "b8c6",
+      "e1g1",
+      "c5d4",
+      "c3d4",
+      "d8b6",
+      "g1h1",
+      "e7f5",
+      "b1c3",
+      "c6d4",
+      "f3d4",
+      "b6d4",
+      "d3f5",
+      "d4d1",
+      "f1d1",
+      "e6f5",
+      "c3d5",
+      "a8c8",
+      "h1g1",
+      "d7e6"
+     ],
+     "scoreCp": 36
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b1a3",
+      "b8c6",
+      "g1f3",
+      "e7f5",
+      "a3c2",
+      "c5d4",
+      "c3d4",
+      "f7f6",
+      "f1d3",
+      "f8e7",
+      "e1g1",
+      "e8g8",
+      "c1f4",
+      "f6e5",
+      "f3e5",
+      "d8b6",
+      "b2b4",
+      "c6e5",
+      "f4e5"
+     ],
+     "scoreCp": 35
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "h2h4",
+      "c5d4",
+      "c3d4",
+      "b8c6",
+      "b1c3",
+      "e7f5",
+      "g1f3",
+      "d8b6",
+      "f1b5",
+      "h7h5",
+      "e1g1",
+      "c8d7",
+      "c1e3",
+      "f8e7",
+      "a1c1",
+      "a8c8"
+     ],
+     "scoreCp": 32
+    }
+   ]
+  },
+  {
+   "ply": 9,
+   "fen": "rnbqkb1r/pp2nppp/4p3/2ppP3/3P1P2/2P5/PP4PP/RNBQKBNR b KQkq - 0 5",
+   "move": {
+    "san": "f4",
+    "uci": "f2f4",
+    "from": "f2",
+    "to": "f4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 27,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7f5",
+      "g1f3",
+      "c5d4",
+      "f1d3",
+      "d4c3",
+      "b1c3",
+      "b8c6",
+      "d3f5",
+      "e6f5",
+      "c1e3",
+      "c8e6",
+      "d1d3",
+      "f8b4",
+      "e1g1",
+      "b4c3",
+      "d3c3",
+      "e8g8",
+      "c3d2",
+      "h7h6",
+      "a1c1",
+      "d5d4",
+      "f3d4",
+      "c6d4",
+      "d2d4",
+      "e6a2"
+     ],
+     "scoreCp": 38
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c5d4",
+      "c3d4",
+      "e7f5",
+      "g1f3",
+      "b8c6",
+      "f1d3",
+      "c6d4",
+      "f3d4",
+      "f5d4",
+      "c1e3",
+      "d8a5",
+      "b1d2",
+      "f8c5",
+      "a2a3",
+      "a5b6",
+      "b2b4",
+      "d4f3",
+      "d1f3"
+     ],
+     "scoreCp": 35
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "b8c6",
+      "g1f3",
+      "c5d4",
+      "f1d3",
+      "d4c3",
+      "b1c3",
+      "e7f5",
+      "d3f5",
+      "e6f5",
+      "c1e3",
+      "c8e6",
+      "d1d3",
+      "f8b4",
+      "e1g1",
+      "e8g8",
+      "f1d1",
+      "b4e7"
+     ],
+     "scoreCp": 25
+    }
+   ]
+  },
+  {
+   "ply": 10,
+   "fen": "r1bqkb1r/pp2nppp/2n1p3/2ppP3/3P1P2/2P5/PP4PP/RNBQKBNR w KQkq - 1 6",
+   "move": {
+    "san": "Nbc6",
+    "uci": "b8c6",
+    "from": "b8",
+    "to": "c6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 35,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g1f3",
+      "c5d4",
+      "f1d3",
+      "d4c3",
+      "b1c3",
+      "e7f5",
+      "c1d2",
+      "f8c5",
+      "c3a4",
+      "c5b6",
+      "a4b6",
+      "d8b6",
+      "d1b3",
+      "b6b3",
+      "a2b3",
+      "a7a6",
+      "e1g1"
+     ],
+     "scoreCp": -24
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f1d3",
+      "c5d4",
+      "g1f3",
+      "d4c3",
+      "b1c3",
+      "e7f5",
+      "d3f5",
+      "e6f5",
+      "c1e3",
+      "c8e6",
+      "e1g1",
+      "h7h6",
+      "f1f2",
+      "f8b4",
+      "a1c1",
+      "e8g8",
+      "f2d2",
+      "d8d7",
+      "h2h3",
+      "a8c8",
+      "a2a3"
+     ],
+     "scoreCp": -24
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d4c5",
+      "e7f5",
+      "b2b4",
+      "d8h4",
+      "g2g3",
+      "f5g3",
+      "g1f3",
+      "h4h5",
+      "h2g3",
+      "h5h1",
+      "c1e3",
+      "f8e7",
+      "a2a4",
+      "h1h5",
+      "b4b5",
+      "c6a5",
+      "e1f2",
+      "e8g8",
+      "b1d2",
+      "f7f6",
+      "e5f6",
+      "e7f6",
+      "e3d4",
+      "h5g6"
+     ],
+     "scoreCp": -25
+    }
+   ]
+  },
+  {
+   "ply": 11,
+   "fen": "r1bqkb1r/pp2nppp/2n1p3/2ppP3/3P1P2/2P2N2/PP4PP/RNBQKB1R b KQkq - 2 6",
+   "move": {
+    "san": "Nf3",
+    "uci": "g1f3",
+    "from": "g1",
+    "to": "f3",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 29,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c5d4",
+      "f1d3",
+      "d4c3",
+      "b1c3",
+      "e7f5",
+      "d3f5",
+      "e6f5",
+      "c1e3",
+      "c8e6",
+      "e1g1",
+      "f8b4",
+      "d1d3",
+      "e8g8",
+      "f1d1",
+      "b4c3",
+      "d3c3",
+      "h7h6",
+      "h2h3",
+      "a8c8"
+     ],
+     "scoreCp": 25
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "e7f5",
+      "f1d3",
+      "f5h4",
+      "f3h4",
+      "d8h4",
+      "g2g3",
+      "h4h3",
+      "d3f1",
+      "h3f5",
+      "f1e2",
+      "c5d4",
+      "e2d3",
+      "f5h3",
+      "d3f1",
+      "h3f5"
+     ],
+     "scoreCp": 0
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "a7a5",
+      "d4c5",
+      "e7f5",
+      "g2g4",
+      "f5h6",
+      "h2h3",
+      "f8c5",
+      "f1d3",
+      "f7f6",
+      "e5f6",
+      "g7f6",
+      "d1e2",
+      "d8b6",
+      "b1d2",
+      "a5a4",
+      "b2b4",
+      "a4b3",
+      "d2b3",
+      "h6f7",
+      "g4g5",
+      "f6g5",
+      "f3g5",
+      "f7g5",
+      "f4g5",
+      "c5d6"
+     ],
+     "scoreCp": -29
+    }
+   ]
+  },
+  {
+   "ply": 12,
+   "fen": "r1bqkb1r/pp2nppp/2n1p3/3pP3/3p1P2/2P2N2/PP4PP/RNBQKB1R w KQkq - 0 7",
+   "move": {
+    "san": "cxd4",
+    "uci": "c5d4",
+    "from": "c5",
+    "to": "d4",
+    "captured": "p",
+    "promotion": null
+   },
+   "legalMoveCount": 36,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f1d3",
+      "d4c3",
+      "b1c3",
+      "e7f5",
+      "d3f5",
+      "e6f5",
+      "c1e3",
+      "c8e6",
+      "e1g1",
+      "f8b4",
+      "a1c1",
+      "d8d7",
+      "a2a3",
+      "b4c3",
+      "c1c3",
+      "d5d4",
+      "f3d4",
+      "c6d4",
+      "e3d4",
+      "e8g8"
+     ],
+     "scoreCp": -28
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c3d4",
+      "e7f5",
+      "b1c3",
+      "c8d7",
+      "g2g3",
+      "d8b6",
+      "c3e2",
+      "f7f6",
+      "f1h3",
+      "f6e5",
+      "f4e5",
+      "f8b4",
+      "e1f2",
+      "e8g8",
+      "f2g2",
+      "b4e7",
+      "h1f1",
+      "a8c8",
+      "h3f5",
+      "f8f5",
+      "h2h4",
+      "c6b4",
+      "f1f2"
+     ],
+     "scoreCp": -34
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f3d4",
+      "c6d4",
+      "d1d4",
+      "e7f5",
+      "d4f2",
+      "b7b6",
+      "f2f3",
+      "f8c5",
+      "b1d2",
+      "e8g8",
+      "f1d3",
+      "f7f6",
+      "d3f5",
+      "e6f5",
+      "b2b4",
+      "c5e7",
+      "e1g1",
+      "f6e5",
+      "f4e5",
+      "a7a5"
+     ],
+     "scoreCp": -60
+    }
+   ]
+  },
+  {
+   "ply": 13,
+   "fen": "r1bqkb1r/pp2nppp/2n1p3/3pP3/3P1P2/5N2/PP4PP/RNBQKB1R b KQkq - 0 7",
+   "move": {
+    "san": "cxd4",
+    "uci": "c3d4",
+    "from": "c3",
+    "to": "d4",
+    "captured": "p",
+    "promotion": null
+   },
+   "legalMoveCount": 27,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7f5",
+      "b1c3",
+      "c8d7",
+      "a2a3",
+      "a8c8",
+      "g2g3",
+      "f8e7",
+      "f1h3",
+      "g7g6",
+      "h3f5",
+      "g6f5",
+      "e1g1",
+      "c6a5",
+      "a1b1",
+      "h7h5",
+      "f1f2",
+      "d8b6",
+      "d1e1",
+      "b6b3",
+      "h2h3",
+      "d7b5"
+     ],
+     "scoreCp": 44
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d8b6",
+      "b1a3",
+      "e7f5",
+      "a3c2",
+      "c8d7",
+      "g2g4",
+      "f5e7",
+      "c1d2",
+      "a8c8",
+      "e1f2",
+      "h7h5",
+      "g4g5",
+      "c6a5",
+      "f1d3",
+      "d7b5",
+      "d3b5",
+      "b6b5",
+      "c2a3",
+      "b5b6",
+      "d2a5",
+      "b6a5",
+      "d1b3",
+      "e7f5",
+      "b3b7"
+     ],
+     "scoreCp": 9
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "h7h5",
+      "b1a3",
+      "e7f5",
+      "a3c2",
+      "d8b6",
+      "f1d3",
+      "c6b4",
+      "c2b4",
+      "f8b4",
+      "e1f2",
+      "c8d7",
+      "d1b3",
+      "g7g6",
+      "c1e3",
+      "e8g8",
+      "d3f5",
+      "g6f5",
+      "h1c1"
+     ],
+     "scoreCp": -18
+    }
+   ]
+  },
+  {
+   "ply": 14,
+   "fen": "r1bqkb1r/pp3ppp/2n1p3/3pPn2/3P1P2/5N2/PP4PP/RNBQKB1R w KQkq - 1 8",
+   "move": {
+    "san": "Nf5",
+    "uci": "e7f5",
+    "from": "e7",
+    "to": "f5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 32,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b1a3",
+      "f8a3",
+      "b2a3",
+      "d8b6",
+      "d1d3",
+      "f5d4",
+      "f3d4",
+      "b6d4",
+      "d3d4",
+      "c6d4",
+      "a1b1",
+      "b7b6",
+      "e1f2",
+      "e8g8",
+      "c1d2"
+     ],
+     "scoreCp": -52
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b1c3",
+      "c8d7",
+      "a2a3",
+      "a8c8",
+      "g2g3",
+      "g7g6",
+      "f1h3",
+      "c6a5",
+      "h3f5",
+      "g6f5",
+      "h2h3",
+      "h7h5",
+      "c1d2",
+      "d8b6",
+      "a1b1",
+      "a5c4",
+      "d2c1",
+      "f8e7",
+      "e1f2",
+      "e8d8",
+      "h1g1"
+     ],
+     "scoreCp": -52
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f1b5",
+      "c8d7",
+      "b1c3",
+      "h7h5",
+      "b5a4",
+      "d8b6",
+      "c3e2",
+      "c6b4",
+      "e1g1",
+      "f8e7",
+      "a2a3",
+      "d7a4",
+      "d1a4",
+      "b4c6",
+      "c1d2",
+      "e8g8",
+      "d2c3",
+      "a8c8",
+      "a1b1",
+      "f5e3"
+     ],
+     "scoreCp": -61
+    }
+   ]
+  },
+  {
+   "ply": 15,
+   "fen": "r1bqkb1r/pp3ppp/2n1p3/3pPn2/3P1PP1/5N2/PP5P/RNBQKB1R b KQkq - 0 8",
+   "move": {
+    "san": "g4",
+    "uci": "g2g4",
+    "from": "g2",
+    "to": "g4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 41,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f5h4",
+      "c1e3",
+      "h4f3",
+      "d1f3",
+      "d8b6",
+      "f3f2",
+      "h7h5",
+      "g4h5",
+      "c8d7",
+      "b1c3",
+      "h8h5",
+      "h2h4",
+      "a8c8",
+      "a1c1",
+      "c6e7",
+      "f2d2",
+      "e7f5",
+      "e3f2",
+      "f8e7"
+     ],
+     "scoreCp": 53
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f8b4",
+      "b1c3",
+      "f5h4",
+      "c1e3",
+      "h4f3",
+      "d1f3",
+      "d8a5",
+      "e3f2",
+      "e8g8",
+      "f1g2",
+      "a5a6",
+      "g2f1"
+     ],
+     "scoreCp": 0
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f5e7",
+      "b1c3",
+      "h7h5",
+      "g4g5",
+      "c8d7",
+      "e1f2",
+      "g7g6",
+      "f1d3",
+      "a7a6",
+      "c1d2",
+      "c6b4",
+      "d3b1",
+      "b4c6",
+      "c3e2",
+      "a6a5",
+      "a2a3",
+      "a5a4",
+      "b1d3",
+      "d8b6"
+     ],
+     "scoreCp": -27
+    }
+   ]
+  },
+  {
+   "ply": 16,
+   "fen": "r1bqkb1r/pp2nppp/2n1p3/3pP3/3P1PP1/5N2/PP5P/RNBQKB1R w KQkq - 1 9",
+   "move": {
+    "san": "Nfe7",
+    "uci": "f5e7",
+    "from": "f5",
+    "to": "e7",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 34,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h2h3",
+      "h7h5",
+      "h1g1",
+      "e7g6",
+      "c1e3",
+      "h5g4",
+      "h3g4",
+      "d8b6",
+      "b1c3",
+      "g6h4",
+      "f3h4",
+      "h8h4",
+      "d1c2",
+      "f8e7",
+      "c2f2",
+      "c8d7",
+      "e1c1",
+      "e8c8",
+      "c1b1",
+      "c8b8"
+     ],
+     "scoreCp": 13
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b1c3",
+      "h7h5",
+      "g4g5",
+      "g7g6",
+      "f1d3",
+      "a7a6",
+      "c1d2",
+      "c8d7",
+      "e1f2",
+      "b7b5",
+      "c3e2",
+      "f8g7",
+      "e2c1",
+      "e8g8",
+      "c1b3",
+      "d8c7",
+      "b3c5",
+      "f8d8",
+      "b2b4",
+      "c7b6"
+     ],
+     "scoreCp": 0
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "b1a3",
+      "h7h5",
+      "a3b5",
+      "e7g6",
+      "g4g5",
+      "a7a6",
+      "b5c3",
+      "g6e7",
+      "f1d3",
+      "g7g6",
+      "c1d2",
+      "c8d7",
+      "c3a4",
+      "e7c8",
+      "a1c1"
+     ],
+     "scoreCp": -2
+    }
+   ]
+  },
+  {
+   "ply": 17,
+   "fen": "r1bqkb1r/pp2nppp/2n1p3/3pP3/3P1PP1/2N2N2/PP5P/R1BQKB1R b KQkq - 2 9",
+   "move": {
+    "san": "Nc3",
+    "uci": "b1c3",
+    "from": "b1",
+    "to": "c3",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 27,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h7h5",
+      "g4g5",
+      "a7a6",
+      "f1d3",
+      "c8d7",
+      "e1f2",
+      "g7g6",
+      "c1d2",
+      "c6b4",
+      "d3b1",
+      "b4c6",
+      "c3e2",
+      "b7b5",
+      "b1d3",
+      "f8g7",
+      "b2b4",
+      "e8g8",
+      "a2a4",
+      "d8c7",
+      "a1a2",
+      "c6a7",
+      "a4a5",
+      "f8c8",
+      "f2g1",
+      "a7c6"
+     ],
+     "scoreCp": -7
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c8d7",
+      "f1d3",
+      "h7h5",
+      "g4h5",
+      "h8h5",
+      "h2h4",
+      "d8b6",
+      "e1f2",
+      "e7f5",
+      "c3e2",
+      "e8c8",
+      "d3f5",
+      "e6f5",
+      "a2a3",
+      "f8e7"
+     ],
+     "scoreCp": -14
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d8b6",
+      "h2h3",
+      "h7h5",
+      "h1g1",
+      "c8d7",
+      "e1f2",
+      "h5g4",
+      "h3g4",
+      "c6a5",
+      "b2b3",
+      "e8c8",
+      "c1d2",
+      "c8b8",
+      "a1b1",
+      "d8c8",
+      "f2g3",
+      "a7a6"
+     ],
+     "scoreCp": -53
+    }
+   ]
+  },
+  {
+   "ply": 18,
+   "fen": "r2qkb1r/pp1bnppp/2n1p3/3pP3/3P1PP1/2N2N2/PP5P/R1BQKB1R w KQkq - 3 10",
+   "move": {
+    "san": "Bd7",
+    "uci": "c8d7",
+    "from": "c8",
+    "to": "d7",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 38,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h1g1",
+      "h7h5",
+      "h2h3",
+      "e7g6",
+      "g4g5",
+      "g6e7",
+      "f1d3",
+      "g7g6",
+      "e1f2",
+      "a7a6",
+      "c3e2",
+      "c6b4",
+      "d3b1",
+      "d7b5",
+      "c1e3",
+      "b4c6",
+      "e2g3",
+      "c6a5",
+      "b2b3",
+      "a5c6",
+      "e3d2"
+     ],
+     "scoreCp": 18
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "h2h3",
+      "h7h5",
+      "h1g1",
+      "e7g6",
+      "g4g5",
+      "g6e7",
+      "f1d3",
+      "g7g6",
+      "e1f2",
+      "a7a6",
+      "c3e2",
+      "c6b4",
+      "d3b1",
+      "d7b5",
+      "c1e3",
+      "b4c6",
+      "e2g3",
+      "c6a5",
+      "b2b3"
+     ],
+     "scoreCp": 18
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f1d3",
+      "h7h5",
+      "g4g5",
+      "a7a6",
+      "c1d2",
+      "b7b5",
+      "c3e2",
+      "g7g6",
+      "e1f2",
+      "f8g7",
+      "b2b4",
+      "e8g8",
+      "a2a4",
+      "d8c7",
+      "d1b3",
+      "c7b7",
+      "a4a5",
+      "f8c8",
+      "e2c1"
+     ],
+     "scoreCp": 7
+    }
+   ]
+  },
+  {
+   "ply": 19,
+   "fen": "r2qkb1r/pp1bnppp/2n1p3/3pP3/3P1PP1/2NB1N2/PP5P/R1BQK2R b KQkq - 4 10",
+   "move": {
+    "san": "Bd3",
+    "uci": "f1d3",
+    "from": "f1",
+    "to": "d3",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 28,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h7h5",
+      "g4h5",
+      "h8h5",
+      "h2h4",
+      "d8b6",
+      "a2a3",
+      "c6a5",
+      "c3a4",
+      "d7a4",
+      "d1a4",
+      "a5c6",
+      "b2b4",
+      "e7f5",
+      "d3f5",
+      "h5f5",
+      "h4h5",
+      "e8c8",
+      "c1e3",
+      "f8e7",
+      "e1f2",
+      "d8h8",
+      "a1g1",
+      "f5h5",
+      "h1h5",
+      "h8h5",
+      "g1g7"
+     ],
+     "scoreCp": -9
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c6b4",
+      "d3b1",
+      "h7h5",
+      "g4h5",
+      "h8h5",
+      "h2h4",
+      "b4c6",
+      "e1f2",
+      "h5h8",
+      "h4h5",
+      "e7g8",
+      "f4f5",
+      "g8h6",
+      "b1c2",
+      "d8b6",
+      "c1h6",
+      "h8h6",
+      "d1d2",
+      "e8c8",
+      "a2a3",
+      "c8b8"
+     ],
+     "scoreCp": -26
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d8b6",
+      "a2a3",
+      "h7h5",
+      "g4g5",
+      "g7g6",
+      "c3a4",
+      "b6c7",
+      "e1f2",
+      "c6a5",
+      "a4c5",
+      "a7a6",
+      "c1d2",
+      "e7c6",
+      "a1c1"
+     ],
+     "scoreCp": -26
+    }
+   ]
+  },
+  {
+   "ply": 20,
+   "fen": "r2qkb1r/pp1bnppp/4p3/3pP3/1n1P1PP1/2NB1N2/PP5P/R1BQK2R w KQkq - 5 11",
+   "move": {
+    "san": "Nb4",
+    "uci": "c6b4",
+    "from": "c6",
+    "to": "b4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 43,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d3b1",
+      "h7h5",
+      "g4h5",
+      "h8h5",
+      "h2h4",
+      "b4c6",
+      "e1f2",
+      "h5h8",
+      "h4h5",
+      "e7g8",
+      "a2a3",
+      "g8h6",
+      "c1d2",
+      "c6e7",
+      "d1b3",
+      "e7f5",
+      "b1f5",
+      "h6f5",
+      "b3b7",
+      "f8e7"
+     ],
+     "scoreCp": 25
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d3f1",
+      "h7h5",
+      "g4g5",
+      "g7g6",
+      "a2a3",
+      "b4c6",
+      "f1d3",
+      "f8g7",
+      "c1d2",
+      "e8g8",
+      "c3e2",
+      "a7a5",
+      "e1f2",
+      "f8e8"
+     ],
+     "scoreCp": -3
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d3e2",
+      "h7h5",
+      "g4h5",
+      "h8h5",
+      "h2h4",
+      "e7f5",
+      "e1f2",
+      "f8e7",
+      "a2a3",
+      "b4c6",
+      "e2d3",
+      "e7h4",
+      "f3h4",
+      "h5h4",
+      "d3f5",
+      "e6f5",
+      "c3b5",
+      "h4h1",
+      "d1h1",
+      "d8b6",
+      "h1d5",
+      "e8c8",
+      "c1e3",
+      "d7e6",
+      "d5c5",
+      "b6c5",
+      "d4c5",
+      "d8d3",
+      "b5d6",
+      "c8d7",
+      "b2b4",
+      "d3b3",
+      "d6b7"
+     ],
+     "scoreCp": -6
+    }
+   ]
+  },
+  {
+   "ply": 21,
+   "fen": "r2qkb1r/pp1bnppp/4p3/3pP3/1n1P1PP1/2NB1N2/PP5P/R1BQ1RK1 b kq - 6 11",
+   "move": {
+    "san": "O-O",
+    "uci": "e1g1",
+    "from": "e1",
+    "to": "g1",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 32,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h7h5",
+      "h2h3",
+      "b4d3",
+      "d1d3",
+      "d8b6",
+      "c1d2",
+      "h5g4",
+      "h3g4",
+      "f7f5",
+      "g4g5",
+      "e7g6",
+      "g1f2",
+      "f8b4",
+      "f1h1",
+      "h8h1",
+      "a1h1",
+      "b4c3",
+      "d3c3",
+      "a8c8",
+      "c3a3",
+      "e8f7",
+      "f2g3"
+     ],
+     "scoreCp": 26
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b4d3",
+      "d1d3",
+      "h7h5",
+      "h2h3",
+      "d8b6",
+      "c1d2",
+      "h5g4",
+      "h3g4",
+      "f7f5",
+      "g4g5",
+      "e7g6",
+      "g1f2",
+      "f8b4",
+      "f1h1",
+      "h8h1",
+      "a1h1",
+      "b4c3",
+      "d3c3",
+      "a8c8",
+      "c3a3",
+      "e8f7",
+      "f2g3"
+     ],
+     "scoreCp": 23
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d8b6",
+      "d3b1",
+      "b4c6",
+      "f4f5",
+      "e6f5",
+      "g4f5",
+      "d7f5",
+      "c3d5",
+      "e7d5",
+      "b1f5",
+      "g7g6",
+      "f5e4",
+      "a8d8",
+      "g1h1",
+      "f8g7"
+     ],
+     "scoreCp": -87
+    }
+   ]
+  },
+  {
+   "ply": 22,
+   "fen": "r2qkb1r/pp1b1ppp/4p1n1/3pP3/1n1P1PP1/2NB1N2/PP5P/R1BQ1RK1 w kq - 7 12",
+   "move": {
+    "san": "Ng6",
+    "uci": "e7g6",
+    "from": "e7",
+    "to": "g6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 40,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f4f5",
+      "g6h4",
+      "f3g5",
+      "b4d3",
+      "d1d3",
+      "h7h5",
+      "f5f6",
+      "g7f6",
+      "g5f7",
+      "e8f7",
+      "c1g5",
+      "f8e7",
+      "g5h4",
+      "h5g4",
+      "h4f6",
+      "h8h3",
+      "f6e7",
+      "f7e7",
+      "d3g6",
+      "d8g8",
+      "c3d5",
+      "e6d5",
+      "g6d6",
+      "e7e8",
+      "e5e6",
+      "d7e6"
+     ],
+     "scoreCp": 146
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d3e2",
+      "h7h5",
+      "f4f5",
+      "h5g4",
+      "f5e6",
+      "d7e6",
+      "f3g5",
+      "d8d7",
+      "g5e6",
+      "f7e6",
+      "c1g5",
+      "f8e7",
+      "d1b1",
+      "g6f8",
+      "c3b5",
+      "e8c8",
+      "f1f7",
+      "e7g5",
+      "f7d7",
+      "d8d7",
+      "b1e1",
+      "b4c6",
+      "e1c3",
+      "c8b8",
+      "e2g4",
+      "a7a6"
+     ],
+     "scoreCp": 137
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d3b1",
+      "g6h4",
+      "f4f5",
+      "h4f3",
+      "f1f3",
+      "h7h5",
+      "f3h3",
+      "b4c6",
+      "c1e3",
+      "f8e7",
+      "g1h1",
+      "d8b6",
+      "b1d3",
+      "e8c8",
+      "g4h5",
+      "c8b8",
+      "d3e2",
+      "e6f5",
+      "c3d5"
+     ],
+     "scoreCp": 134
+    }
+   ]
+  },
+  {
+   "ply": 23,
+   "fen": "r2qkb1r/pp1b1ppp/4p1n1/3pP3/1n1P1PP1/P1NB1N2/1P5P/R1BQ1RK1 b kq - 0 12",
+   "move": {
+    "san": "a3",
+    "uci": "a2a3",
+    "from": "a2",
+    "to": "a3",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 37,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b4d3",
+      "d1d3",
+      "h7h5",
+      "f4f5",
+      "g6h4",
+      "f3h4",
+      "d8h4",
+      "g4g5",
+      "f8e7",
+      "f5f6",
+      "g7f6",
+      "g5f6",
+      "h8g8",
+      "g1h1",
+      "h4g4",
+      "d3g3",
+      "g4g3",
+      "h2g3",
+      "e7d8",
+      "h1g2",
+      "d8a5",
+      "f1h1",
+      "a5c3",
+      "b2c3",
+      "d7a4",
+      "h1h5",
+      "a4c2",
+      "g2f2",
+      "e8d7"
+     ],
+     "scoreCp": -45
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b4c6",
+      "f4f5",
+      "g6h4",
+      "f3g5",
+      "h7h6",
+      "g5f7",
+      "e8f7",
+      "f5e6",
+      "f7e6",
+      "c1e3",
+      "d7e8",
+      "d1b3",
+      "c6a5",
+      "b3c2",
+      "e8c6",
+      "e3f2",
+      "e6d7",
+      "f2h4",
+      "d8h4",
+      "d3f5",
+      "d7e7"
+     ],
+     "scoreCp": -345
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d8a5",
+      "a3b4",
+      "a5a1",
+      "d1b3",
+      "a7a5",
+      "c1e3",
+      "a5b4",
+      "f1a1",
+      "a8a1",
+      "g1f2",
+      "b4c3",
+      "b3b7",
+      "f8e7",
+      "b2c3",
+      "a1a2",
+      "f2g3",
+      "h7h5",
+      "d3b5",
+      "h5h4",
+      "g3h3"
+     ],
+     "scoreCp": -410
+    }
+   ]
+  },
+  {
+   "ply": 24,
+   "fen": "r2qkb1r/pp1b1ppp/4p1n1/3pP3/3P1PP1/P1Nn1N2/1P5P/R1BQ1RK1 w kq - 0 13",
+   "move": {
+    "san": "Nxd3",
+    "uci": "b4d3",
+    "from": "b4",
+    "to": "d3",
+    "captured": "b",
+    "promotion": null
+   },
+   "legalMoveCount": 33,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d1d3",
+      "g6h4",
+      "f4f5",
+      "h4f3",
+      "f1f3",
+      "h7h5",
+      "f3h3",
+      "a8c8",
+      "a1b1",
+      "f8e7",
+      "c1d2",
+      "h5h4",
+      "h3f3",
+      "d8b6",
+      "f5f6",
+      "g7f6",
+      "e5f6",
+      "e7d6",
+      "d2f4",
+      "d6f4",
+      "f3f4"
+     ],
+     "scoreCp": 52
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f4f5",
+      "g6f4",
+      "f3e1",
+      "f4h3",
+      "g1g2",
+      "h3f2",
+      "f1f2",
+      "d3f2",
+      "g2f2",
+      "f8e7",
+      "e1f3",
+      "e6f5",
+      "g4g5",
+      "d7e6",
+      "c3e2",
+      "a8c8",
+      "c1d2",
+      "c8c6",
+      "h2h4",
+      "h7h6",
+      "e2f4",
+      "h6g5",
+      "f4e6",
+      "f7e6"
+     ],
+     "scoreCp": -441
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f3g5",
+      "d3c1",
+      "a1c1",
+      "f8e7",
+      "g5f7",
+      "e8f7",
+      "f4f5",
+      "f7g8",
+      "f5g6",
+      "h7g6",
+      "d1f3",
+      "d8e8"
+     ],
+     "scoreCp": -565
+    }
+   ]
+  },
+  {
+   "ply": 25,
+   "fen": "r2qkb1r/pp1b1ppp/4p1n1/3pP3/3P1PP1/P1NQ1N2/1P5P/R1B2RK1 b kq - 0 13",
+   "move": {
+    "san": "Qxd3",
+    "uci": "d1d3",
+    "from": "d1",
+    "to": "d3",
+    "captured": "n",
+    "promotion": null
+   },
+   "legalMoveCount": 34,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g6e7",
+      "f4f5",
+      "e6f5",
+      "c1d2",
+      "a7a6",
+      "a1e1",
+      "f5g4",
+      "f3g5",
+      "d7e6",
+      "e1e2",
+      "e7c6",
+      "e2f2",
+      "d8b6",
+      "g5f7",
+      "b6d4",
+      "d3d4",
+      "c6d4",
+      "f7h8",
+      "d4f3",
+      "f2f3",
+      "g4f3",
+      "f1f3",
+      "a8c8"
+     ],
+     "scoreCp": -62
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g6h4",
+      "f4f5",
+      "h7h5",
+      "f3h4",
+      "d8h4",
+      "g4g5",
+      "f8e7",
+      "f5f6",
+      "g7f6",
+      "g5f6",
+      "h8g8",
+      "g1h1",
+      "h4g4",
+      "d3g3",
+      "g4g3",
+      "h2g3",
+      "e7d8",
+      "c1e3",
+      "d8a5",
+      "b2b4",
+      "a5b6",
+      "a1c1",
+      "g8g4",
+      "b4b5"
+     ],
+     "scoreCp": -63
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "h7h5",
+      "f4f5",
+      "g6h4",
+      "f3h4",
+      "d8h4",
+      "g4g5",
+      "f8e7",
+      "f5f6",
+      "g7f6",
+      "g5f6",
+      "h8g8",
+      "g1h1",
+      "h4g4",
+      "d3g3",
+      "e7c5"
+     ],
+     "scoreCp": -69
+    }
+   ]
+  },
+  {
+   "ply": 26,
+   "fen": "r2qk2r/pp1bbppp/4p1n1/3pP3/3P1PP1/P1NQ1N2/1P5P/R1B2RK1 w kq - 1 14",
+   "move": {
+    "san": "Be7",
+    "uci": "f8e7",
+    "from": "f8",
+    "to": "e7",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 41,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f4f5",
+      "g6h4",
+      "f5f6",
+      "h4f3",
+      "d3f3",
+      "g7f6",
+      "e5f6",
+      "e7f8",
+      "f1f2",
+      "d8b6",
+      "c1e3",
+      "h7h6",
+      "f2c2",
+      "a8c8",
+      "c3a4",
+      "b6b3",
+      "c2c8",
+      "d7c8",
+      "a1c1",
+      "b3a4"
+     ],
+     "scoreCp": 91
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c1e3",
+      "h7h5",
+      "f4f5",
+      "g6f8",
+      "f5f6",
+      "g7f6",
+      "e5f6",
+      "e7d6",
+      "g4g5",
+      "f8g6",
+      "a1c1",
+      "a7a6",
+      "g1h1",
+      "a8c8",
+      "f1e1",
+      "c8c4",
+      "b2b3",
+      "c4c8",
+      "a3a4",
+      "e8g8",
+      "d3d1",
+      "e6e5",
+      "f3e5"
+     ],
+     "scoreCp": 76
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "c1d2",
+      "d8c8",
+      "f3g5",
+      "c8c4",
+      "d3c4",
+      "d5c4",
+      "f4f5",
+      "g6h4",
+      "a1e1",
+      "e8g8",
+      "f5f6",
+      "e7d8",
+      "f6g7",
+      "g8g7",
+      "c3e4",
+      "d7c6",
+      "e4f6",
+      "d8b6",
+      "f6h5",
+      "g7g8",
+      "d2c3",
+      "h7h6",
+      "h5f6",
+      "g8g7"
+     ],
+     "scoreCp": 67
+    }
+   ]
+  },
+  {
+   "ply": 27,
+   "fen": "r2qk2r/pp1bbppp/4p1n1/3pPP2/3P2P1/P1NQ1N2/1P5P/R1B2RK1 b kq - 0 14",
+   "move": {
+    "san": "f5",
+    "uci": "f4f5",
+    "from": "f4",
+    "to": "f5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 35,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g6f8",
+      "c1d2",
+      "h7h5",
+      "f5f6",
+      "g7f6",
+      "e5f6",
+      "e7f6",
+      "g4g5",
+      "f6g7",
+      "a1e1",
+      "f8g6",
+      "c3d5",
+      "a7a5",
+      "f1f2",
+      "a8a6",
+      "d5f6",
+      "g7f6",
+      "g5f6",
+      "a6d6",
+      "f3g5",
+      "h8g8"
+     ],
+     "scoreCp": -102
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g6h4",
+      "f5f6",
+      "h4f3",
+      "d3f3",
+      "g7f6",
+      "e5f6",
+      "e7f8",
+      "f1f2",
+      "d8b6",
+      "c1e3",
+      "e8c8",
+      "f3g3",
+      "d7c6",
+      "h2h3",
+      "h7h5",
+      "g4g5",
+      "f8d6",
+      "e3f4",
+      "h5h4",
+      "g3e3",
+      "d6f4",
+      "e3f4",
+      "b6c7",
+      "g1h2",
+      "c7f4",
+      "f2f4",
+      "h8h5",
+      "a1g1"
+     ],
+     "scoreCp": -103
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e6f5",
+      "g4f5",
+      "g6h4",
+      "f3h4",
+      "e7h4",
+      "c3d5",
+      "e8g8",
+      "f5f6",
+      "g7f6",
+      "d5f6",
+      "h4f6",
+      "e5f6",
+      "d7g4",
+      "d3g3",
+      "g8h8",
+      "c1h6",
+      "d8d4",
+      "f1f2",
+      "f8g8",
+      "h6g7",
+      "g8g7",
+      "f6g7",
+      "h8g8",
+      "a1f1"
+     ],
+     "scoreCp": -296
+    }
+   ]
+  },
+  {
+   "ply": 28,
+   "fen": "r2qk2r/pp1bbppp/6n1/3pPp2/3P2P1/P1NQ1N2/1P5P/R1B2RK1 w kq - 0 15",
+   "move": {
+    "san": "exf5",
+    "uci": "e6f5",
+    "from": "e6",
+    "to": "f5",
+    "captured": "p",
+    "promotion": null
+   },
+   "legalMoveCount": 44,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g4f5",
+      "g6h4",
+      "f3h4",
+      "e7h4",
+      "c3d5",
+      "e8g8",
+      "d5c3",
+      "d8b6",
+      "d3e4",
+      "h4d8",
+      "f1f2",
+      "b6b3",
+      "f5f6",
+      "f8e8",
+      "e4g2",
+      "g7g6",
+      "c1e3",
+      "d8b6",
+      "g2g5",
+      "g8h8",
+      "a1d1",
+      "a8c8",
+      "d1d2",
+      "c8c3",
+      "b2c3",
+      "b3c3"
+     ],
+     "scoreCp": 284
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g4g5",
+      "a8c8",
+      "c1d2",
+      "f5f4",
+      "h2h4",
+      "h7h5",
+      "c3d5",
+      "e8g8",
+      "d5f4",
+      "g6f4",
+      "d2f4",
+      "d7e6",
+      "g1h2"
+     ],
+     "scoreCp": -95
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "c3d5",
+      "f5g4",
+      "d5e7",
+      "d8e7",
+      "c1g5",
+      "e7e6",
+      "d4d5",
+      "e6b6",
+      "g5e3",
+      "b6b5",
+      "f3e1",
+      "b5d3",
+      "e1d3",
+      "d7b5",
+      "e5e6",
+      "f7e6",
+      "a1d1",
+      "e6d5",
+      "e3d4",
+      "b5d3",
+      "d1d3"
+     ],
+     "scoreCp": -192
+    }
+   ]
+  },
+  {
+   "ply": 29,
+   "fen": "r2qk2r/pp1bbppp/6n1/3pPP2/3P4/P1NQ1N2/1P5P/R1B2RK1 b kq - 0 15",
+   "move": {
+    "san": "gxf5",
+    "uci": "g4f5",
+    "from": "g4",
+    "to": "f5",
+    "captured": "p",
+    "promotion": null
+   },
+   "legalMoveCount": 36,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g6h4",
+      "f3h4",
+      "e7h4",
+      "c3d5",
+      "a8c8",
+      "c1e3",
+      "g7g6",
+      "f5f6",
+      "d7f5",
+      "f1f5",
+      "d8d5",
+      "f5f4",
+      "h4g5",
+      "f4e4",
+      "h7h6",
+      "a1d1",
+      "g5e3",
+      "e4e3",
+      "e8g8",
+      "e5e6",
+      "c8c6"
+     ],
+     "scoreCp": -308
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g6f8",
+      "c1f4",
+      "d8c8",
+      "e5e6",
+      "f7e6",
+      "f3e5",
+      "c8d8",
+      "a1e1",
+      "a7a6",
+      "f1f2",
+      "g7g6",
+      "d3f3",
+      "e7h4",
+      "f4g3",
+      "h4g3",
+      "h2g3",
+      "g6f5"
+     ],
+     "scoreCp": -450
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e8g8",
+      "f5g6",
+      "f7g6",
+      "c3d5",
+      "d7h3",
+      "d5e7",
+      "d8e7",
+      "c1d2",
+      "h7h6",
+      "f1f2",
+      "e7d7",
+      "d4d5",
+      "d7g4",
+      "g1h1",
+      "g4h5",
+      "d2b4",
+      "f8f5",
+      "a1g1"
+     ],
+     "scoreCp": -473
+    }
+   ]
+  },
+  {
+   "ply": 30,
+   "fen": "r2qkn1r/pp1bbppp/8/3pPP2/3P4/P1NQ1N2/1P5P/R1B2RK1 w kq - 1 16",
+   "move": {
+    "san": "Nf8",
+    "uci": "g6f8",
+    "from": "g6",
+    "to": "f8",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 42,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c1f4",
+      "d8c8",
+      "e5e6",
+      "f7e6",
+      "f3e5",
+      "c8d8",
+      "a1e1",
+      "a8c8",
+      "d3e2",
+      "e6f5",
+      "c3d5",
+      "d7e6",
+      "e2b5",
+      "f8d7",
+      "e5g6",
+      "h7g6",
+      "e1e6"
+     ],
+     "scoreCp": 485
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "c1d2",
+      "d8c8",
+      "e5e6",
+      "f7e6",
+      "a1e1",
+      "c8c6",
+      "f3e5",
+      "c6d6",
+      "g1h1",
+      "a8c8",
+      "d3g3",
+      "e7f6",
+      "d2g5",
+      "f6e5",
+      "e1e5",
+      "h7h6"
+     ],
+     "scoreCp": 470
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f1e1",
+      "d8c8",
+      "f5f6",
+      "e7d8",
+      "f6g7",
+      "h8g8",
+      "c1h6",
+      "d7f5",
+      "d3e2",
+      "f8e6",
+      "c3b5",
+      "d8e7",
+      "b5d6",
+      "e7d6",
+      "e5d6",
+      "f5e4",
+      "a1c1",
+      "c8d8"
+     ],
+     "scoreCp": 445
+    }
+   ]
+  },
+  {
+   "ply": 31,
+   "fen": "r2qkn1r/pp1bbppp/8/3NPP2/3P4/P2Q1N2/1P5P/R1B2RK1 b kq - 0 16",
+   "move": {
+    "san": "Nxd5",
+    "uci": "c3d5",
+    "from": "c3",
+    "to": "d5",
+    "captured": "p",
+    "promotion": null
+   },
+   "legalMoveCount": 32,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d7f5",
+      "d3b5",
+      "f8d7",
+      "f3g5",
+      "e7g5",
+      "f1f5",
+      "g5c1",
+      "a1c1",
+      "e8g8",
+      "c1c7",
+      "d8h4",
+      "f5f4",
+      "h4g5",
+      "g1h1",
+      "d7b6",
+      "d5e7",
+      "g8h8",
+      "b5f1",
+      "a8d8",
+      "c7b7",
+      "g5h5"
+     ],
+     "scoreCp": -190
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "h7h6",
+      "d5e7",
+      "d8e7",
+      "c1d2",
+      "d7c6",
+      "e5e6",
+      "f7e6",
+      "f3e5",
+      "a8d8",
+      "a1e1",
+      "e7d6",
+      "f1f2",
+      "d6d4",
+      "d3g3",
+      "d4d5",
+      "e5c6",
+      "b7c6",
+      "f5e6",
+      "f8e6"
+     ],
+     "scoreCp": -504
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "a7a6",
+      "d5c3",
+      "d8c8",
+      "f3d2",
+      "d7b5",
+      "c3b5",
+      "a6b5",
+      "b2b4",
+      "g7g6",
+      "f5f6",
+      "e7b4",
+      "d3b5",
+      "e8d8"
+     ],
+     "scoreCp": -518
+    }
+   ]
+  },
+  {
+   "ply": 32,
+   "fen": "r2qkn1r/pp1bbp1p/8/3NPPp1/3P4/P2Q1N2/1P5P/R1B2RK1 w kq g6 0 17",
+   "move": {
+    "san": "g5",
+    "uci": "g7g5",
+    "from": "g7",
+    "to": "g5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 44,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f5f6",
+      "e7c5",
+      "d4c5",
+      "d7c6",
+      "f1d1",
+      "f8g6",
+      "d5e7",
+      "g6e7",
+      "d3d8",
+      "a8d8",
+      "d1d8",
+      "e8d8",
+      "f6e7",
+      "d8d7",
+      "f3d4",
+      "h7h6",
+      "c1e3",
+      "d7e7"
+     ],
+     "scoreCp": 679
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f1e1",
+      "d7f5",
+      "d5f6",
+      "e7f6",
+      "e5f6",
+      "f5e6",
+      "d4d5",
+      "d8f6",
+      "d5e6",
+      "f8e6",
+      "d3b5",
+      "e8f8",
+      "e1e3",
+      "a8d8",
+      "c1d2",
+      "e6d4",
+      "b5c5",
+      "f8g7",
+      "f3d4"
+     ],
+     "scoreCp": 628
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d5e7",
+      "d8e7",
+      "d4d5",
+      "e7c5",
+      "d3d4",
+      "b7b6",
+      "b2b4",
+      "c5d4",
+      "f3d4",
+      "a8c8",
+      "c1e3"
+     ],
+     "scoreCp": 626
+    }
+   ]
+  },
+  {
+   "ply": 33,
+   "fen": "r2qkn1r/pp1bbp1p/5P2/3NP1p1/3P4/P2Q1N2/1P5P/R1B2RK1 b kq - 0 17",
+   "move": {
+    "san": "f6",
+    "uci": "f5f6",
+    "from": "f5",
+    "to": "f6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 30,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7c5",
+      "d4c5",
+      "d7c6",
+      "f1d1",
+      "f8g6",
+      "d5e7",
+      "d8d3",
+      "d1d3",
+      "g6e7",
+      "f6e7",
+      "h7h6",
+      "f3d4",
+      "e8e7",
+      "d3c3",
+      "h8d8",
+      "c1e3",
+      "d8d5",
+      "b2b4"
+     ],
+     "scoreCp": -694
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d7h3",
+      "d5e7",
+      "h3f1",
+      "g1f1",
+      "f8g6",
+      "c1g5",
+      "g6e7",
+      "f6e7",
+      "d8d7",
+      "a1e1",
+      "d7h3",
+      "f1f2"
+     ],
+     "scoreCp": -786
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e7a3",
+      "a1a3",
+      "a7a6",
+      "d5c3",
+      "a8c8",
+      "d4d5",
+      "f8g6",
+      "d3e4",
+      "e8g8",
+      "e5e6",
+      "f7e6",
+      "d5e6",
+      "d8b6",
+      "f3d4"
+     ],
+     "scoreCp": -795
+    }
+   ]
+  },
+  {
+   "ply": 34,
+   "fen": "r2qkn1r/pp1bbp1p/5P2/3NP3/3P2p1/P2Q1N2/1P5P/R1B2RK1 w kq - 0 18",
+   "move": {
+    "san": "g4",
+    "uci": "g5g4",
+    "from": "g5",
+    "to": "g4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 46,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f6e7",
+      "d8e7",
+      "d5e7",
+      "g4f3",
+      "d3f3",
+      "d7e6",
+      "f3b7",
+      "a8d8",
+      "c1g5",
+      "d8d4",
+      "b7b8",
+      "d4d8"
+     ],
+     "scoreCp": 1057
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f3g5",
+      "e7c5",
+      "d4c5",
+      "d7c6",
+      "f1d1",
+      "d8d5",
+      "d3d5",
+      "c6d5",
+      "d1d5",
+      "f8g6",
+      "g5e4",
+      "e8g8",
+      "e4d6",
+      "h7h6",
+      "c1d2"
+     ],
+     "scoreCp": 808
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f3h4",
+      "e7c5",
+      "d4c5",
+      "d7c6",
+      "f1d1",
+      "d8d5",
+      "d3d5",
+      "c6d5",
+      "d1d5",
+      "a8d8",
+      "d5d8",
+      "e8d8",
+      "c1e3",
+      "h8g8",
+      "h4f5",
+      "f8g6",
+      "e5e6",
+      "f7e6",
+      "f5g7"
+     ],
+     "scoreCp": 799
+    }
+   ]
+  },
+  {
+   "ply": 35,
+   "fen": "r2qkn1r/pp1bPp1p/8/3NP3/3P2p1/P2Q1N2/1P5P/R1B2RK1 b kq - 0 18",
+   "move": {
+    "san": "fxe7",
+    "uci": "f6e7",
+    "from": "f6",
+    "to": "e7",
+    "captured": "b",
+    "promotion": null
+   },
+   "legalMoveCount": 27,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d8e7",
+      "d5e7",
+      "e8e7",
+      "f3g5",
+      "h7h6",
+      "f1f7",
+      "e7e8",
+      "f7f6",
+      "h6g5",
+      "c1g5",
+      "h8g8",
+      "d3b3",
+      "g8g7",
+      "b3b4"
+     ],
+     "scoreCp": -1084
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d8a5",
+      "e7f8r",
+      "h8f8",
+      "d5f6",
+      "e8d8",
+      "f3g5",
+      "a5a4",
+      "b2b3",
+      "d7b5",
+      "d3g3",
+      "a4d4",
+      "c1e3",
+      "b5f1",
+      "a1f1"
+     ],
+     "scoreCp": -1087
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g4f3",
+      "e7d8r",
+      "e8d8",
+      "c1g5",
+      "d8c8",
+      "d3c4",
+      "d7c6",
+      "d5e7",
+      "c8b8",
+      "e7c6",
+      "b7c6",
+      "c4f7",
+      "f3f2",
+      "f1f2",
+      "f8e6"
+     ],
+     "scoreCp": -1173
+    }
+   ]
+  },
+  {
+   "ply": 36,
+   "fen": "r3kn1r/pp1bPp1p/8/q2NP3/3P2p1/P2Q1N2/1P5P/R1B2RK1 w kq - 1 19",
+   "move": {
+    "san": "Qa5",
+    "uci": "d8a5",
+    "from": "d8",
+    "to": "a5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 49,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7f8r",
+      "h8f8",
+      "d5f6",
+      "e8d8",
+      "f3g5",
+      "a8c8",
+      "a3a4",
+      "g4g3",
+      "h2g3",
+      "a5b4",
+      "c1d2",
+      "b4c4",
+      "d3e3",
+      "d7a4",
+      "f1f2",
+      "c4b3",
+      "e3f4",
+      "a4b5"
+     ],
+     "scoreCp": 1126
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "e7f8q",
+      "h8f8",
+      "d5f6",
+      "e8d8",
+      "f3g5",
+      "a8c8",
+      "c1d2",
+      "a5b5",
+      "d3e3",
+      "c8c2",
+      "a1e1",
+      "b5b2",
+      "f1f2",
+      "c2d2",
+      "f2d2",
+      "b2b5",
+      "g5e4"
+     ],
+     "scoreCp": 1118
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f3g5",
+      "a5d5",
+      "g5e4",
+      "d5e4",
+      "d3e4",
+      "a8c8",
+      "e7f8q",
+      "h8f8",
+      "e5e6",
+      "d7e6",
+      "d4d5",
+      "f8g8",
+      "f1f6"
+     ],
+     "scoreCp": 986
+    }
+   ]
+  },
+  {
+   "ply": 37,
+   "fen": "r3kQ1r/pp1b1p1p/8/q2NP3/3P2p1/P2Q1N2/1P5P/R1B2RK1 b kq - 0 19",
+   "move": {
+    "san": "exf8=Q+",
+    "uci": "e7f8q",
+    "from": "e7",
+    "to": "f8",
+    "captured": "n",
+    "promotion": "q"
+   },
+   "legalMoveCount": 2,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h8f8",
+      "d5f6",
+      "e8d8",
+      "f3g5",
+      "h7h6",
+      "g5e4",
+      "a8c8",
+      "c1d2",
+      "a5b5",
+      "d3e3",
+      "d7e6",
+      "d4d5",
+      "b5b6",
+      "e3b6",
+      "a7b6",
+      "d2e3",
+      "e6d7",
+      "e5e6"
+     ],
+     "scoreCp": -1142
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "e8f8",
+      "c1h6",
+      "f8e8",
+      "d5f6",
+      "e8e7",
+      "f3h4",
+      "a5b5",
+      "d3d2",
+      "e7d8",
+      "a3a4",
+      "b5a6",
+      "a1a3"
+     ],
+     "scoreCp": -1206
+    }
+   ]
+  },
+  {
+   "ply": 38,
+   "fen": "r4k1r/pp1b1p1p/8/q2NP3/3P2p1/P2Q1N2/1P5P/R1B2RK1 w - - 0 20",
+   "move": {
+    "san": "Kxf8",
+    "uci": "e8f8",
+    "from": "e8",
+    "to": "f8",
+    "captured": "q",
+    "promotion": null
+   },
+   "legalMoveCount": 46,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c1h6",
+      "f8e8",
+      "d5f6",
+      "e8e7",
+      "f3h4",
+      "a8g8",
+      "d3b3",
+      "d7c6",
+      "f6g8",
+      "h8g8",
+      "b3f7",
+      "e7d8",
+      "f7g8",
+      "d8c7",
+      "g8h7",
+      "c7b6",
+      "a1c1",
+      "a5d5"
+     ],
+     "scoreCp": 1166
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d5f6",
+      "g4f3",
+      "f6d7",
+      "f8e7",
+      "d3f3",
+      "a8g8",
+      "g1h1",
+      "a5a6",
+      "d7f6",
+      "g8g6",
+      "c1d2",
+      "g6f6",
+      "e5f6",
+      "e7d8",
+      "f1c1",
+      "a6b5",
+      "d2f4",
+      "b5f5",
+      "f3b7"
+     ],
+     "scoreCp": 1060
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d3b3",
+      "g4f3",
+      "c1h6",
+      "f8e8",
+      "d5f6",
+      "e8e7",
+      "f6d7",
+      "a8g8",
+      "g1h1",
+      "g8g6",
+      "d7f6",
+      "g6f6",
+      "h6g5",
+      "e7e8",
+      "b3b7"
+     ],
+     "scoreCp": 965
+    }
+   ]
+  },
+  {
+   "ply": 39,
+   "fen": "r4k1r/pp1b1p1p/7B/q2NP3/3P2p1/P2Q1N2/1P5P/R4RK1 b - - 1 20",
+   "move": {
+    "san": "Bh6+",
+    "uci": "c1h6",
+    "from": "c1",
+    "to": "h6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 2,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f8e8",
+      "d5f6",
+      "e8e7",
+      "f3h4",
+      "a8c8",
+      "f6d7",
+      "e7d7",
+      "f1f7",
+      "d7e8",
+      "a1f1",
+      "c8d8",
+      "e5e6",
+      "a5d5",
+      "f7f8",
+      "e8e7",
+      "f1f7",
+      "e7e6",
+      "f7f6",
+      "e6d7"
+     ],
+     "scoreCp": -1177
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f8g8",
+      "d5f6"
+     ],
+     "scoreMate": -1
+    }
+   ]
+  },
+  {
+   "ply": 40,
+   "fen": "r3k2r/pp1b1p1p/7B/q2NP3/3P2p1/P2Q1N2/1P5P/R4RK1 w - - 2 21",
+   "move": {
+    "san": "Ke8",
+    "uci": "f8e8",
+    "from": "f8",
+    "to": "e8",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 53,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d5f6",
+      "e8e7",
+      "f3g5",
+      "a5b5",
+      "d3g3",
+      "d7e6",
+      "g5e6",
+      "f7e6",
+      "f1f2",
+      "e7d8",
+      "h6g5",
+      "h7h6",
+      "g5h4",
+      "b5c4",
+      "a1f1",
+      "c4d4"
+     ],
+     "scoreCp": 1186
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "e5e6",
+      "d7e6",
+      "d5f6",
+      "e8d8",
+      "f3e5",
+      "g4g3",
+      "d3g3",
+      "a5b6",
+      "a1d1",
+      "b6c7",
+      "d1d3",
+      "e6c4",
+      "f1e1",
+      "c4d3",
+      "g3d3",
+      "d8c8",
+      "d3f5",
+      "c8b8"
+     ],
+     "scoreCp": 1107
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "d3e4",
+      "g4f3",
+      "d5f6",
+      "e8e7",
+      "e4h4",
+      "d7c6",
+      "d4d5",
+      "a5b6",
+      "f1f2",
+      "c6b5",
+      "g1h1",
+      "b5e2",
+      "a1c1",
+      "b6b2",
+      "d5d6",
+      "e7d8",
+      "f6d5",
+      "d8d7"
+     ],
+     "scoreCp": 988
+    }
+   ]
+  },
+  {
+   "ply": 41,
+   "fen": "r3k2r/pp1b1p1p/5N1B/q3P3/3P2p1/P2Q1N2/1P5P/R4RK1 b - - 3 21",
+   "move": {
+    "san": "Nf6+",
+    "uci": "d5f6",
+    "from": "d5",
+    "to": "f6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 2,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e8e7",
+      "f3g5",
+      "a5b5",
+      "d3g3",
+      "d7f5",
+      "d4d5",
+      "b5b6",
+      "g1h1",
+      "f5g6",
+      "e5e6",
+      "f7e6",
+      "d5e6",
+      "b6b2"
+     ],
+     "scoreCp": -1223
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "e8d8",
+      "f3g5",
+      "d7c6",
+      "a1c1",
+      "d8c8",
+      "b2b4",
+      "a5b6",
+      "c1c5",
+      "c8b8",
+      "d4d5",
+      "h8d8",
+      "e5e6",
+      "f7e6"
+     ],
+     "scoreCp": -1239
+    }
+   ]
+  },
+  {
+   "ply": 42,
+   "fen": "r6r/pp1bkp1p/5N1B/q3P3/3P2p1/P2Q1N2/1P5P/R4RK1 w - - 4 22",
+   "move": {
+    "san": "Ke7",
+    "uci": "e8e7",
+    "from": "e8",
+    "to": "e7",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 54,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f3g5",
+      "a5b5",
+      "d3g3",
+      "b5b2",
+      "d4d5",
+      "b2d4",
+      "g1h1",
+      "d7e6",
+      "d5e6",
+      "f7e6",
+      "g5e4",
+      "a8g8",
+      "h6e3",
+      "d4a4",
+      "e3c5",
+      "e7d8",
+      "g3d3",
+      "d8c8"
+     ],
+     "scoreCp": 1214
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f3d2",
+      "a8d8",
+      "f1f2",
+      "d7e6",
+      "d2e4",
+      "d8d5",
+      "d3e3",
+      "h8d8",
+      "e3g5",
+      "d5d4",
+      "f6h7",
+      "e7d7"
+     ],
+     "scoreCp": 1194
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f3h4",
+      "a5b5",
+      "d3e3",
+      "e7d8",
+      "f1f2",
+      "a8c8",
+      "a3a4",
+      "b5c4",
+      "e3g5",
+      "c4e6",
+      "d4d5",
+      "g4g3",
+      "d5e6",
+      "g3h2",
+      "f2h2"
+     ],
+     "scoreCp": 1187
+    }
+   ]
+  },
+  {
+   "ply": 43,
+   "fen": "r6r/pp1bkp1p/5N1B/q3P3/3P2p1/P2Q4/1P1N3P/R4RK1 b - - 5 22",
+   "move": {
+    "san": "Nd2",
+    "uci": "f3d2",
+    "from": "f3",
+    "to": "d2",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 38,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "a8e8",
+      "h6g5",
+      "h7h6",
+      "g5h4",
+      "d7e6",
+      "d2e4",
+      "e8d8",
+      "b2b4",
+      "a5a6",
+      "b4b5",
+      "a6a4",
+      "d4d5"
+     ],
+     "scoreCp": -1191
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "a5b5",
+      "d3g3",
+      "e7d8",
+      "h6g5",
+      "h7h6",
+      "g5h4",
+      "d7e6",
+      "d4d5",
+      "d8c7",
+      "a1c1",
+      "c7b8",
+      "d5e6",
+      "f7e6",
+      "d2e4",
+      "h8d8",
+      "g3f4",
+      "a7a5",
+      "h4f2",
+      "a5a4",
+      "c1c3",
+      "g4g3",
+      "h2g3"
+     ],
+     "scoreCp": -1214
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g4g3",
+      "d3g3",
+      "a8e8",
+      "a1c1",
+      "d7c6",
+      "g3h4",
+      "e7d8",
+      "d4d5",
+      "d8c8",
+      "d5c6",
+      "b7c6",
+      "f1f2",
+      "c8b8"
+     ],
+     "scoreCp": -1215
+    }
+   ]
+  },
+  {
+   "ply": 44,
+   "fen": "r6r/pp2kp1p/4bN1B/q3P3/3P2p1/P2Q4/1P1N3P/R4RK1 w - - 6 23",
+   "move": {
+    "san": "Be6",
+    "uci": "d7e6",
+    "from": "d7",
+    "to": "e6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 56,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d4d5",
+      "g4g3",
+      "h2g3",
+      "e6h3",
+      "f1f2",
+      "a8g8",
+      "d2e4",
+      "g8g6",
+      "h6e3",
+      "e7d8",
+      "b2b4",
+      "g6f6",
+      "e4f6",
+      "a5a6"
+     ],
+     "scoreCp": 1260
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d3e4",
+      "e7d8",
+      "d4d5",
+      "e6d5",
+      "f6d5",
+      "h8g8",
+      "e4h7",
+      "a5d5",
+      "h7g8",
+      "d8e7",
+      "g8g5",
+      "e7e8",
+      "f1f2",
+      "a8d8"
+     ],
+     "scoreCp": 1249
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "b2b4",
+      "a5b6",
+      "h6e3",
+      "h8d8",
+      "d4d5",
+      "b6e3",
+      "d3e3",
+      "e6d5",
+      "e3f4",
+      "d5c6",
+      "f1f2",
+      "d8d2",
+      "f2d2",
+      "h7h5",
+      "f6d5",
+      "c6d5"
+     ],
+     "scoreCp": 1217
+    }
+   ]
+  },
+  {
+   "ply": 45,
+   "fen": "r6r/pp2kp1p/4bN2/q3P1B1/3P2p1/P2Q4/1P1N3P/R4RK1 b - - 7 23",
+   "move": {
+    "san": "Bg5",
+    "uci": "h6g5",
+    "from": "h6",
+    "to": "g5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 40,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h7h6",
+      "g5h4",
+      "e7f8",
+      "d2b3",
+      "a5a6",
+      "d3e3",
+      "e6b3",
+      "e3b3",
+      "a6e6",
+      "b3b4",
+      "f8g7",
+      "f6h5",
+      "g7g6",
+      "h5f4",
+      "g6h7"
+     ],
+     "scoreCp": -1149
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "a5a6",
+      "d3e4",
+      "h7h6",
+      "g5h4",
+      "e7f8",
+      "d4d5",
+      "h6h5",
+      "d2c4",
+      "e6d5",
+      "e4d5",
+      "a6e6",
+      "d5e4",
+      "h8h6"
+     ],
+     "scoreCp": -1202
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "a8d8",
+      "d2e4",
+      "a5e5",
+      "f6d5",
+      "e7f8",
+      "g5e7",
+      "f8g7",
+      "d4e5",
+      "d8d5",
+      "d3g3",
+      "h8g8",
+      "e4f6"
+     ],
+     "scoreCp": -1207
+    }
+   ]
+  },
+  {
+   "ply": 46,
+   "fen": "r4k1r/pp3p1p/4bN2/q3P1B1/3P2p1/P2Q4/1P1N3P/R4RK1 w - - 8 24",
+   "move": {
+    "san": "Kf8",
+    "uci": "e7f8",
+    "from": "e7",
+    "to": "f8",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 55,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d4d5",
+      "h7h6",
+      "d5e6",
+      "a5b6",
+      "g5e3",
+      "a8d8",
+      "d3c3",
+      "b6e6",
+      "e3c5",
+      "f8g7",
+      "f1f2",
+      "d8d3",
+      "c3d3"
+     ],
+     "scoreCp": 1282
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g5h6",
+      "f8e7",
+      "d3e4",
+      "a8c8",
+      "d4d5",
+      "a5b5",
+      "d5e6",
+      "f7e6",
+      "f1f2",
+      "b5b2",
+      "a1f1",
+      "b2b6",
+      "a3a4",
+      "b6c6",
+      "e4b4",
+      "e7d8"
+     ],
+     "scoreCp": 1255
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "b2b4",
+      "a5b6",
+      "g5h6",
+      "f8e7",
+      "h6e3",
+      "a8d8",
+      "d4d5",
+      "h7h5",
+      "e3b6",
+      "a7b6",
+      "f1f4",
+      "e7f8",
+      "d3e4"
+     ],
+     "scoreCp": 1226
+    }
+   ]
+  },
+  {
+   "ply": 47,
+   "fen": "r4k1r/pp3p1p/4b3/q3P1B1/3PN1p1/P2Q4/1P1N3P/R4RK1 b - - 9 24",
+   "move": {
+    "san": "Nfe4",
+    "uci": "f6e4",
+    "from": "f6",
+    "to": "e4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 36,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h7h6",
+      "g5h4",
+      "a8d8",
+      "a3a4",
+      "a5b6",
+      "h4d8",
+      "b6d8",
+      "f1f6",
+      "h6h5",
+      "a1f1",
+      "f8g8",
+      "f1f2",
+      "h8h7",
+      "e4g3",
+      "h5h4"
+     ],
+     "scoreCp": -1073
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "h8g8",
+      "g5h6",
+      "f8e7",
+      "d3g3",
+      "g8g6",
+      "h6e3",
+      "a8g8",
+      "a1c1",
+      "e7e8",
+      "d4d5",
+      "a5d5",
+      "e4f6",
+      "g6f6",
+      "e5f6",
+      "d5d8"
+     ],
+     "scoreCp": -1076
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "a8d8",
+      "a3a4",
+      "a5b6",
+      "g5h6",
+      "f8e7",
+      "h6e3",
+      "g4g3",
+      "d3a3",
+      "e7d7",
+      "d4d5",
+      "b6e3",
+      "a3e3",
+      "g3h2",
+      "g1h2",
+      "e6d5",
+      "e4f6",
+      "d7c8",
+      "e3c3",
+      "c8b8"
+     ],
+     "scoreCp": -1101
+    }
+   ]
+  },
+  {
+   "ply": 48,
+   "fen": "r4k1r/pp3p2/4b2p/q3P1B1/3PN1p1/P2Q4/1P1N3P/R4RK1 w - - 0 25",
+   "move": {
+    "san": "h6",
+    "uci": "h7h6",
+    "from": "h7",
+    "to": "h6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 53,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g5h4",
+      "a8c8",
+      "f1f6",
+      "a5d5",
+      "a1f1",
+      "f8e8",
+      "e4c3",
+      "c8c3",
+      "d3c3"
+     ],
+     "scoreCp": 1106
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "g5f6",
+      "h8g8",
+      "e4c5",
+      "a5b6",
+      "d2e4",
+      "g4g3",
+      "h2g3",
+      "a8c8",
+      "d3d2",
+      "g8g6",
+      "f1f2"
+     ],
+     "scoreCp": 1088
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "b2b4",
+      "a5d5",
+      "g5h4",
+      "a8c8",
+      "f1f2",
+      "h8g8",
+      "d3e3",
+      "g8g6",
+      "a3a4",
+      "g4g3",
+      "h2g3",
+      "h6h5",
+      "e4f6"
+     ],
+     "scoreCp": 1082
+    }
+   ]
+  },
+  {
+   "ply": 49,
+   "fen": "r4k1r/pp3p2/4b2p/q3P3/3PN1pB/P2Q4/1P1N3P/R4RK1 b - - 1 25",
+   "move": {
+    "san": "Bh4",
+    "uci": "g5h4",
+    "from": "g5",
+    "to": "h4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 36,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "a5b6",
+      "b2b4",
+      "h8g8",
+      "e4c5",
+      "g4g3",
+      "h2g3",
+      "g8g4",
+      "c5e6",
+      "b6e6",
+      "f1f6",
+      "e6d5",
+      "d2f3",
+      "g4h4",
+      "f3h4",
+      "a8c8",
+      "e5e6",
+      "c8c3",
+      "f6f7",
+      "f8e8",
+      "d3c3"
+     ],
+     "scoreCp": -1088
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "a8c8",
+      "f1f6",
+      "a5d5",
+      "a1f1",
+      "c8d8",
+      "f6e6",
+      "d5d4",
+      "d3d4",
+      "d8d4",
+      "e6f6",
+      "f8g8",
+      "f6f7",
+      "d4e4",
+      "d2e4",
+      "h8h7",
+      "f7f8",
+      "g8g7"
+     ],
+     "scoreCp": -1098
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "a5a6",
+      "d3e3",
+      "f7f5",
+      "d4d5",
+      "a6b6",
+      "e3b6",
+      "a7b6",
+      "d5e6",
+      "f8g7",
+      "f1f5",
+      "h8f8",
+      "f5f8"
+     ],
+     "scoreCp": -1105
+    }
+   ]
+  },
+  {
+   "ply": 50,
+   "fen": "r4k1r/pp3p2/1q2b2p/4P3/3PN1pB/P2Q4/1P1N3P/R4RK1 w - - 2 26",
+   "move": {
+    "san": "Qb6",
+    "uci": "a5b6",
+    "from": "a5",
+    "to": "b6",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 52,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e4c5",
+      "f8g7",
+      "f1f6",
+      "e6d5",
+      "b2b3",
+      "a8c8",
+      "d2e4",
+      "d5e4",
+      "d3e4"
+     ],
+     "scoreCp": 1163
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "d2c4",
+      "b6b5",
+      "e4d6",
+      "b5d5",
+      "c4e3",
+      "d5b3",
+      "d3d2",
+      "h8g8",
+      "d4d5",
+      "g8g6",
+      "d5e6",
+      "b3e6",
+      "f1f7",
+      "f8g8",
+      "f7f6",
+      "g4g3",
+      "f6g6",
+      "e6g6"
+     ],
+     "scoreCp": 1163
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e4d6",
+      "f8g8",
+      "d2e4",
+      "a8d8",
+      "h4d8",
+      "b6b3",
+      "d3b3",
+      "e6b3",
+      "e4f6",
+      "g8f8",
+      "d4d5",
+      "b3d5"
+     ],
+     "scoreCp": 1105
+    }
+   ]
+  },
+  {
+   "ply": 51,
+   "fen": "r4k1r/pp3p2/1q2b2p/2N1P3/3P2pB/P2Q4/1P1N3P/R4RK1 b - - 3 26",
+   "move": {
+    "san": "Nc5",
+    "uci": "e4c5",
+    "from": "e4",
+    "to": "c5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 33,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f8g8",
+      "d2e4",
+      "a8c8",
+      "e4f6",
+      "g8g7",
+      "c5e6",
+      "b6e6",
+      "f1f2",
+      "e6c4",
+      "d3f5",
+      "c4e6",
+      "f5f4",
+      "h8f8",
+      "d4d5",
+      "e6b6",
+      "d5d6"
+     ],
+     "scoreCp": -1160
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "a8e8",
+      "f1f6",
+      "f8g8",
+      "f6g6",
+      "g8f8",
+      "a1f1",
+      "b6c6",
+      "g6f6",
+      "g4g3",
+      "c5e6",
+      "c6e6"
+     ],
+     "scoreCp": -1188
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f8g7",
+      "f1f6",
+      "h6h5",
+      "d3e3",
+      "h8h7",
+      "a1f1",
+      "g7h8",
+      "d2e4",
+      "a8g8",
+      "c5e6",
+      "f7e6",
+      "e4g5",
+      "h7g7",
+      "g5e6",
+      "g7g6"
+     ],
+     "scoreCp": -1219
+    }
+   ]
+  },
+  {
+   "ply": 52,
+   "fen": "r4k1r/pp3p2/1q5p/2NbP3/3P2pB/P2Q4/1P1N3P/R4RK1 w - - 4 27",
+   "move": {
+    "san": "Bd5",
+    "uci": "e6d5",
+    "from": "e6",
+    "to": "d5",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 56,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c5d7",
+      "f8g8",
+      "d7b6",
+      "a7b6",
+      "d2e4",
+      "d5e4",
+      "d3e4",
+      "h8h7",
+      "e4b7",
+      "a8f8",
+      "f1f6",
+      "h7g7",
+      "e5e6",
+      "f7e6",
+      "f6f8",
+      "g8f8",
+      "b7b8",
+      "f8f7"
+     ],
+     "scoreCp": 1287
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f1f6",
+      "b6b2",
+      "a1b1",
+      "b2d2",
+      "d3d2",
+      "f8g8",
+      "e5e6",
+      "h8h7",
+      "d2f4",
+      "f7e6",
+      "f6g6",
+      "h7g7",
+      "g6g7",
+      "g8g7",
+      "f4f6",
+      "g7g8",
+      "f6g6",
+      "g8h8",
+      "g6h6",
+      "h8g8"
+     ],
+     "scoreCp": 1257
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e5e6",
+      "d5e6",
+      "a1e1",
+      "e6d5",
+      "d3f5",
+      "d5f3",
+      "c5d7",
+      "f8g7",
+      "d7b6",
+      "a7b6",
+      "f5e5",
+      "g7g8"
+     ],
+     "scoreCp": 1252
+    }
+   ]
+  },
+  {
+   "ply": 53,
+   "fen": "r4k1r/pp3p2/1q5p/2NbP3/1P1P2pB/P2Q4/3N3P/R4RK1 b - - 0 27",
+   "move": {
+    "san": "b4",
+    "uci": "b2b4",
+    "from": "b2",
+    "to": "b4",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 36,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f8g8",
+      "d2e4",
+      "b6g6",
+      "f1f6",
+      "g6h5",
+      "d3g3",
+      "h8h7",
+      "f6d6",
+      "d5e4",
+      "c5e4",
+      "g8h8",
+      "d6f6",
+      "a8g8"
+     ],
+     "scoreCp": -1141
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "b6c6",
+      "b4b5",
+      "c6c8",
+      "e5e6",
+      "d5e6",
+      "d3g6",
+      "e6d5",
+      "g6d6",
+      "f8g8",
+      "d6d5",
+      "h8h7",
+      "d2e4",
+      "h7g7",
+      "e4f6",
+      "g8h8",
+      "f1f5",
+      "g4g3"
+     ],
+     "scoreCp": -1168
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "g4g3",
+      "c5d7",
+      "f8e8",
+      "d7b6",
+      "g3h2",
+      "g1h2",
+      "a7b6",
+      "f1f6",
+      "a8d8",
+      "d3b5",
+      "d8d7",
+      "a1g1",
+      "e8f8",
+      "b5d7"
+     ],
+     "scoreCp": -1183
+    }
+   ]
+  },
+  {
+   "ply": 54,
+   "fen": "2r2k1r/pp3p2/1q5p/2NbP3/1P1P2pB/P2Q4/3N3P/R4RK1 w - - 1 28",
+   "move": {
+    "san": "Rc8",
+    "uci": "a8c8",
+    "from": "a8",
+    "to": "c8",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 55,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c5d7",
+      "f8g8",
+      "d7b6",
+      "a7b6",
+      "f1f6",
+      "c8c6",
+      "d3b5",
+      "c6f6",
+      "h4f6",
+      "d5c6",
+      "b5f1",
+      "h8h7",
+      "f1f5",
+      "h7g7",
+      "f6g7",
+      "g8g7",
+      "f5f6",
+      "g7g8"
+     ],
+     "scoreCp": 1241
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f1f6",
+      "f8g8",
+      "c5d7",
+      "b6c6",
+      "d3f5",
+      "b7b5",
+      "f6c6",
+      "c8c6",
+      "d7f6",
+      "c6f6",
+      "f5f6",
+      "g4g3"
+     ],
+     "scoreCp": 1222
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "e5e6",
+      "d5e6",
+      "a1e1",
+      "c8c5",
+      "d4c5",
+      "b6c6",
+      "d3d8",
+      "c6e8",
+      "h4e7",
+      "f8g7",
+      "e7f6",
+      "g7h7",
+      "d8d3",
+      "h7g8",
+      "e1e5",
+      "e8d7",
+      "d3c3",
+      "e6d5"
+     ],
+     "scoreCp": 1156
+    }
+   ]
+  },
+  {
+   "ply": 55,
+   "fen": "2r2k1r/pp1N1p2/1q5p/3bP3/1P1P2pB/P2Q4/3N3P/R4RK1 b - - 2 28",
+   "move": {
+    "san": "Nd7+",
+    "uci": "c5d7",
+    "from": "c5",
+    "to": "d7",
+    "captured": null,
+    "promotion": null
+   },
+   "legalMoveCount": 3,
+   "terminal": false,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f8g8",
+      "d7b6",
+      "a7b6",
+      "d2e4",
+      "g8f8",
+      "e5e6",
+      "d5e6",
+      "d4d5",
+      "e6d7",
+      "f1f6",
+      "c8e8",
+      "e4d6",
+      "f8g8",
+      "d6e8",
+      "d7e8"
+     ],
+     "scoreCp": -1295
+    },
+    {
+     "multipv": 2,
+     "depth": 18,
+     "pv": [
+      "f8e8",
+      "d7b6",
+      "a7b6",
+      "d3b5",
+      "d5c6",
+      "b5c4",
+      "c8c7",
+      "d4d5",
+      "g4g3",
+      "d5c6",
+      "h6h5",
+      "f1f6",
+      "h8g8",
+      "h2g3",
+      "g8g4",
+      "d2e4",
+      "e8f8"
+     ],
+     "scoreCp": -1354
+    },
+    {
+     "multipv": 3,
+     "depth": 18,
+     "pv": [
+      "f8g7",
+      "d7b6",
+      "a7b6",
+      "h4f6",
+      "g7g8",
+      "d3f5",
+      "d5e6",
+      "f5f4",
+      "c8a8",
+      "f6h8",
+      "g8h8",
+      "f4h6",
+      "h8g8",
+      "f1f6",
+      "b6b5",
+      "d2e4",
+      "g4g3",
+      "h6g5",
+      "g8f8"
+     ],
+     "scoreCp": -1397
+    }
+   ]
+  }
+ ]
+}

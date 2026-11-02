@@ -1,0 +1,21 @@
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/n3p0bgc7"]
+[Date "????.??.??"]
+[Round "?"]
+[White "georgek"]
+[Black "b777"]
+[Result "1-0"]
+[WhiteElo "1554"]
+[BlackElo "1429"]
+[ECO "B01"]
+[Opening "Scandinavian Defense: Mieses-Kotroc Variation"]
+[TimeControl "300+2"]
+[UTCDate "2012.12.31"]
+[UTCTime "23:12:39"]
+[Termination "Time forfeit"]
+[WhiteRatingDiff "+7"]
+[BlackRatingDiff "-7"]
+
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe6+ 4. Qe2 Nf6 5. Nf3 b6 6. d3 h6 7. Qxe6
+Bxe6 8. Be2 Nbd7 9. O-O Bg4 10. Bf4 Rc8 11. Nb5 Nd5 12. Bg3 a6 13. Nbd4 f6
+14. Rad1 c5 15. Nb3 Nb4 16. d4 c4 17. Nc1 1-0

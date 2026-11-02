@@ -1,0 +1,22 @@
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/7zkpfs9g"]
+[Date "????.??.??"]
+[Round "?"]
+[White "tiggran"]
+[Black "maslick"]
+[Result "0-1"]
+[WhiteElo "1549"]
+[BlackElo "1609"]
+[ECO "C55"]
+[Opening "Italian Game: Two Knights Defense, Modern Bishop's Opening"]
+[TimeControl "300+0"]
+[UTCDate "2012.12.31"]
+[UTCTime "23:37:54"]
+[Termination "Normal"]
+[WhiteRatingDiff "-9"]
+[BlackRatingDiff "+30"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d6 5. Bg5 Be7 6. c3 Bg4 7. h3 Be6 8.
+Bxe6 fxe6 9. Qb3 Qd7 10. Qxb7 O-O 11. Qb3 Rab8 12. Qc2 d5 13. Nbd2 h6 14.
+Bxf6 Rxf6 15. O-O d4 16. c4 Qe8 17. Rfe1 Qg6 18. b3 Bb4 19. Qd1 Bc3 20. Rc1
+Rbf8 21. Nh4 Qg5 22. g3 Qxd2 0-1

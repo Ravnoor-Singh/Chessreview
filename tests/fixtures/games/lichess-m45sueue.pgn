@@ -1,0 +1,23 @@
+[Event "Rated Classical game"]
+[Site "https://lichess.org/m45sueue"]
+[Date "????.??.??"]
+[Round "?"]
+[White "jorespi"]
+[Black "Marzinkus"]
+[Result "1-0"]
+[WhiteElo "1711"]
+[BlackElo "1800"]
+[ECO "C02"]
+[Opening "French Defense: Advance Variation #2"]
+[TimeControl "360+6"]
+[UTCDate "2012.12.31"]
+[UTCTime "23:18:24"]
+[Termination "Normal"]
+[WhiteRatingDiff "+14"]
+[BlackRatingDiff "-15"]
+
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Ne7 5. f4 Nbc6 6. Nf3 cxd4 7. cxd4 Nf5 8.
+g4 Nfe7 9. Nc3 Bd7 10. Bd3 Nb4 11. O-O Ng6 12. a3 Nxd3 13. Qxd3 Be7 14. f5
+exf5 15. gxf5 Nf8 16. Nxd5 g5 17. f6 g4 18. fxe7 Qa5 19. exf8=Q+ Kxf8 20.
+Bh6+ Ke8 21. Nf6+ Ke7 22. Nd2 Be6 23. Bg5 Kf8 24. Nfe4 h6 25. Bh4 Qb6 26.
+Nc5 Bd5 27. b4 Rc8 28. Nd7+ 1-0

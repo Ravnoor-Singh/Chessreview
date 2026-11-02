@@ -48,6 +48,26 @@ let core = coreSource.replace(/^export (?=(?:const|let|var|function|class) )/gm,
     /const ENGINE_FINGERPRINT = '[^']*';/,
     `const ENGINE_FINGERPRINT = '${fingerprint}';`,
   );
+  // Prompt 2: stamp the manifest's file list the same way, so the
+  // activation purge (engineEntriesToPurge in swCore.mjs) knows exactly
+  // which entries the CURRENT engine cache may hold. Absent manifest →
+  // the empty placeholder stands and the purge is a no-op by design.
+  let fileNames = [];
+  try {
+    const manifest = JSON.parse(
+      readFileSync(join(root, 'public', 'engine', 'engine-manifest.json'), 'utf8'),
+    );
+    fileNames = manifest.files.map((f) => String(f.name)).sort();
+  } catch {
+    // No engine manifest: the placeholder stands.
+  }
+  if (!/const ENGINE_FILE_NAMES = \[[^\]]*\];/.test(core)) {
+    throw new Error('build-sw: ENGINE_FILE_NAMES literal not found in swCore.mjs.');
+  }
+  core = core.replace(
+    /const ENGINE_FILE_NAMES = \[[^\]]*\];/,
+    `const ENGINE_FILE_NAMES = ${JSON.stringify(fileNames)};`,
+  );
 }
 if (core.includes('\nexport ') || core.startsWith('export ')) {
   throw new Error('build-sw: un-stripped export left in swCore.mjs — check its export style.');
@@ -139,6 +159,28 @@ self.addEventListener('activate', function (event) {
     (async function () {
       var names = await caches.keys();
       await Promise.all(cachesToDelete(names).map(function (name) { return caches.delete(name); }));
+      // Prompt 2 entry-level purge: whole-cache deletion above cannot
+      // catch stale payload entries that live INSIDE the current engine
+      // cache (e.g. a file a previous payload shipped under a cache name
+      // that did not change). Delete every entry the current manifest
+      // does not list; the pure decision is engineEntriesToPurge in
+      // swCore.mjs (unit-tested), fed by the build-stamped
+      // ENGINE_FILE_NAMES. A failure here must never block activation.
+      try {
+        if (ENGINE_FILE_NAMES && ENGINE_FILE_NAMES.length) {
+          var engineCache = await caches.open(engineSwCurrentCacheName());
+          var requests = await engineCache.keys();
+          var urls = requests.map(function (r) { return r.url; });
+          await Promise.all(
+            engineEntriesToPurge(urls, ENGINE_FILE_NAMES).map(function (url) {
+              return engineCache.delete(url);
+            }),
+          );
+        }
+      } catch (err) {
+        // Non-fatal: stale entries are at worst re-validated by the
+        // loader's SHA-256 check before any engine byte runs.
+      }
       await self.clients.claim();
     })(),
   );
@@ -169,6 +211,25 @@ async function cacheFirst(request, cacheName, searchAllCaches) {
   return injectIsolationHeaders(response);
 }
 
+async function networkFirstEngineManifest(request) {
+  // Prompt 2: the manifest is network-first — a cache-first manifest
+  // would pin the old engine's hashes forever, defeating both the
+  // no-cache response header and the fingerprint-keyed cache name. The
+  // cached copy (kept in the current engine cache) is only the offline
+  // fallback.
+  var cacheName = engineSwCurrentCacheName();
+  try {
+    var response = await fetch(request);
+    if (response && response.ok) putInCache(cacheName, request, response.clone());
+    return injectIsolationHeaders(response);
+  } catch (err) {
+    var cache = await caches.open(cacheName);
+    var hit = await cache.match(request);
+    if (hit) return injectIsolationHeaders(hit);
+    throw err;
+  }
+}
+
 async function networkFirstNavigation(request) {
   try {
     var response = await fetch(request);
@@ -191,7 +252,9 @@ self.addEventListener('fetch', function (event) {
     origin: self.location.origin,
   });
   if (kind === 'network-only' || kind === 'passthrough') return; // browser default (network)
-  if (kind === 'engine') {
+  if (kind === 'engine-manifest') {
+    event.respondWith(networkFirstEngineManifest(request));
+  } else if (kind === 'engine') {
     event.respondWith(cacheFirst(request, engineSwCurrentCacheName(), false));
   } else if (kind === 'static') {
     event.respondWith(cacheFirst(request, RUNTIME_CACHE, false));

@@ -1,0 +1,35 @@
+# Chess Review — self-hosted example (Round 2, Prompt 7).
+#
+#   docker compose up --build
+#
+# Serves the Next.js production server on http://localhost:3000. All
+# required headers come from next.config.js at runtime — including
+# Cross-Origin-Opener-Policy: same-origin and
+# Cross-Origin-Embedder-Policy: require-corp on every response (which is
+# what makes the multi-threaded engine possible), the CSP, and
+# `Cache-Control: public, max-age=31536000, immutable` for /engine/* and
+# /pieces/*. No reverse proxy is required; if you put one in front, pass
+# headers through unchanged and do not let it strip COOP/COEP.
+#
+# Pick a smaller engine payload at build time, e.g.:
+#   ENGINE_BUNDLE=lite-only docker compose up --build
+# (see README "Engine payload" for the profile table).
+services:
+  app:
+    build:
+      context: .
+      args:
+        ENGINE_BUNDLE: ${ENGINE_BUNDLE:-all}
+        # Optional: serve the engine from a CDN instead of this container
+        # (a BUILD-time value — it is inlined into the client bundle; use
+        # with ENGINE_BUNDLE=external and upload the payload first with
+        # `npm run engine:upload`).
+        NEXT_PUBLIC_ENGINE_BASE_URL: ${NEXT_PUBLIC_ENGINE_BASE_URL:-}
+    ports:
+      - '3000:3000'
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'wget', '-qO-', 'http://127.0.0.1:3000/']
+      interval: 30s
+      timeout: 5s
+      retries: 3

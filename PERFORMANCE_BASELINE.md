@@ -1,0 +1,194 @@
+# Performance baseline — real-browser benchmark (Round 2, Prompt 3)
+
+Measured with `scripts/bench-browser.mjs`: the real app origin served by
+`next start`, driven in Chromium (Playwright), running the real Stockfish
+19 WASM builds the app ships. The adaptive budget logic exercised is the
+app's own `src/engine/budgetRules.mjs`, imported into the page verbatim
+(same-origin route interception; the app's CSP forbids blob/eval module
+loading). Raw per-position records: `PERFORMANCE_BASELINE.raw.json`
+(generated, not committed). Agreement/classification analysis:
+`scripts/agreement.mjs`; committed per-move classifications:
+`tests/fixtures/bench/agreement-runtime.json`, guarded by
+`tests/unit/preset-agreement-guard.test.ts`.
+
+## Machine
+
+- CPU: AMD EPYC 9D64 88-Core Processor — **4 cores** available
+- RAM: 7.7 GB
+- OS: Linux (cloud VM)
+- Node: v24.22.1
+- Chromium: 156.0.8078.4 (Playwright headless), `crossOriginIsolated=true`,
+  `hardwareConcurrency=4`
+
+## Configurations
+
+- **Multi-thread**: one worker from `/engine/stockfish-19.js`,
+  Threads = cores − 1 = 3, Hash 128 MB, MultiPV 3 — the app's
+  cross-origin-isolated configuration.
+- **Single-thread fallback**: pool of min(4, cores − 1) = 3 workers from
+  `/engine/stockfish-19-single.js`, Threads 1, Hash 32 MB each — the
+  app's pool configuration (`src/engine/pool.ts`). First passes run in
+  parallel across the pool; critical re-analyses and like-for-like
+  extensions then run sequentially in ply order, as in the analyzer.
+
+Rules in force (Round 2): stability stop never before depth 14
+(Standard) / 16 (Deep); critical positions (eval swing > 12 win-%,
+last-moment best-move change, or the min-depth best move falling out of
+the final top-3) re-analyzed at full target depth, with Standard's hard
+ceiling extended to 2× (3000 ms) for those re-analyses; like-for-like
+depth matching — a position cut shallower than its predecessor is
+extended to the predecessor's depth before classification.
+
+Measurement notes: "Total time" is the sum of engine-reported
+per-position search times (the bench also logs wall time; multi-thread
+wall ran 1.05–1.2× the sum, pool wall ran BELOW the sum because three
+workers search in parallel). All final numbers were measured on an idle
+machine: the Opera fixture was measured in the program's first session;
+the 41-move fixture's first passes overlapped other work on this shared
+VM (~95–180k nodes/sec, mean depths ~1.8 lower) and were **re-measured**
+uncontended — only the re-measured values appear below. The first bench
+process also died mid-run once (its 86-move single-thread passes were
+re-run as a top-up); the raw file's per-fixture checkpoints make every
+re-run a resume, not a redo.
+
+## Results
+
+### Mode: Multi-thread (cross-origin isolated) — build /engine/stockfish-19.js, threads 3, pool 1
+
+| Fixture                           | Preset                | Positions searched | Total time | Mean depth | Median depth | p10 depth | Nodes/sec | Critical re-analyses | Depth-matched extensions |
+| --------------------------------- | --------------------- | -----------------: | ---------: | ---------: | -----------: | --------: | --------: | -------------------: | -----------------------: |
+| Lichess h6veisdc (41)             | quick                 |              82/83 |     61.9 s |      12.40 |           13 |        11 |   315,245 |                   11 |                       36 |
+| Lichess h6veisdc (41)             | standard              |              82/83 |    239.9 s |      14.80 |           15 |        14 |   315,299 |                    7 |                       41 |
+| Lichess h6veisdc (41)             | deep                  |              82/83 |    397.4 s |      16.30 |           17 |        14 |   333,498 |                    6 |                       25 |
+| Lichess h6veisdc (41)             | fixed d18 (reference) |              82/83 |   1025.1 s |      18.00 |           18 |        18 |   466,842 |                    — |                        — |
+| Lichess 2cj9hphe (86)             | quick                 |            171/172 |    116.4 s |      12.32 |           13 |        11 |   438,669 |                   30 |                       61 |
+| Lichess 2cj9hphe (86)             | standard              |            171/172 |    431.6 s |      14.86 |           15 |        13 |   406,993 |                   27 |                       77 |
+| Lichess 2cj9hphe (86)             | deep                  |            171/172 |    738.3 s |      16.57 |           17 |        14 |   406,981 |                   24 |                       63 |
+| Lichess 2cj9hphe (86)             | fixed d18 (reference) |            171/172 |   2375.5 s |      17.99 |           18 |        18 |   565,353 |                    — |                        — |
+| Opera Game (Morphy, 1858) (opera) | quick                 |              33/34 |     23.9 s |      11.36 |           12 |        10 |   226,455 |                    4 |                       11 |
+| Opera Game (Morphy, 1858) (opera) | standard              |              33/34 |     90.6 s |      13.73 |           14 |        12 |   214,138 |                    2 |                       14 |
+| Opera Game (Morphy, 1858) (opera) | deep                  |              33/34 |    157.1 s |      14.88 |           15 |        13 |   235,418 |                    2 |                        8 |
+| Opera Game (Morphy, 1858) (opera) | fixed d18 (reference) |              33/34 |    843.2 s |      17.82 |           18 |        18 |   309,429 |                    — |                        — |
+
+### Mode: Single-thread pool (fallback) — build /engine/stockfish-19-single.js, threads 1, pool 3
+
+| Fixture                           | Preset   | Positions searched | Total time | Mean depth | Median depth | p10 depth | Nodes/sec | Critical re-analyses | Depth-matched extensions |
+| --------------------------------- | -------- | -----------------: | ---------: | ---------: | -----------: | --------: | --------: | -------------------: | -----------------------: |
+| Lichess h6veisdc (41)             | quick    |              82/83 |     65.8 s |      13.41 |           14 |        12 |   141,469 |                    5 |                       55 |
+| Lichess h6veisdc (41)             | standard |              82/83 |    244.7 s |      16.09 |           16 |        15 |   169,549 |                    7 |                       54 |
+| Lichess h6veisdc (41)             | deep     |              82/83 |    492.0 s |      17.70 |           18 |        17 |   126,658 |                    6 |                       47 |
+| Lichess 2cj9hphe (86)             | quick    |            171/172 |    113.3 s |      13.22 |           14 |        13 |   183,129 |                   24 |                       56 |
+| Lichess 2cj9hphe (86)             | standard |            171/172 |    393.6 s |      16.06 |           17 |        15 |   207,916 |                   24 |                       81 |
+| Lichess 2cj9hphe (86)             | deep     |            171/172 |    831.2 s |      18.51 |           19 |        16 |   166,458 |                   25 |                       82 |
+| Opera Game (Morphy, 1858) (opera) | quick    |              33/34 |     24.3 s |      12.48 |           13 |        11 |   111,857 |                    3 |                       15 |
+| Opera Game (Morphy, 1858) (opera) | standard |              33/34 |     71.7 s |      14.88 |           15 |        15 |   125,394 |                    1 |                       16 |
+| Opera Game (Morphy, 1858) (opera) | deep     |              33/34 |    179.6 s |      17.42 |           17 |        17 |   113,319 |                    3 |                       15 |
+
+## The 60-second target
+
+**40-move game at Standard, multi-thread: 239.9 s of search (255.4 s
+wall) — the ~60 s target is MISSED on this machine.** The fixed
+depth-18 pass over the same game takes 1,025.1 s, so adaptive Standard
+is 4.3× faster than the reference at mean depth 14.8 instead of 18.
+On hardware whose Stockfish throughput is several times this VM's
+(~315–440k nodes/sec here; recent desktop CPUs sustain 1M+ with the
+multi-thread build), the same budget rules reach their target depths
+inside the ceilings and the same game lands far closer to the target;
+the budget rules do not change, only the depths the ceilings buy.
+
+## Agreement study — adaptive vs fixed depth-18 (multi-thread)
+
+Mate scores capped at ±1000 cp for the Δcp statistics (spec). Full
+method: `scripts/agreement.mjs`; per-move classifications committed in
+`tests/fixtures/bench/agreement-runtime.json`.
+
+### Agreement with fixed depth-18 (multi-thread, real browser)
+
+| Fixture | Preset | Mean |Δcp| | Median |Δcp| | Best move differs | Classification differs |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 41 | quick | 42.3 | 14 | 25.6% | 23/82 = 28% |
+| 41 | standard | 30.1 | 8 | 19.5% | 24/82 = 29.3% |
+| 41 | deep | 21.3 | 9 | 14.6% | 22/82 = 26.8% |
+| 86 | quick | 67.6 | 16 | 29.8% | 50/171 = 29.2% |
+| 86 | standard | 45.3 | 11 | 26.3% | 40/171 = 23.4% |
+| 86 | deep | 34 | 8 | 24.6% | 28/171 = 16.4% |
+| opera | quick | 45.2 | 17 | 18.2% | 9/33 = 27.3% |
+| opera | standard | 41.1 | 14 | 21.2% | 10/33 = 30.3% |
+| opera | deep | 20.2 | 9 | 12.1% | 6/33 = 18.2% |
+
+### Brilliant/Great frequency per 40 moves (runtime budget vs fixed d18)
+
+- fixed: Brilliant 0/40 · Great 1.68/40 · over 286 moves
+- quick: Brilliant 0/40 · Great 1.68/40 · over 286 moves
+- standard: Brilliant 0/40 · Great 1.96/40 · over 286 moves
+- deep: Brilliant 0/40 · Great 1.68/40 · over 286 moves
+
+Pooled over all 286 moves: classification differs on **28.7% (Quick),
+25.9% (Standard), 19.6% (Deep)** of moves; pooled mean |Δcp| is 57.8 /
+40.5 / 28.8. The spec targets — Standard ≤ 8%, Deep ≤ 4% — are
+**MISSED**, and are recorded as missed here and in known issue K4.
+
+### Why the targets are unreachable on this machine (measured, not assumed)
+
+1. The presets are time-boxed (600 / 1500 / 4000 ms per position). At
+   ~315–440k nodes/sec the ceiling — not the stability rule — ends most
+   searches: Standard's mean achieved depth is 14.8 against a target of
+   18; Deep's is 16.3–16.6 against 22.
+2. Stockfish disagrees with ITSELF across that depth gap: its best move
+   at the achieved depths differs from its depth-18 best move on
+   19.5–26.3% of positions (Standard) — move classifications, which are
+   derived from those evaluations, cannot agree more often than the
+   evaluations do.
+3. The differences that remain are mostly small: ~81% of Standard's
+   differing moves shift by exactly one classification band, and
+   2+-band shifts are 4.9% (Standard) / 3.8% (Deep) of moves. Median
+   |Δcp| is 8–16 cp across presets and fixtures.
+4. Removing the ceiling entirely (the fixed pass) costs 843–2,376 s
+   per game in this browser — so no budget rule that respects the time
+   targets can reproduce depth-18 labels here. The honest levers are
+   the ones shipped: deeper stability floors (14/16), full-depth
+   re-analysis of critical positions at up to 2× ceiling, like-for-like
+   depth matching (41 of 82 positions extended in the 41-move Standard
+   run), and a UI that shows the achieved average depth instead of the
+   target (review header) plus a per-move "Re-analyze deeper" action at
+   fixed depth 24.
+
+Adjusted, documented expectations — guarded by
+`tests/unit/preset-agreement-guard.test.ts` on the committed
+classifications: classification difference ≤ 34% (Quick) / ≤ 30%
+(Standard) / ≤ 24% (Deep); 2+-band shifts ≤ 7% (Standard) / ≤ 6%
+(Deep); pooled mean |Δcp| ≤ 50 (Standard) / ≤ 38 (Deep). These are
+regression ceilings set at the measured values plus headroom, not the
+missed targets.
+
+## Recalibration check (runtime budget)
+
+Brilliant/Great frequencies over the same 286 moves, classified from
+runtime-budget evaluations vs the fixed-d18 reference: Brilliant
+0.00/40 in every pass; Great 1.68/40 (fixed), 1.68/40 (Quick),
+1.96/40 (Standard), 1.68/40 (Deep) — the runtime budget does not
+inflate Brilliant/Great, and the calibration frequency targets
+(Brilliant < ~2/40, Great ~1–4/40) hold for every preset. The
+depth-18 snapshot calibration over the 12 master/club games in
+`tests/fixtures/games/` is unchanged (Brilliant 0.51/40, Great
+3.89/40, targets MET) and its golden-game assertions still pass; no
+`CLASSIFICATION_PROFILE` threshold was adjusted. See
+`tests/fixtures/games/CALIBRATION.md`.
+
+## Reading these numbers
+
+The presets are time-boxed: on this machine the multi-thread build
+sustains ~315–440k nodes/sec in headless Chromium, so the per-position
+ceiling (Quick 600 ms / Standard 1500 ms / Deep 4000 ms) is usually
+what stops the search — achieved depths sit below target depths even
+though the stability stop may not fire before the floor. That is why
+the review header shows the **achieved average depth** next to the
+preset name, with a note that Quick/Standard evaluations can differ
+from a deeper analysis, and why every move additionally offers a
+fixed-depth-24 re-analysis. The single-thread pool is not merely a
+fallback on this VM: because three workers search different positions
+in parallel, its wall-clock time for a full game is LOWER than the
+multi-thread build's at Standard and Deep (e.g. 86-move Standard:
+267.4 s wall vs 478.1 s), at comparable or better mean depths — the
+multi-thread build's advantage is per-position latency, not game
+throughput, on a 4-core machine.

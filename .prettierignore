@@ -1,0 +1,31 @@
+# Generated, vendored, or machine-managed files — prettier skips these.
+# Hand-written sources (src, tests, scripts, configs, docs) ARE formatted.
+
+# Dependencies and build output
+node_modules/
+.next/
+.next-noiso/
+.next-cdn/
+.next-lite/
+out/
+coverage/
+.lighthouseci/
+playwright-report/
+test-results/
+
+# Generated public assets (engine builds, service worker, opening data)
+public/engine/
+public/sw.js
+public/openings/
+
+# Machine-managed manifests and fixture data (written by scripts)
+package-lock.json
+tests/fixtures/
+
+# Binary / media fixtures elsewhere
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.woff2
+*.wasm

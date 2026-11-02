@@ -1,0 +1,10 @@
+node_modules/
+public/engine/
+.next/
+.next-noiso/
+out/
+dist/
+*.log
+.DS_Store
+/test-results/
+/playwright-report/

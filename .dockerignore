@@ -1,0 +1,9 @@
+node_modules
+.next
+.next-noiso
+public/engine
+.git
+coverage
+playwright-report
+test-results
+*.log

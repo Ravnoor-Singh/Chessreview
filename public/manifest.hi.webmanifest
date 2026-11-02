@@ -1,0 +1,70 @@
+{
+  "background_color": "#262522",
+  "categories": ["games", "entertainment", "sports"],
+  "description": "Stockfish द्वारा संचालित chess.com-शैली की गेम समीक्षा, जो आपके ब्राउज़र में ही स्थानीय रूप से चलती है। सटीकता, चाल वर्गीकरण, इंजन लाइनें और ओपनिंग पहचान — ऑफ़लाइन भी काम करती है।",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "192x192",
+      "src": "/icons/icon-192.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "/icons/icon-512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/icons/icon-maskable-512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "any",
+      "src": "/pieces/cburnett/wN.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "id": "/",
+  "lang": "hi",
+  "name": "शतरंज समीक्षा — Stockfish गेम विश्लेषण",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "शतरंज समीक्षा",
+  "shortcuts": [
+    {
+      "description": "नई गेम समीक्षा शुरू करें",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/icons/icon-192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "नई समीक्षा",
+      "short_name": "नई समीक्षा",
+      "url": "/"
+    },
+    {
+      "description": "होम पेज पर अपनी हाल की सहेजी गई समीक्षाएँ देखें",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/icons/icon-192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "मेरी समीक्षाएँ",
+      "short_name": "मेरी समीक्षाएँ",
+      "url": "/#recent"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#262522"
+}

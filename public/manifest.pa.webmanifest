@@ -1,0 +1,70 @@
+{
+  "background_color": "#262522",
+  "categories": ["games", "entertainment", "sports"],
+  "description": "Stockfish ਦੁਆਰਾ ਸੰਚਾਲਿਤ chess.com-ਸ਼ੈਲੀ ਦੀ ਖੇਡ ਸਮੀਖਿਆ, ਜੋ ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਹੀ ਸਥਾਨਕ ਤੌਰ ਤੇ ਚੱਲਦੀ ਹੈ। ਸ਼ੁੱਧਤਾ, ਚਾਲ ਵਰਗੀਕਰਨ, ਇੰਜਣ ਲਾਈਨਾਂ ਅਤੇ ਓਪਨਿੰਗ ਪਛਾਣ — ਆਫ਼ਲਾਈਨ ਵੀ ਕੰਮ ਕਰਦੀ ਹੈ।",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "192x192",
+      "src": "/icons/icon-192.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "/icons/icon-512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/icons/icon-maskable-512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "any",
+      "src": "/pieces/cburnett/wN.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "id": "/",
+  "lang": "pa",
+  "name": "ਸ਼ਤਰੰਜ ਸਮੀਖਿਆ — Stockfish ਖੇਡ ਵਿਸ਼ਲੇਸ਼ਣ",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ਸ਼ਤਰੰਜ ਸਮੀਖਿਆ",
+  "shortcuts": [
+    {
+      "description": "ਨਵੀਂ ਖੇਡ ਸਮੀਖਿਆ ਸ਼ੁਰੂ ਕਰੋ",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/icons/icon-192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "ਨਵੀਂ ਸਮੀਖਿਆ",
+      "short_name": "ਨਵੀਂ ਸਮੀਖਿਆ",
+      "url": "/"
+    },
+    {
+      "description": "ਹੋਮ ਪੇਜ ਉੱਤੇ ਆਪਣੀਆਂ ਹਾਲੀਆ ਸੰਭਾਲੀਆਂ ਸਮੀਖਿਆਵਾਂ ਉੱਤੇ ਜਾਓ",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/icons/icon-192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "ਮੇਰੀਆਂ ਸਮੀਖਿਆਵਾਂ",
+      "short_name": "ਮੇਰੀਆਂ ਸਮੀਖਿਆਵਾਂ",
+      "url": "/#recent"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#262522"
+}

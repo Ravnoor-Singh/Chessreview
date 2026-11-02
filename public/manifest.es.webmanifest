@@ -1,0 +1,70 @@
+{
+  "background_color": "#262522",
+  "categories": ["games", "entertainment", "sports"],
+  "description": "Revisión de partidas al estilo de chess.com con Stockfish ejecutándose localmente en tu navegador. Precisión, clasificación de jugadas, líneas del motor y detección de aperturas — funciona sin conexión.",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "192x192",
+      "src": "/icons/icon-192.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "/icons/icon-512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/icons/icon-maskable-512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "any",
+      "src": "/pieces/cburnett/wN.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "id": "/",
+  "lang": "es",
+  "name": "Revisión de Partidas — Análisis con Stockfish",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Revisión de Partidas",
+  "shortcuts": [
+    {
+      "description": "Iniciar una nueva revisión de partida",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/icons/icon-192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "Nueva revisión",
+      "short_name": "Nueva revisión",
+      "url": "/"
+    },
+    {
+      "description": "Ir a tus revisiones recientes guardadas en la página principal",
+      "icons": [
+        {
+          "sizes": "192x192",
+          "src": "/icons/icon-192.png",
+          "type": "image/png"
+        }
+      ],
+      "name": "Mis revisiones",
+      "short_name": "Mis revisiones",
+      "url": "/#recent"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#262522"
+}

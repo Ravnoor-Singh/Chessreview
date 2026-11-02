@@ -1,0 +1,43 @@
+{
+  "background_color": "#262522",
+  "categories": ["games", "entertainment", "sports"],
+  "description": "Chess.com-style game review powered by Stockfish running locally in your browser. Accuracy, move classifications, engine lines and opening detection — works offline.",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "icons": [
+    { "purpose": "any", "sizes": "192x192", "src": "/icons/icon-192.png", "type": "image/png" },
+    { "purpose": "any", "sizes": "512x512", "src": "/icons/icon-512.png", "type": "image/png" },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/icons/icon-maskable-512.png",
+      "type": "image/png"
+    },
+    { "purpose": "any", "sizes": "any", "src": "/pieces/cburnett/wN.svg", "type": "image/svg+xml" }
+  ],
+  "id": "/",
+  "lang": "en",
+  "name": "Chess Review — Stockfish Game Analysis",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Chess Review",
+  "shortcuts": [
+    {
+      "description": "Start a new game review",
+      "icons": [{ "sizes": "192x192", "src": "/icons/icon-192.png", "type": "image/png" }],
+      "name": "New review",
+      "short_name": "New review",
+      "url": "/"
+    },
+    {
+      "description": "Jump to your recent saved reviews on the home page",
+      "icons": [{ "sizes": "192x192", "src": "/icons/icon-192.png", "type": "image/png" }],
+      "name": "My reviews",
+      "short_name": "My reviews",
+      "url": "/#recent"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#262522"
+}

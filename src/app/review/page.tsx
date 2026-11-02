@@ -852,7 +852,7 @@ function ReviewInner() {
           className="max-w-md rounded-base bg-panel p-6 text-center"
           data-testid="chess960-blocked"
         >
-          <span className="inline-block rounded bg-panel2 px-2 py-0.5 text-xs font-bold uppercase tracking-wide text-muted">
+          <span className="inline-block rounded bg-panel2 px-2 py-0.5 text-xs font-semibold text-muted">
             {t('termination.chess960Label')}
           </span>
           <h1 className="mt-2 text-lg font-bold">{t('termination.chess960Title')}</h1>
@@ -1139,21 +1139,27 @@ function ReviewInner() {
             <h1 className="pointer-events-none absolute inset-x-0 text-center text-[17px] font-bold">
               {t('review.title')}
             </h1>
-            <span className="ml-auto text-[11px] font-medium text-muted">
-              {engineName} · {t(PRESET_MESSAGE_KEY[settings.depth] ?? 'review.presetStandard')} · d
-              {review?.engine.depth ?? DEPTH_PRESETS[settings.depth].depth}
-              {avgDepth !== null
-                ? ` · ${t('review.analyzedAtDepthAvg', { depth: formatDecimal1(avgDepth) })}`
-                : ''}
-              {' · '}
-              {t(BUILD_MESSAGE_KEY[engineMode])}
-              {engineWasmSize ? ` · ${formatFileSize(engineWasmSize)}` : ''}
+            <span className="ml-auto flex flex-wrap items-center justify-end gap-x-2.5 gap-y-0.5 text-[11px] font-medium text-muted">
+              <span>{engineName}</span>
+              <span>{t(PRESET_MESSAGE_KEY[settings.depth] ?? 'review.presetStandard')}</span>
+              <span>d{review?.engine.depth ?? DEPTH_PRESETS[settings.depth].depth}</span>
+              {avgDepth !== null && (
+                <span>{t('review.analyzedAtDepthAvg', { depth: formatDecimal1(avgDepth) })}</span>
+              )}
+              <span>{t(BUILD_MESSAGE_KEY[engineMode])}</span>
+              {engineWasmSize && <span>{formatFileSize(engineWasmSize)}</span>}
             </span>
           </div>
-          <p className="border-b border-line px-4 py-1.5 text-center text-xs text-muted">
-            {nameFor('w')} {t('common.vs')} {nameFor('b')}
-            {headers.Result ? ` · ${headers.Result}` : ''}
-            {review?.opening ? ` · ${review.opening.eco} ${review.opening.name}` : ''}
+          <p className="flex flex-wrap items-baseline justify-center gap-x-2.5 border-b border-line px-4 py-1.5 text-center text-xs text-muted">
+            <span>
+              {nameFor('w')} {t('common.vs')} {nameFor('b')}
+            </span>
+            {headers.Result && <span className="font-semibold text-ink">{headers.Result}</span>}
+            {review?.opening && (
+              <span>
+                {review.opening.eco} {review.opening.name}
+              </span>
+            )}
           </p>
           {review && settings.depth !== 'deep' && (
             <p className="border-b border-line px-4 py-1.5 text-center text-[11px] text-muted">
@@ -1215,9 +1221,7 @@ function ReviewInner() {
               </div>
               <section aria-label={t('review.engineSection')}>
                 <div className="mb-2 flex items-center justify-between">
-                  <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
-                    {t('review.engineSection')}
-                  </h2>
+                  <h2 className="text-sm font-semibold text-muted">{t('review.engineSection')}</h2>
                   <EngineControls
                     enabled={engineEnabled}
                     onToggle={(v) => useAnalysisStore.getState().setEngineEnabled(v)}
@@ -1250,7 +1254,7 @@ function ReviewInner() {
               </section>
               {variations.length > 0 && (
                 <div className="border-t border-line pt-2">
-                  <h3 className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+                  <h3 className="mb-1 text-xs font-semibold text-muted">
                     {t('review.variations')}
                   </h3>
                   <VariationTree
@@ -1749,9 +1753,7 @@ function ReviewInner() {
                   aria-label={t('review.engineExplanation')}
                 >
                   <div className="mb-1.5 flex items-center justify-between">
-                    <h2 className="text-xs font-bold uppercase tracking-wide text-muted">
-                      {t('review.engineLines')}
-                    </h2>
+                    <h2 className="text-xs font-semibold text-muted">{t('review.engineLines')}</h2>
                     <EngineControls
                       enabled={engineEnabled}
                       onToggle={(v) => useAnalysisStore.getState().setEngineEnabled(v)}
@@ -1802,7 +1804,7 @@ function ReviewInner() {
               </div>
               {variations.length > 0 && (
                 <div className="max-h-36 overflow-y-auto border-t border-line px-4 py-2">
-                  <h3 className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+                  <h3 className="mb-1 text-xs font-semibold text-muted">
                     {t('review.variations')}
                   </h3>
                   <VariationTree

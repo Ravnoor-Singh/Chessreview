@@ -1,14 +1,14 @@
 {
   "dependencies": {
     "chess.js": "1.4.0",
-    "framer-motion": "12.43.0",
+    "framer-motion": "14.8.0",
     "idb": "8.0.4",
     "lz-string": "1.5.0",
-    "next": "15.5.28",
+    "next": "16.4.3",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "stockfish": "19.0.1",
-    "zod": "3.25.76",
+    "zod": "4.6.7",
     "zustand": "5.0.16"
   },
   "description": "Chess.com-style game review powered by Stockfish WASM in the browser",

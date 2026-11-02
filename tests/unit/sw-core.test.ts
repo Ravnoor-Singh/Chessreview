@@ -101,10 +101,7 @@ describe('engine cache purge on activate (Prompt 2)', () => {
   const at = (path: string) => `${ORIGIN}${path}`;
 
   it('keeps every entry the current manifest lists, plus the manifest itself', () => {
-    const cached = [
-      ...CURRENT.map((f) => at(`/engine/${f}`)),
-      at('/engine/engine-manifest.json'),
-    ];
+    const cached = [...CURRENT.map((f) => at(`/engine/${f}`)), at('/engine/engine-manifest.json')];
     expect(engineEntriesToPurge(cached, CURRENT)).toEqual([]);
   });
 
@@ -140,9 +137,7 @@ describe('engine cache purge on activate (Prompt 2)', () => {
 
   it('handles relative URLs, query strings and duplicates', () => {
     expect(engineEntryFileName('/engine/stockfish-19.wasm')).toBe('stockfish-19.wasm');
-    expect(engineEntryFileName(`${ORIGIN}/engine/stockfish-19.wasm?v=2`)).toBe(
-      'stockfish-19.wasm',
-    );
+    expect(engineEntryFileName(`${ORIGIN}/engine/stockfish-19.wasm?v=2`)).toBe('stockfish-19.wasm');
     expect(engineEntryFileName('/pieces/neo/wP.svg')).toBeNull();
     const stale = at('/engine/stockfish-18.wasm');
     expect(engineEntriesToPurge([stale, stale], CURRENT)).toEqual([stale]);

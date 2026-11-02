@@ -252,13 +252,13 @@ export default function SettingsDrawer({
                 onClick={onClose}
                 className="text-sm font-semibold text-accent hover:underline"
               >
-                {t('settings.fullSettingsPage')} →
+                {t('settings.fullSettingsPage')}
               </Link>
             </div>
 
             <div className="flex-1 divide-y divide-line overflow-y-auto px-4">
               <section className="py-3" aria-label={t('settings.appearance')}>
-                <h3 className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+                <h3 className="mb-1 text-xs font-semibold text-muted">
                   {t('settings.appearance')}
                 </h3>
                 <Row label={t('settings.theme')}>
@@ -459,7 +459,7 @@ export default function SettingsDrawer({
               </section>
 
               <section className="py-3" aria-label={t('settings.engineSection')}>
-                <h3 className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+                <h3 className="mb-1 text-xs font-semibold text-muted">
                   {t('settings.engineSection')}
                 </h3>
                 <Row label={t('settings.analysisDepth')}>
@@ -606,14 +606,14 @@ export default function SettingsDrawer({
               </section>
 
               <section className="py-3" aria-label={t('settings.storageSection')}>
-                <h3 className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+                <h3 className="mb-1 text-xs font-semibold text-muted">
                   {t('settings.storageSection')}
                 </h3>
                 <StorageSection />
               </section>
 
               <section className="py-3" aria-label={t('settings.appSection')}>
-                <h3 className="mb-1 text-xs font-bold uppercase tracking-wide text-muted">
+                <h3 className="mb-1 text-xs font-semibold text-muted">
                   {t('settings.appSection')}
                 </h3>
                 <InstallAppButton />

@@ -1,0 +1,25 @@
+[Event "Rated Bullet game"]
+[Site "https://lichess.org/h6veisdc"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Ben_Dover"]
+[Black "pseudoknight"]
+[Result "0-1"]
+[WhiteElo "1871"]
+[BlackElo "1714"]
+[ECO "A00"]
+[Opening "Van Geet Opening"]
+[TimeControl "60+1"]
+[UTCDate "2012.12.31"]
+[UTCTime "23:28:33"]
+[Termination "Normal"]
+[WhiteRatingDiff "-15"]
+[BlackRatingDiff "+15"]
+
+1. Nc3 c5 2. d3 g6 3. e4 Bg7 4. f4 Nc6 5. Nf3 e6 6. Be3 Nge7 7. Qe2 Qb6 8.
+Na4 Qa5+ 9. Nc3 d6 10. Bd2 b5 11. Nd5 Qd8 12. Nxe7 Qxe7 13. O-O-O b4 14. d4
+Nxd4 15. Nxd4 Bxd4 16. Qb5+ Bd7 17. Qb7 O-O 18. Bb5 Rfd8 19. Bxd7 Qxd7 20.
+Qxd7 Rxd7 21. c3 bxc3 22. Bxc3 Bxc3 23. bxc3 Rad8 24. Kc2 d5 25. e5 d4 26.
+c4 Rb8 27. Rb1 Rdb7 28. Rxb7 Rxb7 29. Rc1 Kf8 30. Kd3 Ke7 31. Rc2 Kd7 32.
+Ke4 Ke7 33. g4 f6 34. exf6+ Kxf6 35. h4 h6 36. g5+ hxg5 37. hxg5+ Ke7 38.
+Ke5 Rb1 39. Re2 d3 40. Rd2 Re1+ 41. Re2 Rxe2# 0-1

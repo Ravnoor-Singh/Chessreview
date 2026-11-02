@@ -3,11 +3,14 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import {
   APP_CACHE,
+  ENGINE_FILE_NAMES,
   ENGINE_VERSION,
   RUNTIME_CACHE,
   cachesToDelete,
   classifyRequest,
   currentCacheNames,
+  engineEntriesToPurge,
+  engineEntryFileName,
   engineSwCacheName,
   engineSwCurrentCacheName,
   injectIsolationHeaders,
@@ -86,6 +89,83 @@ describe('sw cache names', () => {
   });
 });
 
+describe('engine cache purge on activate (Prompt 2)', () => {
+  const CURRENT = [
+    'stockfish-19.js',
+    'stockfish-19.wasm',
+    'stockfish-19-single.js',
+    'stockfish-19-single.wasm',
+    'stockfish-19-lite-single.js',
+    'stockfish-19-lite-single.wasm',
+  ];
+  const at = (path: string) => `${ORIGIN}${path}`;
+
+  it('keeps every entry the current manifest lists, plus the manifest itself', () => {
+    const cached = [
+      ...CURRENT.map((f) => at(`/engine/${f}`)),
+      at('/engine/engine-manifest.json'),
+    ];
+    expect(engineEntriesToPurge(cached, CURRENT)).toEqual([]);
+  });
+
+  it('purges payload files the current manifest no longer lists (stale engine bytes)', () => {
+    const cached = [
+      at('/engine/stockfish-19.wasm'),
+      at('/engine/stockfish-18.wasm'), // previous engine generation
+      at('/engine/stockfish-19-asm.js'), // optional build no longer shipped
+      at('/engine/engine-manifest.json'),
+    ];
+    expect(engineEntriesToPurge(cached, CURRENT).sort()).toEqual(
+      [at('/engine/stockfish-18.wasm'), at('/engine/stockfish-19-asm.js')].sort(),
+    );
+  });
+
+  it('purges non-engine and nested entries that cannot be current payload', () => {
+    const cached = [
+      at('/pieces/neo/wP.svg'),
+      at('/engine/nested/stockfish-19.wasm'),
+      at('/engine/stockfish-19.wasm'),
+    ];
+    expect(engineEntriesToPurge(cached, CURRENT).sort()).toEqual(
+      [at('/pieces/neo/wP.svg'), at('/engine/nested/stockfish-19.wasm')].sort(),
+    );
+  });
+
+  it('purges nothing when the current file list is empty or unknown (no basis to call an entry stale)', () => {
+    const cached = [at('/engine/stockfish-18.wasm')];
+    expect(engineEntriesToPurge(cached, [])).toEqual([]);
+    expect(engineEntriesToPurge(cached, undefined as unknown as string[])).toEqual([]);
+    expect(engineEntriesToPurge([], CURRENT)).toEqual([]);
+  });
+
+  it('handles relative URLs, query strings and duplicates', () => {
+    expect(engineEntryFileName('/engine/stockfish-19.wasm')).toBe('stockfish-19.wasm');
+    expect(engineEntryFileName(`${ORIGIN}/engine/stockfish-19.wasm?v=2`)).toBe(
+      'stockfish-19.wasm',
+    );
+    expect(engineEntryFileName('/pieces/neo/wP.svg')).toBeNull();
+    const stale = at('/engine/stockfish-18.wasm');
+    expect(engineEntriesToPurge([stale, stale], CURRENT)).toEqual([stale]);
+  });
+
+  it('raw swCore ships an empty ENGINE_FILE_NAMES placeholder; the generated sw.js carries the real list', () => {
+    expect(ENGINE_FILE_NAMES).toEqual([]);
+    let sw: string;
+    try {
+      sw = readFileSync(join(process.cwd(), 'public', 'sw.js'), 'utf8');
+    } catch {
+      return; // sw.js is a build artifact; nothing to assert pre-build.
+    }
+    const match = sw.match(/const ENGINE_FILE_NAMES = \[([^\]]*)\];/);
+    expect(match).not.toBeNull();
+    for (const f of CURRENT) expect(match![1]).toContain(`"${f}"`);
+    // The generated worker must actually run the purge + the
+    // network-first manifest route (guards against generator drift).
+    expect(sw).toContain('engineEntriesToPurge(urls, ENGINE_FILE_NAMES)');
+    expect(sw).toContain('networkFirstEngineManifest');
+  });
+});
+
 describe('precache list', () => {
   const urls = precacheUrls();
 
@@ -143,7 +223,14 @@ describe('classifyRequest', () => {
 
   it('routes engine files to the dedicated cache', () => {
     expect(at('/engine/stockfish-19.wasm')).toBe('engine');
-    expect(at('/engine/engine-manifest.json')).toBe('engine');
+    expect(at('/engine/stockfish-19.js')).toBe('engine');
+    expect(at('/engine/stockfish-19-lite-single.wasm')).toBe('engine');
+  });
+
+  it('routes the engine manifest network-first, never cache-first (Prompt 2)', () => {
+    // The manifest URL never changes: cache-first would serve a stale
+    // manifest (and its stale SHA-256 expectations) forever.
+    expect(at('/engine/engine-manifest.json')).toBe('engine-manifest');
   });
 
   it('routes hashed static chunks to the runtime cache', () => {
@@ -201,7 +288,20 @@ describe('isolation header injection', () => {
     expect(out.get('Permissions-Policy')).toContain('camera=()');
   });
 
+  it('SW CSP connect-src is exactly self + the two named importer hosts', () => {
+    // CSP tightening: no bare https:, no loopback — the SW must never be
+    // able to widen the production policy for cached responses.
+    const connect = SW_CONTENT_SECURITY_POLICY.split(';')
+      .map((d) => d.trim())
+      .find((d) => d.startsWith('connect-src'));
+    expect(connect).toBe("connect-src 'self' https://lichess.org https://api.chess.com");
+  });
+
   it('SW CSP is byte-identical to the next.config.js CSP (single source)', async () => {
+    // Compare against the PRODUCTION rendering of next.config.js: dev
+    // builds additionally allow loopback connect-src, which the shipped
+    // SW policy must never carry (see swCore.mjs).
+    Object.assign(process.env, { NODE_ENV: 'production' });
     const { createRequire } = await import('node:module');
     const require = createRequire(join(__dirname, '..', '..', 'package.json'));
     const config = require(join(__dirname, '..', '..', 'next.config.js')) as {

@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { computeInstallUiState, isIosUserAgent, shouldRegisterServiceWorker } from '@/lib/pwa';
+import {
+  computeInstallUiState,
+  isIosUserAgent,
+  shouldRegisterServiceWorker,
+  swRegistrationOptions,
+} from '@/lib/pwa';
 
 describe('computeInstallUiState', () => {
   const base = { hasDeferredPrompt: false, isIos: false, standalone: false, dismissed: false };
@@ -47,5 +52,11 @@ describe('shouldRegisterServiceWorker', () => {
     expect(shouldRegisterServiceWorker('development')).toBe(false);
     expect(shouldRegisterServiceWorker('test')).toBe(false);
     expect(shouldRegisterServiceWorker(undefined)).toBe(false);
+  });
+});
+
+describe('swRegistrationOptions (Prompt 2)', () => {
+  it("uses updateViaCache: 'none' so SW update checks bypass the HTTP cache", () => {
+    expect(swRegistrationOptions()).toEqual({ updateViaCache: 'none' });
   });
 });

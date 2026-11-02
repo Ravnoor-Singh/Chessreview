@@ -15,17 +15,17 @@ in Part I comes from a command actually run in this environment; anything not ru
 Run in a pristine copy of the source tree (no `node_modules`, `.next`, `public/engine`,
 `public/sw.js`, coverage or test-results):
 
-| Step | Result |
-| --- | --- |
-| `npm ci` | **exit 0** — postinstall regenerated `public/engine` (191 MB) from the stockfish package |
-| `npm run typecheck` / `lint` / `format:check` / `check:unused` | **all exit 0** (lint zero findings) |
-| `npm run i18n:check` | **574 keys × 4 locales**, placeholders aligned |
-| `npm run glossary:check` | 21 canonical terms match; Stockfish intact |
-| `npm run test:coverage` | **831/831 (79 files)**; global lines **74.6%** (floor 72), branches 80.75%, functions 69.18%; critical modules ≥90% |
-| `npm run test:integration` | **exit 0** (real-engine integration) |
-| `npm run build` **with network disabled** (`unshare -n`) | **exit 0** — fully offline after install |
-| `npm run test:e2e` (all projects) | **41/41, three consecutive runs** (4.8m / 4.9m / 5.0m) |
-| `npm run engine:report` | all-profiles 200,180,816 B (190.91 MiB); a visitor downloads ONE build: multi 94.52 MiB, single 94.60 MiB, lite 1.79 MiB |
+| Step                                                           | Result                                                                                                                   |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `npm ci`                                                       | **exit 0** — postinstall regenerated `public/engine` (191 MB) from the stockfish package                                 |
+| `npm run typecheck` / `lint` / `format:check` / `check:unused` | **all exit 0** (lint zero findings)                                                                                      |
+| `npm run i18n:check`                                           | **574 keys × 4 locales**, placeholders aligned                                                                           |
+| `npm run glossary:check`                                       | 21 canonical terms match; Stockfish intact                                                                               |
+| `npm run test:coverage`                                        | **831/831 (79 files)**; global lines **74.6%** (floor 72), branches 80.75%, functions 69.18%; critical modules ≥90%      |
+| `npm run test:integration`                                     | **exit 0** (real-engine integration)                                                                                     |
+| `npm run build` **with network disabled** (`unshare -n`)       | **exit 0** — fully offline after install                                                                                 |
+| `npm run test:e2e` (all projects)                              | **41/41, three consecutive runs** (4.8m / 4.9m / 5.0m)                                                                   |
+| `npm run engine:report`                                        | all-profiles 200,180,816 B (190.91 MiB); a visitor downloads ONE build: multi 94.52 MiB, single 94.60 MiB, lite 1.79 MiB |
 
 Full unit suite in the main tree at the Prompt 10 gate: **854/854 (81 files)**.
 Bundle budgets enforced in the build: `/` First Load JS **147.8 KB gzip** (budget 170),
@@ -79,29 +79,29 @@ scoped exception).
    Root cause is Stockfish's own depth variance (its best move differs from its d18
    choice on 19.5–26.3% of positions); mean |Δcp| did improve 132.6 → 40.5 vs Round 1.
    No honest fix inside WASM Stockfish; labels are calibrated at runtime depth and the
-   UI reports the depth used. *Effort to "fix": not applicable — accept and disclose.*
+   UI reports the depth used. _Effort to "fix": not applicable — accept and disclose._
 2. **Image-import photos at 28.65%** (n=3 licensed photos) — below the 85% Beta bar, so
    the Beta label is shown and the review step is mandatory. Causes: detection geometry
    under perspective (2 photos) and an exotic piece set (1). The ML training pipeline
    ships (`scripts/train-piece-classifier.py`) but no model was trained — no PyTorch in
-   this environment. *Effort: days (data + training + eval).*
+   this environment. _Effort: days (data + training + eval)._
 3. **Lighthouse performance on this VM** (0.71 / 0.57 vs 0.95 / 0.90 targets) — TBT is
-   dominated by engine WASM parse on a throttled shared CPU. *Effort: hours to
+   dominated by engine WASM parse on a throttled shared CPU. _Effort: hours to
    re-measure on representative hardware; budgets already enforced for the other three
-   categories.*
+   categories._
 4. **K7 — Hindi/Spanish/Punjabi are machine-assisted and unreviewed.** The glossary,
    consistency check and CSV review round-trip now exist (§21); closing this needs
-   native-speaker reviewers, not code. *Effort: external.*
+   native-speaker reviewers, not code. _Effort: external._
 5. **Standard preset takes ~240 s for an 82-ply game on this VM** (60 s target) —
    hardware-bound; Quick and the adaptive budget keep the app responsive, and the UI
-   shows live depth so the trade-off is visible. *Effort: none honest on this hardware.*
+   shows live depth so the trade-off is visible. _Effort: none honest on this hardware._
 6. **Chess960 analysis is rejected by design** (chess.js 1.4 generates standard
-   castling only). *Effort: days (a 960-capable move generator) if ever wanted.*
+   castling only). _Effort: days (a 960-capable move generator) if ever wanted._
 7. **`npm audit` cannot run in this sandbox** (the managed registry denies the audit
    endpoint); CI runs `npm audit --omit=dev --audit-level=high` with the policy in
-   SECURITY.md. *Effort: none — CI is the enforcing run.*
+   SECURITY.md. _Effort: none — CI is the enforcing run._
 8. **Docker image build unverified** — `docker-compose.yml` ships, but Docker is not
-   available on this VM. *Effort: minutes on a Docker host.*
+   available on this VM. _Effort: minutes on a Docker host._
 
 ## 4. Go / No-Go
 
@@ -1175,7 +1175,6 @@ zero-length files confirmed as legitimately-empty published files,
 e.g. `client-only/index.js`, resolve test fixtures) before the gate
 numbers above were taken. No deployment.
 
-
 ---
 
 ## Addendum — Themes & Presets, Stage A (2026-11-02)
@@ -1211,13 +1210,14 @@ background readability, preset references and PROVENANCE coverage.
 
 **Gate (Stage A tree):** npm ci ✓ (825 packages) · typecheck ✓ ·
 lint ✓ (0 errors) · `npm test` **941/941 (85 files)** ✓ (854 baseline
-+ 87) · build ✓ — First Load JS **/** 152.6 KB gzip, **/review**
-191.8 KB · e2e: settings 5/5, axe on /settings (see the Stage B note —
-the zero-violations claim for the full page was later found
-incomplete and fixed in Stage B) · `themes:check` ✓ · `i18n:check` ✓
-(693 keys × 4) · `glossary:check` ✓ · `format:check` ✓ ·
-`check:unused` ✓. Screenshots of the new page were captured for
-layout review (`~/workspace/themes-screenshots/`).
+
+- 87. · build ✓ — First Load JS **/** 152.6 KB gzip, **/review**
+      191.8 KB · e2e: settings 5/5, axe on /settings (see the Stage B note —
+      the zero-violations claim for the full page was later found
+      incomplete and fixed in Stage B) · `themes:check` ✓ · `i18n:check` ✓
+      (693 keys × 4) · `glossary:check` ✓ · `format:check` ✓ ·
+      `check:unused` ✓. Screenshots of the new page were captured for
+      layout review (`~/workspace/themes-screenshots/`).
 
 ---
 
@@ -1315,7 +1315,7 @@ engine 'none' is silent, 'wav' keeps the original files, 'synth'
 plays the recipes. A master `soundVolume` setting (0–1, default
 0.5 = the previous hardcoded WAV volume) was added with migration
 clamping, a slider in Settings → Sounds, and the Test button now
-auditions the *draft* theme at the draft volume before saving. Unit
+auditions the _draft_ theme at the draft volume before saving. Unit
 tests drive the scheduler through a structural fake AudioContext.
 
 **Blindfold mode.** New boolean setting (schema stays v2) in Board
@@ -1398,3 +1398,578 @@ addenda are faithful reconstructions from the program's recorded
 gate results; the Stage C addendum is original). All restores were
 written through the reliable file channel only — shell-channel
 writes remained EPERM-blocked throughout the incident.
+
+## Addendum — Post-Round-2 Prompt 1: CSP tightening (2026-11-02)
+
+**Change.** The Content-Security-Policy now matches the product claim
+"all analysis is local, nothing is uploaded". Production `connect-src`
+is exactly `'self' https://lichess.org https://api.chess.com` — the
+bare `https:` (which made every HTTPS host reachable from the page) is
+**removed** from all five policy surfaces (`next.config.js`,
+`vercel.json`, `netlify.toml`, `public/_headers`, and the service
+worker's injected policy in `src/lib/swCore.mjs`, with `public/sw.js`
+regenerated). A configured engine CDN (`NEXT_PUBLIC_ENGINE_BASE_URL` /
+`ENGINE_BASE_URL`) now contributes its **exact origin** to `connect-src`
+(it was already added to `script-src`/`worker-src`/`child-src` by the
+Prompt 7 fix); the loopback allowances (`http://localhost:*`,
+`http://127.0.0.1:*`) are emitted by `next.config.js` only when
+`NODE_ENV !== 'production'`, and the static mirrors and SW policy carry
+the production form only — static-host deployers using a CDN must add
+the origin to `connect-src` themselves (README CDN recipe updated).
+Directive audit beyond `connect-src` (usage verified by grep over
+`src/`): `img-src` drops `data:` (image previews and custom backgrounds
+are `blob:` object URLs; no `data:` URI is constructed anywhere),
+`font-src` drops `data:` (all fonts are self-hosted woff2), `media-src`
+drops `blob:` (sounds are same-origin WAV files or Web Audio
+oscillators). Kept, with consumers: `blob:` in `worker-src`/`child-src`
+(Stockfish Blob-wrapper worker for a cross-origin engine) and in
+`img-src` (object-URL previews/backgrounds); `style-src 'unsafe-inline'`
+(Tailwind/framer-motion inline styles).
+
+**Known issue (unchanged, restated here as required):**
+`script-src 'unsafe-inline'` remains in place and was **not** changed
+by this prompt. It is already recorded in §20 and in `SECURITY.md`:
+nonce-based CSP is not feasible for this app's delivery model
+(statically generated pages + a service worker serving a cached shell
+whose CSP cannot carry a per-request nonce), and the sha256-hash
+variant was tried in Round 1 and reverted with evidence (browsers
+ignore `'unsafe-inline'` next to a hash, which blocked every Next.js
+Flight script). Residual risk and rationale stand as documented there.
+
+**Guards & tests.** The drift-guard suites were strengthened, not
+weakened: `tests/unit/security-headers.test.ts` now loads the config as
+production, asserts `connect-src` token-for-token, asserts
+`img-src`/`font-src`/`media-src` exactly, and asserts no production
+surface (the three static files, `swCore.mjs`, generated `public/sw.js`)
+contains a bare `https:` or a loopback entry; `tests/unit/sw-core.test.ts`
+compares the SW policy against the production rendering of the config
+and pins the SW `connect-src` exactly. Targeted run in this session:
+**25/25 passed** (security-headers 5, sw-core 20). Two Playwright tests
+were added — `tests/e2e/security.spec.ts`: a page-context
+`fetch('https://example.com')` must reject with a `connect-src`
+violation; `tests/e2e/privacy.spec.ts` (new file, registered in the
+heavy project): a full sample-game analysis records every request and
+asserts all stayed on the app origin (plus a configured engine origin).
+Both are collected by `playwright test --list` in their projects
+(security 2 tests in `chromium`, privacy 1 test in `heavy`); they were
+**not executed** in this session (a production build + browser run is
+the coordinator's gate step), and no pass is claimed for them.
+`npm run typecheck`, `npm run lint` and `npm run i18n:check` results
+for this change are reported with the change (no user-visible UI
+strings were added, so no catalogue entries changed). README gained a
+**Privacy** section (policy summary + DevTools verification steps) and
+its CSP directive list and CDN recipe were updated to the new policy.
+
+## Addendum — Post-Round-2 Prompt 2: engine & service-worker caching (2026-11-02)
+
+**Problem.** `/engine/engine-manifest.json` was served with
+`Cache-Control: public, max-age=31536000, immutable` (inherited from the
+generic `/engine/*` rule in all four header configs), but its URL never
+changes — a new engine could hide behind a year-old cached manifest.
+`/sw.js` had no cache rule at all in any config. Inside the service
+worker the manifest was additionally classified `engine` (cache-first),
+so even a correctly-headed manifest could be served stale by the SW.
+
+**Headers (all four surfaces, drift-guarded).** `next.config.js`,
+`vercel.json`, `netlify.toml` and `public/_headers` now carry two
+specific rules, listed BEFORE the generic engine rule (specific /
+first-match order, pinned by test): `/engine/engine-manifest.json` →
+`Cache-Control: no-cache` and `/sw.js` → `Cache-Control: no-cache`. The
+version-named payload files (`stockfish-19*.js`/`.wasm`) keep
+`public, max-age=31536000, immutable`. `manifest.webmanifest` was
+inspected: it had (and keeps) no dedicated Cache-Control rule — it is
+covered by the SW precache lifecycle, not by this prompt. Fifth surface
+found while auditing: `scripts/upload-engine.mjs` (CDN `external`
+profile) uploaded the manifest object with the immutable header too; it
+now uploads `engine-manifest.json` with `no-cache` and keeps immutable
+for the payload objects (verified by a `--dry-run` print).
+
+**Registration.** `PwaManager` now registers the worker with
+`updateViaCache: 'none'` via the pure, unit-tested
+`swRegistrationOptions()` in `src/lib/pwa.ts`, so SW update checks
+bypass the HTTP cache entirely.
+
+**SW runtime.** Engine cache keying by manifest SHA-256 already existed
+(Round 2 Prompt 7: `scripts/build-sw.mjs` stamps a SHA-256 fingerprint
+of version + every file's name/size/SHA-256 into `ENGINE_FINGERPRINT`;
+the SW engine cache is `chess-review-sw-engine-v<version>-f<fingerprint>`,
+and a changed manifest renames the cache and orphans the old one, which
+`cachesToDelete` removes on activate; the loader's CDN cache is keyed
+the same way by `manifestFingerprint`). Prompt 2 closes the remaining
+gaps: (1) `classifyRequest` now returns the new kind `engine-manifest`
+for the manifest, and the generated fetch handler serves it
+network-first (cached copy is only the offline fallback); (2)
+`scripts/build-sw.mjs` also stamps the manifest's file list into
+`ENGINE_FILE_NAMES`, and on activation the worker purges every entry
+inside the current engine cache that the current manifest does not list
+— the pure decision is `engineEntriesToPurge` in `src/lib/swCore.mjs`
+(with `engineEntryFileName`); an empty/unknown list purges nothing by
+design. `public/sw.js` was regenerated with `npm run build:sw`
+(19,726 B on disk; fingerprint unchanged at `3ceda91bae3ddbd8` because
+the manifest itself did not change; stamped file list carries all six
+payload files).
+
+**Guards & tests.** Extended, never weakened:
+`tests/unit/security-headers.test.ts` gained a Prompt 2 describe
+(4 tests: exact no-cache values + specific-before-generic order on
+next.config.js and vercel.json, mirrored blocks + order + exactly-two
+`no-cache` count on netlify.toml/`_headers`, no immutable manifest/sw
+surface); `tests/unit/sw-core.test.ts` changed the manifest
+classification expectation to the new `engine-manifest` kind and gained
+6 purge tests plus the generated-list guard (27 tests);
+`tests/unit/pwa.test.ts` gained the registration-options test.
+Targeted run in this session: **43/43 passed** (security-headers 9,
+sw-core 27, pwa 7), plus an adjacent regression set **53/53 passed**
+(engine-manifest 25, engine-loader 6, engine-cache-idb 7, storage 5,
+cache-key 7, pwa-manifest 3). New Playwright spec
+`tests/e2e/engine-update.spec.ts` (2 tests, `chromium` project):
+response-header assertions, and a simulated A→B manifest deploy via
+route interception (reload after unregister so a fresh SW activates)
+asserting B is served and the seeded stale entry + old cache are
+purged while the current payload survives. It is collected by
+`playwright test --list` (2 tests in `chromium`); it was **not
+executed** in this session (a production build + browser run is the
+coordinator's gate step), and no pass is claimed for it.
+`npm run typecheck` clean; `npm run lint` 0 errors (1 pre-existing
+warning in `scripts/i18n-review-lib.mjs`, untouched by this prompt);
+`npm run i18n:check` OK — 817 keys × 4 locales. No user-visible UI
+strings were added, so no catalogue entries changed. README documents
+the policy in the engine "Loading & caching" note, the PWA table +
+a new "Engine & service-worker caching (Prompt 2)" paragraph, and the
+CDN recipe's cache bullets.
+
+## Addendum — Post-Round-2 Prompt 5: repository cleanup (2026-11-02)
+
+**Deleted generated files at the repo root** (all gitignored classes,
+none of them source): `server.log` (186 B), `bench-single86.log`
+(758 B), `bench-run.log` (2,138 B) and `bench-41-rerun.log` (772 B).
+Also deleted `PERFORMANCE_BASELINE.raw.json` (5,386,036 B): the rule
+applied is that a generated artifact whose generator is committed does
+not belong in the tree — `scripts/bench-browser.mjs` writes it
+(`OUT_PATH = join(root, 'PERFORMANCE_BASELINE.raw.json')`, line 44)
+and `scripts/agreement.mjs` reads it, so it is regenerated on demand.
+It is now named in `.gitignore`, and `PERFORMANCE_BASELINE.md` says so
+(generated by `scripts/bench-browser.mjs`, gitignored, regenerate
+before running `scripts/agreement.mjs`).
+
+**`.gitignore`** gained the generated outputs not yet covered —
+`coverage/`, `.next-cdn/`, `.next-lite/`, `.lighthouseci/` (all four
+directories exist locally) — plus `PERFORMANCE_BASELINE.raw.json`;
+every pre-existing entry is unchanged.
+
+**CI hygiene gate.** New `scripts/check-repo-hygiene.mjs` (no
+dependencies) fails on (a) any tracked `*.log` file or (b) a
+conservative likely-secret pattern in a tracked text file (AWS
+`AKIA…`, GitHub `ghp_…`/`github_pat_…`, `sk-…`, Google `AIza…`, Slack
+`xox…`, private-key blocks, literal `password=` assignments). It lists
+files with `git ls-files` when git is available and falls back to a
+filesystem walk excluding `node_modules`, `.next*`, `coverage` and
+`public/engine`. Personal absolute paths are scanned too but reported
+as warnings (fail only with `--strict`). CI runs it as a new step in
+the existing `check` job of `.github/workflows/ci.yml`, before
+`npm ci`. Final local run on the cleaned tree (after all of this
+prompt's edits): **scanned 855 text files (1,019 listed), 0 failures,
+2 warnings** — both warnings are the same real finding, reported and
+deliberately not changed by this prompt:
+`scripts/capture-lichess-fixtures.mjs:209` hard-codes the fallback
+Chromium path `/home/hatch/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome`
+(used only when `PLAYWRIGHT_CHROMIUM` is unset); the second warning
+is this addendum quoting that path. No secret-pattern findings
+anywhere in the tree.
+
+**Docs.** README's License section now reads exactly: "Application
+code © Ravnoor Singh, licensed under GPL-3.0 (see LICENSE). Stockfish
+is GPL-3.0; third-party assets keep their own licenses, see
+LICENSES.md." — and links `SECURITY.md` from the same section (the
+file lives at the repo root locally). New `CONTRIBUTING.md` (59
+lines): setup, the full check list, integration/e2e notes, and the
+standing rules (never weaken tests, i18n for user-visible strings,
+README/RELEASE_REPORT updates). New
+`.github/pull_request_template.md` (18 lines) with the five-command
+gate checklist (typecheck, lint, test, i18n:check, build).
+
+**Checks run for this prompt** (coordinator runs the full gate):
+`node scripts/check-repo-hygiene.mjs` exit 0 (above); `npm run lint`
+exit 0 — 0 errors, 1 pre-existing warning (`sawAny` in
+`scripts/i18n-review-lib.mjs`, untouched); `npm run typecheck` exit 0;
+`npm run i18n:check` OK — 817 keys × 4 locales. No user-visible UI
+strings were added, so no catalogue entries changed. One pre-existing
+formatting note: `npx prettier --check README.md` flags only the PWA
+cache table at lines 764–770 (column widths from the Prompt 2 edit) —
+not touched by this prompt.
+
+## Addendum — Post-Round-2 Prompt 3: /theme-gallery dev/test-only gating (2026-11-02)
+
+**Decision (assumption A, binding):** `/theme-gallery` is a
+dev/test-only tool, not a user feature. An exhaustive reference hunt
+(`grep -rn "theme-gallery"` and `"themeGallery"` over the whole repo
+excluding `node_modules` and `.next*`) found only:
+`src/app/theme-gallery/page.tsx:20` (its own doc comment) and `:203`
+(the component name), `tests/e2e/themes-gallery.spec.ts:6,31,41,51,61`
+(the contact-sheet spec), the historical Stage B mention at
+`RELEASE_REPORT.md:1244`, and the spec's 8 snapshot PNGs under
+`tests/e2e/themes-gallery.spec.ts-snapshots/`. No nav component, no
+sitemap (the app has no `src/app/sitemap*` or robots file at all),
+no service-worker precache entry (`precacheUrls()` in
+`src/lib/swCore.mjs` is `['/', '/review', '/manifest.webmanifest']`
+plus asset files; `scripts/build-sw.mjs` discovers build assets only
+from `/` and `/review`; 0 hits for `theme-gallery` in `public/sw.js`,
+`src/lib/swCore.mjs` and `scripts/build-sw.mjs`), and no link from
+any page or docs file. Nothing was found suggesting it is a real
+user feature, so nothing had to be removed from nav/sitemap/SW —
+they never referenced it.
+
+**Gate.** The gallery UI (unchanged, still a client component) moved
+verbatim to `src/app/theme-gallery/ThemeGalleryClient.tsx`;
+`src/app/theme-gallery/page.tsx` is now a small server component
+with `export const dynamic = 'force-dynamic'` that calls
+`notFound()` unless `isThemeGalleryEnabled()` (new
+`src/lib/themeGallery.ts`) passes: enabled when
+`NODE_ENV !== 'production'` or `ENABLE_THEME_GALLERY === '1'`. The
+404 served is the framework not-found page — no user-visible strings
+were added and no i18n catalogue entries changed.
+
+**Playwright contact sheets keep working.**
+`playwright.config.ts`'s shared `:3100` webServer now runs with
+`env: { PORT: '3100', ENABLE_THEME_GALLERY: '1' }` (webServer
+entries are global, and the gallery spec shares that server/port
+with the `heavy` project, so the flag cannot be scoped narrower;
+it affects only the gallery route). `tests/e2e/themes-gallery.spec.ts`
+itself changed only by a header note.
+`npx playwright test tests/e2e/themes-gallery.spec.ts --list`
+collects the same **8 tests in the `chromium` project**; the spec
+was not executed in this session (coordinator's gate runs e2e).
+
+**New tests.** `tests/unit/theme-gallery-gate.test.ts` (3 tests)
+pins the gate logic: production without the flag → disabled;
+production with `'1'` → enabled, with `'true'`/`'0'`/`''` →
+disabled; development/test/no-env → enabled. Targeted run:
+**3/3 passed (1 file)**.
+
+**Route table — before** (coordinator's Prompt 1 gate build):
+`/theme-gallery` was `○` (Static) **2.95 kB / 139 kB** First Load JS.
+**After** (this prompt's own `npm run build`, exit 0):
+
+```
+┌ ○ /                                    13.4 kB         165 kB
+├ ○ /_not-found                            990 B         104 kB
+├ ƒ /api/chesscom                          127 B         103 kB
+├ ƒ /api/lichess                           127 B         103 kB
+├ ○ /review                              49.4 kB         204 kB
+├ ○ /settings                              21 kB         160 kB
+└ ƒ /theme-gallery                       2.95 kB         139 kB
++ First Load JS shared by all             103 kB
+```
+
+The only change is `/theme-gallery` becoming `ƒ` (Dynamic,
+server-rendered on demand) — expected, since the gate must be
+evaluated per request at server runtime; its size and First Load JS
+are byte-identical to before, and every other route is unchanged.
+`check-bundle`: `/` 161.3 KB gzip (budget 170) OK, `/review`
+199.8 KB gzip (budget 220) OK — same as before.
+
+**Live curl verification** (this prompt's production build, spare
+ports, servers stopped afterwards): `next start -p 3105` **without**
+the flag → `GET /theme-gallery` **404** (8,811 B, framework
+not-found page, no gallery markup) while `GET /` returned 200.
+Restarted as `ENABLE_THEME_GALLERY=1 next start -p 3106` (same
+build) → `GET /theme-gallery` **200** (683,057 B, gallery markup
+present) and `GET /theme-gallery?section=boards` **200**.
+
+**Checks run for this prompt** (coordinator runs the full gate):
+targeted unit test above; `npm run typecheck` clean (exit 0);
+`npm run lint` exit 0 — 0 errors, 1 warning
+(`scripts/i18n-review-lib.mjs:65`, `'sawAny'` unused — a file
+this prompt did not touch); `npm run i18n:check` OK — 817 keys × 4
+locales, unchanged. The full test suite was not run here, per the
+prompt's division of labour. `public/pieces/neo/wP.svg` untouched
+(825 B, md5 `d5fa1d4b987dabb113aabb653f7facf1`, verified after the
+build).
+
+## Addendum — Post-Round-2 Prompt 4: real-engine integration test expansion (2026-11-02)
+
+**Scope.** Tests + one CI workflow only. No production code changed and
+no bug was exposed by the new tests. The only edits inside the existing
+test file's harness: the Node Stockfish client now mirrors the app
+client's option setup (`Threads 1`, `UCI_AnalyseMode`, `UCI_ShowWDL`, so
+the WDL test reads the same real output the app displays) and builds its
+`position` command with the app's own `buildPositionCommand`, so a
+supplied game history reaches the engine as `… moves …` (previously the
+harness always sent a bare FEN — a harness gap, not an app bug; the
+app's `StockfishClient` already did both).
+
+**Baseline before this prompt:** `npm run test:integration` — 2/2
+passed, Duration 2.72s. **After:** 16/16 passed (1 file), Duration
+10.48s (tests 5.79s) — well under the ~3-minute budget. Typecheck exit
+0; lint exit 0 (0 errors, 1 pre-existing warning in
+`scripts/i18n-review-lib.mjs`, untouched). No user-visible strings were
+added, so no i18n catalogue entries changed.
+
+**New tests (14 added to the existing 2), every position probed against
+the real engine at the test's own depth/MultiPV before its assertions
+were written; assertions pin stable facts only, never exact
+centipawns:**
+
+| Test                         | Position / source                                                             | Asserts (all engine-verified first)                                                                                                                                                 |
+| ---------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mate in 1, White             | Composed back-rank `6k1/5ppp/8/8/8/8/8/R5K1 w`                                | best `a1a8`, mate 1, unique (next line cp)                                                                                                                                          |
+| Mate in 1, Black             | Colour-swapped mirror                                                         | best `a8a1`, mate 1                                                                                                                                                                 |
+| Mate in 2, White             | Opera Game after 15...Nxd7 (bundled sample score, FEN via chess.js)           | best `b3b8`, mate 2, unique                                                                                                                                                         |
+| Mate in 2, Black             | Mirror of the above                                                           | best `b6b1`, mate 2                                                                                                                                                                 |
+| Mate in 3, White `@slow`     | Composed Philidor's-Legacy pattern, line also walked in chess.js to checkmate | best `f7h6`, mate 3 at depth 16 (depth 12/MultiPV had not converged — probed), next-best mate 4                                                                                     |
+| Mate in 3, Black `@slow`     | Mirror of the above                                                           | best `f2h3`, mate 3                                                                                                                                                                 |
+| Stalemate trap               | Composed KQ-vs-K `k7/8/1K1Q4/8/8/8/8/8 w`                                     | `d6c7` is legal and stalemates (chess.js-verified); engine instead plays `d6d8`, mate 1                                                                                             |
+| Winning capture              | Composed: black queen en prise to a rook                                      | best `d1d5` (chess.js-verified queen capture), score > +100 cp (probed ≈ +680), no mate score                                                                                       |
+| WDL parsing                  | Start position, `UCI_ShowWDL` on                                              | `wdl` present, three non-negative integers, sum in 990–1010 (probed exactly 46/947/7 = 1000; the band covers model rounding while catching scaling errors)                          |
+| MultiPV 3                    | Start position                                                                | 3 lines, multipv 1/2/3, three distinct first moves, tracker scores non-increasing                                                                                                   |
+| Stop/cancel race             | Start position at depth 24, stopped after 250 ms                              | stopped result reports `stopped: true`; the next analysis (Scholar's-mate position) is complete and correct (`h5f7`, mate 1, depth 10, not stopped early) — no stale bestmove leaks |
+| Chess960                     | Start array `BBQNNRKR`, Shredder-FEN (`HFhf`) and KQkq forms                  | **Clean rejection** (see below)                                                                                                                                                     |
+| Repetition `@slow`           | Knight-shuffle PGN (start position ×3) through `analyzeGame`                  | See below                                                                                                                                                                           |
+| Whole-pipeline smoke `@slow` | Bundled Opera Game (34 plies) through `analyzeGame` with the real engine      | See below                                                                                                                                                                           |
+
+Mate-sign convention asserted in every mate test via the app's
+`scoreToWhiteCp`: engine scores are side-to-move relative (mate for the
+mover is positive for both colours), and White-perspective mate is
+`+N` for White-to-move and `−N` for Black-to-move.
+
+**Chess960 outcome — clean rejection, pinned as a test.** The app never
+sets `UCI_Chess960` on its engine client, and chess.js throws on a
+Shredder-FEN castling field (`Invalid FEN: castling availability is
+invalid` — probed), so per the README's documented stance the game is
+rejected rather than analyzed with wrong castling semantics. The test
+pins exactly that path: `detectChess960` flags both the Shredder-FEN
+and the KQkq-castling forms of a non-standard start array (and not the
+standard start position), chess.js refuses the Shredder-FEN, and a
+`[Variant "Chess960"]` PGN parses with `isChess960: true` (the flag the
+UI blocks on). It deliberately does not feed a 960 position to the
+engine. (For the record, a raw engine probe showed Stockfish will
+happily return plausible-looking standard-chess moves for a
+Shredder-FEN — precisely the silent wrongness the rejection exists to
+prevent.) No bug found; Chess960 support itself remains Prompt 6
+territory and was not touched.
+
+**Repetition — what the code actually promises, asserted.** A bare
+engine probe first established that the engine itself shows no
+draw-aware difference at the root (start position with the shuffle
+history attached still returns `e2e4`, ≈ +0.3 — the engine does not
+claim the draw), so the test asserts the analyzer-level behaviour the
+code documents (`analyzer.ts`: occurrence counting, history-aware
+search, terminal third occurrence): the direct history search returns a
+legal move; in the shuffle game the start position is searched exactly
+twice (bare, then with the 4-ply history — engine calls recorded), and
+the third occurrence is finalized as an exact draw with no search
+(depth 0, no lines, `evalWhiteCp` 0, win probability 50). Two of the
+worker's own initial assertions were wrong about FEN move counters
+(occurrences differ in the halfmove/fullmove fields) and were corrected
+to the EPD identity the analyzer itself uses — no assertion about the
+app was weakened.
+
+**Whole-pipeline smoke.** `analyzeGame` (real engine, fixed depth-10
+full-budget profile, MultiPV 3, no opening index) over the bundled
+Opera Game: 34 plies in ply order; every searched ply at depth ≥ the
+profile minimum (10), terminal plies at depth 0 and the one
+one-legal-move ply at depth 1 (both exemptions computed from the
+position itself); every played move classified with accuracy in
+0–100; game accuracies for both colours in 0–100.
+
+**CI.** New `.github/workflows/nightly.yml` (style matched to
+`ci.yml`): scheduled `30 2 * * *` UTC plus `workflow_dispatch`; checks
+out, sets up Node from `.nvmrc`, `npm ci`, runs
+`npm run test:integration` teeing to `integration.log`, and always
+uploads the log as the `integration-test-log` artifact (14-day
+retention). It cannot be executed from this environment, so it is
+verified by inspection only — first real run is its first scheduled (or
+manually dispatched) execution on GitHub.
+
+**Not done.** The full unit suite was not run (the coordinator runs the
+gate). No production code, no Chess960 support work (Prompt 6), no
+changes to the existing two tests' assertions. `public/pieces/neo/wP.svg`
+untouched (825 B, md5 `d5fa1d4b987dabb113aabb653f7facf1`, verified after
+all runs).
+
+## Addendum — Post-Round-2 Prompt 6: game endings + Chess960 verification (2026-11-02)
+
+Fixture-driven audit of every ending, Chess960, broken PGNs and the
+400-ply long game. Most of the machinery already existed (Prompt 12);
+this prompt pinned it to on-disk fixtures and fixed the three gaps the
+audit actually found. New fixtures: `tests/fixtures/endings/` (15
+files), `tests/fixtures/chess960/` (3), `tests/fixtures/broken/` (6).
+New tests: `tests/unit/endings-fixtures.test.ts` (23),
+`tests/unit/chess960-fixtures.test.ts` (5),
+`tests/unit/broken-pgn-fixtures.test.ts` (7),
+`tests/components/long-game-movelist.test.tsx` (2) — 37 new tests, all
+passing. Regression spot-checks: termination + pgn + pgn-recovery
+(52/52), analyzer-termination + termination-banner + i18n suites
+(83/83). Typecheck clean, ESLint clean on touched files, `i18n:check`
+OK (817 keys × 4 locales — no new keys were needed; every banner /
+Chess960 / recovery string already existed in all four locales).
+
+### Final endings status
+
+| #   | Ending                           | Status                              | Evidence                                                                                                                                                                                                                                  |
+| --- | -------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Checkmate                        | ✅ works                            | `endings/checkmate.pgn` (4 plies, Fool's mate) → kind `checkmate`, `0-1`, analyzer final ply mate 0 / 0%                                                                                                                                  |
+| 2   | Stalemate                        | ✅ works                            | `endings/stalemate.pgn` (1 ply, Qf7 from SetUp FEN) → `stalemate`, `1/2-1/2`, final eval exactly 0.0                                                                                                                                      |
+| 3   | Threefold repetition             | ✅ works                            | `endings/threefold.pgn` (8 plies) → `repetition-threefold`, final ply 0.0 / 50% at analyzer level                                                                                                                                         |
+| 4   | Fivefold repetition              | ✅ works                            | `endings/fivefold.pgn` (16 plies) → `repetition-fivefold`, final ply 0.0 / 50%                                                                                                                                                            |
+| 5   | 50-move rule                     | ✅ works                            | `endings/fifty-move.pgn` (SetUp halfmove 99 + 2 quiet rook moves = 101) → `fifty-move`, 0.0                                                                                                                                               |
+| 6   | 75-move rule                     | ✅ works                            | `endings/seventyfive-move.pgn` (halfmove 149 + 2 = 151) → `seventyfive-move`, 0.0                                                                                                                                                         |
+| 7   | Insufficient material            | ✅ works                            | `endings/insufficient-material.pgn` (K+B vs K, 1 ply) → `insufficient-material`, 0.0                                                                                                                                                      |
+| 8   | Draw by agreement                | ✅ works                            | `endings/agreement.pgn` (`[Termination "Game drawn by agreement"]`) → `agreement`, `1/2-1/2`; not a board terminal — the final position keeps its engine eval by design                                                                   |
+| 9   | Resignation                      | ✅ works                            | `endings/resignation.pgn` → `resignation`, `1-0`; analyzer test: no extra ply, no blunder/mistake label                                                                                                                                   |
+| 10  | Timeout                          | ✅ works                            | `endings/timeout.pgn` (`"Black won on time"`) → `timeout`, `0-1`; same no-extra-ply / no-blunder assertion                                                                                                                                |
+| 11  | Timeout vs insufficient material | ✅ works                            | `endings/timeout-vs-insufficient.pgn` → `timeout-vs-insufficient-material`, `1/2-1/2`                                                                                                                                                     |
+| 12  | Abandonment                      | ✅ works — **fixed in this prompt** | `endings/abandonment.pgn` (decisive, `1-0`) and `endings/abandonment-aborted.pgn` (aborted, `*`, no winner — previously degraded to `unfinished`; the banner's no-winner "Game abandoned" rendering was unreachable through the resolver) |
+| 13  | Unfinished (`*`)                 | ✅ works                            | `endings/unfinished.pgn` → `unfinished`, `*`                                                                                                                                                                                              |
+
+Final-eval assertions sit at the levels the architecture exposes:
+`terminalEval(finalFen)` for bare-position terminals (mate /
+stalemate / move counters / insufficient material — exactly 0.0 for
+draws), and `analyzeGame` with a fake engine for repetition draws (a
+bare FEN carries no history). Resignation / timeout / agreement /
+abandonment / unfinished are not board terminals: `terminalEval`
+returns null and the position keeps its engine evaluation.
+
+### Fixes made (smallest safe change each)
+
+1. `src/analysis/termination.ts` — an abandonment hit with no known
+   winner now resolves to `kind: 'abandonment', winner: null` instead
+   of falling through to the result-only fallback (`unfinished` for
+   `*` games). Decisive abandonment (winner from the result) is
+   unchanged.
+2. `src/parsers/pgn.ts` — a Shredder-FEN Chess960 game (castling field
+   `HFhf`, which chess.js rejects outright) previously threw
+   "Failed to parse PGN"; the recovery path now returns the flagged
+   game (`isChess960: true`, no replayable moves) so the review page
+   shows the localized Chess960 not-supported screen, as the README
+   already claimed.
+3. `src/parsers/pgn.ts` — the manual-replay accept path derived the
+   result as `headers.Result ?? '*'`, so a header-less PGN with a
+   movetext result token degraded to `*`; it now derives the result
+   exactly like the loadPgn success path (header first, otherwise the
+   last result token).
+
+### Chess960 verdict (per sub-part)
+
+| Sub-part                     | Verdict                     | Evidence                                                                                                                                                                                                          |
+| ---------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Detection                    | ✅ works                    | `tests/fixtures/chess960/`: Variant-tag fixture, start-array-only castling fixture, Shredder-FEN fixture (after fix 2) — all parse with `isChess960: true`                                                        |
+| Move legality (960 castling) | ⛔ not supported, by design | chess.js 1.4 has no 960 mode; the castling fixture's O-O is standard-shaped and replays, but the flag blocks the game from ever being analyzed as standard chess                                                  |
+| Engine `UCI_Chess960`        | ⛔ never set, by design     | Blocked upstream at the parser/UI; the engine client's init options (Threads/Hash/MultiPV/UCI_AnalyseMode/UCI_ShowWDL, `stockfish.worker.ts`) contain no 960 entry; also pinned by integration test #7 (Prompt 4) |
+| "Chess960" label             | ✅ works                    | `termination.chess960Label` = "Chess960" in all 4 locales, rendered on the blocked screen (`src/app/review/page.tsx`, e2e `termination.spec.ts`)                                                                  |
+| Opening book skipped         | ✅ works                    | `analyzer.ts` nulls the index for flagged games; fixture test asserts no `book` classification and no opening even when `analyzeGame` is called directly                                                          |
+
+### Broken-PGN outcomes (`tests/fixtures/broken/`)
+
+| Case                           | Outcome                                                                                                                            |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Illegal move                   | Prefix kept (3 moves); `parseError` ply 4, SAN `BADMOVE`, legal alternatives listed; UI offers "Analyze up to move 2"              |
+| Truncated game (cut mid-token) | Prefix kept (2 moves); `parseError` ply 3, SAN `Nf`                                                                                |
+| BOM                            | Parses cleanly (4 moves, BOM + CRLF fixture)                                                                                       |
+| Mixed line endings             | Parses cleanly (CRLF / CR / LF in one file, 4 moves)                                                                               |
+| `0-0` castling notation        | Normalized to `O-O` (×2) and `O-O-O` (×2, second game in the fixture file)                                                         |
+| Multiple result tokens         | Header `[Result "1-0"]` wins over trailing `1-0 0-1`; header-less duplicates resolve to the last token on both parse paths (fix 3) |
+
+### Long game
+
+`endings/long-game-400.pgn` (400 plies, knight shuffle, resolves to
+fivefold repetition) parses to 400 moves / 401 FENs. MoveList
+virtualization verified at component level: `aria-rowcount="200"`,
+fewer than 60 of 200 rows mounted. Render time measured in the
+component test: **99.6 ms (jsdom timing, not browser timing)**.
+Keyboard navigation verified at the same level with the review page's
+`useKeyboard` map shape: ArrowRight/ArrowLeft step one ply, End jumps
+to ply 400, Home returns to 0.
+
+### Not done
+
+- Playwright flows were not re-run in this prompt (the five
+  termination flows already exist in `tests/e2e/termination.spec.ts`
+  and passed in Round 2; the coordinator's gate owns browser runs).
+- The full unit suite was not run (the coordinator runs the gate).
+- Real Chess960 analysis remains unsupported by design — see the
+  verdict table above. `public/pieces/neo/wP.svg` untouched.
+
+---
+
+## 22. Bug-fix program addendum — Prompt 7 executed (2026-11-02): real-browser speed/depth measurement and tuning check
+
+**Audit.** The benchmark this prompt asks for already existed from Round 2
+Prompt 3 and needed no rewrite: `scripts/bench-browser.mjs` runs the real
+app origin (`next start`) in Chromium (Playwright) with the real Stockfish
+19 WASM builds, in the multi-thread configuration (Threads = cores − 1,
+Hash 128 MB) and the single-thread pool configuration (pool of
+min(4, cores − 1) workers, Hash 32 MB each, mirroring `src/engine/pool.ts`),
+imports the app's own `src/engine/budgetRules.mjs` verbatim into the page,
+covers all three bundled fixtures (`tests/fixtures/bench/`: Opera 34, Lichess
+41-move 83, Lichess 86-move 172 positions) per preset, records total time,
+mean/median/p10 achieved depth, nodes/sec, critical re-analyses and
+depth-matched extensions, checkpoints incrementally to
+`PERFORMANCE_BASELINE.raw.json` (gitignored since Prompt 5), and feeds
+`scripts/agreement.mjs` (mean/median |Δcp| with mates capped at ±1000 cp,
+best-move-difference %, classification-difference % via the production
+classifier). Gaps found, none blocking: the bench's single mode instantiates
+the pool configuration on the (isolated) app origin rather than on a true
+non-isolated origin — that origin behaviour is covered by
+`tests/e2e/pool.spec.ts`; two rule constants (`oneLegalMoveDepth`,
+`criticalCeilingMultiplier`) are passed to the page harness as literals that
+currently match `BUDGET_RULES` (1 and 2); and `scripts/bench.mjs`'s Node-side
+critical rule predates the fell-out-of-top-3 and depth-matching fixups. No
+script was changed in this prompt.
+
+**What was measured today (2026-11-02, this VM: AMD EPYC 9D25, 4 cores,
+7.7 GB RAM, Chromium 156.0.8078.4, crossOriginIsolated=true).** A partial
+matrix on the current post-Prompts-1–6 production build — full detail in the
+new dated section of `PERFORMANCE_BASELINE.md`. Browser: Opera multi Quick
+23.6 s search (mean depth 11.82, 261,597 nps, 4 critical), Opera multi
+Standard 74.6 s (13.55, 235,104 nps, 2 critical), **41-move multi Standard
+236.1 s search / 251.8 s wall (mean depth 14.55, median 15, p10 13,
+291,649 nps, 8 critical, 38 depth-matched)**, Opera single-pool Quick
+21.9 s summed / 11.9 s wall (12.24), Opera single-pool Standard 100.8 s
+summed / 69.8 s wall (15.18). Node (`scripts/bench.mjs --only sample`):
+Opera Quick 10.0 s (avg 12.0), Standard 38.9 s (14.6), Deep 91.3 s (16.5),
+fixed-d18 pass 128.8 s, Standard-vs-d18 mean |Δcp| 22.8 cp over 33 positions
+(bench.mjs mate methodology: flattened to ±10000 cp). All five browser
+combinations attempted today completed; **no combination failed**. Not
+attempted today: browser Deep, the 86-move fixture, single-mode 41/86 and
+all browser fixed-d18 passes (Round 2 measured 843.2–2,375.5 s per fixture
+for those passes; the full matrix is multiple hours) — the exact commands
+for the user's machine are in `PERFORMANCE_BASELINE.md`.
+
+**Targets.** 40-move Standard multi-thread ≤ ~60 s: **MISSED on fresh
+measurement** (236.1 s — Round 2: 239.9 s; hardware-bound at
+~235–292k nodes/sec, as documented in §14/K4). Classification difference
+≤ 8% (Standard) / ≤ 4% (Deep): **not re-measured today** (no fixed-d18
+browser pass was run, so `scripts/agreement.mjs` has no new fixture rows);
+the Round 2 browser-measured miss (pooled 25.9% / 19.6%) stands, guarded by
+`tests/unit/preset-agreement-guard.test.ts` — re-run today, 6/6 pass.
+Known issue **K4 and Part I §3 item 5 (Standard ≈ 240 s for an 82-ply game
+on this VM) are unchanged**.
+
+**Tuning: none.** Every lever the prompt permits is already at its limit in
+the shipped budget rules (stability floors 14 Standard / 16 Deep;
+fell-out-of-top-3 full-depth re-analysis; like-for-like depth matching so
+the played move is evaluated at the same depth as the best move; 2× ceiling
+on critical re-analyses at Standard), and today's numbers reproduce the
+Round 2 dataset within run-to-run variance, so there is no measured
+regression to correct and no permitted lever left unused. Classification
+thresholds unchanged: `node scripts/calibrate.mjs` re-run today reports
+Brilliant 0.51/40 (target < ~2, MET) and Great 3.89/40 (target ~1–4, MET)
+on the depth-18 snapshots.
+
+**Depth display: already shipped, verified in code, no change.** Review
+header shows the preset plus "Analyzed at depth {depth} (avg)"
+(`review.analyzedAtDepthAvg`, all 4 locales); the engine-lines panel shows
+the current position's depth in its header and a per-line `d{depth}` on
+every row (`src/components/engine/EngineLines.tsx`).
+
+**Gates run for this prompt (targeted, per program instructions; the full
+suite is the coordinator's gate):** targeted unit tests 93/93
+(`budget.test.ts` 23, `fixtures-golden.test.ts` 22, `classify.test.ts` 28,
+`classify-profile.test.ts` 14, `preset-agreement-guard.test.ts` 6);
+`npm run typecheck` ✅; `npm run lint` ✅ (0 errors; 1 pre-existing
+warning — `sawAny` unused in `scripts/i18n-review-lib.mjs`, a file this
+prompt did not touch); `npm run i18n:check` ✅ (817 keys × 4 locales). No production code, test,
+script or i18n file was changed in this prompt — documentation only
+(`PERFORMANCE_BASELINE.md`, this section, and the README Performance note).
+`public/pieces/neo/wP.svg` untouched (825 B).

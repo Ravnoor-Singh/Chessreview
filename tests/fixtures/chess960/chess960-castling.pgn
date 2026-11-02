@@ -1,0 +1,8 @@
+[Event "Chess960 castling fixture"]
+[SetUp "1"]
+[FEN "rqbbknnr/pppppppp/8/8/8/8/PPPPPPPP/RQBBKNNR w KQkq - 0 1"]
+[White "Alice"]
+[Black "Bob"]
+[Result "*"]
+
+1. Nf3 Nf6 2. Ng3 Ng6 3. e3 e6 4. O-O *

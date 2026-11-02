@@ -1,0 +1,41 @@
+name: Nightly
+
+on:
+  schedule:
+    # 02:30 UTC daily. The real-engine integration suite loads the
+    # ~99 MB Stockfish WASM build and searches real positions; it runs
+    # on every push/PR in ci.yml already, and this nightly run catches
+    # engine/toolchain drift (new stockfish or Node releases) on days
+    # with no commits.
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  integration:
+    name: Engine integration tests (real Stockfish, Node)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Engine integration tests (real Stockfish, Node)
+        run: npm run test:integration 2>&1 | tee integration.log
+
+      - name: Upload integration test log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integration-test-log
+          path: integration.log
+          if-no-files-found: ignore
+          retention-days: 14

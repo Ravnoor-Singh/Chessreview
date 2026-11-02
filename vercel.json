@@ -4,7 +4,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob:; connect-src 'self' https://lichess.org https://api.chess.com https: http://localhost:* http://127.0.0.1:*; media-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; font-src 'self'; worker-src 'self' blob:; child-src 'self' blob:; connect-src 'self' https://lichess.org https://api.chess.com; media-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
         },
         { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" },
         { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" },
@@ -22,6 +22,14 @@
     {
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }],
       "source": "/engine/(.*)"
+    },
+    {
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }],
+      "source": "/engine/engine-manifest.json"
+    },
+    {
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }],
+      "source": "/sw.js"
     },
     {
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }],

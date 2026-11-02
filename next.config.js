@@ -21,11 +21,20 @@
 // - worker-src 'self' blob: — Stockfish worker file, or a Blob wrapper
 //   for a cross-origin engine CDN base.
 // - connect-src 'self' + lichess.org / api.chess.com (client fallbacks)
-//   + https: for a cross-origin engine CDN (NEXT_PUBLIC_ENGINE_BASE_URL
-//   is build-time and may be any https CDN; the loader verifies the WASM
-//   SHA-256 against the manifest before running it).
-// - img-src 'self' data: blob: — same-origin pieces; data:/blob: cover
-//   image-import previews. frame-ancestors 'none' (+ X-Frame-Options).
+//   + the configured engine-CDN origin only (NEXT_PUBLIC_ENGINE_BASE_URL
+//   is build-time; its origin is added explicitly — there is NO bare
+//   https: allowance, so no other host can be contacted; the loader also
+//   verifies the WASM SHA-256 against the manifest before running it).
+//   Loopback allowances exist only outside production builds (locally
+//   served engine bases in dev / the CDN e2e); the static mirrors
+//   (vercel.json, netlify.toml, public/_headers) and the SW policy carry
+//   the production form with no loopback entries.
+// - img-src 'self' blob: — same-origin pieces; blob: covers image-import
+//   previews and custom backgrounds (object URLs; no data: URIs are
+//   constructed anywhere in src/). font-src 'self' — every font is a
+//   self-hosted woff2. media-src 'self' — sounds are same-origin WAV
+//   files or Web Audio oscillators. frame-ancestors 'none'
+//   (+ X-Frame-Options).
 //
 // Prompt 7 fix (found by tests/e2e/cdn.spec.ts): the cross-origin engine
 // wrapper is a Blob worker that importScripts the engine script from the
@@ -50,20 +59,26 @@ try {
   // Relative or unset base (same-origin engine): nothing to add.
 }
 const ENGINE_ORIGIN_SUFFIX = ENGINE_ORIGIN ? ` ${ENGINE_ORIGIN}` : '';
+// Loopback connect-src allowances (Prompt 7) exist ONLY outside
+// production: they cover a locally served engine base during development
+// and local test servers. A production build (NODE_ENV=production) never
+// emits them, and neither do the static mirrors or the SW policy. The
+// cross-origin CDN e2e no longer needs them: its engine base is
+// configured, so its exact origin arrives via ENGINE_ORIGIN_SUFFIX.
+const LOOPBACK_CONNECT_SUFFIX =
+  process.env.NODE_ENV === 'production' ? '' : ' http://localhost:* http://127.0.0.1:*';
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
   `script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'${ENGINE_ORIGIN_SUFFIX}`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
-  "font-src 'self' data:",
+  "img-src 'self' blob:",
+  "font-src 'self'",
   `worker-src 'self' blob:${ENGINE_ORIGIN_SUFFIX}`,
   `child-src 'self' blob:${ENGINE_ORIGIN_SUFFIX}`,
-  // The https: allowance covers any HTTPS engine CDN (NEXT_PUBLIC_ENGINE_BASE_URL);
-  // the two loopback allowances (Prompt 7) cover a locally served engine
-  // base during development and the cross-origin CDN e2e test — production
-  // CDNs are required to be HTTPS by the README recipe.
-  "connect-src 'self' https://lichess.org https://api.chess.com https: http://localhost:* http://127.0.0.1:*",
-  "media-src 'self' blob:",
+  // No bare https: — the only cross-origin connect targets are the two
+  // named importer fallbacks plus the configured engine origin (if any).
+  `connect-src 'self' https://lichess.org https://api.chess.com${ENGINE_ORIGIN_SUFFIX}${LOOPBACK_CONNECT_SUFFIX}`,
+  "media-src 'self'",
   "manifest-src 'self'",
   "object-src 'none'",
   "base-uri 'self'",
@@ -119,6 +134,29 @@ const nextConfig = {
           ...securityHeaders,
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
+      },
+      // Prompt 2 (engine/SW caching): the engine manifest and sw.js must
+      // NEVER be cached immutably — their URLs never change, so a stale
+      // copy would hide every future engine/SW update behind it. They are
+      // `no-cache` (revalidate on every load; the 304 path keeps this
+      // cheap). These specific rules come AFTER the generic immutable
+      // engine rule above: when several header rules set the same key,
+      // the LAST matching rule wins (verified against `next start` —
+      // with the opposite order the manifest was served immutable).
+      // The static mirrors (vercel.json, netlify.toml, public/_headers)
+      // carry the same order, and the drift-guard test pins both the
+      // values and this order. The stockfish-19*.js/.wasm payload files
+      // keep the immutable rule: their names carry the engine version,
+      // and the SW engine cache is additionally keyed by a SHA-256
+      // fingerprint of the manifest (see scripts/build-sw.mjs), so
+      // changed bytes under the same name still invalidate.
+      {
+        source: '/engine/engine-manifest.json',
+        headers: [{ key: 'Cache-Control', value: 'no-cache' }],
+      },
+      {
+        source: '/sw.js',
+        headers: [{ key: 'Cache-Control', value: 'no-cache' }],
       },
       {
         source: '/pieces/:path*',

@@ -2,8 +2,13 @@ node_modules/
 public/engine/
 .next/
 .next-noiso/
+.next-cdn/
+.next-lite/
 out/
 dist/
+coverage/
+.lighthouseci/
+PERFORMANCE_BASELINE.raw.json
 *.log
 .DS_Store
 /test-results/

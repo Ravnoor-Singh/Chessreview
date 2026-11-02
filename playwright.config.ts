@@ -39,6 +39,9 @@ const HEAVY_SPECS = [
   '**/visual.spec.ts',
   '**/cdn.spec.ts',
   '**/lite.spec.ts',
+  // Privacy proof (CSP Prompt 1): a full real analysis, so it is heavy
+  // even though it lives next to the light security spec thematically.
+  '**/privacy.spec.ts',
 ];
 
 // The heavy project runs against the STANDARD build on :3100, so it must
@@ -111,7 +114,16 @@ export default defineConfig({
       url: 'http://localhost:3100',
       reuseExistingServer: true,
       timeout: 120_000,
-      env: { PORT: '3100' },
+      // ENABLE_THEME_GALLERY=1 (Post-Round-2 Prompt 3): /theme-gallery
+      // is dev/test-only and 404s in production without this flag; the
+      // contact-sheet spec (tests/e2e/themes-gallery.spec.ts, in the
+      // `chromium` project) screenshots it, so the shared :3100 test
+      // server opts in. The flag affects only that one route — every
+      // other spec is served exactly as before. (webServer entries are
+      // global, not per-project, and the gallery spec shares this
+      // server/port with the `heavy` project, so the flag cannot be
+      // scoped any narrower than this entry.)
+      env: { PORT: '3100', ENABLE_THEME_GALLERY: '1' },
     },
     ...(NOISO
       ? [

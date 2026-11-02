@@ -95,7 +95,15 @@ function isCurrentMonth(year: number, month: number, now = new Date()): boolean 
 async function handleUser(query: ChesscomQuery, locale: Locale) {
   const username = query.user as string;
   const cache = getServerCache();
-  const key = `chesscom:user:${username.toLowerCase()}`;
+  // The cached body depends on the query variant (one explicit month vs
+  // the two most recent), so the key must partition by it — a bare
+  // per-user key served one scope's list for the other (security audit
+  // 2026-11-02, chesscom-user-cache-key-variant).
+  const variant =
+    query.year !== undefined && query.month !== undefined
+      ? `${query.year}-${String(query.month).padStart(2, '0')}`
+      : 'recent-2';
+  const key = `chesscom:user:${username.toLowerCase()}:${variant}`;
   const hit = await cache.get<ImportedGameSummary[]>(key);
   if (hit) return jsonCached({ games: hit }, 300, 3600);
 

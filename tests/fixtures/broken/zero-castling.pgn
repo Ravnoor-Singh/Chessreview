@@ -1,0 +1,13 @@
+[Event "Broken fixture"]
+[White "Alice"]
+[Black "Bob"]
+[Result "*"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. 0-0 Nf6 5. d3 0-0 *
+
+[Event "Broken fixture queenside"]
+[White "Alice"]
+[Black "Bob"]
+[Result "*"]
+
+1. d4 d5 2. Nc3 Nc6 3. Bf4 Bf5 4. Qd2 Qd7 5. 0-0-0 0-0-0 *

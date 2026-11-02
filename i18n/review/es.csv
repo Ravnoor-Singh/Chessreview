@@ -1,0 +1,586 @@
+key,english,translation,context,max_length,reviewer,status
+classificationPhrases.best,the best move,la mejor jugada,Move classification phrases (coach text),21,,machine-assisted
+classificationPhrases.blunder,a blunder,un error grave,Move classification phrases (coach text),16,,machine-assisted
+classificationPhrases.book,a book move,una jugada de libro,Move classification phrases (coach text),19,,machine-assisted
+classificationPhrases.brilliant,a brilliant move,una jugada brillante,Move classification phrases (coach text),25,,machine-assisted
+classificationPhrases.excellent,an excellent move,una jugada excelente,Move classification phrases (coach text),27,,machine-assisted
+classificationPhrases.forced,the only move,la única jugada,Move classification phrases (coach text),21,,machine-assisted
+classificationPhrases.good,a good move,una buena jugada,Move classification phrases (coach text),19,,machine-assisted
+classificationPhrases.great,a great move,una gran jugada,Move classification phrases (coach text),20,,machine-assisted
+classificationPhrases.inaccuracy,an inaccuracy,una imprecisión,Move classification phrases (coach text),21,,machine-assisted
+classificationPhrases.miss,a missed opportunity,una oportunidad perdida,Move classification phrases (coach text),30,,machine-assisted
+classificationPhrases.mistake,a mistake,un error,Move classification phrases (coach text),16,,machine-assisted
+classifications.best,Best,La mejor,Move classification labels (badges),10,,machine-assisted
+classifications.blunder,Blunder,Error grave,Move classification labels (badges),14,,machine-assisted
+classifications.book,Book,De libro,Move classification labels (badges),10,,machine-assisted
+classifications.brilliant,Brilliant,Brillante,Move classification labels (badges),16,,machine-assisted
+classifications.excellent,Excellent,Excelente,Move classification labels (badges),16,,machine-assisted
+classifications.forced,Forced,Forzada,Move classification labels (badges),12,,machine-assisted
+classifications.good,Good,Buena,Move classification labels (badges),10,,machine-assisted
+classifications.great,Great,Excelente jugada,Move classification labels (badges),11,,machine-assisted
+classifications.inaccuracy,Inaccuracy,Imprecisión,Move classification labels (badges),17,,machine-assisted
+classifications.miss,Miss,Oportunidad perdida,Move classification labels (badges),10,,machine-assisted
+classifications.mistake,Mistake,Error,Move classification labels (badges),14,,machine-assisted
+common.appName,Chess Review,Chess Review,Shared labels used across screens,20,,machine-assisted
+common.black,Black,Negras,Shared labels used across screens,11,,machine-assisted
+common.blackLower,black,negras,Shared labels used across screens,11,,machine-assisted
+common.cancel,Cancel,Cancelar,Shared labels used across screens,12,,machine-assisted
+common.close,Close,Cerrar,Shared labels used across screens,11,,machine-assisted
+common.closeDialog,Close dialog,Cerrar diálogo,Shared labels used across screens,20,,machine-assisted
+common.closeSettings,Close settings,Cerrar ajustes,Shared labels used across screens,23,,machine-assisted
+common.ellipsis,…,…,Shared labels used across screens,6,,machine-assisted
+common.notReported,Not reported by this browser,Este navegador no lo informa,Shared labels used across screens,41,,machine-assisted
+common.off,Off,Desactivado,Shared labels used across screens,8,,machine-assisted
+common.on,On,Activado,Shared labels used across screens,7,,machine-assisted
+common.settings,Settings,Ajustes,Shared labels used across screens,15,,machine-assisted
+common.unknown,Unknown,Desconocido,Shared labels used across screens,14,,machine-assisted
+common.vs,vs,contra,Shared labels used across screens,7,,machine-assisted
+common.white,White,Blancas,Shared labels used across screens,11,,machine-assisted
+common.whiteLower,white,blancas,Shared labels used across screens,11,,machine-assisted
+editor.blackKingName,♚ Black,♚ Negras,Board editor (FEN setup),14,,machine-assisted
+editor.boardLabel,Position editor board,Tablero editor de posición,Board editor (FEN setup),32,,machine-assisted
+editor.castleBlackLong,Black O-O-O,Negras O-O-O,Board editor (FEN setup),19,,machine-assisted
+editor.castleBlackShort,Black O-O,Negras O-O,Board editor (FEN setup),16,,machine-assisted
+editor.castleWhiteLong,White O-O-O,Blancas O-O-O,Board editor (FEN setup),19,,machine-assisted
+editor.castleWhiteShort,White O-O,Blancas O-O,Board editor (FEN setup),16,,machine-assisted
+editor.castlingRights,Castling rights,Derechos de enroque,Board editor (FEN setup),24,,machine-assisted
+editor.clearBoard,Clear board,Limpiar tablero,Board editor (FEN setup),19,,machine-assisted
+editor.done,Done,Hecho,Board editor (FEN setup),10,,machine-assisted
+editor.eraser,🧽 Eraser,🧽 Borrador,Board editor (FEN setup),16,,machine-assisted
+editor.flipBoard,Flip board,Girar tablero,Board editor (FEN setup),17,,machine-assisted
+editor.hint,"Pick a piece, then click a square to place it. Right-click a square to remove its piece.",Elige una pieza y luego haz clic en una casilla para colocarla. Haz clic derecho en una casilla para quitar su pieza.,Board editor (FEN setup),119,,machine-assisted
+editor.invalidPosition,Invalid position.,Posición no válida.,Board editor (FEN setup),27,,machine-assisted
+editor.needBlackKing,Position needs exactly one black king.,La posición necesita exactamente un rey negro.,Board editor (FEN setup),54,,machine-assisted
+editor.needWhiteKing,Position needs exactly one white king.,La posición necesita exactamente un rey blanco.,Board editor (FEN setup),54,,machine-assisted
+editor.pawnOnBackRank,Pawns cannot stand on the first or eighth rank.,Los peones no pueden estar en la primera ni en la octava fila.,Board editor (FEN setup),66,,machine-assisted
+editor.piecePalette,Piece palette,Paleta de piezas,Board editor (FEN setup),21,,machine-assisted
+editor.placePiece,Place {color} {piece},Colocar {piece} de {color},Board editor (FEN setup),32,,machine-assisted
+editor.positionValid,Position is valid.,La posición es válida.,Board editor (FEN setup),28,,machine-assisted
+editor.sideToMove,Side to move,Turno,Board editor (FEN setup),20,,machine-assisted
+editor.squareEmpty,"{square}, empty","{square}, vacía",Board editor (FEN setup),24,,machine-assisted
+editor.squarePiece,"{square}, {piece}","{square}, {piece}",Board editor (FEN setup),27,,machine-assisted
+editor.startPosition,Start position,Posición inicial,Board editor (FEN setup),23,,machine-assisted
+editor.title,Board editor,Editor de tablero,Board editor (FEN setup),20,,machine-assisted
+editor.whiteKingName,♔ White,♔ Blancas,Board editor (FEN setup),14,,machine-assisted
+engine.cancelPromotion,Cancel promotion,Cancelar promoción,"Engine status, eval bar/graph, engine lines",25,,machine-assisted
+engine.chessBoard,Chess board,Tablero de ajedrez,"Engine status, eval bar/graph, engine lines",19,,machine-assisted
+engine.choosePromotion,Choose promotion piece,Elegir pieza de promoción,"Engine status, eval bar/graph, engine lines",33,,machine-assisted
+engine.depthLabel,Depth {depth},Profundidad {depth},"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.depthOnly,Depth {depth},Profundidad {depth},"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.engineLinesLabel,Engine lines,Líneas del motor,"Engine status, eval bar/graph, engine lines",20,,machine-assisted
+engine.engineOff,Engine off,Motor desactivado,"Engine status, eval bar/graph, engine lines",17,,machine-assisted
+engine.engineOffThinking,Engine off or thinking…,Motor desactivado o pensando…,"Engine status, eval bar/graph, engine lines",34,,machine-assisted
+engine.engineOn,Engine on,Motor activado,"Engine status, eval bar/graph, engine lines",16,,machine-assisted
+engine.evalChance,Evaluation {eval}: White winning chance {pct} percent,Evaluación {eval}: probabilidad de victoria de las blancas del {pct} por ciento,"Engine status, eval bar/graph, engine lines",73,,machine-assisted
+engine.evalFromWhite,Evaluation from White's perspective,Evaluación desde la perspectiva de las blancas,"Engine status, eval bar/graph, engine lines",50,,machine-assisted
+engine.evalGraph,Evaluation graph,Gráfico de evaluación,"Engine status, eval bar/graph, engine lines",25,,machine-assisted
+engine.evalMates,Evaluation {eval}: {side} mates in {n},Evaluación {eval}: {side} da mate en {n},"Engine status, eval bar/graph, engine lines",54,,machine-assisted
+engine.kbBoardHint,"Use the arrow keys to move between squares, Enter to select a piece or play a move, Escape to clear the selection.","Usa las flechas para moverte entre casillas, Intro para seleccionar una pieza o jugar un movimiento, y Escape para borrar la selección.","Engine status, eval bar/graph, engine lines",,,machine-assisted
+engine.kbMovePlayed,{san} played,{san} jugada,"Engine status, eval bar/graph, engine lines",20,,machine-assisted
+engine.kbSelected.one,{label} selected. 1 legal move: {moves},{label} seleccionada. 1 movimiento legal: {moves},"Engine status, eval bar/graph, engine lines — plural form ""one""",55,,machine-assisted
+engine.kbSelected.other,{label} selected. {count} legal moves: {moves},{label} seleccionada. {count} movimientos legales: {moves},"Engine status, eval bar/graph, engine lines — plural form ""other""",64,,machine-assisted
+engine.kbSelectionCleared,Selection cleared,Selección borrada,"Engine status, eval bar/graph, engine lines",27,,machine-assisted
+engine.modeLite,Lite,Lite,"Engine status, eval bar/graph, engine lines",10,,machine-assisted
+engine.modeMulti,Multi-thread,Multihilo,"Engine status, eval bar/graph, engine lines",20,,machine-assisted
+engine.modeSingle,Single-thread,Un solo hilo,"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.noMoves,No moves,Sin jugadas,"Engine status, eval bar/graph, engine lines",15,,machine-assisted
+engine.playLine,Play line,Jugar línea,"Engine status, eval bar/graph, engine lines",16,,machine-assisted
+engine.previewThrough,Preview through {san},Vista previa hasta {san},"Engine status, eval bar/graph, engine lines",32,,machine-assisted
+engine.promoteTo,Promote to {piece},Promocionar a {piece},"Engine status, eval bar/graph, engine lines",28,,machine-assisted
+engine.squareWithPiece,"{square}, {color} {piece}","{square}, {piece} de {color}","Engine status, eval bar/graph, engine lines",37,,machine-assisted
+engine.start,Start,Inicio,"Engine status, eval bar/graph, engine lines",11,,machine-assisted
+engine.thinkingDepth,Thinking · depth {depth},Pensando · profundidad {depth},"Engine status, eval bar/graph, engine lines",36,,machine-assisted
+engine.thinkingDepthNps,Thinking · depth {depth} · {nps} nps,Pensando · profundidad {depth} · {nps} nps,"Engine status, eval bar/graph, engine lines",51,,machine-assisted
+engine.toggleEngine,Toggle engine,Activar o desactivar el motor,"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.wdlForWhite,"Win, draw, loss chances for White: {label}","Probabilidades de victoria, tablas y derrota para las blancas: {label}","Engine status, eval bar/graph, engine lines",59,,machine-assisted
+engine.wdlSuffix,Win draw loss for White: {wdl},"Victoria, tablas y derrota para las blancas: {wdl}","Engine status, eval bar/graph, engine lines",43,,machine-assisted
+engine.wdlWhitePerspective,White perspective — {label},Perspectiva de las blancas: {label},"Engine status, eval bar/graph, engine lines",40,,machine-assisted
+errors.chesscomArchiveFailed,Chess.com archive index could not be loaded.,No se pudo cargar el índice de archivos de Chess.com.,Error messages,62,,machine-assisted
+errors.chesscomBadId,That chess.com game id looks wrong.,Ese id de partida de chess.com parece incorrecto.,Error messages,50,,machine-assisted
+errors.chesscomBadRequest,Pass ?user={username} or ?id={gameId}.,Pasa ?user={username} o ?id={gameId}.,Error messages,54,,machine-assisted
+errors.chesscomBadUsername,That chess.com username looks wrong.,Ese nombre de usuario de chess.com no parece válido.,Error messages,51,,machine-assisted
+errors.chesscomDecodeFailed,"Could not decode that chess.com game. Try importing by username, or paste the PGN.",No se pudo decodificar esa partida de chess.com. Prueba a importar por usuario o pega el PGN.,Error messages,111,,machine-assisted
+errors.chesscomGameFailed,Chess.com game could not be loaded.,No se pudo cargar la partida de Chess.com.,Error messages,50,,machine-assisted
+errors.chesscomGameNotFound,Chess.com game not found (it may be private).,Partida de Chess.com no encontrada (puede ser privada).,Error messages,63,,machine-assisted
+errors.chesscomGamePrivate,That chess.com game is private.,Esa partida de chess.com es privada.,Error messages,45,,machine-assisted
+errors.chesscomNetwork,Could not reach chess.com. Check your connection.,No se pudo contactar con chess.com. Comprueba tu conexión.,Error messages,68,,machine-assisted
+errors.chesscomNoMoves,Chess.com returned no moves for that game.,Chess.com no devolvió jugadas para esa partida.,Error messages,59,,machine-assisted
+errors.chesscomRateLimited,Chess.com is rate-limiting. Try again shortly.,Chess.com está limitando las solicitudes. Inténtalo de nuevo en breve.,Error messages,64,,machine-assisted
+errors.chesscomSearchEmpty,"That player has no public archived games in the last 12 months. Check the username, or paste the PGN instead.",Este jugador no tiene partidas públicas archivadas en los últimos 12 meses. Comprueba el usuario o pega el PGN.,Error messages,,,machine-assisted
+errors.chesscomSearchNotFound,"That game was not found in this player's last 12 monthly archives. It may be older than 12 months or private. Try the other player's username, or paste the PGN instead.",Esa partida no se encontró en los últimos 12 archivos mensuales de este jugador. Puede ser más antigua de 12 meses o privada. Prueba con el usuario del otro jugador o pega el PGN.,Error messages,,,machine-assisted
+errors.chesscomUnexpected,Unexpected response from chess.com.,Respuesta inesperada de chess.com.,Error messages,50,,machine-assisted
+errors.chesscomUserNotFound,"Chess.com user ""{username}"" not found.","Usuario de Chess.com ""{username}"" no encontrado.",Error messages,54,,machine-assisted
+errors.couldNotLoadPieceArtwork,Could not load piece artwork ({set}/{key}).,No se pudo cargar el gráfico de la pieza ({set}/{key}).,Error messages,60,,machine-assisted
+errors.decodeMoveList,Could not decode chess.com move list,No se pudo decodificar la lista de jugadas de chess.com,Error messages,51,,machine-assisted
+errors.engineFailedToLoad,Engine failed to load,El motor no se pudo cargar,Error messages,32,,machine-assisted
+errors.engineIntegrityFailed,"Engine integrity check failed for {file}: expected SHA-256 {expected}, got {actual}. The download looks corrupted — check your connection and reload the page.","La comprobación de integridad del motor falló para {file}: SHA-256 esperado {expected}, obtenido {actual}. La descarga parece dañada: comprueba tu conexión y recarga la página.",Error messages,,,machine-assisted
+errors.engineLoadAllFailed,"Could not load the Stockfish engine — tried {builds}. {detail} Check your connection and reload; if the engine is hosted on a CDN, verify its CORS headers (see README).","No se pudo cargar el motor Stockfish: se probaron {builds}. {detail} Comprueba tu conexión y recarga; si el motor está alojado en un CDN, verifica sus cabeceras CORS (consulta el README).",Error messages,,,machine-assisted
+errors.engineLoadFailed,Engine file failed to load (HTTP {status}): {url},El archivo del motor no se pudo cargar (HTTP {status}): {url},Error messages,68,,machine-assisted
+errors.internal,Something went wrong while importing. Try again.,Algo salió mal durante la importación. Inténtalo de nuevo.,Error messages,67,,machine-assisted
+errors.lichessBadId,That does not look like a Lichess game id.,Eso no parece un id de partida de Lichess.,Error messages,59,,machine-assisted
+errors.lichessEmpty,Lichess returned an empty game.,Lichess devolvió una partida vacía.,Error messages,45,,machine-assisted
+errors.lichessNetwork,Could not reach Lichess. Check your connection.,No se pudo contactar con Lichess. Comprueba tu conexión.,Error messages,66,,machine-assisted
+errors.lichessNotFound,Lichess game not found. Check the link and try again.,Partida de Lichess no encontrada. Comprueba el enlace e inténtalo de nuevo.,Error messages,73,,machine-assisted
+errors.lichessRateLimited,Lichess is rate-limiting requests. Try again in a minute.,Lichess está limitando las solicitudes. Inténtalo de nuevo en un minuto.,Error messages,79,,machine-assisted
+errors.lichessUpstream,Lichess returned {status}.,Lichess devolvió {status}.,Error messages,38,,machine-assisted
+errors.notConfigured,This import method is disabled on this server. Paste the PGN instead.,Este método de importación está desactivado en este servidor. Pega el PGN en su lugar.,Error messages,94,,machine-assisted
+errors.pgnEmpty,Failed to parse PGN: input is empty,No se pudo analizar el PGN: la entrada está vacía,Error messages,50,,machine-assisted
+errors.pgnFailed,Failed to parse PGN: {detail},No se pudo analizar el PGN: {detail},Error messages,42,,machine-assisted
+errors.pgnNoGames,Failed to parse PGN: no games found,No se pudo analizar el PGN: no se encontraron partidas,Error messages,50,,machine-assisted
+errors.pgnTruncated,"PGN stopped at ply {ply}: ""{san}"" is not a legal move in that position","El PGN se detuvo en la jugada {ply}: ""{san}"" no es una jugada legal en esa posición",Error messages,95,,machine-assisted
+errors.rateLimited,Too many import requests. Try again in a moment.,Demasiadas solicitudes de importación. Inténtalo de nuevo en un momento.,Error messages,67,,machine-assisted
+errors.responseTooLarge,The game server sent back too much data to import safely.,El servidor de partidas devolvió demasiados datos para importar de forma segura.,Error messages,79,,machine-assisted
+errors.upstreamTimeout,The game server took too long to respond. Try again shortly.,El servidor de partidas tardó demasiado en responder. Inténtalo de nuevo en breve.,Error messages,82,,machine-assisted
+feedback.bestLine,Best line: {line}.,Mejor línea: {line}.,Coach feedback sentences,28,,machine-assisted
+feedback.bestWas,Best was {best}.,La mejor era {best}.,Coach feedback sentences,25,,machine-assisted
+feedback.bestWasEval,Best was {best} ({eval}).,La mejor era {best} ({eval}).,Coach feedback sentences,37,,machine-assisted
+feedback.bookKnown,A well-known theoretical move.,Una jugada teórica muy conocida.,Coach feedback sentences,43,,machine-assisted
+feedback.bookNamed,This is the {name}.,Esto es la {name}.,Coach feedback sentences,29,,machine-assisted
+feedback.bookNamedEco,This is the {name} ({eco}).,Esto es la {name} ({eco}).,Coach feedback sentences,40,,machine-assisted
+feedback.classifiedAs,{san} is classified as {label}.,{san} se clasifica como {label}.,Coach feedback sentences,45,,machine-assisted
+feedback.engineEval,Engine evaluation: {eval}.,Evaluación del motor: {eval}.,Coach feedback sentences,38,,machine-assisted
+feedback.forcedOnly,It was the only legal move in the position.,Era la única jugada legal en la posición.,Coach feedback sentences,60,,machine-assisted
+feedback.headlineBest,{san} is the best move.,{san} es la mejor jugada.,Coach feedback sentences,34,,machine-assisted
+feedback.headlineBlunder,{san} is a blunder.,{san} es un error grave.,Coach feedback sentences,29,,machine-assisted
+feedback.headlineBook,{san} is a book move.,{san} es una jugada de libro.,Coach feedback sentences,32,,machine-assisted
+feedback.headlineBrilliant,{san} is a brilliant move.,{san} es una jugada brillante.,Coach feedback sentences,38,,machine-assisted
+feedback.headlineExcellent,{san} is an excellent move.,{san} es una jugada excelente.,Coach feedback sentences,40,,machine-assisted
+feedback.headlineFallback,{san}.,{san}.,Coach feedback sentences,12,,machine-assisted
+feedback.headlineForced,{san} is forced.,{san} es forzada.,Coach feedback sentences,25,,machine-assisted
+feedback.headlineGood,{san} is a good move.,{san} es una buena jugada.,Coach feedback sentences,32,,machine-assisted
+feedback.headlineGreat,{san} is a great move.,{san} es una gran jugada.,Coach feedback sentences,33,,machine-assisted
+feedback.headlineInaccuracy,{san} is an inaccuracy.,{san} es una imprecisión.,Coach feedback sentences,34,,machine-assisted
+feedback.headlineMiss,{san} misses a winning opportunity.,{san} pierde una oportunidad ganadora.,Coach feedback sentences,50,,machine-assisted
+feedback.headlineMistake,{san} is a mistake.,{san} es un error.,Coach feedback sentences,29,,machine-assisted
+feedback.keepsOnTrack,It keeps the position on track.,Mantiene la posición en buen camino.,Coach feedback sentences,45,,machine-assisted
+feedback.missIntro,Your opponent’s previous move gave you a chance.,La jugada anterior de tu rival te dio una oportunidad.,Coach feedback sentences,67,,machine-assisted
+feedback.moveIsPhrase,{san} is {phrase}.,{san} es {phrase}.,Coach feedback sentences,28,,machine-assisted
+feedback.moveIsPhraseNoPeriod,{san} is {phrase},{san} es {phrase},Coach feedback sentences,27,,machine-assisted
+feedback.nearlyBest,Nearly as strong as the engine’s top choice.,Casi tan fuerte como la primera opción del motor.,Coach feedback sentences,62,,machine-assisted
+feedback.onlyMoveHolds,It is the only move that holds the position together.,Es la única jugada que mantiene la posición.,Coach feedback sentences,73,,machine-assisted
+feedback.played,{san} was played.,Se jugó {san}.,Coach feedback sentences,27,,machine-assisted
+feedback.reasonAvoidsMate,It avoids mate.,Evita el mate.,Coach feedback sentences,24,,machine-assisted
+feedback.reasonMate,It delivers checkmate.,Da jaque mate.,Coach feedback sentences,33,,machine-assisted
+feedback.reasonStrongAttack,It keeps a strong attack.,Mantiene un ataque fuerte.,Coach feedback sentences,37,,machine-assisted
+feedback.reasonTextBestMove,The engine’s top move (or within a hair of it).,La jugada principal del motor (o a un pelo de ella).,Coach feedback sentences,66,,machine-assisted
+feedback.reasonTextBook,A known opening (book) move.,Una jugada de apertura conocida (de libro).,Coach feedback sentences,41,,machine-assisted
+feedback.reasonTextCriticalMoment,"A critical moment: the alternatives lose, this move holds.","Un momento crítico: las alternativas pierden, esta jugada resiste.",Coach feedback sentences,80,,machine-assisted
+feedback.reasonTextEplThreshold,Classified by expected-points loss against the engine’s best move.,Clasificada por la pérdida de puntos esperados frente a la mejor jugada del motor.,Coach feedback sentences,90,,machine-assisted
+feedback.reasonTextForced,It was the only legal move.,Era la única jugada legal.,Coach feedback sentences,40,,machine-assisted
+feedback.reasonTextMateThreat,It finds or creates a forced mate threat the alternatives miss.,Encuentra o crea una amenaza de mate forzado que las alternativas no ven.,Coach feedback sentences,86,,machine-assisted
+feedback.reasonTextMissedTactic,It fails to punish the opponent’s previous mistake/blunder.,No castiga el error o error grave anterior del rival.,Coach feedback sentences,81,,machine-assisted
+feedback.reasonTextOnlyMove,The only move that holds the position — every alternative is much worse.,La única jugada que mantiene la posición: todas las alternativas son mucho peores.,Coach feedback sentences,98,,machine-assisted
+feedback.reasonTextRecapture,A recapture — taking back material is not a sacrifice.,Una recaptura: recuperar material no es un sacrificio.,Coach feedback sentences,75,,machine-assisted
+feedback.reasonTextSacrificeExchange,A sound exchange sacrifice (rook for a minor piece) the engine rates (near-)best.,Un sacrificio correcto de calidad (torre por pieza menor) que el motor valora como (casi) la mejor.,Coach feedback sentences,110,,machine-assisted
+feedback.reasonTextSacrificeMate,A sacrifice that leads to forced mate in the engine line.,Un sacrificio que conduce a mate forzado en la línea del motor.,Coach feedback sentences,79,,machine-assisted
+feedback.reasonTextSacrificePiece,A sound sacrifice of a piece that the engine rates (near-)best.,Un sacrificio correcto de una pieza que el motor valora como (casi) la mejor.,Coach feedback sentences,86,,machine-assisted
+feedback.reasonTextSacrificeQueen,A sound queen sacrifice that the engine rates (near-)best.,Un sacrificio correcto de dama que el motor valora como (casi) la mejor.,Coach feedback sentences,80,,machine-assisted
+feedback.reasonTextTrivialRecapture,A pure recapture of the piece that just moved — recaptures are never labelled Great.,Una recaptura pura de la pieza que acaba de moverse: las recapturas nunca se etiquetan como gran jugada.,Coach feedback sentences,114,,machine-assisted
+feedback.reasonTextTurningPoint,"It turns the evaluation around, crossing from worse/equal to better.","Invierte la evaluación, pasando de peor/igualada a mejor.",Coach feedback sentences,93,,machine-assisted
+feedback.reasonWinsExchange,It wins the exchange.,Gana la calidad.,Coach feedback sentences,32,,machine-assisted
+feedback.reasonWinsMaterial,It wins material.,Gana material.,Coach feedback sentences,27,,machine-assisted
+feedback.reasonWinsPawn,It wins a pawn.,Gana un peón.,Coach feedback sentences,24,,machine-assisted
+feedback.reasonWinsPiece,It wins a piece.,Gana una pieza.,Coach feedback sentences,25,,machine-assisted
+feedback.sacrificeApproved,A sacrifice the engine fully approves of.,Un sacrificio que el motor aprueba por completo.,Coach feedback sentences,58,,machine-assisted
+feedback.swing,The evaluation drops by about {pawns} pawns.,La evaluación cae unos {pawns} peones.,Coach feedback sentences,62,,machine-assisted
+feedback.whyLabel,Why this label? {text},¿Por qué esta etiqueta? {text},Coach feedback sentences,33,,machine-assisted
+input.analysisDepth,Analysis depth,Profundidad de análisis,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.archiveSearchEmpty,"Archive search found no public games for ""{username}"". Check the username, or paste the PGN instead.","La búsqueda en archivos no encontró partidas públicas de ""{username}"". Comprueba el usuario o pega el PGN.",Home page: game input (PGN/FEN/link/image tabs),134,,machine-assisted
+input.archiveSearchFailed,"Archive search step failed: {message} Next: check your connection and try again, or paste the PGN instead.","Falló un paso de la búsqueda en archivos: {message} Siguiente: comprueba tu conexión e inténtalo de nuevo, o pega el PGN.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.archiveSearchNotFound,"Archive search finished: this game was not found in the last 12 months of archives for ""{username}"". It may be older than 12 months, private, or played under a different username. Try the other player's username, or paste the PGN instead.","Búsqueda en archivos terminada: esta partida no se encontró en los últimos 12 meses de archivos de ""{username}"". Puede ser más antigua de 12 meses, privada o jugada con otro usuario. Prueba con el usuario del otro jugador o pega el PGN.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.chesscomFallbackBody,"Open the game on chess.com, choose Share → PGN, copy the PGN text, then paste it in the PGN tab — the review works exactly the same.","Abre la partida en chess.com, elige Compartir → PGN, copia el texto PGN y pégalo en la pestaña PGN: la revisión funciona exactamente igual.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.chesscomFallbackTitle,Chess.com link import is unavailable,La importación por enlace de Chess.com no está disponible,Home page: game input (PGN/FEN/link/image tabs),51,,machine-assisted
+input.chesscomImportFailed,Chess.com import failed.,La importación de Chess.com falló.,Home page: game input (PGN/FEN/link/image tabs),36,,machine-assisted
+input.chesscomUsernameBody,"Enter the chess.com username of one of the two players. We'll search that player's public monthly archives — newest first, up to 12 months back — for this game, using only the official chess.com public API.","Introduce el nombre de usuario de chess.com de uno de los dos jugadores. Buscaremos esta partida en los archivos mensuales públicos de ese jugador — del más reciente hacia atrás, hasta 12 meses — usando solo la API pública oficial de chess.com.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.chesscomUsernameLabel,Chess.com username,Usuario de Chess.com,Home page: game input (PGN/FEN/link/image tabs),28,,machine-assisted
+input.chesscomUsernamePlaceholder,e.g. hikaru,"p. ej., hikaru",Home page: game input (PGN/FEN/link/image tabs),19,,machine-assisted
+input.chesscomUsernameTitle,Which chess.com player was in this game?,¿Qué jugador de chess.com jugó esta partida?,Home page: game input (PGN/FEN/link/image tabs),56,,machine-assisted
+input.clearFilters,Clear filters,Borrar filtros,Home page: game input (PGN/FEN/link/image tabs),21,,machine-assisted
+input.couldNotParsePgn,Could not parse that PGN.,No se pudo analizar ese PGN.,Home page: game input (PGN/FEN/link/image tabs),37,,machine-assisted
+input.couldNotReadFile,Could not read {name}.,No se pudo leer {name}.,Home page: game input (PGN/FEN/link/image tabs),33,,machine-assisted
+input.deleteReview,Delete review {white} vs {black},Eliminar revisión {white} contra {black},Home page: game input (PGN/FEN/link/image tabs),46,,machine-assisted
+input.depthDeep,Deep (adaptive · target depth 22 · ≤4 s),Profundo (adaptativo · profundidad objetivo 22 · ≤4 s),Home page: game input (PGN/FEN/link/image tabs),56,,machine-assisted
+input.depthQuick,Quick (adaptive · target depth 14 · ≤600 ms),Rápido (adaptativo · profundidad objetivo 14 · ≤600 ms),Home page: game input (PGN/FEN/link/image tabs),62,,machine-assisted
+input.depthStandard,Standard (adaptive · target depth 18 · ≤1.5 s),"Estándar (adaptativo · profundidad objetivo 18 · ≤1,5 s)",Home page: game input (PGN/FEN/link/image tabs),64,,machine-assisted
+input.fenEmpty,FEN is empty,El FEN está vacío,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.fenHint,"Paste a full FEN (placement, side to move, castling, en passant, clocks).","Pega un FEN completo (piezas, turno, enroque, captura al paso, relojes).",Home page: game input (PGN/FEN/link/image tabs),99,,machine-assisted
+input.fenLabel,FEN position,Posición FEN,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.fenValid,Valid FEN — ready to analyze from this position.,FEN válido: listo para analizar desde esta posición.,Home page: game input (PGN/FEN/link/image tabs),67,,machine-assisted
+input.filterAll,All,Todos,Home page: game input (PGN/FEN/link/image tabs),8,,machine-assisted
+input.filterMonth,Month,Mes,Home page: game input (PGN/FEN/link/image tabs),11,,machine-assisted
+input.filterResult,Result,Resultado,Home page: game input (PGN/FEN/link/image tabs),12,,machine-assisted
+input.filterSearchLabel,Search games,Buscar partidas,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.filterSearchPlaceholder,Search by player name…,Buscar por nombre de jugador…,Home page: game input (PGN/FEN/link/image tabs),33,,machine-assisted
+input.filterTimeControl,Time control,Control de tiempo,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.footerCredits,"Powered by Stockfish.js (Stockfish engine, GPLv3) running entirely in your browser. Opening data from lichess-org/chess-openings (CC0). Pieces: cburnett set (GFDL/BSD) plus original sets drawn for this app (CC0). Chess logic: chess.js (BSD-2-Clause). Not affiliated with chess.com.","Con tecnología de Stockfish.js (motor Stockfish, GPLv3) ejecutándose por completo en tu navegador. Datos de aperturas de lichess-org/chess-openings (CC0). Piezas: conjunto cburnett (GFDL/BSD) más conjuntos originales creados para esta app (CC0). Lógica de ajedrez: chess.js (BSD-2-Clause). Sin afiliación con chess.com.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.gameInputLabel,Game input,Entrada de partida,Home page: game input (PGN/FEN/link/image tabs),17,,machine-assisted
+input.gameLabel,{white} vs {black} · {result} · {date} {event} (game {n}),{white} contra {black} · {result} · {date} {event} (partida {n}),Home page: game input (PGN/FEN/link/image tabs),79,,machine-assisted
+input.gameLabelNoEvent,{white} vs {black} · {result} · {date}  (game {n}),{white} contra {black} · {result} · {date}  (partida {n}),Home page: game input (PGN/FEN/link/image tabs),69,,machine-assisted
+input.heroSubtitle,"Stockfish runs locally in your browser — accuracy, brilliancies, blunders and engine lines for every move. No uploads, no account.","Stockfish se ejecuta localmente en tu navegador: precisión, genialidades, errores y líneas del motor para cada jugada. Sin subidas, sin cuenta.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.heroTitleAccent,Grandmaster,Gran Maestro,Home page: game input (PGN/FEN/link/image tabs),19,,machine-assisted
+input.heroTitlePrefix,Review your game like a,Revisa tu partida como un,Home page: game input (PGN/FEN/link/image tabs),34,,machine-assisted
+input.importFailed,Import failed.,La importación falló.,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.inputMethodLabel,Game input method,Método de entrada de partida,Home page: game input (PGN/FEN/link/image tabs),27,,machine-assisted
+input.invalidFen,Invalid FEN,FEN no válido,Home page: game input (PGN/FEN/link/image tabs),19,,machine-assisted
+input.lichessImportFailed,Lichess import failed.,La importación de Lichess falló.,Home page: game input (PGN/FEN/link/image tabs),33,,machine-assisted
+input.linkHintLong,"Accepted: a chess.com game link (chess.com/game/live/… or /game/daily/…), a Lichess game link (lichess.org/…), or just a Chess.com / Lichess username to browse recent games.","Aceptado: un enlace de partida de chess.com (chess.com/game/live/… o /game/daily/…), un enlace de partida de Lichess (lichess.org/…) o solo un nombre de usuario de Chess.com / Lichess para explorar partidas recientes.",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.linkHintShort,"Works with chess.com game links (live/daily), chess.com usernames, and Lichess game links.","Funciona con enlaces de partida de chess.com (en vivo/diarias), nombres de usuario de chess.com y enlaces de partida de Lichess.",Home page: game input (PGN/FEN/link/image tabs),121,,machine-assisted
+input.linkLabel,Game link or username,Enlace de partida o usuario,Home page: game input (PGN/FEN/link/image tabs),32,,machine-assisted
+input.linkPlaceholder,https://www.chess.com/game/live/123456789 or your username,https://www.chess.com/game/live/123456789 o tu nombre de usuario,Home page: game input (PGN/FEN/link/image tabs),80,,machine-assisted
+input.loadSample,Load sample game,Cargar partida de ejemplo,Home page: game input (PGN/FEN/link/image tabs),25,,machine-assisted
+input.multiGames.one,This file has {count} game — pick one:,Este archivo tiene {count} partida: elige una:,"Home page: game input (PGN/FEN/link/image tabs) — plural form ""one""",54,,machine-assisted
+input.multiGames.other,This file has {count} games — pick one:,Este archivo tiene {count} partidas: elige una:,"Home page: game input (PGN/FEN/link/image tabs) — plural form ""other""",55,,machine-assisted
+input.noCompleteGame,No complete game found in that PGN.,No se encontró ninguna partida completa en ese PGN.,Home page: game input (PGN/FEN/link/image tabs),50,,machine-assisted
+input.noGamesMatchFilters,No games match these filters.,Ninguna partida coincide con estos filtros.,Home page: game input (PGN/FEN/link/image tabs),42,,machine-assisted
+input.noRecentGamesFor,"No recent games found for ""{username}"".","No se encontraron partidas recientes de ""{username}"".",Home page: game input (PGN/FEN/link/image tabs),55,,machine-assisted
+input.offlineLink,You're offline — link import needs internet; paste a PGN or use the editor instead,Estás sin conexión: la importación por enlace necesita internet; pega un PGN o usa el editor,Home page: game input (PGN/FEN/link/image tabs),111,,machine-assisted
+input.openBoardEditor,Open board editor,Abrir editor de tablero,Home page: game input (PGN/FEN/link/image tabs),27,,machine-assisted
+input.pastePgnOrSample,"Paste a PGN, or load the sample game.",Pega un PGN o carga la partida de ejemplo.,Home page: game input (PGN/FEN/link/image tabs),53,,machine-assisted
+input.pgnDragHint,Drag & drop a .pgn / .txt file anywhere on the box.,Arrastra y suelta un archivo .pgn / .txt en cualquier parte del cuadro.,Home page: game input (PGN/FEN/link/image tabs),71,,machine-assisted
+input.pgnPlaceholder,"Paste a PGN here, or drop a .pgn file…
+
+[Event ""Casual game""]
+1. e4 e5 2. Nf3 Nc6 …","Pega un PGN aquí o suelta un archivo .pgn…
+
+[Event ""Casual game""]
+1. e4 e5 2. Nf3 Nc6 …",Home page: game input (PGN/FEN/link/image tabs),112,,machine-assisted
+input.pgnTextLabel,PGN text,Texto PGN,Home page: game input (PGN/FEN/link/image tabs),15,,machine-assisted
+input.recentGamesPick,Recent games — pick one to review:,Partidas recientes: elige una para revisar:,Home page: game input (PGN/FEN/link/image tabs),49,,machine-assisted
+input.recentReviews,Recent reviews,Revisiones recientes,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.recentReviewsLabel,Recent reviews,Revisiones recientes,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.resultBlackWins,Black wins,Ganan las negras,Home page: game input (PGN/FEN/link/image tabs),17,,machine-assisted
+input.resultDraw,Draw,Tablas,Home page: game input (PGN/FEN/link/image tabs),10,,machine-assisted
+input.resultWhiteWins,White wins,Ganan las blancas,Home page: game input (PGN/FEN/link/image tabs),17,,machine-assisted
+input.review,Review,Revisar,Home page: game input (PGN/FEN/link/image tabs),12,,machine-assisted
+input.searchArchives,Search archives,Buscar en archivos,Home page: game input (PGN/FEN/link/image tabs),24,,machine-assisted
+input.searchCancelled,"Search cancelled. Try another username, or paste the PGN instead.",Búsqueda cancelada. Prueba con otro usuario o pega el PGN.,Home page: game input (PGN/FEN/link/image tabs),89,,machine-assisted
+input.searchingMonth,Searching {month}…,Buscando en {month}…,Home page: game input (PGN/FEN/link/image tabs),28,,machine-assisted
+input.setupInEditor,"Set up the position in the board editor, then analyze it.",Configura la posición en el editor de tablero y luego analízala.,Home page: game input (PGN/FEN/link/image tabs),79,,machine-assisted
+input.switchToPgn,Paste the PGN instead,Pegar el PGN en su lugar,Home page: game input (PGN/FEN/link/image tabs),32,,machine-assisted
+input.tabFen,FEN,FEN,Home page: game input (PGN/FEN/link/image tabs),8,,machine-assisted
+input.tabImage,Image,Imagen,Home page: game input (PGN/FEN/link/image tabs),11,,machine-assisted
+input.tabLink,Link / Username,Enlace / Usuario,Home page: game input (PGN/FEN/link/image tabs),24,,machine-assisted
+input.tabPgn,PGN,PGN,Home page: game input (PGN/FEN/link/image tabs),8,,machine-assisted
+input.unrecognizedInput,"Could not recognize that input. Paste a chess.com or Lichess game link, a username, a PGN, or a FEN.","No se pudo reconocer esa entrada. Pega un enlace de partida de chess.com o Lichess, un nombre de usuario, un PGN o un FEN.",Home page: game input (PGN/FEN/link/image tabs),134,,machine-assisted
+input.uploadPgn,Upload .pgn file,Subir archivo .pgn,Home page: game input (PGN/FEN/link/image tabs),25,,machine-assisted
+meta.description,"Chess.com-style game review powered by Stockfish running locally in your browser. Accuracy, move classifications, engine lines and opening detection.","Revisión de partidas al estilo de chess.com con Stockfish ejecutándose localmente en tu navegador. Precisión, clasificación de jugadas, líneas del motor y detección de aperturas.",Browser tab title and search/social description,,,machine-assisted
+meta.title,Chess Review — Stockfish Game Analysis,Revisión de Partidas — Análisis con Stockfish,Browser tab title and search/social description,54,,machine-assisted
+moves.bestWas,Best was {best},La mejor era {best},"Move list, coach feedback and retry mode",24,,machine-assisted
+moves.coachFeedback,Coach feedback,Comentarios del entrenador,"Move list, coach feedback and retry mode",23,,machine-assisted
+moves.deleteTitle,Delete variation,Eliminar variante,"Move list, coach feedback and retry mode",25,,machine-assisted
+moves.deleteVariation,Delete variation starting with {san},Eliminar la variante que empieza con {san},"Move list, coach feedback and retry mode",51,,machine-assisted
+moves.moveHeading,Move {move}{sep} {san},Jugada {move}{sep} {san},"Move list, coach feedback and retry mode",33,,machine-assisted
+moves.moveHeadingClass,Move {move}{sep} {san} · {label},Jugada {move}{sep} {san} · {label},"Move list, coach feedback and retry mode",46,,machine-assisted
+moves.movesLabel,Moves,Jugadas,"Move list, coach feedback and retry mode",11,,machine-assisted
+moves.nextCriticalMoment,Next critical moment,Siguiente momento crítico,"Move list, coach feedback and retry mode",30,,machine-assisted
+moves.noMovesYet,No moves yet.,Aún no hay jugadas.,"Move list, coach feedback and retry mode",21,,machine-assisted
+moves.promoteTitle,Promote to main line,Promover a línea principal,"Move list, coach feedback and retry mode",30,,machine-assisted
+moves.promoteVariation,Promote variation starting with {san},Promover la variante que empieza con {san},"Move list, coach feedback and retry mode",53,,machine-assisted
+moves.retry,Retry,Reintentar,"Move list, coach feedback and retry mode",11,,machine-assisted
+moves.selectMoveFeedback,Select a move to see feedback.,Selecciona una jugada para ver comentarios.,"Move list, coach feedback and retry mode",43,,machine-assisted
+moves.showBestMove,Show best move,Mostrar mejor jugada,"Move list, coach feedback and retry mode",23,,machine-assisted
+moves.timeSpent,Time spent: {time},Tiempo empleado: {time},"Move list, coach feedback and retry mode",28,,machine-assisted
+moves.timeTrouble,Time trouble,Apuro de tiempo,"Move list, coach feedback and retry mode",20,,machine-assisted
+moves.timeTroubleTitle,Time trouble: under 30 seconds (or 10% of the base time) left,Apuro de tiempo: quedan menos de 30 segundos (o el 10 % del tiempo base),"Move list, coach feedback and retry mode",84,,machine-assisted
+moves.variationsLabel,Variations,Variantes,"Move list, coach feedback and retry mode",17,,machine-assisted
+moves.whyLabel,Why this label? {text},¿Por qué esta etiqueta? {text},"Move list, coach feedback and retry mode",33,,machine-assisted
+performance.beginner,Beginner-level play,Juego de nivel principiante,Performance estimate bands,29,,machine-assisted
+performance.club,Club-level play,Juego de nivel club,Performance estimate bands,24,,machine-assisted
+performance.expert,Expert-level play,Juego de nivel experto,Performance estimate bands,27,,machine-assisted
+performance.master,Master-level play,Juego de nivel maestro,Performance estimate bands,27,,machine-assisted
+performance.note,Rough single-game band from accuracy and average centipawn loss — not a rating.,Banda aproximada de una sola partida a partir de la precisión y la pérdida media en centipeones: no es una puntuación Elo.,Performance estimate bands,107,,machine-assisted
+performance.strongClub,Strong club play,Juego de club fuerte,Performance estimate bands,25,,machine-assisted
+pieces.bishop,bishop,alfil,"Piece names (board editor, promotion picker)",12,,machine-assisted
+pieces.king,king,rey,"Piece names (board editor, promotion picker)",10,,machine-assisted
+pieces.knight,knight,caballo,"Piece names (board editor, promotion picker)",12,,machine-assisted
+pieces.pawn,pawn,peón,"Piece names (board editor, promotion picker)",10,,machine-assisted
+pieces.queen,queen,dama,"Piece names (board editor, promotion picker)",11,,machine-assisted
+pieces.rook,rook,torre,"Piece names (board editor, promotion picker)",10,,machine-assisted
+pwa.buildFull,Full (multi-threaded),Completa (multihilo),PWA install/update prompts,32,,machine-assisted
+pwa.buildLite,Lite,Lite,PWA install/update prompts,10,,machine-assisted
+pwa.buildSingle,Single-threaded,De un solo hilo,PWA install/update prompts,24,,machine-assisted
+pwa.dismissInstall,Dismiss install suggestion,Descartar sugerencia de instalación,PWA install/update prompts,38,,machine-assisted
+pwa.dismissUpdate,Dismiss update notice,Descartar aviso de actualización,PWA install/update prompts,32,,machine-assisted
+pwa.installApp,Install app,Instalar app,PWA install/update prompts,19,,machine-assisted
+pwa.installHidden,"Chess Review is a web app — in a browser that supports it, an install option appears here when the app can be installed, and on iOS via Share → Add to Home Screen.","Chess Review es una app web: en un navegador compatible, aquí aparece una opción de instalación cuando la app se puede instalar, y en iOS mediante Compartir → Añadir a pantalla de inicio.",PWA install/update prompts,,,machine-assisted
+pwa.installPitch,"Install Chess Review for a full-screen, offline-ready app.",Instala Chess Review para una app a pantalla completa y lista sin conexión.,PWA install/update prompts,80,,machine-assisted
+pwa.iosSteps,"On iPhone/iPad: tap the Share button in Safari, then choose “Add to Home Screen” to install Chess Review.",En iPhone/iPad: toca el botón Compartir en Safari y elige «Añadir a pantalla de inicio» para instalar Chess Review.,PWA install/update prompts,,,machine-assisted
+pwa.offlineBanner,"You're offline — saved reviews, the board editor and analysis still work; link import needs internet.","Estás sin conexión: las revisiones guardadas, el editor de tablero y el análisis siguen funcionando; la importación por enlace necesita internet.",PWA install/update prompts,,,machine-assisted
+pwa.reload,Reload,Recargar,PWA install/update prompts,12,,machine-assisted
+pwa.updateAvailable,A new version is available,Hay una nueva versión disponible,PWA install/update prompts,38,,machine-assisted
+review.accuracy,Accuracy,Precisión,Review screen header and progress,15,,machine-assisted
+review.adaptiveDepthNote,"Adaptive presets stop early on stable positions, so Quick/Standard evaluations and labels can differ from a deeper analysis.","Los ajustes adaptativos se detienen antes en posiciones estables, por lo que las evaluaciones y etiquetas de Rápido/Estándar pueden diferir de un análisis más profundo.",Review screen header and progress,,,machine-assisted
+review.analysisComplete,✓ Analysis complete,✓ Análisis completo,Review screen header and progress,29,,machine-assisted
+review.analysisFailed,Analysis failed.,El análisis falló.,Review screen header and progress,25,,machine-assisted
+review.analysisProgress,Analysis progress,Progreso del análisis,Review screen header and progress,27,,machine-assisted
+review.analyzedAtDepthAvg,Analyzed at depth {depth} (avg),Analizado a profundidad {depth} (media),Review screen header and progress,45,,machine-assisted
+review.analyzingEta,Move {done} of {total} — classifications appear as I go. · ~{eta} left,Jugada {done} de {total}: las clasificaciones aparecen sobre la marcha. · quedan ~{eta},Review screen header and progress,95,,machine-assisted
+review.analyzingGame,Analyzing your game…,Analizando tu partida…,Review screen header and progress,30,,machine-assisted
+review.analyzingMove,Analyzing move {done} / {total},Analizando jugada {done} / {total},Review screen header and progress,45,,machine-assisted
+review.analyzingProgress,Move {done} of {total} — classifications appear as I go.,Jugada {done} de {total}: las clasificaciones aparecen sobre la marcha.,Review screen header and progress,77,,machine-assisted
+review.annotatedDownloaded,Annotated PGN downloaded,PGN anotado descargado,Review screen header and progress,36,,machine-assisted
+review.backToGame,Back to game,Volver a la partida,Review screen header and progress,20,,machine-assisted
+review.backToInput,Back to input,Volver a la entrada,Review screen header and progress,21,,machine-assisted
+review.backToSummary,Back to summary,Volver al resumen,Review screen header and progress,24,,machine-assisted
+review.bestWas,Best was {best}.,La mejor era {best}.,Review screen header and progress,25,,machine-assisted
+review.bookContinuations,Book continuations:,Continuaciones de libro:,Review screen header and progress,29,,machine-assisted
+review.cancelAnalysis,Cancel analysis,Cancelar análisis,Review screen header and progress,24,,machine-assisted
+review.clockLabel,Clock: {time},Reloj: {time},Review screen header and progress,21,,machine-assisted
+review.coachSummary,"Okay, let's see what we can learn from your game then.","Bien, veamos qué podemos aprender de tu partida.",Review screen header and progress,75,,machine-assisted
+review.copyFailed,Copy failed,La copia falló,Review screen header and progress,19,,machine-assisted
+review.copyFen,Copy FEN,Copiar FEN,Review screen header and progress,15,,machine-assisted
+review.copyPgn,Copy PGN,Copiar PGN,Review screen header and progress,15,,machine-assisted
+review.couldNotParsePgn,Could not parse that PGN.,No se pudo analizar ese PGN.,Review screen header and progress,37,,machine-assisted
+review.couldNotStart,Could not start the review,No se pudo iniciar la revisión,Review screen header and progress,38,,machine-assisted
+review.deeperResult,Deeper analysis (depth {depth}),Análisis más profundo (profundidad {depth}),Review screen header and progress,45,,machine-assisted
+review.downloadPgn,Download PGN,Descargar PGN,Review screen header and progress,20,,machine-assisted
+review.engineBadge,{name} · depth {depth} · {mode},{name} · profundidad {depth} · {mode},Review screen header and progress,45,,machine-assisted
+review.engineBadgeDegraded,Engine: {mode},Motor: {mode},Review screen header and progress,23,,machine-assisted
+review.engineCacheCleared,Engine cache cleared,Caché del motor borrada,Review screen header and progress,30,,machine-assisted
+review.engineDegradedTitle,"This browser cannot run the multi-threaded engine (cross-origin isolation unavailable), so analysis uses a single-threaded build.","Este navegador no puede ejecutar el motor multihilo (aislamiento de origen cruzado no disponible), así que el análisis usa una versión de un solo hilo.",Review screen header and progress,,,machine-assisted
+review.engineExplanation,Engine explanation,Explicación del motor,Review screen header and progress,28,,machine-assisted
+review.engineFailedToLoad,Engine failed to load: {error},El motor no se pudo cargar: {error},Review screen header and progress,43,,machine-assisted
+review.engineFooter,{name}{version} · {build}{file} · {size} WASM · analysis ran locally in your browser,{name}{version} · {build}{file} · {size} WASM · el análisis se ejecutó localmente en tu navegador,Review screen header and progress,114,,machine-assisted
+review.engineFooterNoSize,{name}{version} · {build}{file} · analysis ran locally in your browser,{name}{version} · {build}{file} · el análisis se ejecutó localmente en tu navegador,Review screen header and progress,95,,machine-assisted
+review.engineLines,Engine lines,Líneas del motor,Review screen header and progress,20,,machine-assisted
+review.engineModeLite,lite single-thread mode,modo lite de un solo hilo,Review screen header and progress,34,,machine-assisted
+review.engineModeMulti,multi-thread,multihilo,Review screen header and progress,20,,machine-assisted
+review.engineModeSingle,single-thread mode,modo de un solo hilo,Review screen header and progress,28,,machine-assisted
+review.engineNameDepth,{name} · depth {depth},{name} · profundidad {depth},Review screen header and progress,33,,machine-assisted
+review.enginePrefix,Engine: {error},Motor: {error},Review screen header and progress,24,,machine-assisted
+review.engineSection,Engine,Motor,Review screen header and progress,12,,machine-assisted
+review.explain,💡 Explain,💡 Explicar,Review screen header and progress,17,,machine-assisted
+review.fenCopied,FEN copied,FEN copiado,Review screen header and progress,17,,machine-assisted
+review.findBetterMove,Find a better move!,¡Encuentra una jugada mejor!,Review screen header and progress,29,,machine-assisted
+review.finish,Finish ✓,Terminar ✓,Review screen header and progress,15,,machine-assisted
+review.firstMove,First move,Primera jugada,Review screen header and progress,17,,machine-assisted
+review.flipBoard,Flip board,Girar tablero,Review screen header and progress,17,,machine-assisted
+review.flipShort,⇅ Flip,⇅ Girar,Review screen header and progress,12,,machine-assisted
+review.fullSummaryLater,The full summary appears here when the analysis finishes.,El resumen completo aparecerá aquí cuando termine el análisis.,Review screen header and progress,79,,machine-assisted
+review.gettingReady,Getting your review ready…,Preparando tu revisión…,Review screen header and progress,38,,machine-assisted
+review.hideBestMove,Hide best move,Ocultar mejor jugada,Review screen header and progress,23,,machine-assisted
+review.lastMove,Last move,Última jugada,Review screen header and progress,16,,machine-assisted
+review.leftBookAtMove,Left book at move {move},Salió del libro en la jugada {move},Review screen header and progress,36,,machine-assisted
+review.leftBookPlayed,Left book at move {move} — played {san}.,Salió del libro en la jugada {move}: se jugó {san}.,Review screen header and progress,56,,machine-assisted
+review.liveMove,Move {move}: {san},Jugada {move}: {san},Review screen header and progress,28,,machine-assisted
+review.liveMoveClassified,"Move {move}: {san}, classified {classification}","Jugada {move}: {san}, clasificada como {classification}",Review screen header and progress,66,,machine-assisted
+review.loadingEngine,Loading engine…,Cargando motor…,Review screen header and progress,24,,machine-assisted
+review.loadingEnginePct,Loading engine… {pct}%,Cargando motor… {pct}%,Review screen header and progress,33,,machine-assisted
+review.loadingReview,Loading review…,Cargando revisión…,Review screen header and progress,24,,machine-assisted
+review.navigationControls,Navigation controls,Controles de navegación,Review screen header and progress,29,,machine-assisted
+review.newGame,New game,Nueva partida,Review screen header and progress,15,,machine-assisted
+review.next,Next →,Siguiente →,Review screen header and progress,12,,machine-assisted
+review.nextCriticalMoment,Next critical moment,Siguiente momento crítico,Review screen header and progress,30,,machine-assisted
+review.nextMove,Next move,Jugada siguiente,Review screen header and progress,16,,machine-assisted
+review.noBookContinuations,No book continuations in the dataset for this position.,No hay continuaciones de libro en los datos para esta posición.,Review screen header and progress,76,,machine-assisted
+review.noGameFound,No game found.,No se encontró ninguna partida.,Review screen header and progress,23,,machine-assisted
+review.noGameProvided,"No game was provided. Go back and paste a PGN, FEN, or game link.","No se proporcionó ninguna partida. Vuelve y pega un PGN, un FEN o un enlace de partida.",Review screen header and progress,89,,machine-assisted
+review.openingLabel,Opening:,Apertura:,Review screen header and progress,15,,machine-assisted
+review.performanceEstimate,Performance estimate,Estimación de rendimiento,Review screen header and progress,30,,machine-assisted
+review.pgnCopied,PGN copied,PGN copiado,Review screen header and progress,17,,machine-assisted
+review.playerBar,{name} player bar,Barra del jugador {name},Review screen header and progress,27,,machine-assisted
+review.players,Players,Jugadores,Review screen header and progress,14,,machine-assisted
+review.positionCoach,Analyzing this position. Play moves on the board and I'll evaluate them live.,Analizando esta posición. Juega movimientos en el tablero y los evaluaré en vivo.,Review screen header and progress,105,,machine-assisted
+review.positionEvent,Position analysis,Análisis de posición,Review screen header and progress,27,,machine-assisted
+review.presetDeep,Deep,Profundo,Review screen header and progress,10,,machine-assisted
+review.presetQuick,Quick,Rápido,Review screen header and progress,11,,machine-assisted
+review.presetStandard,Standard,Estándar,Review screen header and progress,15,,machine-assisted
+review.previousMove,Previous move,Jugada anterior,Review screen header and progress,21,,machine-assisted
+review.reanalyzeDeeper,Re-analyze this position deeper,Reanalizar esta posición más a fondo,Review screen header and progress,45,,machine-assisted
+review.reanalyzingDeeper,Re-analyzing at depth {depth}…,Reanalizando a profundidad {depth}…,Review screen header and progress,43,,machine-assisted
+review.retryAgain,Try again — still not good enough.,Inténtalo de nuevo: aún no es suficientemente buena.,Review screen header and progress,49,,machine-assisted
+review.retryBest,That's the best move!,¡Esa es la mejor jugada!,Review screen header and progress,32,,machine-assisted
+review.retryBetter,Good — that's better!,"¡Bien, esa es mejor!",Review screen header and progress,32,,machine-assisted
+review.retryThisMove,⟳ Retry this move,⟳ Reintentar esta jugada,Review screen header and progress,27,,machine-assisted
+review.retryWeak,That move was weak. Play a stronger one on the board.,Esa jugada fue débil. Juega una más fuerte en el tablero.,Review screen header and progress,73,,machine-assisted
+review.reviewNavigation,Review navigation,Navegación de la revisión,Review screen header and progress,27,,machine-assisted
+review.savedReviewNotFound,That saved review could not be found.,No se encontró esa revisión guardada.,Review screen header and progress,53,,machine-assisted
+review.share,↗ Share,↗ Compartir,Review screen header and progress,14,,machine-assisted
+review.shareLink,Share link,Enlace para compartir,Review screen header and progress,17,,machine-assisted
+review.shareLinkCopied,Share link copied,Enlace copiado,Review screen header and progress,27,,machine-assisted
+review.showBestMove,Show best move,Mostrar mejor jugada,Review screen header and progress,23,,machine-assisted
+review.showSolution,Show solution,Mostrar solución,Review screen header and progress,21,,machine-assisted
+review.skip,Skip,Saltar,Review screen header and progress,10,,machine-assisted
+review.startReview,▶ Start Review,▶ Iniciar revisión,Review screen header and progress,23,,machine-assisted
+review.startingHint,"Press Next and I'll walk you through the game, move by move.","Pulsa Siguiente y te guiaré por la partida, jugada a jugada.",Review screen header and progress,82,,machine-assisted
+review.startingPosition,Starting position,Posición inicial,Review screen header and progress,27,,machine-assisted
+review.summary,★ Summary,★ Resumen,Review screen header and progress,16,,machine-assisted
+review.thinking,Thinking…,Pensando…,Review screen header and progress,16,,machine-assisted
+review.thinkingNps,Thinking… {nps}k nodes/s,Pensando… {nps} mil nodos/s,Review screen header and progress,36,,machine-assisted
+review.title,Game Review,Revisión de la partida,Review screen header and progress,19,,machine-assisted
+review.variations,Variations,Variantes,Review screen header and progress,17,,machine-assisted
+settings.analysisDepth,Analysis depth,Profundidad de análisis,Settings drawer,23,,machine-assisted
+settings.animationSpeed,Animation speed · {ms} ms,Velocidad de animación · {ms} ms,Settings drawer,37,,machine-assisted
+settings.animationSpeedLabel,Animation speed in milliseconds,Velocidad de animación en milisegundos,Settings drawer,45,,machine-assisted
+settings.appHelp,"Installed or not, Chess Review works offline after one online visit — reviews, the board editor and analysis all run on this device.","Instalada o no, Chess Review funciona sin conexión tras una visita con conexión: las revisiones, el editor de tablero y el análisis se ejecutan en este dispositivo.",Settings drawer,,,machine-assisted
+settings.appSection,App,App,Settings drawer,8,,machine-assisted
+settings.appearance,Appearance,Apariencia,Settings drawer,17,,machine-assisted
+settings.bestMoveArrows,Best-move arrows,Flechas de mejor jugada,Settings drawer,25,,machine-assisted
+settings.boardCoordinates,Board coordinates,Coordenadas del tablero,Settings drawer,27,,machine-assisted
+settings.boardSize,Board size · {px} px,Tamaño del tablero · {px} px,Settings drawer,30,,machine-assisted
+settings.boardSizeLabel,Board size in pixels,Tamaño del tablero en píxeles,Settings drawer,30,,machine-assisted
+settings.boardTheme,Board theme,Tema del tablero,Settings drawer,19,,machine-assisted
+settings.boardThemeName,Board theme {name},Tema del tablero {name},Settings drawer,28,,machine-assisted
+settings.budgetExtra,Terminal positions are never searched; positions with one legal move get a depth-1 evaluation.,Las posiciones terminales nunca se analizan; las posiciones con una sola jugada legal reciben solo una evaluación de profundidad 1.,Settings drawer,127,,machine-assisted
+settings.budgetSummary,"Adaptive: target depth {target}, hard cap {cap} ms. Stops early after depth {min} when the best move is unchanged for {window} consecutive depths and the score moves < {delta} cp. Swings over {swing} win-% points (or a last-moment best-move change) are re-analyzed at full depth. Book positions stop from depth {bookMin}; the last book position is verified at full budget.","Adaptativo: profundidad objetivo {target}, límite duro de {cap} ms. Se detiene antes, tras la profundidad {min}, cuando la mejor jugada no cambia durante {window} profundidades consecutivas y la puntuación se mueve < {delta} cp. Los cambios de más de {swing} puntos de % de victoria (o un cambio de mejor jugada en el último momento) se vuelven a analizar a profundidad completa. Las posiciones de libro se detienen desde la profundidad {bookMin}; la última posición de libro se verifica con el presupuesto completo.",Settings drawer,,,machine-assisted
+settings.buildAuto,Auto,Automática,Settings drawer,10,,machine-assisted
+settings.buildLite,Lite (smallest),Lite (la más pequeña),Settings drawer,24,,machine-assisted
+settings.buildMulti,Full (multi-threaded),Completa (multihilo),Settings drawer,32,,machine-assisted
+settings.buildSingle,Single-threaded,De un solo hilo,Settings drawer,24,,machine-assisted
+settings.cacheCurrently.one,Currently: 1 position · ~{size}.,Actualmente: 1 posición · ~{size}.,"Settings drawer — plural form ""one""",46,,machine-assisted
+settings.cacheCurrently.other,Currently: {count} positions · ~{size}.,Actualmente: {count} posiciones · ~{size}.,"Settings drawer — plural form ""other""",55,,machine-assisted
+settings.cacheHelp,Removes cached position evaluations stored on this device.,Elimina las evaluaciones de posiciones en caché guardadas en este dispositivo.,Settings drawer,80,,machine-assisted
+settings.classification,Classification,Clasificación,Settings drawer,23,,machine-assisted
+settings.classificationBalanced,Balanced,Equilibrado,Settings drawer,15,,machine-assisted
+settings.classificationGenerous,Generous,Generoso,Settings drawer,15,,machine-assisted
+settings.classificationHelp,Classification: Strict / Balanced / Generous — strict awards Brilliant/Great rarely and demotes sooner; generous is the opposite; Balanced is the calibrated default.,Clasificación: estricto / equilibrado / generoso. El estricto concede Brillante/Gran jugada rara vez y baja antes; el generoso hace lo contrario; el equilibrado es el valor calibrado por defecto.,Settings drawer,,,machine-assisted
+settings.classificationProfile,Classification profile,Perfil de clasificación,Settings drawer,33,,machine-assisted
+settings.classificationStrict,Strict,Estricto,Settings drawer,12,,machine-assisted
+settings.clearEngineCache,Clear engine cache,Borrar caché del motor,Settings drawer,28,,machine-assisted
+settings.clearEngineFiles,Clear downloaded engine files,Borrar archivos del motor descargados,Settings drawer,42,,machine-assisted
+settings.confirmClear,Click again to confirm clear,Haz clic de nuevo para confirmar el borrado,Settings drawer,41,,machine-assisted
+settings.coordInside,Inside,Dentro,Settings drawer,12,,machine-assisted
+settings.coordOff,Off,Desactivadas,Settings drawer,8,,machine-assisted
+settings.coordOutside,Outside,Fuera,Settings drawer,14,,machine-assisted
+settings.countAndSize,{count} · ~{size},{count} · ~{size},Settings drawer,27,,machine-assisted
+settings.darkMode,Dark mode,Modo oscuro,Settings drawer,16,,machine-assisted
+settings.engineBuild,Engine build,Versión del motor,Settings drawer,20,,machine-assisted
+settings.engineBuildHelp,"Auto picks the fastest build this device supports. Full needs cross-origin isolation, SharedArrayBuffer, at least 4 GB of reported memory and a non-mobile browser — it cannot be forced when those are missing and falls back automatically. Lite is a ~1.8 MB build always used on devices reporting 2 GB or less. Takes effect after a reload.","La automática elige la versión más rápida que admite este dispositivo. La completa necesita aislamiento de origen cruzado, SharedArrayBuffer, al menos 4 GB de memoria informada y un navegador no móvil: no se puede forzar cuando falta algo y vuelve atrás automáticamente. Lite es una versión de ~1,8 MB que se usa siempre en dispositivos que informan de 2 GB o menos. Surte efecto tras recargar.",Settings drawer,,,machine-assisted
+settings.engineBundleLiteOnly,"This deployment ships only the Lite engine build (~1.8 MB) — a smaller, weaker Stockfish chosen to keep the deployment tiny. Analysis works as usual; the full builds are not available on this host.","Esta implementación incluye solo la versión Lite del motor (~1,8 MB): un Stockfish más pequeño y débil, elegido para mantener la implementación reducida. El análisis funciona como siempre; las versiones completas no están disponibles en este host.",Settings drawer,,,machine-assisted
+settings.engineSection,Engine,Motor,Settings drawer,12,,machine-assisted
+settings.hash,Hash (MB),Hash (MB),Settings drawer,16,,machine-assisted
+settings.hashLabel,"Engine hash size in megabytes, 16 to 512","Tamaño del hash del motor en megabytes, de 16 a 512",Settings drawer,56,,machine-assisted
+settings.keepPersistent,Keep storage persistent,Mantener el almacenamiento persistente,Settings drawer,34,,machine-assisted
+settings.language,Language,Idioma,Settings drawer,15,,machine-assisted
+settings.languageLabel,Language,Idioma,Settings drawer,15,,machine-assisted
+settings.lightMode,Light mode,Modo claro,Settings drawer,17,,machine-assisted
+settings.linesLabel,"Number of engine lines, 1 to 5","Número de líneas del motor, de 1 a 5",Settings drawer,43,,machine-assisted
+settings.linesMultiPv,Lines (MultiPV),Líneas (MultiPV),Settings drawer,24,,machine-assisted
+settings.machineAssisted,Machine-assisted translation,Traducción automática asistida,Settings drawer,41,,machine-assisted
+settings.machineAssistedShort,machine-assisted,traducción automática,Settings drawer,25,,machine-assisted
+settings.parallelWorkers,Parallel workers,Trabajadores en paralelo,Settings drawer,25,,machine-assisted
+settings.pieceSet,Piece set,Juego de piezas,Settings drawer,16,,machine-assisted
+settings.pieceSetName,Piece set {name},Juego de piezas {name},Settings drawer,25,,machine-assisted
+settings.sounds,Sounds,Sonidos,Settings drawer,12,,machine-assisted
+settings.storageClearHelp,"Clearing removes the cached Stockfish downloads; the engine will re-download (~95 MB for the full build, ~1.8 MB for lite) on the next analysis. Saved reviews and the position cache are not touched.","Al borrar se eliminan las descargas de Stockfish en caché; el motor volverá a descargarse (~95 MB para la versión completa, ~1,8 MB para lite) en el próximo análisis. Las revisiones guardadas y la caché de posiciones no se tocan.",Settings drawer,,,machine-assisted
+settings.storageEngineFiles,Downloaded engine files,Archivos del motor descargados,Settings drawer,34,,machine-assisted
+settings.storagePersistent,Persistent storage,Almacenamiento persistente,Settings drawer,28,,machine-assisted
+settings.storagePositionCache,Position cache,Caché de posiciones,Settings drawer,23,,machine-assisted
+settings.storageSavedReviews,Saved reviews,Revisiones guardadas,Settings drawer,21,,machine-assisted
+settings.storageSection,Storage,Almacenamiento,Settings drawer,14,,machine-assisted
+settings.storageTotal,Total for this site,Total de este sitio,Settings drawer,29,,machine-assisted
+settings.storageTotalFull,{usage} of {quota},{usage} de {quota},Settings drawer,28,,machine-assisted
+settings.storageTotalOnly,{usage},{usage},Settings drawer,14,,machine-assisted
+settings.switchToDark,Switch to dark theme,Cambiar a tema oscuro,Settings drawer,30,,machine-assisted
+settings.switchToLight,Switch to light theme,Cambiar a tema claro,Settings drawer,32,,machine-assisted
+settings.theme,Theme,Tema,Settings drawer,11,,machine-assisted
+settings.themeBlue,Blue,Azul,Settings drawer,10,,machine-assisted
+settings.themeBrown,Brown,Marrón,Settings drawer,11,,machine-assisted
+settings.themeDark,Dark,Oscuro,Settings drawer,10,,machine-assisted
+settings.themeGreen,Green,Verde,Settings drawer,11,,machine-assisted
+settings.themeGrey,Grey,Gris,Settings drawer,10,,machine-assisted
+settings.themeLight,Light,Claro,Settings drawer,11,,machine-assisted
+settings.themePurple,Purple,Morado,Settings drawer,12,,machine-assisted
+settings.themeWood,Wood,Madera,Settings drawer,10,,machine-assisted
+settings.threads,Threads,Hilos,Settings drawer,14,,machine-assisted
+settings.threadsLabel,"Engine threads, 1 to 8","Hilos del motor, de 1 a 8",Settings drawer,33,,machine-assisted
+settings.title,Settings,Ajustes,Settings drawer,15,,machine-assisted
+summary.accuracyLabel,Accuracy,Precisión,"Review summary panel (accuracy, classifications)",15,,machine-assisted
+summary.accuracyPercent,Accuracy {value} percent,Precisión del {value} por ciento,"Review summary panel (accuracy, classifications)",36,,machine-assisted
+summary.accuracyUnavailable,Accuracy unavailable,Precisión no disponible,"Review summary panel (accuracy, classifications)",30,,machine-assisted
+summary.acpl,Avg. centipawn loss,Pérdida media en centipeones,"Review summary panel (accuracy, classifications)",29,,machine-assisted
+summary.bestStreak,Best-move streak,Racha de mejores jugadas,"Review summary panel (accuracy, classifications)",25,,machine-assisted
+summary.biggestSwing,Biggest eval swing,Mayor cambio de evaluación,"Review summary panel (accuracy, classifications)",28,,machine-assisted
+summary.classificationSummary,Move classification summary,Resumen de clasificación de jugadas,"Review summary panel (accuracy, classifications)",40,,machine-assisted
+summary.eplBarJump,Move {move} {san}: expected points lost {epl}. Jump to this move.,Jugada {move} {san}: puntos esperados perdidos {epl}. Ir a esta jugada.,"Review summary panel (accuracy, classifications)",89,,machine-assisted
+summary.eplBarLabel,Move {move} {san}: expected points lost {epl},Jugada {move} {san}: puntos esperados perdidos {epl},"Review summary panel (accuracy, classifications)",63,,machine-assisted
+summary.eplBars,EPL bars,Barras de PPE,"Review summary panel (accuracy, classifications)",15,,machine-assisted
+summary.eplPerMove,Expected points lost per move,Puntos esperados perdidos por jugada,"Review summary panel (accuracy, classifications)",42,,machine-assisted
+summary.filtering,Filtering: {label} — click the row again to clear.,Filtro: {label}. Haz clic de nuevo en la fila para quitarlo.,"Review summary panel (accuracy, classifications)",69,,machine-assisted
+summary.gameStatistics,Game statistics,Estadísticas de la partida,"Review summary panel (accuracy, classifications)",24,,machine-assisted
+summary.jumpToSwing,"Jump to {name}'s biggest eval swing: move {move}, {san}","Ir al mayor cambio de evaluación de {name}: jugada {move}, {san}","Review summary panel (accuracy, classifications)",76,,machine-assisted
+summary.keyMoments,Key moments,Momentos clave,"Review summary panel (accuracy, classifications)",19,,machine-assisted
+summary.leftBookAtMove,Left book at move {move},Salió del libro en la jugada {move},"Review summary panel (accuracy, classifications)",36,,machine-assisted
+summary.moveCountsTable,{white} versus {black} move counts,Recuento de jugadas de {white} contra {black},"Review summary panel (accuracy, classifications)",49,,machine-assisted
+summary.nextClassMove,Next {label} move,Jugada {label} siguiente,"Review summary panel (accuracy, classifications)",27,,machine-assisted
+summary.noCriticalMoments,No critical moments.,Sin momentos críticos.,"Review summary panel (accuracy, classifications)",30,,machine-assisted
+summary.notEnoughMoves,Not enough moves,Jugadas insuficientes,"Review summary panel (accuracy, classifications)",25,,machine-assisted
+summary.opening,Opening,Apertura,"Review summary panel (accuracy, classifications)",14,,machine-assisted
+summary.performanceTitle,Rough single-game band from accuracy and average centipawn loss — not a rating.,Banda aproximada de una sola partida a partir de la precisión y la pérdida media en centipeones: no es una puntuación Elo.,"Review summary panel (accuracy, classifications)",107,,machine-assisted
+summary.previousClassMove,Previous {label} move,Jugada {label} anterior,"Review summary panel (accuracy, classifications)",32,,machine-assisted
+summary.statistics,Statistics,Estadísticas,"Review summary panel (accuracy, classifications)",17,,machine-assisted
+summary.timeByPhase,Time by phase,Tiempo por fase,"Review summary panel (accuracy, classifications)",21,,machine-assisted
+summary.timeByPhaseSub,opening / middle / end,apertura / medio juego / final,"Review summary panel (accuracy, classifications)",33,,machine-assisted
+summary.timeTroubleMoves,Time-trouble moves,Jugadas en apuro de tiempo,"Review summary panel (accuracy, classifications)",28,,machine-assisted
+termination.analyzeFirst100,First 100 moves,Primeras 100 jugadas,Game-ending banners,24,,machine-assisted
+termination.analyzeFirst200,First 200 moves,Primeras 200 jugadas,Game-ending banners,24,,machine-assisted
+termination.analyzeFirstLabel,Long game — analyze,Partida larga: analizar,Game-ending banners,29,,machine-assisted
+termination.analyzeFull,Full game,Partida completa,Game-ending banners,16,,machine-assisted
+termination.analyzeUpTo,Analyze up to move {move},Analizar hasta la jugada {move},Game-ending banners,37,,machine-assisted
+termination.bannerAbandoned,Game abandoned,Partida abandonada,Game-ending banners,23,,machine-assisted
+termination.bannerAbandonment,{winner} won by abandonment,{winner} ganó por abandono de la partida,Game-ending banners,40,,machine-assisted
+termination.bannerAgreement,Draw by agreement,Tablas por acuerdo,Game-ending banners,27,,machine-assisted
+termination.bannerCheckmate,{winner} won by checkmate,{winner} ganó por jaque mate,Game-ending banners,37,,machine-assisted
+termination.bannerDecisiveUnknown,{winner} won,{winner} ganó,Game-ending banners,20,,machine-assisted
+termination.bannerDrawUnknown,Draw,Tablas,Game-ending banners,10,,machine-assisted
+termination.bannerFiftyMove,Draw by the fifty-move rule,Tablas por la regla de los cincuenta movimientos,Game-ending banners,40,,machine-assisted
+termination.bannerForfeit,{winner} won by forfeit,{winner} ganó por incomparecencia,Game-ending banners,34,,machine-assisted
+termination.bannerInsufficient,Draw by insufficient material,Tablas por material insuficiente,Game-ending banners,42,,machine-assisted
+termination.bannerLabel,Game result: {text},Resultado de la partida: {text},Game-ending banners,29,,machine-assisted
+termination.bannerRepetitionFivefold,Draw by fivefold repetition,Tablas por quíntuple repetición,Game-ending banners,40,,machine-assisted
+termination.bannerRepetitionThreefold,Draw by threefold repetition,Tablas por triple repetición,Game-ending banners,41,,machine-assisted
+termination.bannerResignation,{winner} won by resignation,{winner} ganó por abandono,Game-ending banners,40,,machine-assisted
+termination.bannerSeventyFiveMove,Draw by the seventy-five-move rule,Tablas por la regla de los setenta y cinco movimientos,Game-ending banners,49,,machine-assisted
+termination.bannerStalemate,Draw by stalemate,Tablas por rey ahogado,Game-ending banners,27,,machine-assisted
+termination.bannerTimeout,{winner} won on time,{winner} ganó por tiempo,Game-ending banners,30,,machine-assisted
+termination.bannerTimeoutVsInsufficient,Draw — timeout against insufficient material,Tablas: tiempo agotado contra material insuficiente,Game-ending banners,62,,machine-assisted
+termination.bannerUnfinished,Game not finished,Partida no terminada,Game-ending banners,27,,machine-assisted
+termination.chess960Body,"This is a Chess960 (Fischer Random) game. Castling in Chess960 follows different rules, and this app cannot analyze it correctly as standard chess, so the game has not been analyzed rather than risk wrong results.","Esta es una partida de Chess960 (Fischer Random). El enroque en Chess960 sigue reglas diferentes y esta aplicación no puede analizarla correctamente como ajedrez estándar, por lo que la partida no se ha analizado para no arriesgar resultados incorrectos.",Game-ending banners,,,machine-assisted
+termination.chess960Label,Chess960,Chess960,Game-ending banners,15,,machine-assisted
+termination.chess960Title,Chess960 is not supported yet,Chess960 aún no es compatible,Game-ending banners,42,,machine-assisted
+termination.finalResult,Final result: {result},Resultado final: {result},Game-ending banners,33,,machine-assisted
+termination.parseErrorBody.one,"The move ""{san}"" is not legal in that position, so only the first move could be read. You can analyze the valid part of the game.","La jugada ""{san}"" no es legal en esa posición, por lo que solo se pudo leer la primera jugada. Puedes analizar la parte válida de la partida.","Game-ending banners — plural form ""one""",,,machine-assisted
+termination.parseErrorBody.other,"The move ""{san}"" is not legal in that position, so only the first {count} moves could be read. You can analyze the valid part of the game.","La jugada ""{san}"" no es legal en esa posición, por lo que solo se pudieron leer las primeras {count} jugadas. Puedes analizar la parte válida de la partida.","Game-ending banners — plural form ""other""",,,machine-assisted
+termination.parseErrorTitle,This PGN stopped at ply {ply},Este PGN se detuvo en la jugada {ply},Game-ending banners,42,,machine-assisted
+vision.analyzePosition,Analyze this position,Analizar esta posición,Screenshot import flow,32,,machine-assisted
+vision.betaLabel,Beta,Beta,Screenshot import flow,10,,machine-assisted
+vision.canvasUnavailable,Canvas 2D is not available in this browser.,Canvas 2D no está disponible en este navegador.,Screenshot import flow,60,,machine-assisted
+vision.chooseScreenshot,Choose screenshot…,Elegir captura…,Screenshot import flow,28,,machine-assisted
+vision.confidenceLabel,Recognition confidence:,Confianza del reconocimiento:,Screenshot import flow,34,,machine-assisted
+vision.confidenceMeta,(mean of the 64 square confidences · took {seconds}s · {side} at the bottom),(media de las confianzas de las 64 casillas · tardó {seconds}s · {side} abajo),Screenshot import flow,103,,machine-assisted
+vision.couldNotLoadArtwork,Could not load piece artwork ({set}/{key}).,No se pudo cargar el gráfico de la pieza ({set}/{key}).,Screenshot import flow,60,,machine-assisted
+vision.importIntro,Upload a screenshot of a chess board and the position is recognized on this device by template matching against this app's own piece sets — then you review and fix it square-by-square before anything is analyzed.,Sube una captura de un tablero de ajedrez y la posición se reconoce en este dispositivo por coincidencia de plantillas con los conjuntos de piezas de esta app; luego la revisas y la corriges casilla por casilla antes de analizar nada.,Screenshot import flow,,,machine-assisted
+vision.importIntroTail,": recognition runs locally in a Web Worker, with no uploads and no network calls.",": el reconocimiento se ejecuta localmente en un Web Worker, sin subidas ni llamadas de red.",Screenshot import flow,110,,machine-assisted
+vision.importTitle,Import from a screenshot,Importar desde una captura,Screenshot import flow,36,,machine-assisted
+vision.kingsAdjacent,"The two kings are next to each other, which is never legal.","Los dos reyes están uno junto al otro, lo que nunca es legal.",Screenshot import flow,81,,machine-assisted
+vision.lowConfidence,"Recognition confidence is low — check every highlighted square against your screenshot before analyzing. Orange rings mark the least certain squares, yellow rings uncertain ones.","La confianza del reconocimiento es baja: comprueba cada casilla resaltada con tu captura antes de analizar. Los anillos naranjas marcan las casillas menos seguras y los amarillos, las dudosas.",Screenshot import flow,,,machine-assisted
+vision.materialWarning.one,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawns are missing.,"El material de {side} ({extras} pieza promocionada más allá del conjunto inicial) necesita {extras} promoción de peón, pero solo faltan {missing} peones.","Screenshot import flow — plural form ""one""",,,machine-assisted
+vision.materialWarning.other,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawns are missing.,"El material de {side} ({extras} piezas promocionadas más allá del conjunto inicial) necesita {extras} promociones de peón, pero solo faltan {missing} peones.","Screenshot import flow — plural form ""other""",,,machine-assisted
+vision.materialWarningMissingOne,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawn is missing.,"El material de {side} ({extras} piezas promocionadas más allá del conjunto inicial) necesita {extras} promociones de peón, pero solo falta {missing} peón.",Screenshot import flow,,,machine-assisted
+vision.materialWarningOneOne,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawn is missing.,"El material de {side} ({extras} pieza promocionada más allá del conjunto inicial) necesita {extras} promoción de peón, pero solo falta {missing} peón.",Screenshot import flow,,,machine-assisted
+vision.needBlackKingCount,Position needs exactly one black king (found {count}).,La posición necesita exactamente un rey negro (se encontraron {count}).,Screenshot import flow,75,,machine-assisted
+vision.needWhiteKingCount,Position needs exactly one white king (found {count}).,La posición necesita exactamente un rey blanco (se encontraron {count}).,Screenshot import flow,75,,machine-assisted
+vision.neverLeave,Images never leave your device,Las imágenes nunca salen de tu dispositivo,Screenshot import flow,43,,machine-assisted
+vision.noBoardBody,"Recognition works best on screenshots when the board fills most of the frame and uses a standard piece set; tilted screenshots are straightened automatically. Photographs of real boards are experimental — expect to correct squares. The editor below starts empty — place the pieces to match your screenshot, which stays beside the editor for comparison.","El reconocimiento funciona mejor en capturas cuando el tablero ocupa la mayor parte del encuadre y usa un conjunto de piezas estándar; las capturas inclinadas se enderezan automáticamente. Las fotografías de tableros reales son experimentales: espera tener que corregir casillas. El editor siguiente empieza vacío: coloca las piezas para que coincidan con tu captura, que permanece junto al editor para comparar.",Screenshot import flow,,,machine-assisted
+vision.noBoardTitle,No board could be detected in this image.,No se pudo detectar ningún tablero en esta imagen.,Screenshot import flow,58,,machine-assisted
+vision.openEditorManual,Open board editor to set up a position manually,Abrir el editor de tablero para crear una posición manualmente,Screenshot import flow,66,,machine-assisted
+vision.pawnOnSquare,A pawn cannot stand on {square} (rank {rank}).,Un peón no puede estar en {square} (fila {rank}).,Screenshot import flow,64,,machine-assisted
+vision.positionProblems,The recognized position has problems:,La posición reconocida tiene problemas:,Screenshot import flow,53,,machine-assisted
+vision.recognitionFailedPrefix,Recognition failed:,El reconocimiento falló:,Screenshot import flow,29,,machine-assisted
+vision.recognitionFailedSuffix,You can still set a position up with the board editor.,Aun así puedes crear una posición con el editor de tablero.,Screenshot import flow,75,,machine-assisted
+vision.recognitionFailedUnexpected,Recognition failed unexpectedly.,El reconocimiento falló inesperadamente.,Screenshot import flow,46,,machine-assisted
+vision.recognitionTook,(Recognition took {seconds}s before giving up.),(El reconocimiento tardó {seconds}s antes de rendirse.),Screenshot import flow,66,,machine-assisted
+vision.rejectedPosition,chess.js rejected this position.,chess.js rechazó esta posición.,Screenshot import flow,46,,machine-assisted
+vision.sideNotToMoveInCheck,"The side not to move is in check — the previous move would have left its own king attacked, so this position cannot occur in a real game. Check the pieces around both kings.","El bando que no mueve está en jaque: la jugada anterior habría dejado a su propio rey atacado, así que esta posición no puede darse en una partida real. Comprueba las piezas alrededor de ambos reyes.",Screenshot import flow,,,machine-assisted
+vision.stageDetecting,Detecting the board…,Detectando el tablero…,Screenshot import flow,30,,machine-assisted
+vision.stageLoadingPieces,Loading piece templates…,Cargando plantillas de piezas…,Screenshot import flow,36,,machine-assisted
+vision.stageRecognizing,Recognizing pieces…,Reconociendo piezas…,Screenshot import flow,29,,machine-assisted
+vision.startOver,Start over,Empezar de nuevo,Screenshot import flow,17,,machine-assisted
+vision.swapHint,Screenshots are assumed to show White at the bottom — swap if yours shows Black at the bottom. Side to move and castling rights are set in the editor (castling was inferred from the king/rook squares).,Se supone que las capturas muestran las blancas abajo: cámbialo si la tuya muestra las negras abajo. El turno y los derechos de enroque se ajustan en el editor (el enroque se infirió de las casillas del rey y la torre).,Screenshot import flow,,,machine-assisted
+vision.swapOrientation,Swap orientation (rotate board 180°),Cambiar orientación (girar el tablero 180°),Screenshot import flow,51,,machine-assisted
+vision.tooManyPawns,{side} has {count} pawns — a side never has more than 8.,{side} tiene {count} peones: un bando nunca tiene más de 8.,Screenshot import flow,77,,machine-assisted
+vision.tooManyPieces,{side} has {count} pieces — more than the 16 a side starts with.,{side} tiene {count} piezas: más de las 16 con las que empieza un bando.,Screenshot import flow,88,,machine-assisted
+vision.uploadedAlt,Uploaded board screenshot: {name},Captura de tablero subida: {name},Screenshot import flow,47,,machine-assisted
+vision.uploadedAltPlain,Uploaded board screenshot,Captura de tablero subida,Screenshot import flow,37,,machine-assisted
+vision.workerFailed,The recognition worker failed to start.,El trabajador de reconocimiento no pudo iniciarse.,Screenshot import flow,55,,machine-assisted
+vision.working,Working…,Trabajando…,Screenshot import flow,15,,machine-assisted

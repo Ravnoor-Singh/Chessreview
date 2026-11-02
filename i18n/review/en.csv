@@ -1,0 +1,586 @@
+key,english,translation,context,max_length,reviewer,status
+classificationPhrases.best,the best move,the best move,Move classification phrases (coach text),21,,source
+classificationPhrases.blunder,a blunder,a blunder,Move classification phrases (coach text),16,,source
+classificationPhrases.book,a book move,a book move,Move classification phrases (coach text),19,,source
+classificationPhrases.brilliant,a brilliant move,a brilliant move,Move classification phrases (coach text),25,,source
+classificationPhrases.excellent,an excellent move,an excellent move,Move classification phrases (coach text),27,,source
+classificationPhrases.forced,the only move,the only move,Move classification phrases (coach text),21,,source
+classificationPhrases.good,a good move,a good move,Move classification phrases (coach text),19,,source
+classificationPhrases.great,a great move,a great move,Move classification phrases (coach text),20,,source
+classificationPhrases.inaccuracy,an inaccuracy,an inaccuracy,Move classification phrases (coach text),21,,source
+classificationPhrases.miss,a missed opportunity,a missed opportunity,Move classification phrases (coach text),30,,source
+classificationPhrases.mistake,a mistake,a mistake,Move classification phrases (coach text),16,,source
+classifications.best,Best,Best,Move classification labels (badges),10,,source
+classifications.blunder,Blunder,Blunder,Move classification labels (badges),14,,source
+classifications.book,Book,Book,Move classification labels (badges),10,,source
+classifications.brilliant,Brilliant,Brilliant,Move classification labels (badges),16,,source
+classifications.excellent,Excellent,Excellent,Move classification labels (badges),16,,source
+classifications.forced,Forced,Forced,Move classification labels (badges),12,,source
+classifications.good,Good,Good,Move classification labels (badges),10,,source
+classifications.great,Great,Great,Move classification labels (badges),11,,source
+classifications.inaccuracy,Inaccuracy,Inaccuracy,Move classification labels (badges),17,,source
+classifications.miss,Miss,Miss,Move classification labels (badges),10,,source
+classifications.mistake,Mistake,Mistake,Move classification labels (badges),14,,source
+common.appName,Chess Review,Chess Review,Shared labels used across screens,20,,source
+common.black,Black,Black,Shared labels used across screens,11,,source
+common.blackLower,black,black,Shared labels used across screens,11,,source
+common.cancel,Cancel,Cancel,Shared labels used across screens,12,,source
+common.close,Close,Close,Shared labels used across screens,11,,source
+common.closeDialog,Close dialog,Close dialog,Shared labels used across screens,20,,source
+common.closeSettings,Close settings,Close settings,Shared labels used across screens,23,,source
+common.ellipsis,…,…,Shared labels used across screens,6,,source
+common.notReported,Not reported by this browser,Not reported by this browser,Shared labels used across screens,41,,source
+common.off,Off,Off,Shared labels used across screens,8,,source
+common.on,On,On,Shared labels used across screens,7,,source
+common.settings,Settings,Settings,Shared labels used across screens,15,,source
+common.unknown,Unknown,Unknown,Shared labels used across screens,14,,source
+common.vs,vs,vs,Shared labels used across screens,7,,source
+common.white,White,White,Shared labels used across screens,11,,source
+common.whiteLower,white,white,Shared labels used across screens,11,,source
+editor.blackKingName,♚ Black,♚ Black,Board editor (FEN setup),14,,source
+editor.boardLabel,Position editor board,Position editor board,Board editor (FEN setup),32,,source
+editor.castleBlackLong,Black O-O-O,Black O-O-O,Board editor (FEN setup),19,,source
+editor.castleBlackShort,Black O-O,Black O-O,Board editor (FEN setup),16,,source
+editor.castleWhiteLong,White O-O-O,White O-O-O,Board editor (FEN setup),19,,source
+editor.castleWhiteShort,White O-O,White O-O,Board editor (FEN setup),16,,source
+editor.castlingRights,Castling rights,Castling rights,Board editor (FEN setup),24,,source
+editor.clearBoard,Clear board,Clear board,Board editor (FEN setup),19,,source
+editor.done,Done,Done,Board editor (FEN setup),10,,source
+editor.eraser,🧽 Eraser,🧽 Eraser,Board editor (FEN setup),16,,source
+editor.flipBoard,Flip board,Flip board,Board editor (FEN setup),17,,source
+editor.hint,"Pick a piece, then click a square to place it. Right-click a square to remove its piece.","Pick a piece, then click a square to place it. Right-click a square to remove its piece.",Board editor (FEN setup),119,,source
+editor.invalidPosition,Invalid position.,Invalid position.,Board editor (FEN setup),27,,source
+editor.needBlackKing,Position needs exactly one black king.,Position needs exactly one black king.,Board editor (FEN setup),54,,source
+editor.needWhiteKing,Position needs exactly one white king.,Position needs exactly one white king.,Board editor (FEN setup),54,,source
+editor.pawnOnBackRank,Pawns cannot stand on the first or eighth rank.,Pawns cannot stand on the first or eighth rank.,Board editor (FEN setup),66,,source
+editor.piecePalette,Piece palette,Piece palette,Board editor (FEN setup),21,,source
+editor.placePiece,Place {color} {piece},Place {color} {piece},Board editor (FEN setup),32,,source
+editor.positionValid,Position is valid.,Position is valid.,Board editor (FEN setup),28,,source
+editor.sideToMove,Side to move,Side to move,Board editor (FEN setup),20,,source
+editor.squareEmpty,"{square}, empty","{square}, empty",Board editor (FEN setup),24,,source
+editor.squarePiece,"{square}, {piece}","{square}, {piece}",Board editor (FEN setup),27,,source
+editor.startPosition,Start position,Start position,Board editor (FEN setup),23,,source
+editor.title,Board editor,Board editor,Board editor (FEN setup),20,,source
+editor.whiteKingName,♔ White,♔ White,Board editor (FEN setup),14,,source
+engine.cancelPromotion,Cancel promotion,Cancel promotion,"Engine status, eval bar/graph, engine lines",25,,source
+engine.chessBoard,Chess board,Chess board,"Engine status, eval bar/graph, engine lines",19,,source
+engine.choosePromotion,Choose promotion piece,Choose promotion piece,"Engine status, eval bar/graph, engine lines",33,,source
+engine.depthLabel,Depth {depth},Depth {depth},"Engine status, eval bar/graph, engine lines",21,,source
+engine.depthOnly,Depth {depth},Depth {depth},"Engine status, eval bar/graph, engine lines",21,,source
+engine.engineLinesLabel,Engine lines,Engine lines,"Engine status, eval bar/graph, engine lines",20,,source
+engine.engineOff,Engine off,Engine off,"Engine status, eval bar/graph, engine lines",17,,source
+engine.engineOffThinking,Engine off or thinking…,Engine off or thinking…,"Engine status, eval bar/graph, engine lines",34,,source
+engine.engineOn,Engine on,Engine on,"Engine status, eval bar/graph, engine lines",16,,source
+engine.evalChance,Evaluation {eval}: White winning chance {pct} percent,Evaluation {eval}: White winning chance {pct} percent,"Engine status, eval bar/graph, engine lines",73,,source
+engine.evalFromWhite,Evaluation from White's perspective,Evaluation from White's perspective,"Engine status, eval bar/graph, engine lines",50,,source
+engine.evalGraph,Evaluation graph,Evaluation graph,"Engine status, eval bar/graph, engine lines",25,,source
+engine.evalMates,Evaluation {eval}: {side} mates in {n},Evaluation {eval}: {side} mates in {n},"Engine status, eval bar/graph, engine lines",54,,source
+engine.kbBoardHint,"Use the arrow keys to move between squares, Enter to select a piece or play a move, Escape to clear the selection.","Use the arrow keys to move between squares, Enter to select a piece or play a move, Escape to clear the selection.","Engine status, eval bar/graph, engine lines",,,source
+engine.kbMovePlayed,{san} played,{san} played,"Engine status, eval bar/graph, engine lines",20,,source
+engine.kbSelected.one,{label} selected. 1 legal move: {moves},{label} selected. 1 legal move: {moves},"Engine status, eval bar/graph, engine lines — plural form ""one""",55,,source
+engine.kbSelected.other,{label} selected. {count} legal moves: {moves},{label} selected. {count} legal moves: {moves},"Engine status, eval bar/graph, engine lines — plural form ""other""",64,,source
+engine.kbSelectionCleared,Selection cleared,Selection cleared,"Engine status, eval bar/graph, engine lines",27,,source
+engine.modeLite,Lite,Lite,"Engine status, eval bar/graph, engine lines",10,,source
+engine.modeMulti,Multi-thread,Multi-thread,"Engine status, eval bar/graph, engine lines",20,,source
+engine.modeSingle,Single-thread,Single-thread,"Engine status, eval bar/graph, engine lines",21,,source
+engine.noMoves,No moves,No moves,"Engine status, eval bar/graph, engine lines",15,,source
+engine.playLine,Play line,Play line,"Engine status, eval bar/graph, engine lines",16,,source
+engine.previewThrough,Preview through {san},Preview through {san},"Engine status, eval bar/graph, engine lines",32,,source
+engine.promoteTo,Promote to {piece},Promote to {piece},"Engine status, eval bar/graph, engine lines",28,,source
+engine.squareWithPiece,"{square}, {color} {piece}","{square}, {color} {piece}","Engine status, eval bar/graph, engine lines",37,,source
+engine.start,Start,Start,"Engine status, eval bar/graph, engine lines",11,,source
+engine.thinkingDepth,Thinking · depth {depth},Thinking · depth {depth},"Engine status, eval bar/graph, engine lines",36,,source
+engine.thinkingDepthNps,Thinking · depth {depth} · {nps} nps,Thinking · depth {depth} · {nps} nps,"Engine status, eval bar/graph, engine lines",51,,source
+engine.toggleEngine,Toggle engine,Toggle engine,"Engine status, eval bar/graph, engine lines",21,,source
+engine.wdlForWhite,"Win, draw, loss chances for White: {label}","Win, draw, loss chances for White: {label}","Engine status, eval bar/graph, engine lines",59,,source
+engine.wdlSuffix,Win draw loss for White: {wdl},Win draw loss for White: {wdl},"Engine status, eval bar/graph, engine lines",43,,source
+engine.wdlWhitePerspective,White perspective — {label},White perspective — {label},"Engine status, eval bar/graph, engine lines",40,,source
+errors.chesscomArchiveFailed,Chess.com archive index could not be loaded.,Chess.com archive index could not be loaded.,Error messages,62,,source
+errors.chesscomBadId,That chess.com game id looks wrong.,That chess.com game id looks wrong.,Error messages,50,,source
+errors.chesscomBadRequest,Pass ?user={username} or ?id={gameId}.,Pass ?user={username} or ?id={gameId}.,Error messages,54,,source
+errors.chesscomBadUsername,That chess.com username looks wrong.,That chess.com username looks wrong.,Error messages,51,,source
+errors.chesscomDecodeFailed,"Could not decode that chess.com game. Try importing by username, or paste the PGN.","Could not decode that chess.com game. Try importing by username, or paste the PGN.",Error messages,111,,source
+errors.chesscomGameFailed,Chess.com game could not be loaded.,Chess.com game could not be loaded.,Error messages,50,,source
+errors.chesscomGameNotFound,Chess.com game not found (it may be private).,Chess.com game not found (it may be private).,Error messages,63,,source
+errors.chesscomGamePrivate,That chess.com game is private.,That chess.com game is private.,Error messages,45,,source
+errors.chesscomNetwork,Could not reach chess.com. Check your connection.,Could not reach chess.com. Check your connection.,Error messages,68,,source
+errors.chesscomNoMoves,Chess.com returned no moves for that game.,Chess.com returned no moves for that game.,Error messages,59,,source
+errors.chesscomRateLimited,Chess.com is rate-limiting. Try again shortly.,Chess.com is rate-limiting. Try again shortly.,Error messages,64,,source
+errors.chesscomSearchEmpty,"That player has no public archived games in the last 12 months. Check the username, or paste the PGN instead.","That player has no public archived games in the last 12 months. Check the username, or paste the PGN instead.",Error messages,,,source
+errors.chesscomSearchNotFound,"That game was not found in this player's last 12 monthly archives. It may be older than 12 months or private. Try the other player's username, or paste the PGN instead.","That game was not found in this player's last 12 monthly archives. It may be older than 12 months or private. Try the other player's username, or paste the PGN instead.",Error messages,,,source
+errors.chesscomUnexpected,Unexpected response from chess.com.,Unexpected response from chess.com.,Error messages,50,,source
+errors.chesscomUserNotFound,"Chess.com user ""{username}"" not found.","Chess.com user ""{username}"" not found.",Error messages,54,,source
+errors.couldNotLoadPieceArtwork,Could not load piece artwork ({set}/{key}).,Could not load piece artwork ({set}/{key}).,Error messages,60,,source
+errors.decodeMoveList,Could not decode chess.com move list,Could not decode chess.com move list,Error messages,51,,source
+errors.engineFailedToLoad,Engine failed to load,Engine failed to load,Error messages,32,,source
+errors.engineIntegrityFailed,"Engine integrity check failed for {file}: expected SHA-256 {expected}, got {actual}. The download looks corrupted — check your connection and reload the page.","Engine integrity check failed for {file}: expected SHA-256 {expected}, got {actual}. The download looks corrupted — check your connection and reload the page.",Error messages,,,source
+errors.engineLoadAllFailed,"Could not load the Stockfish engine — tried {builds}. {detail} Check your connection and reload; if the engine is hosted on a CDN, verify its CORS headers (see README).","Could not load the Stockfish engine — tried {builds}. {detail} Check your connection and reload; if the engine is hosted on a CDN, verify its CORS headers (see README).",Error messages,,,source
+errors.engineLoadFailed,Engine file failed to load (HTTP {status}): {url},Engine file failed to load (HTTP {status}): {url},Error messages,68,,source
+errors.internal,Something went wrong while importing. Try again.,Something went wrong while importing. Try again.,Error messages,67,,source
+errors.lichessBadId,That does not look like a Lichess game id.,That does not look like a Lichess game id.,Error messages,59,,source
+errors.lichessEmpty,Lichess returned an empty game.,Lichess returned an empty game.,Error messages,45,,source
+errors.lichessNetwork,Could not reach Lichess. Check your connection.,Could not reach Lichess. Check your connection.,Error messages,66,,source
+errors.lichessNotFound,Lichess game not found. Check the link and try again.,Lichess game not found. Check the link and try again.,Error messages,73,,source
+errors.lichessRateLimited,Lichess is rate-limiting requests. Try again in a minute.,Lichess is rate-limiting requests. Try again in a minute.,Error messages,79,,source
+errors.lichessUpstream,Lichess returned {status}.,Lichess returned {status}.,Error messages,38,,source
+errors.notConfigured,This import method is disabled on this server. Paste the PGN instead.,This import method is disabled on this server. Paste the PGN instead.,Error messages,94,,source
+errors.pgnEmpty,Failed to parse PGN: input is empty,Failed to parse PGN: input is empty,Error messages,50,,source
+errors.pgnFailed,Failed to parse PGN: {detail},Failed to parse PGN: {detail},Error messages,42,,source
+errors.pgnNoGames,Failed to parse PGN: no games found,Failed to parse PGN: no games found,Error messages,50,,source
+errors.pgnTruncated,"PGN stopped at ply {ply}: ""{san}"" is not a legal move in that position","PGN stopped at ply {ply}: ""{san}"" is not a legal move in that position",Error messages,95,,source
+errors.rateLimited,Too many import requests. Try again in a moment.,Too many import requests. Try again in a moment.,Error messages,67,,source
+errors.responseTooLarge,The game server sent back too much data to import safely.,The game server sent back too much data to import safely.,Error messages,79,,source
+errors.upstreamTimeout,The game server took too long to respond. Try again shortly.,The game server took too long to respond. Try again shortly.,Error messages,82,,source
+feedback.bestLine,Best line: {line}.,Best line: {line}.,Coach feedback sentences,28,,source
+feedback.bestWas,Best was {best}.,Best was {best}.,Coach feedback sentences,25,,source
+feedback.bestWasEval,Best was {best} ({eval}).,Best was {best} ({eval}).,Coach feedback sentences,37,,source
+feedback.bookKnown,A well-known theoretical move.,A well-known theoretical move.,Coach feedback sentences,43,,source
+feedback.bookNamed,This is the {name}.,This is the {name}.,Coach feedback sentences,29,,source
+feedback.bookNamedEco,This is the {name} ({eco}).,This is the {name} ({eco}).,Coach feedback sentences,40,,source
+feedback.classifiedAs,{san} is classified as {label}.,{san} is classified as {label}.,Coach feedback sentences,45,,source
+feedback.engineEval,Engine evaluation: {eval}.,Engine evaluation: {eval}.,Coach feedback sentences,38,,source
+feedback.forcedOnly,It was the only legal move in the position.,It was the only legal move in the position.,Coach feedback sentences,60,,source
+feedback.headlineBest,{san} is the best move.,{san} is the best move.,Coach feedback sentences,34,,source
+feedback.headlineBlunder,{san} is a blunder.,{san} is a blunder.,Coach feedback sentences,29,,source
+feedback.headlineBook,{san} is a book move.,{san} is a book move.,Coach feedback sentences,32,,source
+feedback.headlineBrilliant,{san} is a brilliant move.,{san} is a brilliant move.,Coach feedback sentences,38,,source
+feedback.headlineExcellent,{san} is an excellent move.,{san} is an excellent move.,Coach feedback sentences,40,,source
+feedback.headlineFallback,{san}.,{san}.,Coach feedback sentences,12,,source
+feedback.headlineForced,{san} is forced.,{san} is forced.,Coach feedback sentences,25,,source
+feedback.headlineGood,{san} is a good move.,{san} is a good move.,Coach feedback sentences,32,,source
+feedback.headlineGreat,{san} is a great move.,{san} is a great move.,Coach feedback sentences,33,,source
+feedback.headlineInaccuracy,{san} is an inaccuracy.,{san} is an inaccuracy.,Coach feedback sentences,34,,source
+feedback.headlineMiss,{san} misses a winning opportunity.,{san} misses a winning opportunity.,Coach feedback sentences,50,,source
+feedback.headlineMistake,{san} is a mistake.,{san} is a mistake.,Coach feedback sentences,29,,source
+feedback.keepsOnTrack,It keeps the position on track.,It keeps the position on track.,Coach feedback sentences,45,,source
+feedback.missIntro,Your opponent’s previous move gave you a chance.,Your opponent’s previous move gave you a chance.,Coach feedback sentences,67,,source
+feedback.moveIsPhrase,{san} is {phrase}.,{san} is {phrase}.,Coach feedback sentences,28,,source
+feedback.moveIsPhraseNoPeriod,{san} is {phrase},{san} is {phrase},Coach feedback sentences,27,,source
+feedback.nearlyBest,Nearly as strong as the engine’s top choice.,Nearly as strong as the engine’s top choice.,Coach feedback sentences,62,,source
+feedback.onlyMoveHolds,It is the only move that holds the position together.,It is the only move that holds the position together.,Coach feedback sentences,73,,source
+feedback.played,{san} was played.,{san} was played.,Coach feedback sentences,27,,source
+feedback.reasonAvoidsMate,It avoids mate.,It avoids mate.,Coach feedback sentences,24,,source
+feedback.reasonMate,It delivers checkmate.,It delivers checkmate.,Coach feedback sentences,33,,source
+feedback.reasonStrongAttack,It keeps a strong attack.,It keeps a strong attack.,Coach feedback sentences,37,,source
+feedback.reasonTextBestMove,The engine’s top move (or within a hair of it).,The engine’s top move (or within a hair of it).,Coach feedback sentences,66,,source
+feedback.reasonTextBook,A known opening (book) move.,A known opening (book) move.,Coach feedback sentences,41,,source
+feedback.reasonTextCriticalMoment,"A critical moment: the alternatives lose, this move holds.","A critical moment: the alternatives lose, this move holds.",Coach feedback sentences,80,,source
+feedback.reasonTextEplThreshold,Classified by expected-points loss against the engine’s best move.,Classified by expected-points loss against the engine’s best move.,Coach feedback sentences,90,,source
+feedback.reasonTextForced,It was the only legal move.,It was the only legal move.,Coach feedback sentences,40,,source
+feedback.reasonTextMateThreat,It finds or creates a forced mate threat the alternatives miss.,It finds or creates a forced mate threat the alternatives miss.,Coach feedback sentences,86,,source
+feedback.reasonTextMissedTactic,It fails to punish the opponent’s previous mistake/blunder.,It fails to punish the opponent’s previous mistake/blunder.,Coach feedback sentences,81,,source
+feedback.reasonTextOnlyMove,The only move that holds the position — every alternative is much worse.,The only move that holds the position — every alternative is much worse.,Coach feedback sentences,98,,source
+feedback.reasonTextRecapture,A recapture — taking back material is not a sacrifice.,A recapture — taking back material is not a sacrifice.,Coach feedback sentences,75,,source
+feedback.reasonTextSacrificeExchange,A sound exchange sacrifice (rook for a minor piece) the engine rates (near-)best.,A sound exchange sacrifice (rook for a minor piece) the engine rates (near-)best.,Coach feedback sentences,110,,source
+feedback.reasonTextSacrificeMate,A sacrifice that leads to forced mate in the engine line.,A sacrifice that leads to forced mate in the engine line.,Coach feedback sentences,79,,source
+feedback.reasonTextSacrificePiece,A sound sacrifice of a piece that the engine rates (near-)best.,A sound sacrifice of a piece that the engine rates (near-)best.,Coach feedback sentences,86,,source
+feedback.reasonTextSacrificeQueen,A sound queen sacrifice that the engine rates (near-)best.,A sound queen sacrifice that the engine rates (near-)best.,Coach feedback sentences,80,,source
+feedback.reasonTextTrivialRecapture,A pure recapture of the piece that just moved — recaptures are never labelled Great.,A pure recapture of the piece that just moved — recaptures are never labelled Great.,Coach feedback sentences,114,,source
+feedback.reasonTextTurningPoint,"It turns the evaluation around, crossing from worse/equal to better.","It turns the evaluation around, crossing from worse/equal to better.",Coach feedback sentences,93,,source
+feedback.reasonWinsExchange,It wins the exchange.,It wins the exchange.,Coach feedback sentences,32,,source
+feedback.reasonWinsMaterial,It wins material.,It wins material.,Coach feedback sentences,27,,source
+feedback.reasonWinsPawn,It wins a pawn.,It wins a pawn.,Coach feedback sentences,24,,source
+feedback.reasonWinsPiece,It wins a piece.,It wins a piece.,Coach feedback sentences,25,,source
+feedback.sacrificeApproved,A sacrifice the engine fully approves of.,A sacrifice the engine fully approves of.,Coach feedback sentences,58,,source
+feedback.swing,The evaluation drops by about {pawns} pawns.,The evaluation drops by about {pawns} pawns.,Coach feedback sentences,62,,source
+feedback.whyLabel,Why this label? {text},Why this label? {text},Coach feedback sentences,33,,source
+input.analysisDepth,Analysis depth,Analysis depth,Home page: game input (PGN/FEN/link/image tabs),23,,source
+input.archiveSearchEmpty,"Archive search found no public games for ""{username}"". Check the username, or paste the PGN instead.","Archive search found no public games for ""{username}"". Check the username, or paste the PGN instead.",Home page: game input (PGN/FEN/link/image tabs),134,,source
+input.archiveSearchFailed,"Archive search step failed: {message} Next: check your connection and try again, or paste the PGN instead.","Archive search step failed: {message} Next: check your connection and try again, or paste the PGN instead.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.archiveSearchNotFound,"Archive search finished: this game was not found in the last 12 months of archives for ""{username}"". It may be older than 12 months, private, or played under a different username. Try the other player's username, or paste the PGN instead.","Archive search finished: this game was not found in the last 12 months of archives for ""{username}"". It may be older than 12 months, private, or played under a different username. Try the other player's username, or paste the PGN instead.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.chesscomFallbackBody,"Open the game on chess.com, choose Share → PGN, copy the PGN text, then paste it in the PGN tab — the review works exactly the same.","Open the game on chess.com, choose Share → PGN, copy the PGN text, then paste it in the PGN tab — the review works exactly the same.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.chesscomFallbackTitle,Chess.com link import is unavailable,Chess.com link import is unavailable,Home page: game input (PGN/FEN/link/image tabs),51,,source
+input.chesscomImportFailed,Chess.com import failed.,Chess.com import failed.,Home page: game input (PGN/FEN/link/image tabs),36,,source
+input.chesscomUsernameBody,"Enter the chess.com username of one of the two players. We'll search that player's public monthly archives — newest first, up to 12 months back — for this game, using only the official chess.com public API.","Enter the chess.com username of one of the two players. We'll search that player's public monthly archives — newest first, up to 12 months back — for this game, using only the official chess.com public API.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.chesscomUsernameLabel,Chess.com username,Chess.com username,Home page: game input (PGN/FEN/link/image tabs),28,,source
+input.chesscomUsernamePlaceholder,e.g. hikaru,e.g. hikaru,Home page: game input (PGN/FEN/link/image tabs),19,,source
+input.chesscomUsernameTitle,Which chess.com player was in this game?,Which chess.com player was in this game?,Home page: game input (PGN/FEN/link/image tabs),56,,source
+input.clearFilters,Clear filters,Clear filters,Home page: game input (PGN/FEN/link/image tabs),21,,source
+input.couldNotParsePgn,Could not parse that PGN.,Could not parse that PGN.,Home page: game input (PGN/FEN/link/image tabs),37,,source
+input.couldNotReadFile,Could not read {name}.,Could not read {name}.,Home page: game input (PGN/FEN/link/image tabs),33,,source
+input.deleteReview,Delete review {white} vs {black},Delete review {white} vs {black},Home page: game input (PGN/FEN/link/image tabs),46,,source
+input.depthDeep,Deep (adaptive · target depth 22 · ≤4 s),Deep (adaptive · target depth 22 · ≤4 s),Home page: game input (PGN/FEN/link/image tabs),56,,source
+input.depthQuick,Quick (adaptive · target depth 14 · ≤600 ms),Quick (adaptive · target depth 14 · ≤600 ms),Home page: game input (PGN/FEN/link/image tabs),62,,source
+input.depthStandard,Standard (adaptive · target depth 18 · ≤1.5 s),Standard (adaptive · target depth 18 · ≤1.5 s),Home page: game input (PGN/FEN/link/image tabs),64,,source
+input.fenEmpty,FEN is empty,FEN is empty,Home page: game input (PGN/FEN/link/image tabs),20,,source
+input.fenHint,"Paste a full FEN (placement, side to move, castling, en passant, clocks).","Paste a full FEN (placement, side to move, castling, en passant, clocks).",Home page: game input (PGN/FEN/link/image tabs),99,,source
+input.fenLabel,FEN position,FEN position,Home page: game input (PGN/FEN/link/image tabs),20,,source
+input.fenValid,Valid FEN — ready to analyze from this position.,Valid FEN — ready to analyze from this position.,Home page: game input (PGN/FEN/link/image tabs),67,,source
+input.filterAll,All,All,Home page: game input (PGN/FEN/link/image tabs),8,,source
+input.filterMonth,Month,Month,Home page: game input (PGN/FEN/link/image tabs),11,,source
+input.filterResult,Result,Result,Home page: game input (PGN/FEN/link/image tabs),12,,source
+input.filterSearchLabel,Search games,Search games,Home page: game input (PGN/FEN/link/image tabs),20,,source
+input.filterSearchPlaceholder,Search by player name…,Search by player name…,Home page: game input (PGN/FEN/link/image tabs),33,,source
+input.filterTimeControl,Time control,Time control,Home page: game input (PGN/FEN/link/image tabs),20,,source
+input.footerCredits,"Powered by Stockfish.js (Stockfish engine, GPLv3) running entirely in your browser. Opening data from lichess-org/chess-openings (CC0). Pieces: cburnett set (GFDL/BSD) plus original sets drawn for this app (CC0). Chess logic: chess.js (BSD-2-Clause). Not affiliated with chess.com.","Powered by Stockfish.js (Stockfish engine, GPLv3) running entirely in your browser. Opening data from lichess-org/chess-openings (CC0). Pieces: cburnett set (GFDL/BSD) plus original sets drawn for this app (CC0). Chess logic: chess.js (BSD-2-Clause). Not affiliated with chess.com.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.gameInputLabel,Game input,Game input,Home page: game input (PGN/FEN/link/image tabs),17,,source
+input.gameLabel,{white} vs {black} · {result} · {date} {event} (game {n}),{white} vs {black} · {result} · {date} {event} (game {n}),Home page: game input (PGN/FEN/link/image tabs),79,,source
+input.gameLabelNoEvent,{white} vs {black} · {result} · {date}  (game {n}),{white} vs {black} · {result} · {date}  (game {n}),Home page: game input (PGN/FEN/link/image tabs),69,,source
+input.heroSubtitle,"Stockfish runs locally in your browser — accuracy, brilliancies, blunders and engine lines for every move. No uploads, no account.","Stockfish runs locally in your browser — accuracy, brilliancies, blunders and engine lines for every move. No uploads, no account.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.heroTitleAccent,Grandmaster,Grandmaster,Home page: game input (PGN/FEN/link/image tabs),19,,source
+input.heroTitlePrefix,Review your game like a,Review your game like a,Home page: game input (PGN/FEN/link/image tabs),34,,source
+input.importFailed,Import failed.,Import failed.,Home page: game input (PGN/FEN/link/image tabs),23,,source
+input.inputMethodLabel,Game input method,Game input method,Home page: game input (PGN/FEN/link/image tabs),27,,source
+input.invalidFen,Invalid FEN,Invalid FEN,Home page: game input (PGN/FEN/link/image tabs),19,,source
+input.lichessImportFailed,Lichess import failed.,Lichess import failed.,Home page: game input (PGN/FEN/link/image tabs),33,,source
+input.linkHintLong,"Accepted: a chess.com game link (chess.com/game/live/… or /game/daily/…), a Lichess game link (lichess.org/…), or just a Chess.com / Lichess username to browse recent games.","Accepted: a chess.com game link (chess.com/game/live/… or /game/daily/…), a Lichess game link (lichess.org/…), or just a Chess.com / Lichess username to browse recent games.",Home page: game input (PGN/FEN/link/image tabs),,,source
+input.linkHintShort,"Works with chess.com game links (live/daily), chess.com usernames, and Lichess game links.","Works with chess.com game links (live/daily), chess.com usernames, and Lichess game links.",Home page: game input (PGN/FEN/link/image tabs),121,,source
+input.linkLabel,Game link or username,Game link or username,Home page: game input (PGN/FEN/link/image tabs),32,,source
+input.linkPlaceholder,https://www.chess.com/game/live/123456789 or your username,https://www.chess.com/game/live/123456789 or your username,Home page: game input (PGN/FEN/link/image tabs),80,,source
+input.loadSample,Load sample game,Load sample game,Home page: game input (PGN/FEN/link/image tabs),25,,source
+input.multiGames.one,This file has {count} game — pick one:,This file has {count} game — pick one:,"Home page: game input (PGN/FEN/link/image tabs) — plural form ""one""",54,,source
+input.multiGames.other,This file has {count} games — pick one:,This file has {count} games — pick one:,"Home page: game input (PGN/FEN/link/image tabs) — plural form ""other""",55,,source
+input.noCompleteGame,No complete game found in that PGN.,No complete game found in that PGN.,Home page: game input (PGN/FEN/link/image tabs),50,,source
+input.noGamesMatchFilters,No games match these filters.,No games match these filters.,Home page: game input (PGN/FEN/link/image tabs),42,,source
+input.noRecentGamesFor,"No recent games found for ""{username}"".","No recent games found for ""{username}"".",Home page: game input (PGN/FEN/link/image tabs),55,,source
+input.offlineLink,You're offline — link import needs internet; paste a PGN or use the editor instead,You're offline — link import needs internet; paste a PGN or use the editor instead,Home page: game input (PGN/FEN/link/image tabs),111,,source
+input.openBoardEditor,Open board editor,Open board editor,Home page: game input (PGN/FEN/link/image tabs),27,,source
+input.pastePgnOrSample,"Paste a PGN, or load the sample game.","Paste a PGN, or load the sample game.",Home page: game input (PGN/FEN/link/image tabs),53,,source
+input.pgnDragHint,Drag & drop a .pgn / .txt file anywhere on the box.,Drag & drop a .pgn / .txt file anywhere on the box.,Home page: game input (PGN/FEN/link/image tabs),71,,source
+input.pgnPlaceholder,"Paste a PGN here, or drop a .pgn file…
+
+[Event ""Casual game""]
+1. e4 e5 2. Nf3 Nc6 …","Paste a PGN here, or drop a .pgn file…
+
+[Event ""Casual game""]
+1. e4 e5 2. Nf3 Nc6 …",Home page: game input (PGN/FEN/link/image tabs),112,,source
+input.pgnTextLabel,PGN text,PGN text,Home page: game input (PGN/FEN/link/image tabs),15,,source
+input.recentGamesPick,Recent games — pick one to review:,Recent games — pick one to review:,Home page: game input (PGN/FEN/link/image tabs),49,,source
+input.recentReviews,Recent reviews,Recent reviews,Home page: game input (PGN/FEN/link/image tabs),23,,source
+input.recentReviewsLabel,Recent reviews,Recent reviews,Home page: game input (PGN/FEN/link/image tabs),23,,source
+input.resultBlackWins,Black wins,Black wins,Home page: game input (PGN/FEN/link/image tabs),17,,source
+input.resultDraw,Draw,Draw,Home page: game input (PGN/FEN/link/image tabs),10,,source
+input.resultWhiteWins,White wins,White wins,Home page: game input (PGN/FEN/link/image tabs),17,,source
+input.review,Review,Review,Home page: game input (PGN/FEN/link/image tabs),12,,source
+input.searchArchives,Search archives,Search archives,Home page: game input (PGN/FEN/link/image tabs),24,,source
+input.searchCancelled,"Search cancelled. Try another username, or paste the PGN instead.","Search cancelled. Try another username, or paste the PGN instead.",Home page: game input (PGN/FEN/link/image tabs),89,,source
+input.searchingMonth,Searching {month}…,Searching {month}…,Home page: game input (PGN/FEN/link/image tabs),28,,source
+input.setupInEditor,"Set up the position in the board editor, then analyze it.","Set up the position in the board editor, then analyze it.",Home page: game input (PGN/FEN/link/image tabs),79,,source
+input.switchToPgn,Paste the PGN instead,Paste the PGN instead,Home page: game input (PGN/FEN/link/image tabs),32,,source
+input.tabFen,FEN,FEN,Home page: game input (PGN/FEN/link/image tabs),8,,source
+input.tabImage,Image,Image,Home page: game input (PGN/FEN/link/image tabs),11,,source
+input.tabLink,Link / Username,Link / Username,Home page: game input (PGN/FEN/link/image tabs),24,,source
+input.tabPgn,PGN,PGN,Home page: game input (PGN/FEN/link/image tabs),8,,source
+input.unrecognizedInput,"Could not recognize that input. Paste a chess.com or Lichess game link, a username, a PGN, or a FEN.","Could not recognize that input. Paste a chess.com or Lichess game link, a username, a PGN, or a FEN.",Home page: game input (PGN/FEN/link/image tabs),134,,source
+input.uploadPgn,Upload .pgn file,Upload .pgn file,Home page: game input (PGN/FEN/link/image tabs),25,,source
+meta.description,"Chess.com-style game review powered by Stockfish running locally in your browser. Accuracy, move classifications, engine lines and opening detection.","Chess.com-style game review powered by Stockfish running locally in your browser. Accuracy, move classifications, engine lines and opening detection.",Browser tab title and search/social description,,,source
+meta.title,Chess Review — Stockfish Game Analysis,Chess Review — Stockfish Game Analysis,Browser tab title and search/social description,54,,source
+moves.bestWas,Best was {best},Best was {best},"Move list, coach feedback and retry mode",24,,source
+moves.coachFeedback,Coach feedback,Coach feedback,"Move list, coach feedback and retry mode",23,,source
+moves.deleteTitle,Delete variation,Delete variation,"Move list, coach feedback and retry mode",25,,source
+moves.deleteVariation,Delete variation starting with {san},Delete variation starting with {san},"Move list, coach feedback and retry mode",51,,source
+moves.moveHeading,Move {move}{sep} {san},Move {move}{sep} {san},"Move list, coach feedback and retry mode",33,,source
+moves.moveHeadingClass,Move {move}{sep} {san} · {label},Move {move}{sep} {san} · {label},"Move list, coach feedback and retry mode",46,,source
+moves.movesLabel,Moves,Moves,"Move list, coach feedback and retry mode",11,,source
+moves.nextCriticalMoment,Next critical moment,Next critical moment,"Move list, coach feedback and retry mode",30,,source
+moves.noMovesYet,No moves yet.,No moves yet.,"Move list, coach feedback and retry mode",21,,source
+moves.promoteTitle,Promote to main line,Promote to main line,"Move list, coach feedback and retry mode",30,,source
+moves.promoteVariation,Promote variation starting with {san},Promote variation starting with {san},"Move list, coach feedback and retry mode",53,,source
+moves.retry,Retry,Retry,"Move list, coach feedback and retry mode",11,,source
+moves.selectMoveFeedback,Select a move to see feedback.,Select a move to see feedback.,"Move list, coach feedback and retry mode",43,,source
+moves.showBestMove,Show best move,Show best move,"Move list, coach feedback and retry mode",23,,source
+moves.timeSpent,Time spent: {time},Time spent: {time},"Move list, coach feedback and retry mode",28,,source
+moves.timeTrouble,Time trouble,Time trouble,"Move list, coach feedback and retry mode",20,,source
+moves.timeTroubleTitle,Time trouble: under 30 seconds (or 10% of the base time) left,Time trouble: under 30 seconds (or 10% of the base time) left,"Move list, coach feedback and retry mode",84,,source
+moves.variationsLabel,Variations,Variations,"Move list, coach feedback and retry mode",17,,source
+moves.whyLabel,Why this label? {text},Why this label? {text},"Move list, coach feedback and retry mode",33,,source
+performance.beginner,Beginner-level play,Beginner-level play,Performance estimate bands,29,,source
+performance.club,Club-level play,Club-level play,Performance estimate bands,24,,source
+performance.expert,Expert-level play,Expert-level play,Performance estimate bands,27,,source
+performance.master,Master-level play,Master-level play,Performance estimate bands,27,,source
+performance.note,Rough single-game band from accuracy and average centipawn loss — not a rating.,Rough single-game band from accuracy and average centipawn loss — not a rating.,Performance estimate bands,107,,source
+performance.strongClub,Strong club play,Strong club play,Performance estimate bands,25,,source
+pieces.bishop,bishop,bishop,"Piece names (board editor, promotion picker)",12,,source
+pieces.king,king,king,"Piece names (board editor, promotion picker)",10,,source
+pieces.knight,knight,knight,"Piece names (board editor, promotion picker)",12,,source
+pieces.pawn,pawn,pawn,"Piece names (board editor, promotion picker)",10,,source
+pieces.queen,queen,queen,"Piece names (board editor, promotion picker)",11,,source
+pieces.rook,rook,rook,"Piece names (board editor, promotion picker)",10,,source
+pwa.buildFull,Full (multi-threaded),Full (multi-threaded),PWA install/update prompts,32,,source
+pwa.buildLite,Lite,Lite,PWA install/update prompts,10,,source
+pwa.buildSingle,Single-threaded,Single-threaded,PWA install/update prompts,24,,source
+pwa.dismissInstall,Dismiss install suggestion,Dismiss install suggestion,PWA install/update prompts,38,,source
+pwa.dismissUpdate,Dismiss update notice,Dismiss update notice,PWA install/update prompts,32,,source
+pwa.installApp,Install app,Install app,PWA install/update prompts,19,,source
+pwa.installHidden,"Chess Review is a web app — in a browser that supports it, an install option appears here when the app can be installed, and on iOS via Share → Add to Home Screen.","Chess Review is a web app — in a browser that supports it, an install option appears here when the app can be installed, and on iOS via Share → Add to Home Screen.",PWA install/update prompts,,,source
+pwa.installPitch,"Install Chess Review for a full-screen, offline-ready app.","Install Chess Review for a full-screen, offline-ready app.",PWA install/update prompts,80,,source
+pwa.iosSteps,"On iPhone/iPad: tap the Share button in Safari, then choose “Add to Home Screen” to install Chess Review.","On iPhone/iPad: tap the Share button in Safari, then choose “Add to Home Screen” to install Chess Review.",PWA install/update prompts,,,source
+pwa.offlineBanner,"You're offline — saved reviews, the board editor and analysis still work; link import needs internet.","You're offline — saved reviews, the board editor and analysis still work; link import needs internet.",PWA install/update prompts,,,source
+pwa.reload,Reload,Reload,PWA install/update prompts,12,,source
+pwa.updateAvailable,A new version is available,A new version is available,PWA install/update prompts,38,,source
+review.accuracy,Accuracy,Accuracy,Review screen header and progress,15,,source
+review.adaptiveDepthNote,"Adaptive presets stop early on stable positions, so Quick/Standard evaluations and labels can differ from a deeper analysis.","Adaptive presets stop early on stable positions, so Quick/Standard evaluations and labels can differ from a deeper analysis.",Review screen header and progress,,,source
+review.analysisComplete,✓ Analysis complete,✓ Analysis complete,Review screen header and progress,29,,source
+review.analysisFailed,Analysis failed.,Analysis failed.,Review screen header and progress,25,,source
+review.analysisProgress,Analysis progress,Analysis progress,Review screen header and progress,27,,source
+review.analyzedAtDepthAvg,Analyzed at depth {depth} (avg),Analyzed at depth {depth} (avg),Review screen header and progress,45,,source
+review.analyzingEta,Move {done} of {total} — classifications appear as I go. · ~{eta} left,Move {done} of {total} — classifications appear as I go. · ~{eta} left,Review screen header and progress,95,,source
+review.analyzingGame,Analyzing your game…,Analyzing your game…,Review screen header and progress,30,,source
+review.analyzingMove,Analyzing move {done} / {total},Analyzing move {done} / {total},Review screen header and progress,45,,source
+review.analyzingProgress,Move {done} of {total} — classifications appear as I go.,Move {done} of {total} — classifications appear as I go.,Review screen header and progress,77,,source
+review.annotatedDownloaded,Annotated PGN downloaded,Annotated PGN downloaded,Review screen header and progress,36,,source
+review.backToGame,Back to game,Back to game,Review screen header and progress,20,,source
+review.backToInput,Back to input,Back to input,Review screen header and progress,21,,source
+review.backToSummary,Back to summary,Back to summary,Review screen header and progress,24,,source
+review.bestWas,Best was {best}.,Best was {best}.,Review screen header and progress,25,,source
+review.bookContinuations,Book continuations:,Book continuations:,Review screen header and progress,29,,source
+review.cancelAnalysis,Cancel analysis,Cancel analysis,Review screen header and progress,24,,source
+review.clockLabel,Clock: {time},Clock: {time},Review screen header and progress,21,,source
+review.coachSummary,"Okay, let's see what we can learn from your game then.","Okay, let's see what we can learn from your game then.",Review screen header and progress,75,,source
+review.copyFailed,Copy failed,Copy failed,Review screen header and progress,19,,source
+review.copyFen,Copy FEN,Copy FEN,Review screen header and progress,15,,source
+review.copyPgn,Copy PGN,Copy PGN,Review screen header and progress,15,,source
+review.couldNotParsePgn,Could not parse that PGN.,Could not parse that PGN.,Review screen header and progress,37,,source
+review.couldNotStart,Could not start the review,Could not start the review,Review screen header and progress,38,,source
+review.deeperResult,Deeper analysis (depth {depth}),Deeper analysis (depth {depth}),Review screen header and progress,45,,source
+review.downloadPgn,Download PGN,Download PGN,Review screen header and progress,20,,source
+review.engineBadge,{name} · depth {depth} · {mode},{name} · depth {depth} · {mode},Review screen header and progress,45,,source
+review.engineBadgeDegraded,Engine: {mode},Engine: {mode},Review screen header and progress,23,,source
+review.engineCacheCleared,Engine cache cleared,Engine cache cleared,Review screen header and progress,30,,source
+review.engineDegradedTitle,"This browser cannot run the multi-threaded engine (cross-origin isolation unavailable), so analysis uses a single-threaded build.","This browser cannot run the multi-threaded engine (cross-origin isolation unavailable), so analysis uses a single-threaded build.",Review screen header and progress,,,source
+review.engineExplanation,Engine explanation,Engine explanation,Review screen header and progress,28,,source
+review.engineFailedToLoad,Engine failed to load: {error},Engine failed to load: {error},Review screen header and progress,43,,source
+review.engineFooter,{name}{version} · {build}{file} · {size} WASM · analysis ran locally in your browser,{name}{version} · {build}{file} · {size} WASM · analysis ran locally in your browser,Review screen header and progress,114,,source
+review.engineFooterNoSize,{name}{version} · {build}{file} · analysis ran locally in your browser,{name}{version} · {build}{file} · analysis ran locally in your browser,Review screen header and progress,95,,source
+review.engineLines,Engine lines,Engine lines,Review screen header and progress,20,,source
+review.engineModeLite,lite single-thread mode,lite single-thread mode,Review screen header and progress,34,,source
+review.engineModeMulti,multi-thread,multi-thread,Review screen header and progress,20,,source
+review.engineModeSingle,single-thread mode,single-thread mode,Review screen header and progress,28,,source
+review.engineNameDepth,{name} · depth {depth},{name} · depth {depth},Review screen header and progress,33,,source
+review.enginePrefix,Engine: {error},Engine: {error},Review screen header and progress,24,,source
+review.engineSection,Engine,Engine,Review screen header and progress,12,,source
+review.explain,💡 Explain,💡 Explain,Review screen header and progress,17,,source
+review.fenCopied,FEN copied,FEN copied,Review screen header and progress,17,,source
+review.findBetterMove,Find a better move!,Find a better move!,Review screen header and progress,29,,source
+review.finish,Finish ✓,Finish ✓,Review screen header and progress,15,,source
+review.firstMove,First move,First move,Review screen header and progress,17,,source
+review.flipBoard,Flip board,Flip board,Review screen header and progress,17,,source
+review.flipShort,⇅ Flip,⇅ Flip,Review screen header and progress,12,,source
+review.fullSummaryLater,The full summary appears here when the analysis finishes.,The full summary appears here when the analysis finishes.,Review screen header and progress,79,,source
+review.gettingReady,Getting your review ready…,Getting your review ready…,Review screen header and progress,38,,source
+review.hideBestMove,Hide best move,Hide best move,Review screen header and progress,23,,source
+review.lastMove,Last move,Last move,Review screen header and progress,16,,source
+review.leftBookAtMove,Left book at move {move},Left book at move {move},Review screen header and progress,36,,source
+review.leftBookPlayed,Left book at move {move} — played {san}.,Left book at move {move} — played {san}.,Review screen header and progress,56,,source
+review.liveMove,Move {move}: {san},Move {move}: {san},Review screen header and progress,28,,source
+review.liveMoveClassified,"Move {move}: {san}, classified {classification}","Move {move}: {san}, classified {classification}",Review screen header and progress,66,,source
+review.loadingEngine,Loading engine…,Loading engine…,Review screen header and progress,24,,source
+review.loadingEnginePct,Loading engine… {pct}%,Loading engine… {pct}%,Review screen header and progress,33,,source
+review.loadingReview,Loading review…,Loading review…,Review screen header and progress,24,,source
+review.navigationControls,Navigation controls,Navigation controls,Review screen header and progress,29,,source
+review.newGame,New game,New game,Review screen header and progress,15,,source
+review.next,Next →,Next →,Review screen header and progress,12,,source
+review.nextCriticalMoment,Next critical moment,Next critical moment,Review screen header and progress,30,,source
+review.nextMove,Next move,Next move,Review screen header and progress,16,,source
+review.noBookContinuations,No book continuations in the dataset for this position.,No book continuations in the dataset for this position.,Review screen header and progress,76,,source
+review.noGameFound,No game found.,No game found.,Review screen header and progress,23,,source
+review.noGameProvided,"No game was provided. Go back and paste a PGN, FEN, or game link.","No game was provided. Go back and paste a PGN, FEN, or game link.",Review screen header and progress,89,,source
+review.openingLabel,Opening:,Opening:,Review screen header and progress,15,,source
+review.performanceEstimate,Performance estimate,Performance estimate,Review screen header and progress,30,,source
+review.pgnCopied,PGN copied,PGN copied,Review screen header and progress,17,,source
+review.playerBar,{name} player bar,{name} player bar,Review screen header and progress,27,,source
+review.players,Players,Players,Review screen header and progress,14,,source
+review.positionCoach,Analyzing this position. Play moves on the board and I'll evaluate them live.,Analyzing this position. Play moves on the board and I'll evaluate them live.,Review screen header and progress,105,,source
+review.positionEvent,Position analysis,Position analysis,Review screen header and progress,27,,source
+review.presetDeep,Deep,Deep,Review screen header and progress,10,,source
+review.presetQuick,Quick,Quick,Review screen header and progress,11,,source
+review.presetStandard,Standard,Standard,Review screen header and progress,15,,source
+review.previousMove,Previous move,Previous move,Review screen header and progress,21,,source
+review.reanalyzeDeeper,Re-analyze this position deeper,Re-analyze this position deeper,Review screen header and progress,45,,source
+review.reanalyzingDeeper,Re-analyzing at depth {depth}…,Re-analyzing at depth {depth}…,Review screen header and progress,43,,source
+review.retryAgain,Try again — still not good enough.,Try again — still not good enough.,Review screen header and progress,49,,source
+review.retryBest,That's the best move!,That's the best move!,Review screen header and progress,32,,source
+review.retryBetter,Good — that's better!,Good — that's better!,Review screen header and progress,32,,source
+review.retryThisMove,⟳ Retry this move,⟳ Retry this move,Review screen header and progress,27,,source
+review.retryWeak,That move was weak. Play a stronger one on the board.,That move was weak. Play a stronger one on the board.,Review screen header and progress,73,,source
+review.reviewNavigation,Review navigation,Review navigation,Review screen header and progress,27,,source
+review.savedReviewNotFound,That saved review could not be found.,That saved review could not be found.,Review screen header and progress,53,,source
+review.share,↗ Share,↗ Share,Review screen header and progress,14,,source
+review.shareLink,Share link,Share link,Review screen header and progress,17,,source
+review.shareLinkCopied,Share link copied,Share link copied,Review screen header and progress,27,,source
+review.showBestMove,Show best move,Show best move,Review screen header and progress,23,,source
+review.showSolution,Show solution,Show solution,Review screen header and progress,21,,source
+review.skip,Skip,Skip,Review screen header and progress,10,,source
+review.startReview,▶ Start Review,▶ Start Review,Review screen header and progress,23,,source
+review.startingHint,"Press Next and I'll walk you through the game, move by move.","Press Next and I'll walk you through the game, move by move.",Review screen header and progress,82,,source
+review.startingPosition,Starting position,Starting position,Review screen header and progress,27,,source
+review.summary,★ Summary,★ Summary,Review screen header and progress,16,,source
+review.thinking,Thinking…,Thinking…,Review screen header and progress,16,,source
+review.thinkingNps,Thinking… {nps}k nodes/s,Thinking… {nps}k nodes/s,Review screen header and progress,36,,source
+review.title,Game Review,Game Review,Review screen header and progress,19,,source
+review.variations,Variations,Variations,Review screen header and progress,17,,source
+settings.analysisDepth,Analysis depth,Analysis depth,Settings drawer,23,,source
+settings.animationSpeed,Animation speed · {ms} ms,Animation speed · {ms} ms,Settings drawer,37,,source
+settings.animationSpeedLabel,Animation speed in milliseconds,Animation speed in milliseconds,Settings drawer,45,,source
+settings.appHelp,"Installed or not, Chess Review works offline after one online visit — reviews, the board editor and analysis all run on this device.","Installed or not, Chess Review works offline after one online visit — reviews, the board editor and analysis all run on this device.",Settings drawer,,,source
+settings.appSection,App,App,Settings drawer,8,,source
+settings.appearance,Appearance,Appearance,Settings drawer,17,,source
+settings.bestMoveArrows,Best-move arrows,Best-move arrows,Settings drawer,25,,source
+settings.boardCoordinates,Board coordinates,Board coordinates,Settings drawer,27,,source
+settings.boardSize,Board size · {px} px,Board size · {px} px,Settings drawer,30,,source
+settings.boardSizeLabel,Board size in pixels,Board size in pixels,Settings drawer,30,,source
+settings.boardTheme,Board theme,Board theme,Settings drawer,19,,source
+settings.boardThemeName,Board theme {name},Board theme {name},Settings drawer,28,,source
+settings.budgetExtra,Terminal positions are never searched; positions with one legal move get a depth-1 evaluation.,Terminal positions are never searched; positions with one legal move get a depth-1 evaluation.,Settings drawer,127,,source
+settings.budgetSummary,"Adaptive: target depth {target}, hard cap {cap} ms. Stops early after depth {min} when the best move is unchanged for {window} consecutive depths and the score moves < {delta} cp. Swings over {swing} win-% points (or a last-moment best-move change) are re-analyzed at full depth. Book positions stop from depth {bookMin}; the last book position is verified at full budget.","Adaptive: target depth {target}, hard cap {cap} ms. Stops early after depth {min} when the best move is unchanged for {window} consecutive depths and the score moves < {delta} cp. Swings over {swing} win-% points (or a last-moment best-move change) are re-analyzed at full depth. Book positions stop from depth {bookMin}; the last book position is verified at full budget.",Settings drawer,,,source
+settings.buildAuto,Auto,Auto,Settings drawer,10,,source
+settings.buildLite,Lite (smallest),Lite (smallest),Settings drawer,24,,source
+settings.buildMulti,Full (multi-threaded),Full (multi-threaded),Settings drawer,32,,source
+settings.buildSingle,Single-threaded,Single-threaded,Settings drawer,24,,source
+settings.cacheCurrently.one,Currently: 1 position · ~{size}.,Currently: 1 position · ~{size}.,"Settings drawer — plural form ""one""",46,,source
+settings.cacheCurrently.other,Currently: {count} positions · ~{size}.,Currently: {count} positions · ~{size}.,"Settings drawer — plural form ""other""",55,,source
+settings.cacheHelp,Removes cached position evaluations stored on this device.,Removes cached position evaluations stored on this device.,Settings drawer,80,,source
+settings.classification,Classification,Classification,Settings drawer,23,,source
+settings.classificationBalanced,Balanced,Balanced,Settings drawer,15,,source
+settings.classificationGenerous,Generous,Generous,Settings drawer,15,,source
+settings.classificationHelp,Classification: Strict / Balanced / Generous — strict awards Brilliant/Great rarely and demotes sooner; generous is the opposite; Balanced is the calibrated default.,Classification: Strict / Balanced / Generous — strict awards Brilliant/Great rarely and demotes sooner; generous is the opposite; Balanced is the calibrated default.,Settings drawer,,,source
+settings.classificationProfile,Classification profile,Classification profile,Settings drawer,33,,source
+settings.classificationStrict,Strict,Strict,Settings drawer,12,,source
+settings.clearEngineCache,Clear engine cache,Clear engine cache,Settings drawer,28,,source
+settings.clearEngineFiles,Clear downloaded engine files,Clear downloaded engine files,Settings drawer,42,,source
+settings.confirmClear,Click again to confirm clear,Click again to confirm clear,Settings drawer,41,,source
+settings.coordInside,Inside,Inside,Settings drawer,12,,source
+settings.coordOff,Off,Off,Settings drawer,8,,source
+settings.coordOutside,Outside,Outside,Settings drawer,14,,source
+settings.countAndSize,{count} · ~{size},{count} · ~{size},Settings drawer,27,,source
+settings.darkMode,Dark mode,Dark mode,Settings drawer,16,,source
+settings.engineBuild,Engine build,Engine build,Settings drawer,20,,source
+settings.engineBuildHelp,"Auto picks the fastest build this device supports. Full needs cross-origin isolation, SharedArrayBuffer, at least 4 GB of reported memory and a non-mobile browser — it cannot be forced when those are missing and falls back automatically. Lite is a ~1.8 MB build always used on devices reporting 2 GB or less. Takes effect after a reload.","Auto picks the fastest build this device supports. Full needs cross-origin isolation, SharedArrayBuffer, at least 4 GB of reported memory and a non-mobile browser — it cannot be forced when those are missing and falls back automatically. Lite is a ~1.8 MB build always used on devices reporting 2 GB or less. Takes effect after a reload.",Settings drawer,,,source
+settings.engineBundleLiteOnly,"This deployment ships only the Lite engine build (~1.8 MB) — a smaller, weaker Stockfish chosen to keep the deployment tiny. Analysis works as usual; the full builds are not available on this host.","This deployment ships only the Lite engine build (~1.8 MB) — a smaller, weaker Stockfish chosen to keep the deployment tiny. Analysis works as usual; the full builds are not available on this host.",Settings drawer,,,source
+settings.engineSection,Engine,Engine,Settings drawer,12,,source
+settings.hash,Hash (MB),Hash (MB),Settings drawer,16,,source
+settings.hashLabel,"Engine hash size in megabytes, 16 to 512","Engine hash size in megabytes, 16 to 512",Settings drawer,56,,source
+settings.keepPersistent,Keep storage persistent,Keep storage persistent,Settings drawer,34,,source
+settings.language,Language,Language,Settings drawer,15,,source
+settings.languageLabel,Language,Language,Settings drawer,15,,source
+settings.lightMode,Light mode,Light mode,Settings drawer,17,,source
+settings.linesLabel,"Number of engine lines, 1 to 5","Number of engine lines, 1 to 5",Settings drawer,43,,source
+settings.linesMultiPv,Lines (MultiPV),Lines (MultiPV),Settings drawer,24,,source
+settings.machineAssisted,Machine-assisted translation,Machine-assisted translation,Settings drawer,41,,source
+settings.machineAssistedShort,machine-assisted,machine-assisted,Settings drawer,25,,source
+settings.parallelWorkers,Parallel workers,Parallel workers,Settings drawer,25,,source
+settings.pieceSet,Piece set,Piece set,Settings drawer,16,,source
+settings.pieceSetName,Piece set {name},Piece set {name},Settings drawer,25,,source
+settings.sounds,Sounds,Sounds,Settings drawer,12,,source
+settings.storageClearHelp,"Clearing removes the cached Stockfish downloads; the engine will re-download (~95 MB for the full build, ~1.8 MB for lite) on the next analysis. Saved reviews and the position cache are not touched.","Clearing removes the cached Stockfish downloads; the engine will re-download (~95 MB for the full build, ~1.8 MB for lite) on the next analysis. Saved reviews and the position cache are not touched.",Settings drawer,,,source
+settings.storageEngineFiles,Downloaded engine files,Downloaded engine files,Settings drawer,34,,source
+settings.storagePersistent,Persistent storage,Persistent storage,Settings drawer,28,,source
+settings.storagePositionCache,Position cache,Position cache,Settings drawer,23,,source
+settings.storageSavedReviews,Saved reviews,Saved reviews,Settings drawer,21,,source
+settings.storageSection,Storage,Storage,Settings drawer,14,,source
+settings.storageTotal,Total for this site,Total for this site,Settings drawer,29,,source
+settings.storageTotalFull,{usage} of {quota},{usage} of {quota},Settings drawer,28,,source
+settings.storageTotalOnly,{usage},{usage},Settings drawer,14,,source
+settings.switchToDark,Switch to dark theme,Switch to dark theme,Settings drawer,30,,source
+settings.switchToLight,Switch to light theme,Switch to light theme,Settings drawer,32,,source
+settings.theme,Theme,Theme,Settings drawer,11,,source
+settings.themeBlue,Blue,Blue,Settings drawer,10,,source
+settings.themeBrown,Brown,Brown,Settings drawer,11,,source
+settings.themeDark,Dark,Dark,Settings drawer,10,,source
+settings.themeGreen,Green,Green,Settings drawer,11,,source
+settings.themeGrey,Grey,Grey,Settings drawer,10,,source
+settings.themeLight,Light,Light,Settings drawer,11,,source
+settings.themePurple,Purple,Purple,Settings drawer,12,,source
+settings.themeWood,Wood,Wood,Settings drawer,10,,source
+settings.threads,Threads,Threads,Settings drawer,14,,source
+settings.threadsLabel,"Engine threads, 1 to 8","Engine threads, 1 to 8",Settings drawer,33,,source
+settings.title,Settings,Settings,Settings drawer,15,,source
+summary.accuracyLabel,Accuracy,Accuracy,"Review summary panel (accuracy, classifications)",15,,source
+summary.accuracyPercent,Accuracy {value} percent,Accuracy {value} percent,"Review summary panel (accuracy, classifications)",36,,source
+summary.accuracyUnavailable,Accuracy unavailable,Accuracy unavailable,"Review summary panel (accuracy, classifications)",30,,source
+summary.acpl,Avg. centipawn loss,Avg. centipawn loss,"Review summary panel (accuracy, classifications)",29,,source
+summary.bestStreak,Best-move streak,Best-move streak,"Review summary panel (accuracy, classifications)",25,,source
+summary.biggestSwing,Biggest eval swing,Biggest eval swing,"Review summary panel (accuracy, classifications)",28,,source
+summary.classificationSummary,Move classification summary,Move classification summary,"Review summary panel (accuracy, classifications)",40,,source
+summary.eplBarJump,Move {move} {san}: expected points lost {epl}. Jump to this move.,Move {move} {san}: expected points lost {epl}. Jump to this move.,"Review summary panel (accuracy, classifications)",89,,source
+summary.eplBarLabel,Move {move} {san}: expected points lost {epl},Move {move} {san}: expected points lost {epl},"Review summary panel (accuracy, classifications)",63,,source
+summary.eplBars,EPL bars,EPL bars,"Review summary panel (accuracy, classifications)",15,,source
+summary.eplPerMove,Expected points lost per move,Expected points lost per move,"Review summary panel (accuracy, classifications)",42,,source
+summary.filtering,Filtering: {label} — click the row again to clear.,Filtering: {label} — click the row again to clear.,"Review summary panel (accuracy, classifications)",69,,source
+summary.gameStatistics,Game statistics,Game statistics,"Review summary panel (accuracy, classifications)",24,,source
+summary.jumpToSwing,"Jump to {name}'s biggest eval swing: move {move}, {san}","Jump to {name}'s biggest eval swing: move {move}, {san}","Review summary panel (accuracy, classifications)",76,,source
+summary.keyMoments,Key moments,Key moments,"Review summary panel (accuracy, classifications)",19,,source
+summary.leftBookAtMove,Left book at move {move},Left book at move {move},"Review summary panel (accuracy, classifications)",36,,source
+summary.moveCountsTable,{white} versus {black} move counts,{white} versus {black} move counts,"Review summary panel (accuracy, classifications)",49,,source
+summary.nextClassMove,Next {label} move,Next {label} move,"Review summary panel (accuracy, classifications)",27,,source
+summary.noCriticalMoments,No critical moments.,No critical moments.,"Review summary panel (accuracy, classifications)",30,,source
+summary.notEnoughMoves,Not enough moves,Not enough moves,"Review summary panel (accuracy, classifications)",25,,source
+summary.opening,Opening,Opening,"Review summary panel (accuracy, classifications)",14,,source
+summary.performanceTitle,Rough single-game band from accuracy and average centipawn loss — not a rating.,Rough single-game band from accuracy and average centipawn loss — not a rating.,"Review summary panel (accuracy, classifications)",107,,source
+summary.previousClassMove,Previous {label} move,Previous {label} move,"Review summary panel (accuracy, classifications)",32,,source
+summary.statistics,Statistics,Statistics,"Review summary panel (accuracy, classifications)",17,,source
+summary.timeByPhase,Time by phase,Time by phase,"Review summary panel (accuracy, classifications)",21,,source
+summary.timeByPhaseSub,opening / middle / end,opening / middle / end,"Review summary panel (accuracy, classifications)",33,,source
+summary.timeTroubleMoves,Time-trouble moves,Time-trouble moves,"Review summary panel (accuracy, classifications)",28,,source
+termination.analyzeFirst100,First 100 moves,First 100 moves,Game-ending banners,24,,source
+termination.analyzeFirst200,First 200 moves,First 200 moves,Game-ending banners,24,,source
+termination.analyzeFirstLabel,Long game — analyze,Long game — analyze,Game-ending banners,29,,source
+termination.analyzeFull,Full game,Full game,Game-ending banners,16,,source
+termination.analyzeUpTo,Analyze up to move {move},Analyze up to move {move},Game-ending banners,37,,source
+termination.bannerAbandoned,Game abandoned,Game abandoned,Game-ending banners,23,,source
+termination.bannerAbandonment,{winner} won by abandonment,{winner} won by abandonment,Game-ending banners,40,,source
+termination.bannerAgreement,Draw by agreement,Draw by agreement,Game-ending banners,27,,source
+termination.bannerCheckmate,{winner} won by checkmate,{winner} won by checkmate,Game-ending banners,37,,source
+termination.bannerDecisiveUnknown,{winner} won,{winner} won,Game-ending banners,20,,source
+termination.bannerDrawUnknown,Draw,Draw,Game-ending banners,10,,source
+termination.bannerFiftyMove,Draw by the fifty-move rule,Draw by the fifty-move rule,Game-ending banners,40,,source
+termination.bannerForfeit,{winner} won by forfeit,{winner} won by forfeit,Game-ending banners,34,,source
+termination.bannerInsufficient,Draw by insufficient material,Draw by insufficient material,Game-ending banners,42,,source
+termination.bannerLabel,Game result: {text},Game result: {text},Game-ending banners,29,,source
+termination.bannerRepetitionFivefold,Draw by fivefold repetition,Draw by fivefold repetition,Game-ending banners,40,,source
+termination.bannerRepetitionThreefold,Draw by threefold repetition,Draw by threefold repetition,Game-ending banners,41,,source
+termination.bannerResignation,{winner} won by resignation,{winner} won by resignation,Game-ending banners,40,,source
+termination.bannerSeventyFiveMove,Draw by the seventy-five-move rule,Draw by the seventy-five-move rule,Game-ending banners,49,,source
+termination.bannerStalemate,Draw by stalemate,Draw by stalemate,Game-ending banners,27,,source
+termination.bannerTimeout,{winner} won on time,{winner} won on time,Game-ending banners,30,,source
+termination.bannerTimeoutVsInsufficient,Draw — timeout against insufficient material,Draw — timeout against insufficient material,Game-ending banners,62,,source
+termination.bannerUnfinished,Game not finished,Game not finished,Game-ending banners,27,,source
+termination.chess960Body,"This is a Chess960 (Fischer Random) game. Castling in Chess960 follows different rules, and this app cannot analyze it correctly as standard chess, so the game has not been analyzed rather than risk wrong results.","This is a Chess960 (Fischer Random) game. Castling in Chess960 follows different rules, and this app cannot analyze it correctly as standard chess, so the game has not been analyzed rather than risk wrong results.",Game-ending banners,,,source
+termination.chess960Label,Chess960,Chess960,Game-ending banners,15,,source
+termination.chess960Title,Chess960 is not supported yet,Chess960 is not supported yet,Game-ending banners,42,,source
+termination.finalResult,Final result: {result},Final result: {result},Game-ending banners,33,,source
+termination.parseErrorBody.one,"The move ""{san}"" is not legal in that position, so only the first move could be read. You can analyze the valid part of the game.","The move ""{san}"" is not legal in that position, so only the first move could be read. You can analyze the valid part of the game.","Game-ending banners — plural form ""one""",,,source
+termination.parseErrorBody.other,"The move ""{san}"" is not legal in that position, so only the first {count} moves could be read. You can analyze the valid part of the game.","The move ""{san}"" is not legal in that position, so only the first {count} moves could be read. You can analyze the valid part of the game.","Game-ending banners — plural form ""other""",,,source
+termination.parseErrorTitle,This PGN stopped at ply {ply},This PGN stopped at ply {ply},Game-ending banners,42,,source
+vision.analyzePosition,Analyze this position,Analyze this position,Screenshot import flow,32,,source
+vision.betaLabel,Beta,Beta,Screenshot import flow,10,,source
+vision.canvasUnavailable,Canvas 2D is not available in this browser.,Canvas 2D is not available in this browser.,Screenshot import flow,60,,source
+vision.chooseScreenshot,Choose screenshot…,Choose screenshot…,Screenshot import flow,28,,source
+vision.confidenceLabel,Recognition confidence:,Recognition confidence:,Screenshot import flow,34,,source
+vision.confidenceMeta,(mean of the 64 square confidences · took {seconds}s · {side} at the bottom),(mean of the 64 square confidences · took {seconds}s · {side} at the bottom),Screenshot import flow,103,,source
+vision.couldNotLoadArtwork,Could not load piece artwork ({set}/{key}).,Could not load piece artwork ({set}/{key}).,Screenshot import flow,60,,source
+vision.importIntro,Upload a screenshot of a chess board and the position is recognized on this device by template matching against this app's own piece sets — then you review and fix it square-by-square before anything is analyzed.,Upload a screenshot of a chess board and the position is recognized on this device by template matching against this app's own piece sets — then you review and fix it square-by-square before anything is analyzed.,Screenshot import flow,,,source
+vision.importIntroTail,": recognition runs locally in a Web Worker, with no uploads and no network calls.",": recognition runs locally in a Web Worker, with no uploads and no network calls.",Screenshot import flow,110,,source
+vision.importTitle,Import from a screenshot,Import from a screenshot,Screenshot import flow,36,,source
+vision.kingsAdjacent,"The two kings are next to each other, which is never legal.","The two kings are next to each other, which is never legal.",Screenshot import flow,81,,source
+vision.lowConfidence,"Recognition confidence is low — check every highlighted square against your screenshot before analyzing. Orange rings mark the least certain squares, yellow rings uncertain ones.","Recognition confidence is low — check every highlighted square against your screenshot before analyzing. Orange rings mark the least certain squares, yellow rings uncertain ones.",Screenshot import flow,,,source
+vision.materialWarning.one,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawns are missing.,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawns are missing.,"Screenshot import flow — plural form ""one""",,,source
+vision.materialWarning.other,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawns are missing.,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawns are missing.,"Screenshot import flow — plural form ""other""",,,source
+vision.materialWarningMissingOne,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawn is missing.,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawn is missing.,Screenshot import flow,,,source
+vision.materialWarningOneOne,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawn is missing.,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawn is missing.,Screenshot import flow,,,source
+vision.needBlackKingCount,Position needs exactly one black king (found {count}).,Position needs exactly one black king (found {count}).,Screenshot import flow,75,,source
+vision.needWhiteKingCount,Position needs exactly one white king (found {count}).,Position needs exactly one white king (found {count}).,Screenshot import flow,75,,source
+vision.neverLeave,Images never leave your device,Images never leave your device,Screenshot import flow,43,,source
+vision.noBoardBody,"Recognition works best on screenshots when the board fills most of the frame and uses a standard piece set; tilted screenshots are straightened automatically. Photographs of real boards are experimental — expect to correct squares. The editor below starts empty — place the pieces to match your screenshot, which stays beside the editor for comparison.","Recognition works best on screenshots when the board fills most of the frame and uses a standard piece set; tilted screenshots are straightened automatically. Photographs of real boards are experimental — expect to correct squares. The editor below starts empty — place the pieces to match your screenshot, which stays beside the editor for comparison.",Screenshot import flow,,,source
+vision.noBoardTitle,No board could be detected in this image.,No board could be detected in this image.,Screenshot import flow,58,,source
+vision.openEditorManual,Open board editor to set up a position manually,Open board editor to set up a position manually,Screenshot import flow,66,,source
+vision.pawnOnSquare,A pawn cannot stand on {square} (rank {rank}).,A pawn cannot stand on {square} (rank {rank}).,Screenshot import flow,64,,source
+vision.positionProblems,The recognized position has problems:,The recognized position has problems:,Screenshot import flow,53,,source
+vision.recognitionFailedPrefix,Recognition failed:,Recognition failed:,Screenshot import flow,29,,source
+vision.recognitionFailedSuffix,You can still set a position up with the board editor.,You can still set a position up with the board editor.,Screenshot import flow,75,,source
+vision.recognitionFailedUnexpected,Recognition failed unexpectedly.,Recognition failed unexpectedly.,Screenshot import flow,46,,source
+vision.recognitionTook,(Recognition took {seconds}s before giving up.),(Recognition took {seconds}s before giving up.),Screenshot import flow,66,,source
+vision.rejectedPosition,chess.js rejected this position.,chess.js rejected this position.,Screenshot import flow,46,,source
+vision.sideNotToMoveInCheck,"The side not to move is in check — the previous move would have left its own king attacked, so this position cannot occur in a real game. Check the pieces around both kings.","The side not to move is in check — the previous move would have left its own king attacked, so this position cannot occur in a real game. Check the pieces around both kings.",Screenshot import flow,,,source
+vision.stageDetecting,Detecting the board…,Detecting the board…,Screenshot import flow,30,,source
+vision.stageLoadingPieces,Loading piece templates…,Loading piece templates…,Screenshot import flow,36,,source
+vision.stageRecognizing,Recognizing pieces…,Recognizing pieces…,Screenshot import flow,29,,source
+vision.startOver,Start over,Start over,Screenshot import flow,17,,source
+vision.swapHint,Screenshots are assumed to show White at the bottom — swap if yours shows Black at the bottom. Side to move and castling rights are set in the editor (castling was inferred from the king/rook squares).,Screenshots are assumed to show White at the bottom — swap if yours shows Black at the bottom. Side to move and castling rights are set in the editor (castling was inferred from the king/rook squares).,Screenshot import flow,,,source
+vision.swapOrientation,Swap orientation (rotate board 180°),Swap orientation (rotate board 180°),Screenshot import flow,51,,source
+vision.tooManyPawns,{side} has {count} pawns — a side never has more than 8.,{side} has {count} pawns — a side never has more than 8.,Screenshot import flow,77,,source
+vision.tooManyPieces,{side} has {count} pieces — more than the 16 a side starts with.,{side} has {count} pieces — more than the 16 a side starts with.,Screenshot import flow,88,,source
+vision.uploadedAlt,Uploaded board screenshot: {name},Uploaded board screenshot: {name},Screenshot import flow,47,,source
+vision.uploadedAltPlain,Uploaded board screenshot,Uploaded board screenshot,Screenshot import flow,37,,source
+vision.workerFailed,The recognition worker failed to start.,The recognition worker failed to start.,Screenshot import flow,55,,source
+vision.working,Working…,Working…,Screenshot import flow,15,,source

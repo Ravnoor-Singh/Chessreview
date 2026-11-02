@@ -1,0 +1,586 @@
+key,english,translation,context,max_length,reviewer,status
+classificationPhrases.best,the best move,सबसे अच्छी चाल,Move classification phrases (coach text),21,,machine-assisted
+classificationPhrases.blunder,a blunder,एक भारी गलती,Move classification phrases (coach text),16,,machine-assisted
+classificationPhrases.book,a book move,एक किताबी चाल,Move classification phrases (coach text),19,,machine-assisted
+classificationPhrases.brilliant,a brilliant move,एक शानदार चाल,Move classification phrases (coach text),25,,machine-assisted
+classificationPhrases.excellent,an excellent move,एक उत्कृष्ट चाल,Move classification phrases (coach text),27,,machine-assisted
+classificationPhrases.forced,the only move,एकमात्र चाल,Move classification phrases (coach text),21,,machine-assisted
+classificationPhrases.good,a good move,एक अच्छी चाल,Move classification phrases (coach text),19,,machine-assisted
+classificationPhrases.great,a great move,एक बहुत बढ़िया चाल,Move classification phrases (coach text),20,,machine-assisted
+classificationPhrases.inaccuracy,an inaccuracy,एक अशुद्धि,Move classification phrases (coach text),21,,machine-assisted
+classificationPhrases.miss,a missed opportunity,एक गंवाया अवसर,Move classification phrases (coach text),30,,machine-assisted
+classificationPhrases.mistake,a mistake,एक गलती,Move classification phrases (coach text),16,,machine-assisted
+classifications.best,Best,सर्वश्रेष्ठ,Move classification labels (badges),10,,machine-assisted
+classifications.blunder,Blunder,भारी गलती,Move classification labels (badges),14,,machine-assisted
+classifications.book,Book,किताबी,Move classification labels (badges),10,,machine-assisted
+classifications.brilliant,Brilliant,शानदार,Move classification labels (badges),16,,machine-assisted
+classifications.excellent,Excellent,उत्कृष्ट,Move classification labels (badges),16,,machine-assisted
+classifications.forced,Forced,मजबूरी,Move classification labels (badges),12,,machine-assisted
+classifications.good,Good,अच्छा,Move classification labels (badges),10,,machine-assisted
+classifications.great,Great,बहुत बढ़िया,Move classification labels (badges),11,,machine-assisted
+classifications.inaccuracy,Inaccuracy,अशुद्धि,Move classification labels (badges),17,,machine-assisted
+classifications.miss,Miss,चूक,Move classification labels (badges),10,,machine-assisted
+classifications.mistake,Mistake,गलती,Move classification labels (badges),14,,machine-assisted
+common.appName,Chess Review,Chess Review,Shared labels used across screens,20,,machine-assisted
+common.black,Black,काला,Shared labels used across screens,11,,machine-assisted
+common.blackLower,black,काला,Shared labels used across screens,11,,machine-assisted
+common.cancel,Cancel,रद्द करें,Shared labels used across screens,12,,machine-assisted
+common.close,Close,बंद करें,Shared labels used across screens,11,,machine-assisted
+common.closeDialog,Close dialog,डायलॉग बंद करें,Shared labels used across screens,20,,machine-assisted
+common.closeSettings,Close settings,सेटिंग्स बंद करें,Shared labels used across screens,23,,machine-assisted
+common.ellipsis,…,…,Shared labels used across screens,6,,machine-assisted
+common.notReported,Not reported by this browser,इस ब्राउज़र द्वारा सूचित नहीं,Shared labels used across screens,41,,machine-assisted
+common.off,Off,बंद,Shared labels used across screens,8,,machine-assisted
+common.on,On,चालू,Shared labels used across screens,7,,machine-assisted
+common.settings,Settings,सेटिंग्स,Shared labels used across screens,15,,machine-assisted
+common.unknown,Unknown,अज्ञात,Shared labels used across screens,14,,machine-assisted
+common.vs,vs,बनाम,Shared labels used across screens,7,,machine-assisted
+common.white,White,सफ़ेद,Shared labels used across screens,11,,machine-assisted
+common.whiteLower,white,सफ़ेद,Shared labels used across screens,11,,machine-assisted
+editor.blackKingName,♚ Black,♚ काला,Board editor (FEN setup),14,,machine-assisted
+editor.boardLabel,Position editor board,स्थिति एडिटर बोर्ड,Board editor (FEN setup),32,,machine-assisted
+editor.castleBlackLong,Black O-O-O,काला O-O-O,Board editor (FEN setup),19,,machine-assisted
+editor.castleBlackShort,Black O-O,काला O-O,Board editor (FEN setup),16,,machine-assisted
+editor.castleWhiteLong,White O-O-O,सफ़ेद O-O-O,Board editor (FEN setup),19,,machine-assisted
+editor.castleWhiteShort,White O-O,सफ़ेद O-O,Board editor (FEN setup),16,,machine-assisted
+editor.castlingRights,Castling rights,कैसलिंग अधिकार,Board editor (FEN setup),24,,machine-assisted
+editor.clearBoard,Clear board,बोर्ड साफ़ करें,Board editor (FEN setup),19,,machine-assisted
+editor.done,Done,हो गया,Board editor (FEN setup),10,,machine-assisted
+editor.eraser,🧽 Eraser,🧽 इरेज़र,Board editor (FEN setup),16,,machine-assisted
+editor.flipBoard,Flip board,बोर्ड पलटें,Board editor (FEN setup),17,,machine-assisted
+editor.hint,"Pick a piece, then click a square to place it. Right-click a square to remove its piece.","एक मोहरा चुनें, फिर उसे रखने के लिए किसी खाने पर क्लिक करें। मोहरा हटाने के लिए खाने पर राइट-क्लिक करें।",Board editor (FEN setup),119,,machine-assisted
+editor.invalidPosition,Invalid position.,अमान्य स्थिति।,Board editor (FEN setup),27,,machine-assisted
+editor.needBlackKing,Position needs exactly one black king.,स्थिति में ठीक एक काला राजा होना चाहिए।,Board editor (FEN setup),54,,machine-assisted
+editor.needWhiteKing,Position needs exactly one white king.,स्थिति में ठीक एक सफ़ेद राजा होना चाहिए।,Board editor (FEN setup),54,,machine-assisted
+editor.pawnOnBackRank,Pawns cannot stand on the first or eighth rank.,प्यादे पहली या आठवीं पंक्ति पर नहीं खड़े हो सकते।,Board editor (FEN setup),66,,machine-assisted
+editor.piecePalette,Piece palette,मोहरों की पट्टी,Board editor (FEN setup),21,,machine-assisted
+editor.placePiece,Place {color} {piece},{color} {piece} रखें,Board editor (FEN setup),32,,machine-assisted
+editor.positionValid,Position is valid.,स्थिति मान्य है।,Board editor (FEN setup),28,,machine-assisted
+editor.sideToMove,Side to move,चलने की बारी,Board editor (FEN setup),20,,machine-assisted
+editor.squareEmpty,"{square}, empty","{square}, खाली",Board editor (FEN setup),24,,machine-assisted
+editor.squarePiece,"{square}, {piece}","{square}, {piece}",Board editor (FEN setup),27,,machine-assisted
+editor.startPosition,Start position,प्रारंभिक स्थिति,Board editor (FEN setup),23,,machine-assisted
+editor.title,Board editor,बोर्ड एडिटर,Board editor (FEN setup),20,,machine-assisted
+editor.whiteKingName,♔ White,♔ सफ़ेद,Board editor (FEN setup),14,,machine-assisted
+engine.cancelPromotion,Cancel promotion,पदोन्नति रद्द करें,"Engine status, eval bar/graph, engine lines",25,,machine-assisted
+engine.chessBoard,Chess board,शतरंज बोर्ड,"Engine status, eval bar/graph, engine lines",19,,machine-assisted
+engine.choosePromotion,Choose promotion piece,पदोन्नति मोहरा चुनें,"Engine status, eval bar/graph, engine lines",33,,machine-assisted
+engine.depthLabel,Depth {depth},गहराई {depth},"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.depthOnly,Depth {depth},गहराई {depth},"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.engineLinesLabel,Engine lines,इंजन लाइनें,"Engine status, eval bar/graph, engine lines",20,,machine-assisted
+engine.engineOff,Engine off,इंजन बंद,"Engine status, eval bar/graph, engine lines",17,,machine-assisted
+engine.engineOffThinking,Engine off or thinking…,इंजन बंद है या सोच रहा है…,"Engine status, eval bar/graph, engine lines",34,,machine-assisted
+engine.engineOn,Engine on,इंजन चालू,"Engine status, eval bar/graph, engine lines",16,,machine-assisted
+engine.evalChance,Evaluation {eval}: White winning chance {pct} percent,मूल्यांकन {eval}: सफ़ेद की जीत की संभावना {pct} प्रतिशत,"Engine status, eval bar/graph, engine lines",73,,machine-assisted
+engine.evalFromWhite,Evaluation from White's perspective,सफ़ेद के दृष्टिकोण से मूल्यांकन,"Engine status, eval bar/graph, engine lines",50,,machine-assisted
+engine.evalGraph,Evaluation graph,मूल्यांकन ग्राफ़,"Engine status, eval bar/graph, engine lines",25,,machine-assisted
+engine.evalMates,Evaluation {eval}: {side} mates in {n},मूल्यांकन {eval}: {side} {n} में मात देता है,"Engine status, eval bar/graph, engine lines",54,,machine-assisted
+engine.kbBoardHint,"Use the arrow keys to move between squares, Enter to select a piece or play a move, Escape to clear the selection.","वर्गों के बीच जाने के लिए तीर कुंजियों का उपयोग करें, मोहरा चुनने या चाल चलने के लिए Enter, चयन साफ़ करने के लिए Escape दबाएँ।","Engine status, eval bar/graph, engine lines",,,machine-assisted
+engine.kbMovePlayed,{san} played,{san} खेला गया,"Engine status, eval bar/graph, engine lines",20,,machine-assisted
+engine.kbSelected.one,{label} selected. 1 legal move: {moves},{label} चुना गया। 1 कानूनी चाल: {moves},"Engine status, eval bar/graph, engine lines — plural form ""one""",55,,machine-assisted
+engine.kbSelected.other,{label} selected. {count} legal moves: {moves},{label} चुना गया। {count} कानूनी चालें: {moves},"Engine status, eval bar/graph, engine lines — plural form ""other""",64,,machine-assisted
+engine.kbSelectionCleared,Selection cleared,चयन साफ़ किया गया,"Engine status, eval bar/graph, engine lines",27,,machine-assisted
+engine.modeLite,Lite,लाइट,"Engine status, eval bar/graph, engine lines",10,,machine-assisted
+engine.modeMulti,Multi-thread,मल्टी-थ्रेड,"Engine status, eval bar/graph, engine lines",20,,machine-assisted
+engine.modeSingle,Single-thread,सिंगल-थ्रेड,"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.noMoves,No moves,कोई चाल नहीं,"Engine status, eval bar/graph, engine lines",15,,machine-assisted
+engine.playLine,Play line,लाइन चलाएँ,"Engine status, eval bar/graph, engine lines",16,,machine-assisted
+engine.previewThrough,Preview through {san},{san} तक पूर्वावलोकन,"Engine status, eval bar/graph, engine lines",32,,machine-assisted
+engine.promoteTo,Promote to {piece},{piece} में पदोन्नत करें,"Engine status, eval bar/graph, engine lines",28,,machine-assisted
+engine.squareWithPiece,"{square}, {color} {piece}","{square}, {color} {piece}","Engine status, eval bar/graph, engine lines",37,,machine-assisted
+engine.start,Start,शुरुआत,"Engine status, eval bar/graph, engine lines",11,,machine-assisted
+engine.thinkingDepth,Thinking · depth {depth},सोच रहा है · गहराई {depth},"Engine status, eval bar/graph, engine lines",36,,machine-assisted
+engine.thinkingDepthNps,Thinking · depth {depth} · {nps} nps,सोच रहा है · गहराई {depth} · {nps} nps,"Engine status, eval bar/graph, engine lines",51,,machine-assisted
+engine.toggleEngine,Toggle engine,इंजन चालू/बंद करें,"Engine status, eval bar/graph, engine lines",21,,machine-assisted
+engine.wdlForWhite,"Win, draw, loss chances for White: {label}","सफ़ेद के लिए जीत, ड्रॉ, हार की संभावनाएँ: {label}","Engine status, eval bar/graph, engine lines",59,,machine-assisted
+engine.wdlSuffix,Win draw loss for White: {wdl},सफ़ेद के लिए जीत ड्रॉ हार: {wdl},"Engine status, eval bar/graph, engine lines",43,,machine-assisted
+engine.wdlWhitePerspective,White perspective — {label},सफ़ेद का दृष्टिकोण — {label},"Engine status, eval bar/graph, engine lines",40,,machine-assisted
+errors.chesscomArchiveFailed,Chess.com archive index could not be loaded.,Chess.com संग्रह सूची लोड नहीं हो सकी।,Error messages,62,,machine-assisted
+errors.chesscomBadId,That chess.com game id looks wrong.,वह chess.com गेम आईडी गलत लगती है।,Error messages,50,,machine-assisted
+errors.chesscomBadRequest,Pass ?user={username} or ?id={gameId}.,?user={username} या ?id={gameId} दें।,Error messages,54,,machine-assisted
+errors.chesscomBadUsername,That chess.com username looks wrong.,यह chess.com उपयोगकर्ता नाम गलत लगता है।,Error messages,51,,machine-assisted
+errors.chesscomDecodeFailed,"Could not decode that chess.com game. Try importing by username, or paste the PGN.","वह chess.com गेम डिकोड नहीं हो सका। उपयोगकर्ता नाम से आयात करके देखें, या PGN चिपकाएँ।",Error messages,111,,machine-assisted
+errors.chesscomGameFailed,Chess.com game could not be loaded.,Chess.com गेम लोड नहीं हो सका।,Error messages,50,,machine-assisted
+errors.chesscomGameNotFound,Chess.com game not found (it may be private).,Chess.com गेम नहीं मिला (यह निजी हो सकता है)।,Error messages,63,,machine-assisted
+errors.chesscomGamePrivate,That chess.com game is private.,वह chess.com गेम निजी है।,Error messages,45,,machine-assisted
+errors.chesscomNetwork,Could not reach chess.com. Check your connection.,chess.com तक पहुँचा नहीं जा सका। अपना कनेक्शन जाँचें।,Error messages,68,,machine-assisted
+errors.chesscomNoMoves,Chess.com returned no moves for that game.,Chess.com ने उस गेम के लिए कोई चाल नहीं लौटाई।,Error messages,59,,machine-assisted
+errors.chesscomRateLimited,Chess.com is rate-limiting. Try again shortly.,Chess.com दर सीमित कर रहा है। थोड़ी देर बाद फिर कोशिश करें।,Error messages,64,,machine-assisted
+errors.chesscomSearchEmpty,"That player has no public archived games in the last 12 months. Check the username, or paste the PGN instead.","इस खिलाड़ी के पिछले 12 महीनों में कोई सार्वजनिक अभिलेखित गेम नहीं है। उपयोगकर्ता नाम जाँचें, या PGN पेस्ट करें।",Error messages,,,machine-assisted
+errors.chesscomSearchNotFound,"That game was not found in this player's last 12 monthly archives. It may be older than 12 months or private. Try the other player's username, or paste the PGN instead.","यह गेम इस खिलाड़ी के पिछले 12 मासिक अभिलेखों में नहीं मिला। यह 12 महीने से पुराना या निजी हो सकता है। दूसरे खिलाड़ी का उपयोगकर्ता नाम आज़माएँ, या PGN पेस्ट करें।",Error messages,,,machine-assisted
+errors.chesscomUnexpected,Unexpected response from chess.com.,chess.com से अप्रत्याशित प्रतिक्रिया।,Error messages,50,,machine-assisted
+errors.chesscomUserNotFound,"Chess.com user ""{username}"" not found.","Chess.com उपयोगकर्ता ""{username}"" नहीं मिला।",Error messages,54,,machine-assisted
+errors.couldNotLoadPieceArtwork,Could not load piece artwork ({set}/{key}).,मोहरा चित्र लोड नहीं हो सका ({set}/{key})।,Error messages,60,,machine-assisted
+errors.decodeMoveList,Could not decode chess.com move list,chess.com चाल सूची डिकोड नहीं हो सकी,Error messages,51,,machine-assisted
+errors.engineFailedToLoad,Engine failed to load,इंजन लोड नहीं हो सका,Error messages,32,,machine-assisted
+errors.engineIntegrityFailed,"Engine integrity check failed for {file}: expected SHA-256 {expected}, got {actual}. The download looks corrupted — check your connection and reload the page.","{file} के लिए इंजन इंटीग्रिटी जाँच विफल: अपेक्षित SHA-256 {expected}, मिला {actual}। डाउनलोड दूषित लगता है — अपना कनेक्शन जाँचें और पेज पुनः लोड करें।",Error messages,,,machine-assisted
+errors.engineLoadAllFailed,"Could not load the Stockfish engine — tried {builds}. {detail} Check your connection and reload; if the engine is hosted on a CDN, verify its CORS headers (see README).","Stockfish इंजन लोड नहीं हो सका — {builds} आज़माए गए। {detail} अपना कनेक्शन जाँचें और पुनः लोड करें; यदि इंजन CDN पर होस्ट है, तो उसके CORS हेडर सत्यापित करें (README देखें)।",Error messages,,,machine-assisted
+errors.engineLoadFailed,Engine file failed to load (HTTP {status}): {url},इंजन फ़ाइल लोड नहीं हो सकी (HTTP {status}): {url},Error messages,68,,machine-assisted
+errors.internal,Something went wrong while importing. Try again.,आयात करते समय कुछ गलत हो गया। फिर कोशिश करें।,Error messages,67,,machine-assisted
+errors.lichessBadId,That does not look like a Lichess game id.,यह Lichess गेम आईडी जैसी नहीं लगती।,Error messages,59,,machine-assisted
+errors.lichessEmpty,Lichess returned an empty game.,Lichess ने खाली गेम लौटाया।,Error messages,45,,machine-assisted
+errors.lichessNetwork,Could not reach Lichess. Check your connection.,Lichess तक पहुँचा नहीं जा सका। अपना कनेक्शन जाँचें।,Error messages,66,,machine-assisted
+errors.lichessNotFound,Lichess game not found. Check the link and try again.,Lichess गेम नहीं मिला। लिंक जाँचकर फिर कोशिश करें।,Error messages,73,,machine-assisted
+errors.lichessRateLimited,Lichess is rate-limiting requests. Try again in a minute.,Lichess अनुरोधों को दर सीमित कर रहा है। एक मिनट बाद फिर कोशिश करें।,Error messages,79,,machine-assisted
+errors.lichessUpstream,Lichess returned {status}.,Lichess ने {status} लौटाया।,Error messages,38,,machine-assisted
+errors.notConfigured,This import method is disabled on this server. Paste the PGN instead.,यह आयात विधि इस सर्वर पर बंद है। इसके बजाय PGN पेस्ट करें।,Error messages,94,,machine-assisted
+errors.pgnEmpty,Failed to parse PGN: input is empty,PGN पार्स विफल: इनपुट खाली है,Error messages,50,,machine-assisted
+errors.pgnFailed,Failed to parse PGN: {detail},PGN पार्स विफल: {detail},Error messages,42,,machine-assisted
+errors.pgnNoGames,Failed to parse PGN: no games found,PGN पार्स विफल: कोई गेम नहीं मिला,Error messages,50,,machine-assisted
+errors.pgnTruncated,"PGN stopped at ply {ply}: ""{san}"" is not a legal move in that position","PGN प्लाई {ply} पर रुका: ""{san}"" उस स्थिति में वैध चाल नहीं है",Error messages,95,,machine-assisted
+errors.rateLimited,Too many import requests. Try again in a moment.,बहुत ज़्यादा आयात अनुरोध। थोड़ी देर में फिर कोशिश करें।,Error messages,67,,machine-assisted
+errors.responseTooLarge,The game server sent back too much data to import safely.,गेम सर्वर ने सुरक्षित आयात के लिए बहुत ज़्यादा डेटा भेजा।,Error messages,79,,machine-assisted
+errors.upstreamTimeout,The game server took too long to respond. Try again shortly.,गेम सर्वर ने जवाब देने में बहुत देर लगाई। थोड़ी देर में फिर कोशिश करें।,Error messages,82,,machine-assisted
+feedback.bestLine,Best line: {line}.,सर्वश्रेष्ठ लाइन: {line}।,Coach feedback sentences,28,,machine-assisted
+feedback.bestWas,Best was {best}.,सबसे अच्छी चाल {best} थी।,Coach feedback sentences,25,,machine-assisted
+feedback.bestWasEval,Best was {best} ({eval}).,सबसे अच्छी चाल {best} ({eval}) थी।,Coach feedback sentences,37,,machine-assisted
+feedback.bookKnown,A well-known theoretical move.,एक प्रसिद्ध सैद्धांतिक चाल।,Coach feedback sentences,43,,machine-assisted
+feedback.bookNamed,This is the {name}.,यह {name} है।,Coach feedback sentences,29,,machine-assisted
+feedback.bookNamedEco,This is the {name} ({eco}).,यह {name} ({eco}) है।,Coach feedback sentences,40,,machine-assisted
+feedback.classifiedAs,{san} is classified as {label}.,{san} को {label} के रूप में वर्गीकृत किया गया है।,Coach feedback sentences,45,,machine-assisted
+feedback.engineEval,Engine evaluation: {eval}.,इंजन मूल्यांकन: {eval}।,Coach feedback sentences,38,,machine-assisted
+feedback.forcedOnly,It was the only legal move in the position.,यह स्थिति में एकमात्र वैध चाल थी।,Coach feedback sentences,60,,machine-assisted
+feedback.headlineBest,{san} is the best move.,{san} सबसे अच्छी चाल है।,Coach feedback sentences,34,,machine-assisted
+feedback.headlineBlunder,{san} is a blunder.,{san} एक भारी गलती है।,Coach feedback sentences,29,,machine-assisted
+feedback.headlineBook,{san} is a book move.,{san} एक किताबी चाल है।,Coach feedback sentences,32,,machine-assisted
+feedback.headlineBrilliant,{san} is a brilliant move.,{san} एक शानदार चाल है।,Coach feedback sentences,38,,machine-assisted
+feedback.headlineExcellent,{san} is an excellent move.,{san} एक उत्कृष्ट चाल है।,Coach feedback sentences,40,,machine-assisted
+feedback.headlineFallback,{san}.,{san}।,Coach feedback sentences,12,,machine-assisted
+feedback.headlineForced,{san} is forced.,{san} मजबूरी की चाल है।,Coach feedback sentences,25,,machine-assisted
+feedback.headlineGood,{san} is a good move.,{san} एक अच्छी चाल है।,Coach feedback sentences,32,,machine-assisted
+feedback.headlineGreat,{san} is a great move.,{san} एक बहुत बढ़िया चाल है।,Coach feedback sentences,33,,machine-assisted
+feedback.headlineInaccuracy,{san} is an inaccuracy.,{san} एक अशुद्धि है।,Coach feedback sentences,34,,machine-assisted
+feedback.headlineMiss,{san} misses a winning opportunity.,{san} जीत का अवसर गंवा देता है।,Coach feedback sentences,50,,machine-assisted
+feedback.headlineMistake,{san} is a mistake.,{san} एक गलती है।,Coach feedback sentences,29,,machine-assisted
+feedback.keepsOnTrack,It keeps the position on track.,यह स्थिति को सही दिशा में रखता है।,Coach feedback sentences,45,,machine-assisted
+feedback.missIntro,Your opponent’s previous move gave you a chance.,आपके प्रतिद्वंद्वी की पिछली चाल ने आपको अवसर दिया था।,Coach feedback sentences,67,,machine-assisted
+feedback.moveIsPhrase,{san} is {phrase}.,{san} {phrase} है।,Coach feedback sentences,28,,machine-assisted
+feedback.moveIsPhraseNoPeriod,{san} is {phrase},{san} {phrase} है,Coach feedback sentences,27,,machine-assisted
+feedback.nearlyBest,Nearly as strong as the engine’s top choice.,"इंजन की शीर्ष पसंद जितना ही मज़बूत, लगभग।",Coach feedback sentences,62,,machine-assisted
+feedback.onlyMoveHolds,It is the only move that holds the position together.,यह एकमात्र चाल है जो स्थिति को संभाले रखती है।,Coach feedback sentences,73,,machine-assisted
+feedback.played,{san} was played.,{san} खेला गया।,Coach feedback sentences,27,,machine-assisted
+feedback.reasonAvoidsMate,It avoids mate.,यह मात से बचाता है।,Coach feedback sentences,24,,machine-assisted
+feedback.reasonMate,It delivers checkmate.,यह शहमात देता है।,Coach feedback sentences,33,,machine-assisted
+feedback.reasonStrongAttack,It keeps a strong attack.,यह मज़बूत हमला बनाए रखता है।,Coach feedback sentences,37,,machine-assisted
+feedback.reasonTextBestMove,The engine’s top move (or within a hair of it).,इंजन की शीर्ष चाल (या उससे बाल बराबर)।,Coach feedback sentences,66,,machine-assisted
+feedback.reasonTextBook,A known opening (book) move.,एक ज्ञात ओपनिंग (किताबी) चाल।,Coach feedback sentences,41,,machine-assisted
+feedback.reasonTextCriticalMoment,"A critical moment: the alternatives lose, this move holds.","एक महत्वपूर्ण क्षण: विकल्प हारते हैं, यह चाल संभालती है।",Coach feedback sentences,80,,machine-assisted
+feedback.reasonTextEplThreshold,Classified by expected-points loss against the engine’s best move.,इंजन की सर्वश्रेष्ठ चाल के मुकाबले अपेक्षित-अंक हानि द्वारा वर्गीकृत।,Coach feedback sentences,90,,machine-assisted
+feedback.reasonTextForced,It was the only legal move.,यह एकमात्र वैध चाल थी।,Coach feedback sentences,40,,machine-assisted
+feedback.reasonTextMateThreat,It finds or creates a forced mate threat the alternatives miss.,यह ज़बरदस्त मात का ख़तरा खोजता या बनाता है जिसे विकल्प चूक जाते हैं।,Coach feedback sentences,86,,machine-assisted
+feedback.reasonTextMissedTactic,It fails to punish the opponent’s previous mistake/blunder.,यह प्रतिद्वंद्वी की पिछली गलती/भारी गलती को सज़ा देने में विफल रहता है।,Coach feedback sentences,81,,machine-assisted
+feedback.reasonTextOnlyMove,The only move that holds the position — every alternative is much worse.,स्थिति को संभालने वाली एकमात्र चाल — हर विकल्प बहुत बदतर है।,Coach feedback sentences,98,,machine-assisted
+feedback.reasonTextRecapture,A recapture — taking back material is not a sacrifice.,एक पुनः-पकड़ — सामग्री वापस लेना बलिदान नहीं है।,Coach feedback sentences,75,,machine-assisted
+feedback.reasonTextSacrificeExchange,A sound exchange sacrifice (rook for a minor piece) the engine rates (near-)best.,एक सही एक्सचेंज बलिदान (हाथी के बदले छोटा मोहरा) जिसे इंजन (लगभग) सर्वश्रेष्ठ मानता है।,Coach feedback sentences,110,,machine-assisted
+feedback.reasonTextSacrificeMate,A sacrifice that leads to forced mate in the engine line.,एक बलिदान जो इंजन लाइन में ज़बरदस्त मात की ओर ले जाता है।,Coach feedback sentences,79,,machine-assisted
+feedback.reasonTextSacrificePiece,A sound sacrifice of a piece that the engine rates (near-)best.,एक मोहरे का सही बलिदान जिसे इंजन (लगभग) सर्वश्रेष्ठ मानता है।,Coach feedback sentences,86,,machine-assisted
+feedback.reasonTextSacrificeQueen,A sound queen sacrifice that the engine rates (near-)best.,एक सही वज़ीर बलिदान जिसे इंजन (लगभग) सर्वश्रेष्ठ मानता है।,Coach feedback sentences,80,,machine-assisted
+feedback.reasonTextTrivialRecapture,A pure recapture of the piece that just moved — recaptures are never labelled Great.,अभी चले मोहरे की शुद्ध पुनः-पकड़ — पुनः-पकड़ों को कभी बहुत बढ़िया नहीं कहा जाता।,Coach feedback sentences,114,,machine-assisted
+feedback.reasonTextTurningPoint,"It turns the evaluation around, crossing from worse/equal to better.","यह मूल्यांकन को पलट देता है, बदतर/बराबर से बेहतर की ओर ले जाता है।",Coach feedback sentences,93,,machine-assisted
+feedback.reasonWinsExchange,It wins the exchange.,यह एक्सचेंज जीतता है।,Coach feedback sentences,32,,machine-assisted
+feedback.reasonWinsMaterial,It wins material.,यह सामग्री जीतता है।,Coach feedback sentences,27,,machine-assisted
+feedback.reasonWinsPawn,It wins a pawn.,यह एक प्यादा जीतता है।,Coach feedback sentences,24,,machine-assisted
+feedback.reasonWinsPiece,It wins a piece.,यह एक मोहरा जीतता है।,Coach feedback sentences,25,,machine-assisted
+feedback.sacrificeApproved,A sacrifice the engine fully approves of.,एक बलिदान जिसे इंजन पूरी तरह सही मानता है।,Coach feedback sentences,58,,machine-assisted
+feedback.swing,The evaluation drops by about {pawns} pawns.,मूल्यांकन लगभग {pawns} प्यादों से गिर जाता है।,Coach feedback sentences,62,,machine-assisted
+feedback.whyLabel,Why this label? {text},यह लेबल क्यों? {text},Coach feedback sentences,33,,machine-assisted
+input.analysisDepth,Analysis depth,विश्लेषण गहराई,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.archiveSearchEmpty,"Archive search found no public games for ""{username}"". Check the username, or paste the PGN instead.","अभिलेख खोज में ""{username}"" के लिए कोई सार्वजनिक गेम नहीं मिला। उपयोगकर्ता नाम जाँचें, या PGN पेस्ट करें।",Home page: game input (PGN/FEN/link/image tabs),134,,machine-assisted
+input.archiveSearchFailed,"Archive search step failed: {message} Next: check your connection and try again, or paste the PGN instead.","अभिलेख खोज चरण विफल रहा: {message} आगे: अपना कनेक्शन जाँचकर फिर प्रयास करें, या PGN पेस्ट करें।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.archiveSearchNotFound,"Archive search finished: this game was not found in the last 12 months of archives for ""{username}"". It may be older than 12 months, private, or played under a different username. Try the other player's username, or paste the PGN instead.","अभिलेख खोज पूरी हुई: ""{username}"" के पिछले 12 महीनों के अभिलेखों में यह गेम नहीं मिला। यह 12 महीने से पुराना, निजी, या किसी अन्य उपयोगकर्ता नाम से खेला गया हो सकता है। दूसरे खिलाड़ी का उपयोगकर्ता नाम आज़माएँ, या PGN पेस्ट करें।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.chesscomFallbackBody,"Open the game on chess.com, choose Share → PGN, copy the PGN text, then paste it in the PGN tab — the review works exactly the same.","chess.com पर गेम खोलें, Share → PGN चुनें, PGN टेक्स्ट कॉपी करें, फिर उसे PGN टैब में पेस्ट करें — समीक्षा बिल्कुल वैसी ही चलेगी।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.chesscomFallbackTitle,Chess.com link import is unavailable,Chess.com लिंक आयात उपलब्ध नहीं है,Home page: game input (PGN/FEN/link/image tabs),51,,machine-assisted
+input.chesscomImportFailed,Chess.com import failed.,Chess.com आयात विफल रहा।,Home page: game input (PGN/FEN/link/image tabs),36,,machine-assisted
+input.chesscomUsernameBody,"Enter the chess.com username of one of the two players. We'll search that player's public monthly archives — newest first, up to 12 months back — for this game, using only the official chess.com public API.","दोनों खिलाड़ियों में से किसी एक का chess.com उपयोगकर्ता नाम डालें। हम केवल आधिकारिक chess.com सार्वजनिक API का उपयोग करके उस खिलाड़ी के सार्वजनिक मासिक अभिलेखों में — सबसे नए से शुरू करके, 12 महीने पीछे तक — यह गेम खोजेंगे।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.chesscomUsernameLabel,Chess.com username,Chess.com उपयोगकर्ता नाम,Home page: game input (PGN/FEN/link/image tabs),28,,machine-assisted
+input.chesscomUsernamePlaceholder,e.g. hikaru,जैसे hikaru,Home page: game input (PGN/FEN/link/image tabs),19,,machine-assisted
+input.chesscomUsernameTitle,Which chess.com player was in this game?,इस गेम में chess.com का कौन-सा खिलाड़ी था?,Home page: game input (PGN/FEN/link/image tabs),56,,machine-assisted
+input.clearFilters,Clear filters,फ़िल्टर साफ़ करें,Home page: game input (PGN/FEN/link/image tabs),21,,machine-assisted
+input.couldNotParsePgn,Could not parse that PGN.,वह PGN पार्स नहीं हो सका।,Home page: game input (PGN/FEN/link/image tabs),37,,machine-assisted
+input.couldNotReadFile,Could not read {name}.,{name} पढ़ा नहीं जा सका।,Home page: game input (PGN/FEN/link/image tabs),33,,machine-assisted
+input.deleteReview,Delete review {white} vs {black},समीक्षा हटाएँ {white} बनाम {black},Home page: game input (PGN/FEN/link/image tabs),46,,machine-assisted
+input.depthDeep,Deep (adaptive · target depth 22 · ≤4 s),गहरा (अनुकूली · लक्ष्य गहराई 22 · ≤4 s),Home page: game input (PGN/FEN/link/image tabs),56,,machine-assisted
+input.depthQuick,Quick (adaptive · target depth 14 · ≤600 ms),त्वरित (अनुकूली · लक्ष्य गहराई 14 · ≤600 ms),Home page: game input (PGN/FEN/link/image tabs),62,,machine-assisted
+input.depthStandard,Standard (adaptive · target depth 18 · ≤1.5 s),मानक (अनुकूली · लक्ष्य गहराई 18 · ≤1.5 s),Home page: game input (PGN/FEN/link/image tabs),64,,machine-assisted
+input.fenEmpty,FEN is empty,FEN खाली है,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.fenHint,"Paste a full FEN (placement, side to move, castling, en passant, clocks).","पूरा FEN चिपकाएँ (मोहरे, चलने की बारी, कैसलिंग, en passant, घड़ियाँ)।",Home page: game input (PGN/FEN/link/image tabs),99,,machine-assisted
+input.fenLabel,FEN position,FEN स्थिति,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.fenValid,Valid FEN — ready to analyze from this position.,मान्य FEN — इस स्थिति से विश्लेषण के लिए तैयार।,Home page: game input (PGN/FEN/link/image tabs),67,,machine-assisted
+input.filterAll,All,सभी,Home page: game input (PGN/FEN/link/image tabs),8,,machine-assisted
+input.filterMonth,Month,महीना,Home page: game input (PGN/FEN/link/image tabs),11,,machine-assisted
+input.filterResult,Result,परिणाम,Home page: game input (PGN/FEN/link/image tabs),12,,machine-assisted
+input.filterSearchLabel,Search games,गेम खोजें,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.filterSearchPlaceholder,Search by player name…,खिलाड़ी के नाम से खोजें…,Home page: game input (PGN/FEN/link/image tabs),33,,machine-assisted
+input.filterTimeControl,Time control,समय नियंत्रण,Home page: game input (PGN/FEN/link/image tabs),20,,machine-assisted
+input.footerCredits,"Powered by Stockfish.js (Stockfish engine, GPLv3) running entirely in your browser. Opening data from lichess-org/chess-openings (CC0). Pieces: cburnett set (GFDL/BSD) plus original sets drawn for this app (CC0). Chess logic: chess.js (BSD-2-Clause). Not affiliated with chess.com.","Stockfish.js (Stockfish इंजन, GPLv3) द्वारा संचालित, पूरी तरह आपके ब्राउज़र में चलता है। ओपनिंग डेटा lichess-org/chess-openings (CC0) से। मोहरे: cburnett सेट (GFDL/BSD) और इस ऐप के लिए बनाए गए मूल सेट (CC0)। शतरंज तर्क: chess.js (BSD-2-Clause)। chess.com से संबद्ध नहीं।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.gameInputLabel,Game input,गेम इनपुट,Home page: game input (PGN/FEN/link/image tabs),17,,machine-assisted
+input.gameLabel,{white} vs {black} · {result} · {date} {event} (game {n}),{white} बनाम {black} · {result} · {date} {event} (गेम {n}),Home page: game input (PGN/FEN/link/image tabs),79,,machine-assisted
+input.gameLabelNoEvent,{white} vs {black} · {result} · {date}  (game {n}),{white} बनाम {black} · {result} · {date}  (गेम {n}),Home page: game input (PGN/FEN/link/image tabs),69,,machine-assisted
+input.heroSubtitle,"Stockfish runs locally in your browser — accuracy, brilliancies, blunders and engine lines for every move. No uploads, no account.","Stockfish आपके ब्राउज़र में ही स्थानीय रूप से चलता है — हर चाल के लिए सटीकता, शानदार चालें, गलतियाँ और इंजन लाइनें। कोई अपलोड नहीं, कोई खाता नहीं।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.heroTitleAccent,Grandmaster,समीक्षा करें,Home page: game input (PGN/FEN/link/image tabs),19,,machine-assisted
+input.heroTitlePrefix,Review your game like a,किसी ग्रैंडमास्टर की तरह अपने गेम की,Home page: game input (PGN/FEN/link/image tabs),34,,machine-assisted
+input.importFailed,Import failed.,आयात विफल रहा।,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.inputMethodLabel,Game input method,गेम इनपुट विधि,Home page: game input (PGN/FEN/link/image tabs),27,,machine-assisted
+input.invalidFen,Invalid FEN,अमान्य FEN,Home page: game input (PGN/FEN/link/image tabs),19,,machine-assisted
+input.lichessImportFailed,Lichess import failed.,Lichess आयात विफल रहा।,Home page: game input (PGN/FEN/link/image tabs),33,,machine-assisted
+input.linkHintLong,"Accepted: a chess.com game link (chess.com/game/live/… or /game/daily/…), a Lichess game link (lichess.org/…), or just a Chess.com / Lichess username to browse recent games.","स्वीकृत: chess.com गेम लिंक (chess.com/game/live/… या /game/daily/…), Lichess गेम लिंक (lichess.org/…), या हाल के गेम देखने के लिए केवल Chess.com / Lichess उपयोगकर्ता नाम।",Home page: game input (PGN/FEN/link/image tabs),,,machine-assisted
+input.linkHintShort,"Works with chess.com game links (live/daily), chess.com usernames, and Lichess game links.","chess.com गेम लिंक (लाइव/डेली), chess.com उपयोगकर्ता नाम और Lichess गेम लिंक के साथ काम करता है।",Home page: game input (PGN/FEN/link/image tabs),121,,machine-assisted
+input.linkLabel,Game link or username,गेम लिंक या उपयोगकर्ता नाम,Home page: game input (PGN/FEN/link/image tabs),32,,machine-assisted
+input.linkPlaceholder,https://www.chess.com/game/live/123456789 or your username,https://www.chess.com/game/live/123456789 या आपका उपयोगकर्ता नाम,Home page: game input (PGN/FEN/link/image tabs),80,,machine-assisted
+input.loadSample,Load sample game,नमूना गेम लोड करें,Home page: game input (PGN/FEN/link/image tabs),25,,machine-assisted
+input.multiGames.one,This file has {count} game — pick one:,इस फ़ाइल में {count} गेम है — एक चुनें:,"Home page: game input (PGN/FEN/link/image tabs) — plural form ""one""",54,,machine-assisted
+input.multiGames.other,This file has {count} games — pick one:,इस फ़ाइल में {count} गेम हैं — एक चुनें:,"Home page: game input (PGN/FEN/link/image tabs) — plural form ""other""",55,,machine-assisted
+input.noCompleteGame,No complete game found in that PGN.,उस PGN में कोई पूर्ण गेम नहीं मिला।,Home page: game input (PGN/FEN/link/image tabs),50,,machine-assisted
+input.noGamesMatchFilters,No games match these filters.,कोई गेम इन फ़िल्टर से मेल नहीं खाता।,Home page: game input (PGN/FEN/link/image tabs),42,,machine-assisted
+input.noRecentGamesFor,"No recent games found for ""{username}"".","""{username}"" के लिए कोई हालिया गेम नहीं मिला।",Home page: game input (PGN/FEN/link/image tabs),55,,machine-assisted
+input.offlineLink,You're offline — link import needs internet; paste a PGN or use the editor instead,आप ऑफ़लाइन हैं — लिंक आयात के लिए इंटरनेट चाहिए; इसके बजाय PGN चिपकाएँ या एडिटर का उपयोग करें,Home page: game input (PGN/FEN/link/image tabs),111,,machine-assisted
+input.openBoardEditor,Open board editor,बोर्ड एडिटर खोलें,Home page: game input (PGN/FEN/link/image tabs),27,,machine-assisted
+input.pastePgnOrSample,"Paste a PGN, or load the sample game.","PGN चिपकाएँ, या नमूना गेम लोड करें।",Home page: game input (PGN/FEN/link/image tabs),53,,machine-assisted
+input.pgnDragHint,Drag & drop a .pgn / .txt file anywhere on the box.,.pgn / .txt फ़ाइल को बॉक्स पर कहीं भी खींचकर छोड़ें।,Home page: game input (PGN/FEN/link/image tabs),71,,machine-assisted
+input.pgnPlaceholder,"Paste a PGN here, or drop a .pgn file…
+
+[Event ""Casual game""]
+1. e4 e5 2. Nf3 Nc6 …","यहाँ PGN चिपकाएँ, या .pgn फ़ाइल डालें…
+
+[Event ""Casual game""]
+1. e4 e5 2. Nf3 Nc6 …",Home page: game input (PGN/FEN/link/image tabs),112,,machine-assisted
+input.pgnTextLabel,PGN text,PGN टेक्स्ट,Home page: game input (PGN/FEN/link/image tabs),15,,machine-assisted
+input.recentGamesPick,Recent games — pick one to review:,हाल के गेम — समीक्षा के लिए एक चुनें:,Home page: game input (PGN/FEN/link/image tabs),49,,machine-assisted
+input.recentReviews,Recent reviews,हाल की समीक्षाएँ,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.recentReviewsLabel,Recent reviews,हाल की समीक्षाएँ,Home page: game input (PGN/FEN/link/image tabs),23,,machine-assisted
+input.resultBlackWins,Black wins,काले की जीत,Home page: game input (PGN/FEN/link/image tabs),17,,machine-assisted
+input.resultDraw,Draw,ड्रॉ,Home page: game input (PGN/FEN/link/image tabs),10,,machine-assisted
+input.resultWhiteWins,White wins,सफ़ेद की जीत,Home page: game input (PGN/FEN/link/image tabs),17,,machine-assisted
+input.review,Review,समीक्षा,Home page: game input (PGN/FEN/link/image tabs),12,,machine-assisted
+input.searchArchives,Search archives,अभिलेख खोजें,Home page: game input (PGN/FEN/link/image tabs),24,,machine-assisted
+input.searchCancelled,"Search cancelled. Try another username, or paste the PGN instead.","खोज रद्द कर दी गई। कोई अन्य उपयोगकर्ता नाम आज़माएँ, या इसके बजाय PGN पेस्ट करें।",Home page: game input (PGN/FEN/link/image tabs),89,,machine-assisted
+input.searchingMonth,Searching {month}…,{month} खोजा जा रहा है…,Home page: game input (PGN/FEN/link/image tabs),28,,machine-assisted
+input.setupInEditor,"Set up the position in the board editor, then analyze it.","बोर्ड एडिटर में स्थिति बनाएँ, फिर उसका विश्लेषण करें।",Home page: game input (PGN/FEN/link/image tabs),79,,machine-assisted
+input.switchToPgn,Paste the PGN instead,इसके बजाय PGN पेस्ट करें,Home page: game input (PGN/FEN/link/image tabs),32,,machine-assisted
+input.tabFen,FEN,FEN,Home page: game input (PGN/FEN/link/image tabs),8,,machine-assisted
+input.tabImage,Image,छवि,Home page: game input (PGN/FEN/link/image tabs),11,,machine-assisted
+input.tabLink,Link / Username,लिंक / उपयोगकर्ता नाम,Home page: game input (PGN/FEN/link/image tabs),24,,machine-assisted
+input.tabPgn,PGN,PGN,Home page: game input (PGN/FEN/link/image tabs),8,,machine-assisted
+input.unrecognizedInput,"Could not recognize that input. Paste a chess.com or Lichess game link, a username, a PGN, or a FEN.","वह इनपुट पहचाना नहीं जा सका। chess.com या Lichess गेम लिंक, उपयोगकर्ता नाम, PGN या FEN चिपकाएँ।",Home page: game input (PGN/FEN/link/image tabs),134,,machine-assisted
+input.uploadPgn,Upload .pgn file,.pgn फ़ाइल अपलोड करें,Home page: game input (PGN/FEN/link/image tabs),25,,machine-assisted
+meta.description,"Chess.com-style game review powered by Stockfish running locally in your browser. Accuracy, move classifications, engine lines and opening detection.","Stockfish द्वारा संचालित chess.com-शैली की गेम समीक्षा, जो आपके ब्राउज़र में ही स्थानीय रूप से चलती है। सटीकता, चाल वर्गीकरण, इंजन लाइनें और ओपनिंग पहचान।",Browser tab title and search/social description,,,machine-assisted
+meta.title,Chess Review — Stockfish Game Analysis,शतरंज समीक्षा — Stockfish गेम विश्लेषण,Browser tab title and search/social description,54,,machine-assisted
+moves.bestWas,Best was {best},सबसे अच्छी चाल {best} थी,"Move list, coach feedback and retry mode",24,,machine-assisted
+moves.coachFeedback,Coach feedback,कोच प्रतिक्रिया,"Move list, coach feedback and retry mode",23,,machine-assisted
+moves.deleteTitle,Delete variation,वेरिएशन हटाएँ,"Move list, coach feedback and retry mode",25,,machine-assisted
+moves.deleteVariation,Delete variation starting with {san},{san} से शुरू होने वाला वेरिएशन हटाएँ,"Move list, coach feedback and retry mode",51,,machine-assisted
+moves.moveHeading,Move {move}{sep} {san},चाल {move}{sep} {san},"Move list, coach feedback and retry mode",33,,machine-assisted
+moves.moveHeadingClass,Move {move}{sep} {san} · {label},चाल {move}{sep} {san} · {label},"Move list, coach feedback and retry mode",46,,machine-assisted
+moves.movesLabel,Moves,चालें,"Move list, coach feedback and retry mode",11,,machine-assisted
+moves.nextCriticalMoment,Next critical moment,अगला महत्वपूर्ण क्षण,"Move list, coach feedback and retry mode",30,,machine-assisted
+moves.noMovesYet,No moves yet.,अभी कोई चाल नहीं।,"Move list, coach feedback and retry mode",21,,machine-assisted
+moves.promoteTitle,Promote to main line,मुख्य लाइन में बढ़ाएँ,"Move list, coach feedback and retry mode",30,,machine-assisted
+moves.promoteVariation,Promote variation starting with {san},{san} से शुरू होने वाले वेरिएशन को बढ़ाएँ,"Move list, coach feedback and retry mode",53,,machine-assisted
+moves.retry,Retry,फिर से आज़माएँ,"Move list, coach feedback and retry mode",11,,machine-assisted
+moves.selectMoveFeedback,Select a move to see feedback.,प्रतिक्रिया देखने के लिए कोई चाल चुनें।,"Move list, coach feedback and retry mode",43,,machine-assisted
+moves.showBestMove,Show best move,सबसे अच्छी चाल दिखाएँ,"Move list, coach feedback and retry mode",23,,machine-assisted
+moves.timeSpent,Time spent: {time},लगा समय: {time},"Move list, coach feedback and retry mode",28,,machine-assisted
+moves.timeTrouble,Time trouble,समय का दबाव,"Move list, coach feedback and retry mode",20,,machine-assisted
+moves.timeTroubleTitle,Time trouble: under 30 seconds (or 10% of the base time) left,समय का दबाव: 30 सेकंड से कम (या आधार समय का 10%) बचा है,"Move list, coach feedback and retry mode",84,,machine-assisted
+moves.variationsLabel,Variations,वेरिएशन,"Move list, coach feedback and retry mode",17,,machine-assisted
+moves.whyLabel,Why this label? {text},यह लेबल क्यों? {text},"Move list, coach feedback and retry mode",33,,machine-assisted
+performance.beginner,Beginner-level play,शुरुआती-स्तर का खेल,Performance estimate bands,29,,machine-assisted
+performance.club,Club-level play,क्लब-स्तर का खेल,Performance estimate bands,24,,machine-assisted
+performance.expert,Expert-level play,विशेषज्ञ-स्तर का खेल,Performance estimate bands,27,,machine-assisted
+performance.master,Master-level play,मास्टर-स्तर का खेल,Performance estimate bands,27,,machine-assisted
+performance.note,Rough single-game band from accuracy and average centipawn loss — not a rating.,सटीकता और औसत सेंटिपawn हानि से मोटा एकल-गेम अनुमान — यह रेटिंग नहीं है।,Performance estimate bands,107,,machine-assisted
+performance.strongClub,Strong club play,मज़बूत क्लब खेल,Performance estimate bands,25,,machine-assisted
+pieces.bishop,bishop,ऊंट,"Piece names (board editor, promotion picker)",12,,machine-assisted
+pieces.king,king,राजा,"Piece names (board editor, promotion picker)",10,,machine-assisted
+pieces.knight,knight,घोड़ा,"Piece names (board editor, promotion picker)",12,,machine-assisted
+pieces.pawn,pawn,प्यादा,"Piece names (board editor, promotion picker)",10,,machine-assisted
+pieces.queen,queen,वज़ीर,"Piece names (board editor, promotion picker)",11,,machine-assisted
+pieces.rook,rook,हाथी,"Piece names (board editor, promotion picker)",10,,machine-assisted
+pwa.buildFull,Full (multi-threaded),पूर्ण (मल्टी-थ्रेड),PWA install/update prompts,32,,machine-assisted
+pwa.buildLite,Lite,लाइट,PWA install/update prompts,10,,machine-assisted
+pwa.buildSingle,Single-threaded,सिंगल-थ्रेड,PWA install/update prompts,24,,machine-assisted
+pwa.dismissInstall,Dismiss install suggestion,इंस्टॉल सुझाव खारिज करें,PWA install/update prompts,38,,machine-assisted
+pwa.dismissUpdate,Dismiss update notice,अपडेट सूचना खारिज करें,PWA install/update prompts,32,,machine-assisted
+pwa.installApp,Install app,ऐप इंस्टॉल करें,PWA install/update prompts,19,,machine-assisted
+pwa.installHidden,"Chess Review is a web app — in a browser that supports it, an install option appears here when the app can be installed, and on iOS via Share → Add to Home Screen.","Chess Review एक वेब ऐप है — समर्थित ब्राउज़र में, ऐप इंस्टॉल होने योग्य होने पर यहाँ इंस्टॉल विकल्प दिखाई देता है, और iOS पर Share → Add to Home Screen द्वारा।",PWA install/update prompts,,,machine-assisted
+pwa.installPitch,"Install Chess Review for a full-screen, offline-ready app.","पूर्ण-स्क्रीन, ऑफ़लाइन-तैयार ऐप के लिए Chess Review इंस्टॉल करें।",PWA install/update prompts,80,,machine-assisted
+pwa.iosSteps,"On iPhone/iPad: tap the Share button in Safari, then choose “Add to Home Screen” to install Chess Review.","iPhone/iPad पर: Safari में Share बटन दबाएँ, फिर Chess Review इंस्टॉल करने के लिए “Add to Home Screen” चुनें।",PWA install/update prompts,,,machine-assisted
+pwa.offlineBanner,"You're offline — saved reviews, the board editor and analysis still work; link import needs internet.","आप ऑफ़लाइन हैं — सहेजी गई समीक्षाएँ, बोर्ड एडिटर और विश्लेषण फिर भी काम करते हैं; लिंक आयात के लिए इंटरनेट चाहिए।",PWA install/update prompts,,,machine-assisted
+pwa.reload,Reload,पुनः लोड करें,PWA install/update prompts,12,,machine-assisted
+pwa.updateAvailable,A new version is available,नया संस्करण उपलब्ध है,PWA install/update prompts,38,,machine-assisted
+review.accuracy,Accuracy,सटीकता,Review screen header and progress,15,,machine-assisted
+review.adaptiveDepthNote,"Adaptive presets stop early on stable positions, so Quick/Standard evaluations and labels can differ from a deeper analysis.","अनुकूली प्रीसेट स्थिर स्थितियों पर जल्दी रुकते हैं, इसलिए त्वरित/मानक मूल्यांकन और लेबल गहरे विश्लेषण से भिन्न हो सकते हैं।",Review screen header and progress,,,machine-assisted
+review.analysisComplete,✓ Analysis complete,✓ विश्लेषण पूर्ण,Review screen header and progress,29,,machine-assisted
+review.analysisFailed,Analysis failed.,विश्लेषण विफल रहा।,Review screen header and progress,25,,machine-assisted
+review.analysisProgress,Analysis progress,विश्लेषण प्रगति,Review screen header and progress,27,,machine-assisted
+review.analyzedAtDepthAvg,Analyzed at depth {depth} (avg),गहराई {depth} (औसत) पर विश्लेषण किया गया,Review screen header and progress,45,,machine-assisted
+review.analyzingEta,Move {done} of {total} — classifications appear as I go. · ~{eta} left,"{total} में से चाल {done} — वर्गीकरण जैसे-जैसे आगे बढ़ता हूँ, आते जाते हैं। · ~{eta} बाकी",Review screen header and progress,95,,machine-assisted
+review.analyzingGame,Analyzing your game…,आपके गेम का विश्लेषण हो रहा है…,Review screen header and progress,30,,machine-assisted
+review.analyzingMove,Analyzing move {done} / {total},चाल {done} / {total} का विश्लेषण हो रहा है,Review screen header and progress,45,,machine-assisted
+review.analyzingProgress,Move {done} of {total} — classifications appear as I go.,"{total} में से चाल {done} — वर्गीकरण जैसे-जैसे आगे बढ़ता हूँ, आते जाते हैं।",Review screen header and progress,77,,machine-assisted
+review.annotatedDownloaded,Annotated PGN downloaded,टिप्पणी सहित PGN डाउनलोड हो गया,Review screen header and progress,36,,machine-assisted
+review.backToGame,Back to game,गेम पर वापस जाएँ,Review screen header and progress,20,,machine-assisted
+review.backToInput,Back to input,इनपुट पर वापस जाएँ,Review screen header and progress,21,,machine-assisted
+review.backToSummary,Back to summary,सारांश पर वापस जाएँ,Review screen header and progress,24,,machine-assisted
+review.bestWas,Best was {best}.,सबसे अच्छी चाल {best} थी।,Review screen header and progress,25,,machine-assisted
+review.bookContinuations,Book continuations:,किताबी निरंतरताएँ:,Review screen header and progress,29,,machine-assisted
+review.cancelAnalysis,Cancel analysis,विश्लेषण रद्द करें,Review screen header and progress,24,,machine-assisted
+review.clockLabel,Clock: {time},घड़ी: {time},Review screen header and progress,21,,machine-assisted
+review.coachSummary,"Okay, let's see what we can learn from your game then.","ठीक है, देखें कि हम आपके गेम से क्या सीख सकते हैं।",Review screen header and progress,75,,machine-assisted
+review.copyFailed,Copy failed,कॉपी विफल रही,Review screen header and progress,19,,machine-assisted
+review.copyFen,Copy FEN,FEN कॉपी करें,Review screen header and progress,15,,machine-assisted
+review.copyPgn,Copy PGN,PGN कॉपी करें,Review screen header and progress,15,,machine-assisted
+review.couldNotParsePgn,Could not parse that PGN.,वह PGN पार्स नहीं हो सका।,Review screen header and progress,37,,machine-assisted
+review.couldNotStart,Could not start the review,समीक्षा शुरू नहीं हो सकी,Review screen header and progress,38,,machine-assisted
+review.deeperResult,Deeper analysis (depth {depth}),गहरा विश्लेषण (गहराई {depth}),Review screen header and progress,45,,machine-assisted
+review.downloadPgn,Download PGN,PGN डाउनलोड करें,Review screen header and progress,20,,machine-assisted
+review.engineBadge,{name} · depth {depth} · {mode},{name} · गहराई {depth} · {mode},Review screen header and progress,45,,machine-assisted
+review.engineBadgeDegraded,Engine: {mode},इंजन: {mode},Review screen header and progress,23,,machine-assisted
+review.engineCacheCleared,Engine cache cleared,इंजन कैश साफ़ हो गया,Review screen header and progress,30,,machine-assisted
+review.engineDegradedTitle,"This browser cannot run the multi-threaded engine (cross-origin isolation unavailable), so analysis uses a single-threaded build.","यह ब्राउज़र मल्टी-थ्रेड इंजन नहीं चला सकता (क्रॉस-ऑरिजिन आइसोलेशन उपलब्ध नहीं), इसलिए विश्लेषण सिंगल-थ्रेड बिल्ड का उपयोग करता है।",Review screen header and progress,,,machine-assisted
+review.engineExplanation,Engine explanation,इंजन व्याख्या,Review screen header and progress,28,,machine-assisted
+review.engineFailedToLoad,Engine failed to load: {error},इंजन लोड नहीं हो सका: {error},Review screen header and progress,43,,machine-assisted
+review.engineFooter,{name}{version} · {build}{file} · {size} WASM · analysis ran locally in your browser,{name}{version} · {build}{file} · {size} WASM · विश्लेषण आपके ब्राउज़र में स्थानीय रूप से चला,Review screen header and progress,114,,machine-assisted
+review.engineFooterNoSize,{name}{version} · {build}{file} · analysis ran locally in your browser,{name}{version} · {build}{file} · विश्लेषण आपके ब्राउज़र में स्थानीय रूप से चला,Review screen header and progress,95,,machine-assisted
+review.engineLines,Engine lines,इंजन लाइनें,Review screen header and progress,20,,machine-assisted
+review.engineModeLite,lite single-thread mode,लाइट सिंगल-थ्रेड मोड,Review screen header and progress,34,,machine-assisted
+review.engineModeMulti,multi-thread,मल्टी-थ्रेड,Review screen header and progress,20,,machine-assisted
+review.engineModeSingle,single-thread mode,सिंगल-थ्रेड मोड,Review screen header and progress,28,,machine-assisted
+review.engineNameDepth,{name} · depth {depth},{name} · गहराई {depth},Review screen header and progress,33,,machine-assisted
+review.enginePrefix,Engine: {error},इंजन: {error},Review screen header and progress,24,,machine-assisted
+review.engineSection,Engine,इंजन,Review screen header and progress,12,,machine-assisted
+review.explain,💡 Explain,💡 समझाएँ,Review screen header and progress,17,,machine-assisted
+review.fenCopied,FEN copied,FEN कॉपी हो गया,Review screen header and progress,17,,machine-assisted
+review.findBetterMove,Find a better move!,बेहतर चाल खोजें!,Review screen header and progress,29,,machine-assisted
+review.finish,Finish ✓,समाप्त ✓,Review screen header and progress,15,,machine-assisted
+review.firstMove,First move,पहली चाल,Review screen header and progress,17,,machine-assisted
+review.flipBoard,Flip board,बोर्ड पलटें,Review screen header and progress,17,,machine-assisted
+review.flipShort,⇅ Flip,⇅ पलटें,Review screen header and progress,12,,machine-assisted
+review.fullSummaryLater,The full summary appears here when the analysis finishes.,विश्लेषण पूरा होने पर पूरा सारांश यहाँ दिखाई देगा।,Review screen header and progress,79,,machine-assisted
+review.gettingReady,Getting your review ready…,आपकी समीक्षा तैयार हो रही है…,Review screen header and progress,38,,machine-assisted
+review.hideBestMove,Hide best move,सबसे अच्छी चाल छिपाएँ,Review screen header and progress,23,,machine-assisted
+review.lastMove,Last move,अंतिम चाल,Review screen header and progress,16,,machine-assisted
+review.leftBookAtMove,Left book at move {move},चाल {move} पर किताब छूटी,Review screen header and progress,36,,machine-assisted
+review.leftBookPlayed,Left book at move {move} — played {san}.,चाल {move} पर किताब छूटी — {san} खेला गया।,Review screen header and progress,56,,machine-assisted
+review.liveMove,Move {move}: {san},चाल {move}: {san},Review screen header and progress,28,,machine-assisted
+review.liveMoveClassified,"Move {move}: {san}, classified {classification}","चाल {move}: {san}, वर्गीकरण {classification}",Review screen header and progress,66,,machine-assisted
+review.loadingEngine,Loading engine…,इंजन लोड हो रहा है…,Review screen header and progress,24,,machine-assisted
+review.loadingEnginePct,Loading engine… {pct}%,इंजन लोड हो रहा है… {pct}%,Review screen header and progress,33,,machine-assisted
+review.loadingReview,Loading review…,समीक्षा लोड हो रही है…,Review screen header and progress,24,,machine-assisted
+review.navigationControls,Navigation controls,नेविगेशन नियंत्रण,Review screen header and progress,29,,machine-assisted
+review.newGame,New game,नया गेम,Review screen header and progress,15,,machine-assisted
+review.next,Next →,आगे →,Review screen header and progress,12,,machine-assisted
+review.nextCriticalMoment,Next critical moment,अगला महत्वपूर्ण क्षण,Review screen header and progress,30,,machine-assisted
+review.nextMove,Next move,अगली चाल,Review screen header and progress,16,,machine-assisted
+review.noBookContinuations,No book continuations in the dataset for this position.,इस स्थिति के लिए डेटासेट में कोई किताबी निरंतरता नहीं है।,Review screen header and progress,76,,machine-assisted
+review.noGameFound,No game found.,कोई गेम नहीं मिला।,Review screen header and progress,23,,machine-assisted
+review.noGameProvided,"No game was provided. Go back and paste a PGN, FEN, or game link.","कोई गेम नहीं दिया गया। वापस जाएँ और PGN, FEN या गेम लिंक चिपकाएँ।",Review screen header and progress,89,,machine-assisted
+review.openingLabel,Opening:,ओपनिंग:,Review screen header and progress,15,,machine-assisted
+review.performanceEstimate,Performance estimate,प्रदर्शन अनुमान,Review screen header and progress,30,,machine-assisted
+review.pgnCopied,PGN copied,PGN कॉपी हो गया,Review screen header and progress,17,,machine-assisted
+review.playerBar,{name} player bar,{name} खिलाड़ी पट्टी,Review screen header and progress,27,,machine-assisted
+review.players,Players,खिलाड़ी,Review screen header and progress,14,,machine-assisted
+review.positionCoach,Analyzing this position. Play moves on the board and I'll evaluate them live.,इस स्थिति का विश्लेषण हो रहा है। बोर्ड पर चालें चलें और मैं उनका लाइव मूल्यांकन करूँगा।,Review screen header and progress,105,,machine-assisted
+review.positionEvent,Position analysis,स्थिति विश्लेषण,Review screen header and progress,27,,machine-assisted
+review.presetDeep,Deep,गहरा,Review screen header and progress,10,,machine-assisted
+review.presetQuick,Quick,त्वरित,Review screen header and progress,11,,machine-assisted
+review.presetStandard,Standard,मानक,Review screen header and progress,15,,machine-assisted
+review.previousMove,Previous move,पिछली चाल,Review screen header and progress,21,,machine-assisted
+review.reanalyzeDeeper,Re-analyze this position deeper,इस स्थिति का गहरा पुनः विश्लेषण करें,Review screen header and progress,45,,machine-assisted
+review.reanalyzingDeeper,Re-analyzing at depth {depth}…,गहराई {depth} पर पुनः विश्लेषण हो रहा है…,Review screen header and progress,43,,machine-assisted
+review.retryAgain,Try again — still not good enough.,फिर से कोशिश करें — अभी भी पर्याप्त अच्छा नहीं है।,Review screen header and progress,49,,machine-assisted
+review.retryBest,That's the best move!,यह सबसे अच्छी चाल है!,Review screen header and progress,32,,machine-assisted
+review.retryBetter,Good — that's better!,अच्छा — यह बेहतर है!,Review screen header and progress,32,,machine-assisted
+review.retryThisMove,⟳ Retry this move,⟳ इस चाल को फिर से आज़माएँ,Review screen header and progress,27,,machine-assisted
+review.retryWeak,That move was weak. Play a stronger one on the board.,वह चाल कमज़ोर थी। बोर्ड पर कोई मज़बूत चाल चलें।,Review screen header and progress,73,,machine-assisted
+review.reviewNavigation,Review navigation,समीक्षा नेविगेशन,Review screen header and progress,27,,machine-assisted
+review.savedReviewNotFound,That saved review could not be found.,वह सहेजी गई समीक्षा नहीं मिली।,Review screen header and progress,53,,machine-assisted
+review.share,↗ Share,↗ साझा करें,Review screen header and progress,14,,machine-assisted
+review.shareLink,Share link,लिंक साझा करें,Review screen header and progress,17,,machine-assisted
+review.shareLinkCopied,Share link copied,साझा लिंक कॉपी हो गया,Review screen header and progress,27,,machine-assisted
+review.showBestMove,Show best move,सबसे अच्छी चाल दिखाएँ,Review screen header and progress,23,,machine-assisted
+review.showSolution,Show solution,समाधान दिखाएँ,Review screen header and progress,21,,machine-assisted
+review.skip,Skip,छोड़ें,Review screen header and progress,10,,machine-assisted
+review.startReview,▶ Start Review,▶ समीक्षा शुरू करें,Review screen header and progress,23,,machine-assisted
+review.startingHint,"Press Next and I'll walk you through the game, move by move.",आगे दबाएँ और मैं आपको गेम में चाल-दर-चाल ले चलूँगा।,Review screen header and progress,82,,machine-assisted
+review.startingPosition,Starting position,प्रारंभिक स्थिति,Review screen header and progress,27,,machine-assisted
+review.summary,★ Summary,★ सारांश,Review screen header and progress,16,,machine-assisted
+review.thinking,Thinking…,सोच रहा है…,Review screen header and progress,16,,machine-assisted
+review.thinkingNps,Thinking… {nps}k nodes/s,सोच रहा है… {nps}k नोड/सेकंड,Review screen header and progress,36,,machine-assisted
+review.title,Game Review,गेम समीक्षा,Review screen header and progress,19,,machine-assisted
+review.variations,Variations,वेरिएशन,Review screen header and progress,17,,machine-assisted
+settings.analysisDepth,Analysis depth,विश्लेषण गहराई,Settings drawer,23,,machine-assisted
+settings.animationSpeed,Animation speed · {ms} ms,एनीमेशन गति · {ms} ms,Settings drawer,37,,machine-assisted
+settings.animationSpeedLabel,Animation speed in milliseconds,मिलीसेकंड में एनीमेशन गति,Settings drawer,45,,machine-assisted
+settings.appHelp,"Installed or not, Chess Review works offline after one online visit — reviews, the board editor and analysis all run on this device.","इंस्टॉल हो या न हो, एक ऑनलाइन विज़िट के बाद Chess Review ऑफ़लाइन काम करता है — समीक्षाएँ, बोर्ड एडिटर और विश्लेषण सभी इसी डिवाइस पर चलते हैं।",Settings drawer,,,machine-assisted
+settings.appSection,App,ऐप,Settings drawer,8,,machine-assisted
+settings.appearance,Appearance,दिखावट,Settings drawer,17,,machine-assisted
+settings.bestMoveArrows,Best-move arrows,सर्वश्रेष्ठ-चाल तीर,Settings drawer,25,,machine-assisted
+settings.boardCoordinates,Board coordinates,बोर्ड निर्देशांक,Settings drawer,27,,machine-assisted
+settings.boardSize,Board size · {px} px,बोर्ड आकार · {px} px,Settings drawer,30,,machine-assisted
+settings.boardSizeLabel,Board size in pixels,पिक्सेल में बोर्ड आकार,Settings drawer,30,,machine-assisted
+settings.boardTheme,Board theme,बोर्ड थीम,Settings drawer,19,,machine-assisted
+settings.boardThemeName,Board theme {name},बोर्ड थीम {name},Settings drawer,28,,machine-assisted
+settings.budgetExtra,Terminal positions are never searched; positions with one legal move get a depth-1 evaluation.,अंतिम स्थितियाँ कभी खोजी नहीं जातीं; एकमात्र वैध चाल वाली स्थितियों को केवल गहराई-1 मूल्यांकन मिलता है।,Settings drawer,127,,machine-assisted
+settings.budgetSummary,"Adaptive: target depth {target}, hard cap {cap} ms. Stops early after depth {min} when the best move is unchanged for {window} consecutive depths and the score moves < {delta} cp. Swings over {swing} win-% points (or a last-moment best-move change) are re-analyzed at full depth. Book positions stop from depth {bookMin}; the last book position is verified at full budget.","अनुकूली: लक्ष्य गहराई {target}, कठोर सीमा {cap} ms। गहराई {min} के बाद जल्दी रुकता है जब सर्वश्रेष्ठ चाल {window} लगातार गहराइयों तक अपरिवर्तित रहती है और स्कोर < {delta} cp बदलता है। {swing} जीत-% अंकों से अधिक बदलाव (या अंतिम क्षण में सर्वश्रेष्ठ चाल का बदलाव) पूर्ण गहराई पर फिर से विश्लेषित होते हैं। किताबी स्थितियाँ गहराई {bookMin} से रुकती हैं; अंतिम किताबी स्थिति पूर्ण बजट पर सत्यापित होती है।",Settings drawer,,,machine-assisted
+settings.buildAuto,Auto,स्वतः,Settings drawer,10,,machine-assisted
+settings.buildLite,Lite (smallest),लाइट (सबसे छोटा),Settings drawer,24,,machine-assisted
+settings.buildMulti,Full (multi-threaded),पूर्ण (मल्टी-थ्रेड),Settings drawer,32,,machine-assisted
+settings.buildSingle,Single-threaded,सिंगल-थ्रेड,Settings drawer,24,,machine-assisted
+settings.cacheCurrently.one,Currently: 1 position · ~{size}.,वर्तमान में: 1 स्थिति · ~{size}।,"Settings drawer — plural form ""one""",46,,machine-assisted
+settings.cacheCurrently.other,Currently: {count} positions · ~{size}.,वर्तमान में: {count} स्थितियाँ · ~{size}।,"Settings drawer — plural form ""other""",55,,machine-assisted
+settings.cacheHelp,Removes cached position evaluations stored on this device.,इस डिवाइस पर संग्रहीत कैश किए गए स्थिति मूल्यांकन हटाता है।,Settings drawer,80,,machine-assisted
+settings.classification,Classification,वर्गीकरण,Settings drawer,23,,machine-assisted
+settings.classificationBalanced,Balanced,संतुलित,Settings drawer,15,,machine-assisted
+settings.classificationGenerous,Generous,उदार,Settings drawer,15,,machine-assisted
+settings.classificationHelp,Classification: Strict / Balanced / Generous — strict awards Brilliant/Great rarely and demotes sooner; generous is the opposite; Balanced is the calibrated default.,वर्गीकरण: सख्त / संतुलित / उदार — सख्त शानदार/बहुत बढ़िया कम देता है और जल्दी नीचे करता है; उदार इसका उल्टा है; संतुलित कैलिब्रेटेड डिफ़ॉल्ट है।,Settings drawer,,,machine-assisted
+settings.classificationProfile,Classification profile,वर्गीकरण प्रोफ़ाइल,Settings drawer,33,,machine-assisted
+settings.classificationStrict,Strict,सख्त,Settings drawer,12,,machine-assisted
+settings.clearEngineCache,Clear engine cache,इंजन कैश साफ़ करें,Settings drawer,28,,machine-assisted
+settings.clearEngineFiles,Clear downloaded engine files,डाउनलोड की गई इंजन फ़ाइलें साफ़ करें,Settings drawer,42,,machine-assisted
+settings.confirmClear,Click again to confirm clear,साफ़ करने की पुष्टि के लिए फिर से क्लिक करें,Settings drawer,41,,machine-assisted
+settings.coordInside,Inside,अंदर,Settings drawer,12,,machine-assisted
+settings.coordOff,Off,बंद,Settings drawer,8,,machine-assisted
+settings.coordOutside,Outside,बाहर,Settings drawer,14,,machine-assisted
+settings.countAndSize,{count} · ~{size},{count} · ~{size},Settings drawer,27,,machine-assisted
+settings.darkMode,Dark mode,गहरा मोड,Settings drawer,16,,machine-assisted
+settings.engineBuild,Engine build,इंजन बिल्ड,Settings drawer,20,,machine-assisted
+settings.engineBuildHelp,"Auto picks the fastest build this device supports. Full needs cross-origin isolation, SharedArrayBuffer, at least 4 GB of reported memory and a non-mobile browser — it cannot be forced when those are missing and falls back automatically. Lite is a ~1.8 MB build always used on devices reporting 2 GB or less. Takes effect after a reload.","स्वतः इस डिवाइस द्वारा समर्थित सबसे तेज़ बिल्ड चुनता है। पूर्ण के लिए क्रॉस-ऑरिजिन आइसोलेशन, SharedArrayBuffer, कम से कम 4 GB सूचित मेमोरी और गैर-मोबाइल ब्राउज़र चाहिए — ये न हों तो इसे मजबूर नहीं किया जा सकता और यह स्वतः वापस आ जाता है। लाइट ~1.8 MB बिल्ड है जो 2 GB या कम सूचित करने वाले डिवाइसों पर हमेशा उपयोग होता है। पुनः लोड के बाद प्रभावी होता है।",Settings drawer,,,machine-assisted
+settings.engineBundleLiteOnly,"This deployment ships only the Lite engine build (~1.8 MB) — a smaller, weaker Stockfish chosen to keep the deployment tiny. Analysis works as usual; the full builds are not available on this host.","यह डिप्लॉयमेंट केवल लाइट इंजन बिल्ड (~1.8 MB) के साथ आता है — डिप्लॉयमेंट को छोटा रखने के लिए चुना गया एक छोटा, कमज़ोर Stockfish। विश्लेषण सामान्य रूप से काम करता है; पूर्ण बिल्ड इस होस्ट पर उपलब्ध नहीं हैं।",Settings drawer,,,machine-assisted
+settings.engineSection,Engine,इंजन,Settings drawer,12,,machine-assisted
+settings.hash,Hash (MB),हैश (MB),Settings drawer,16,,machine-assisted
+settings.hashLabel,"Engine hash size in megabytes, 16 to 512","मेगाबाइट में इंजन हैश आकार, 16 से 512",Settings drawer,56,,machine-assisted
+settings.keepPersistent,Keep storage persistent,संग्रहण स्थायी रखें,Settings drawer,34,,machine-assisted
+settings.language,Language,भाषा,Settings drawer,15,,machine-assisted
+settings.languageLabel,Language,भाषा,Settings drawer,15,,machine-assisted
+settings.lightMode,Light mode,हल्का मोड,Settings drawer,17,,machine-assisted
+settings.linesLabel,"Number of engine lines, 1 to 5","इंजन लाइनों की संख्या, 1 से 5",Settings drawer,43,,machine-assisted
+settings.linesMultiPv,Lines (MultiPV),लाइनें (MultiPV),Settings drawer,24,,machine-assisted
+settings.machineAssisted,Machine-assisted translation,मशीन-सहायता प्राप्त अनुवाद,Settings drawer,41,,machine-assisted
+settings.machineAssistedShort,machine-assisted,मशीन-सहायता प्राप्त,Settings drawer,25,,machine-assisted
+settings.parallelWorkers,Parallel workers,समानांतर वर्कर,Settings drawer,25,,machine-assisted
+settings.pieceSet,Piece set,मोहरा सेट,Settings drawer,16,,machine-assisted
+settings.pieceSetName,Piece set {name},मोहरा सेट {name},Settings drawer,25,,machine-assisted
+settings.sounds,Sounds,ध्वनियाँ,Settings drawer,12,,machine-assisted
+settings.storageClearHelp,"Clearing removes the cached Stockfish downloads; the engine will re-download (~95 MB for the full build, ~1.8 MB for lite) on the next analysis. Saved reviews and the position cache are not touched.","साफ़ करने से कैश किए गए Stockfish डाउनलोड हट जाते हैं; अगले विश्लेषण पर इंजन फिर से डाउनलोड होगा (पूर्ण बिल्ड के लिए ~95 MB, लाइट के लिए ~1.8 MB)। सहेजी गई समीक्षाएँ और स्थिति कैश प्रभावित नहीं होते।",Settings drawer,,,machine-assisted
+settings.storageEngineFiles,Downloaded engine files,डाउनलोड की गई इंजन फ़ाइलें,Settings drawer,34,,machine-assisted
+settings.storagePersistent,Persistent storage,स्थायी संग्रहण,Settings drawer,28,,machine-assisted
+settings.storagePositionCache,Position cache,स्थिति कैश,Settings drawer,23,,machine-assisted
+settings.storageSavedReviews,Saved reviews,सहेजी गई समीक्षाएँ,Settings drawer,21,,machine-assisted
+settings.storageSection,Storage,संग्रहण,Settings drawer,14,,machine-assisted
+settings.storageTotal,Total for this site,इस साइट के लिए कुल,Settings drawer,29,,machine-assisted
+settings.storageTotalFull,{usage} of {quota},{quota} में से {usage},Settings drawer,28,,machine-assisted
+settings.storageTotalOnly,{usage},{usage},Settings drawer,14,,machine-assisted
+settings.switchToDark,Switch to dark theme,गहरी थीम पर जाएँ,Settings drawer,30,,machine-assisted
+settings.switchToLight,Switch to light theme,हल्की थीम पर जाएँ,Settings drawer,32,,machine-assisted
+settings.theme,Theme,थीम,Settings drawer,11,,machine-assisted
+settings.themeBlue,Blue,नीला,Settings drawer,10,,machine-assisted
+settings.themeBrown,Brown,भूरा,Settings drawer,11,,machine-assisted
+settings.themeDark,Dark,गहरी,Settings drawer,10,,machine-assisted
+settings.themeGreen,Green,हरा,Settings drawer,11,,machine-assisted
+settings.themeGrey,Grey,स्लेटी,Settings drawer,10,,machine-assisted
+settings.themeLight,Light,हल्की,Settings drawer,11,,machine-assisted
+settings.themePurple,Purple,बैंगनी,Settings drawer,12,,machine-assisted
+settings.themeWood,Wood,लकड़ी,Settings drawer,10,,machine-assisted
+settings.threads,Threads,थ्रेड,Settings drawer,14,,machine-assisted
+settings.threadsLabel,"Engine threads, 1 to 8","इंजन थ्रेड, 1 से 8",Settings drawer,33,,machine-assisted
+settings.title,Settings,सेटिंग्स,Settings drawer,15,,machine-assisted
+summary.accuracyLabel,Accuracy,सटीकता,"Review summary panel (accuracy, classifications)",15,,machine-assisted
+summary.accuracyPercent,Accuracy {value} percent,सटीकता {value} प्रतिशत,"Review summary panel (accuracy, classifications)",36,,machine-assisted
+summary.accuracyUnavailable,Accuracy unavailable,सटीकता उपलब्ध नहीं,"Review summary panel (accuracy, classifications)",30,,machine-assisted
+summary.acpl,Avg. centipawn loss,औसत सेंटिपawn हानि,"Review summary panel (accuracy, classifications)",29,,machine-assisted
+summary.bestStreak,Best-move streak,सर्वश्रेष्ठ-चाल श्रृंखला,"Review summary panel (accuracy, classifications)",25,,machine-assisted
+summary.biggestSwing,Biggest eval swing,सबसे बड़ा मूल्यांकन बदलाव,"Review summary panel (accuracy, classifications)",28,,machine-assisted
+summary.classificationSummary,Move classification summary,चाल वर्गीकरण सारांश,"Review summary panel (accuracy, classifications)",40,,machine-assisted
+summary.eplBarJump,Move {move} {san}: expected points lost {epl}. Jump to this move.,चाल {move} {san}: खोए अपेक्षित अंक {epl}। इस चाल पर जाएँ।,"Review summary panel (accuracy, classifications)",89,,machine-assisted
+summary.eplBarLabel,Move {move} {san}: expected points lost {epl},चाल {move} {san}: खोए अपेक्षित अंक {epl},"Review summary panel (accuracy, classifications)",63,,machine-assisted
+summary.eplBars,EPL bars,EPL पट्टियाँ,"Review summary panel (accuracy, classifications)",15,,machine-assisted
+summary.eplPerMove,Expected points lost per move,प्रति चाल खोए अपेक्षित अंक,"Review summary panel (accuracy, classifications)",42,,machine-assisted
+summary.filtering,Filtering: {label} — click the row again to clear.,फ़िल्टर: {label} — साफ़ करने के लिए पंक्ति पर फिर से क्लिक करें।,"Review summary panel (accuracy, classifications)",69,,machine-assisted
+summary.gameStatistics,Game statistics,गेम आँकड़े,"Review summary panel (accuracy, classifications)",24,,machine-assisted
+summary.jumpToSwing,"Jump to {name}'s biggest eval swing: move {move}, {san}","{name} के सबसे बड़े मूल्यांकन बदलाव पर जाएँ: चाल {move}, {san}","Review summary panel (accuracy, classifications)",76,,machine-assisted
+summary.keyMoments,Key moments,महत्वपूर्ण क्षण,"Review summary panel (accuracy, classifications)",19,,machine-assisted
+summary.leftBookAtMove,Left book at move {move},चाल {move} पर किताब छूटी,"Review summary panel (accuracy, classifications)",36,,machine-assisted
+summary.moveCountsTable,{white} versus {black} move counts,{white} बनाम {black} चाल गणना,"Review summary panel (accuracy, classifications)",49,,machine-assisted
+summary.nextClassMove,Next {label} move,अगली {label} चाल,"Review summary panel (accuracy, classifications)",27,,machine-assisted
+summary.noCriticalMoments,No critical moments.,कोई महत्वपूर्ण क्षण नहीं।,"Review summary panel (accuracy, classifications)",30,,machine-assisted
+summary.notEnoughMoves,Not enough moves,पर्याप्त चालें नहीं,"Review summary panel (accuracy, classifications)",25,,machine-assisted
+summary.opening,Opening,ओपनिंग,"Review summary panel (accuracy, classifications)",14,,machine-assisted
+summary.performanceTitle,Rough single-game band from accuracy and average centipawn loss — not a rating.,सटीकता और औसत सेंटिपawn हानि से मोटा एकल-गेम अनुमान — यह रेटिंग नहीं है।,"Review summary panel (accuracy, classifications)",107,,machine-assisted
+summary.previousClassMove,Previous {label} move,पिछली {label} चाल,"Review summary panel (accuracy, classifications)",32,,machine-assisted
+summary.statistics,Statistics,आँकड़े,"Review summary panel (accuracy, classifications)",17,,machine-assisted
+summary.timeByPhase,Time by phase,चरण अनुसार समय,"Review summary panel (accuracy, classifications)",21,,machine-assisted
+summary.timeByPhaseSub,opening / middle / end,ओपनिंग / मध्य / अंत,"Review summary panel (accuracy, classifications)",33,,machine-assisted
+summary.timeTroubleMoves,Time-trouble moves,समय-दबाव वाली चालें,"Review summary panel (accuracy, classifications)",28,,machine-assisted
+termination.analyzeFirst100,First 100 moves,पहली 100 चालें,Game-ending banners,24,,machine-assisted
+termination.analyzeFirst200,First 200 moves,पहली 200 चालें,Game-ending banners,24,,machine-assisted
+termination.analyzeFirstLabel,Long game — analyze,लंबा गेम — विश्लेषण करें,Game-ending banners,29,,machine-assisted
+termination.analyzeFull,Full game,पूरा गेम,Game-ending banners,16,,machine-assisted
+termination.analyzeUpTo,Analyze up to move {move},चाल {move} तक विश्लेषण करें,Game-ending banners,37,,machine-assisted
+termination.bannerAbandoned,Game abandoned,गेम छोड़ दिया गया,Game-ending banners,23,,machine-assisted
+termination.bannerAbandonment,{winner} won by abandonment,{winner} परित्याग से जीता,Game-ending banners,40,,machine-assisted
+termination.bannerAgreement,Draw by agreement,समझौते से ड्रॉ,Game-ending banners,27,,machine-assisted
+termination.bannerCheckmate,{winner} won by checkmate,{winner} शतरंज की चाल से जीता,Game-ending banners,37,,machine-assisted
+termination.bannerDecisiveUnknown,{winner} won,{winner} जीता,Game-ending banners,20,,machine-assisted
+termination.bannerDrawUnknown,Draw,ड्रॉ,Game-ending banners,10,,machine-assisted
+termination.bannerFiftyMove,Draw by the fifty-move rule,पचास चाल नियम से ड्रॉ,Game-ending banners,40,,machine-assisted
+termination.bannerForfeit,{winner} won by forfeit,{winner} ज़ब्ती से जीता,Game-ending banners,34,,machine-assisted
+termination.bannerInsufficient,Draw by insufficient material,अपर्याप्त सामग्री से ड्रॉ,Game-ending banners,42,,machine-assisted
+termination.bannerLabel,Game result: {text},गेम परिणाम: {text},Game-ending banners,29,,machine-assisted
+termination.bannerRepetitionFivefold,Draw by fivefold repetition,पाँच बार दोहराव से ड्रॉ,Game-ending banners,40,,machine-assisted
+termination.bannerRepetitionThreefold,Draw by threefold repetition,तीन बार दोहराव से ड्रॉ,Game-ending banners,41,,machine-assisted
+termination.bannerResignation,{winner} won by resignation,{winner} इस्तीफ़े से जीता,Game-ending banners,40,,machine-assisted
+termination.bannerSeventyFiveMove,Draw by the seventy-five-move rule,पचहत्तर चाल नियम से ड्रॉ,Game-ending banners,49,,machine-assisted
+termination.bannerStalemate,Draw by stalemate,स्टेलमेट से ड्रॉ,Game-ending banners,27,,machine-assisted
+termination.bannerTimeout,{winner} won on time,{winner} समय पर जीता,Game-ending banners,30,,machine-assisted
+termination.bannerTimeoutVsInsufficient,Draw — timeout against insufficient material,ड्रॉ — अपर्याप्त सामग्री के विरुद्ध समय समाप्त,Game-ending banners,62,,machine-assisted
+termination.bannerUnfinished,Game not finished,गेम समाप्त नहीं हुआ,Game-ending banners,27,,machine-assisted
+termination.chess960Body,"This is a Chess960 (Fischer Random) game. Castling in Chess960 follows different rules, and this app cannot analyze it correctly as standard chess, so the game has not been analyzed rather than risk wrong results.","यह Chess960 (फिशर रैंडम) गेम है। Chess960 में कैसलिंग के नियम अलग होते हैं, और यह ऐप इसे मानक शतरंज के रूप में सही ढंग से विश्लेषण नहीं कर सकता, इसलिए गलत परिणामों के जोखिम के बजाय गेम का विश्लेषण नहीं किया गया है।",Game-ending banners,,,machine-assisted
+termination.chess960Label,Chess960,Chess960,Game-ending banners,15,,machine-assisted
+termination.chess960Title,Chess960 is not supported yet,Chess960 अभी समर्थित नहीं है,Game-ending banners,42,,machine-assisted
+termination.finalResult,Final result: {result},अंतिम परिणाम: {result},Game-ending banners,33,,machine-assisted
+termination.parseErrorBody.one,"The move ""{san}"" is not legal in that position, so only the first move could be read. You can analyze the valid part of the game.","चाल ""{san}"" उस स्थिति में वैध नहीं है, इसलिए केवल पहली चाल पढ़ी जा सकी। आप गेम के वैध भाग का विश्लेषण कर सकते हैं।","Game-ending banners — plural form ""one""",,,machine-assisted
+termination.parseErrorBody.other,"The move ""{san}"" is not legal in that position, so only the first {count} moves could be read. You can analyze the valid part of the game.","चाल ""{san}"" उस स्थिति में वैध नहीं है, इसलिए केवल पहली {count} चालें पढ़ी जा सकीं। आप गेम के वैध भाग का विश्लेषण कर सकते हैं।","Game-ending banners — plural form ""other""",,,machine-assisted
+termination.parseErrorTitle,This PGN stopped at ply {ply},यह PGN प्लाई {ply} पर रुक गया,Game-ending banners,42,,machine-assisted
+vision.analyzePosition,Analyze this position,इस स्थिति का विश्लेषण करें,Screenshot import flow,32,,machine-assisted
+vision.betaLabel,Beta,Beta,Screenshot import flow,10,,machine-assisted
+vision.canvasUnavailable,Canvas 2D is not available in this browser.,इस ब्राउज़र में Canvas 2D उपलब्ध नहीं है।,Screenshot import flow,60,,machine-assisted
+vision.chooseScreenshot,Choose screenshot…,स्क्रीनशॉट चुनें…,Screenshot import flow,28,,machine-assisted
+vision.confidenceLabel,Recognition confidence:,पहचान विश्वसनीयता:,Screenshot import flow,34,,machine-assisted
+vision.confidenceMeta,(mean of the 64 square confidences · took {seconds}s · {side} at the bottom),(64 खानों की विश्वसनीयता का औसत · {seconds}s लगे · नीचे {side}),Screenshot import flow,103,,machine-assisted
+vision.couldNotLoadArtwork,Could not load piece artwork ({set}/{key}).,मोहरा चित्र लोड नहीं हो सका ({set}/{key})।,Screenshot import flow,60,,machine-assisted
+vision.importIntro,Upload a screenshot of a chess board and the position is recognized on this device by template matching against this app's own piece sets — then you review and fix it square-by-square before anything is analyzed.,शतरंज बोर्ड का स्क्रीनशॉट अपलोड करें और स्थिति इस डिवाइस पर ही इस ऐप के अपने मोहरा सेटों से टेम्पलेट मिलान द्वारा पहचानी जाती है — फिर विश्लेषण से पहले आप उसे खाने-दर-खाने जाँचकर ठीक करते हैं।,Screenshot import flow,,,machine-assisted
+vision.importIntroTail,": recognition runs locally in a Web Worker, with no uploads and no network calls.",": पहचान स्थानीय रूप से Web Worker में चलती है, बिना अपलोड और बिना नेटवर्क कॉल के।",Screenshot import flow,110,,machine-assisted
+vision.importTitle,Import from a screenshot,स्क्रीनशॉट से आयात करें,Screenshot import flow,36,,machine-assisted
+vision.kingsAdjacent,"The two kings are next to each other, which is never legal.","दोनों राजा एक-दूसरे के बगल में हैं, जो कभी वैध नहीं होता।",Screenshot import flow,81,,machine-assisted
+vision.lowConfidence,"Recognition confidence is low — check every highlighted square against your screenshot before analyzing. Orange rings mark the least certain squares, yellow rings uncertain ones.","पहचान विश्वसनीयता कम है — विश्लेषण से पहले हर हाइलाइट किए गए खाने को अपने स्क्रीनशॉट से जाँचें। नारंगी घेरे सबसे कम निश्चित खानों को, पीले घेरे अनिश्चित खानों को दर्शाते हैं।",Screenshot import flow,,,machine-assisted
+vision.materialWarning.one,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawns are missing.,"{side} की सामग्री (प्रारंभिक सेट से {extras} पदोन्नत मोहरा अधिक) के लिए {extras} प्यादा पदोन्नति चाहिए, लेकिन केवल {missing} प्यादे गायब हैं।","Screenshot import flow — plural form ""one""",,,machine-assisted
+vision.materialWarning.other,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawns are missing.,"{side} की सामग्री (प्रारंभिक सेट से {extras} पदोन्नत मोहरे अधिक) के लिए {extras} प्यादा पदोन्नतियाँ चाहिए, लेकिन केवल {missing} प्यादे गायब हैं।","Screenshot import flow — plural form ""other""",,,machine-assisted
+vision.materialWarningMissingOne,{side}'s material ({extras} promoted pieces beyond the starting set) needs {extras} pawn promotions but only {missing} pawn is missing.,"{side} की सामग्री (प्रारंभिक सेट से {extras} पदोन्नत मोहरे अधिक) के लिए {extras} प्यादा पदोन्नतियाँ चाहिए, लेकिन केवल {missing} प्यादा गायब है।",Screenshot import flow,,,machine-assisted
+vision.materialWarningOneOne,{side}'s material ({extras} promoted piece beyond the starting set) needs {extras} pawn promotion but only {missing} pawn is missing.,"{side} की सामग्री (प्रारंभिक सेट से {extras} पदोन्नत मोहरा अधिक) के लिए {extras} प्यादा पदोन्नति चाहिए, लेकिन केवल {missing} प्यादा गायब है।",Screenshot import flow,,,machine-assisted
+vision.needBlackKingCount,Position needs exactly one black king (found {count}).,स्थिति में ठीक एक काला राजा चाहिए (मिले {count})।,Screenshot import flow,75,,machine-assisted
+vision.needWhiteKingCount,Position needs exactly one white king (found {count}).,स्थिति में ठीक एक सफ़ेद राजा चाहिए (मिले {count})।,Screenshot import flow,75,,machine-assisted
+vision.neverLeave,Images never leave your device,छवियाँ कभी आपके डिवाइस से बाहर नहीं जातीं,Screenshot import flow,43,,machine-assisted
+vision.noBoardBody,"Recognition works best on screenshots when the board fills most of the frame and uses a standard piece set; tilted screenshots are straightened automatically. Photographs of real boards are experimental — expect to correct squares. The editor below starts empty — place the pieces to match your screenshot, which stays beside the editor for comparison.","पहचान स्क्रीनशॉट पर तब सबसे अच्छी होती है जब बोर्ड फ़्रेम का अधिकांश हिस्सा घेरता हो और मानक मोहरा सेट उपयोग करता हो; झुके हुए स्क्रीनशॉट अपने आप सीधे हो जाते हैं। असली बोर्डों की तस्वीरों पर पहचान प्रयोगात्मक है — मोहरों को सुधारने के लिए तैयार रहें। नीचे का एडिटर खाली शुरू होता है — अपने स्क्रीनशॉट से मिलान करते हुए मोहरे रखें, जो तुलना के लिए एडिटर के पास ही रहता है।",Screenshot import flow,,,machine-assisted
+vision.noBoardTitle,No board could be detected in this image.,इस छवि में कोई बोर्ड नहीं मिला।,Screenshot import flow,58,,machine-assisted
+vision.openEditorManual,Open board editor to set up a position manually,स्थिति मैन्युअल रूप से बनाने के लिए बोर्ड एडिटर खोलें,Screenshot import flow,66,,machine-assisted
+vision.pawnOnSquare,A pawn cannot stand on {square} (rank {rank}).,प्यादा {square} पर नहीं खड़ा हो सकता (पंक्ति {rank})।,Screenshot import flow,64,,machine-assisted
+vision.positionProblems,The recognized position has problems:,पहचानी गई स्थिति में समस्याएँ हैं:,Screenshot import flow,53,,machine-assisted
+vision.recognitionFailedPrefix,Recognition failed:,पहचान विफल:,Screenshot import flow,29,,machine-assisted
+vision.recognitionFailedSuffix,You can still set a position up with the board editor.,आप फिर भी बोर्ड एडिटर से स्थिति बना सकते हैं।,Screenshot import flow,75,,machine-assisted
+vision.recognitionFailedUnexpected,Recognition failed unexpectedly.,पहचान अप्रत्याशित रूप से विफल रही।,Screenshot import flow,46,,machine-assisted
+vision.recognitionTook,(Recognition took {seconds}s before giving up.),(पहचान ने हार मानने से पहले {seconds}s लिए।),Screenshot import flow,66,,machine-assisted
+vision.rejectedPosition,chess.js rejected this position.,chess.js ने इस स्थिति को अस्वीकार कर दिया।,Screenshot import flow,46,,machine-assisted
+vision.sideNotToMoveInCheck,"The side not to move is in check — the previous move would have left its own king attacked, so this position cannot occur in a real game. Check the pieces around both kings.","जिस पक्ष की बारी नहीं है वह शह में है — पिछली चाल ने अपने ही राजा को हमले में छोड़ दिया होता, इसलिए यह स्थिति वास्तविक गेम में नहीं हो सकती। दोनों राजाओं के आसपास के मोहरे जाँचें।",Screenshot import flow,,,machine-assisted
+vision.stageDetecting,Detecting the board…,बोर्ड का पता लगाया जा रहा है…,Screenshot import flow,30,,machine-assisted
+vision.stageLoadingPieces,Loading piece templates…,मोहरा टेम्पलेट लोड हो रहे हैं…,Screenshot import flow,36,,machine-assisted
+vision.stageRecognizing,Recognizing pieces…,मोहरे पहचाने जा रहे हैं…,Screenshot import flow,29,,machine-assisted
+vision.startOver,Start over,फिर से शुरू करें,Screenshot import flow,17,,machine-assisted
+vision.swapHint,Screenshots are assumed to show White at the bottom — swap if yours shows Black at the bottom. Side to move and castling rights are set in the editor (castling was inferred from the king/rook squares).,स्क्रीनशॉट में नीचे सफ़ेद माना जाता है — यदि आपके स्क्रीनशॉट में नीचे काला है तो बदलें। चलने की बारी और कैसलिंग अधिकार एडिटर में सेट होते हैं (कैसलिंग राजा/हाथी खानों से अनुमानित थी)।,Screenshot import flow,,,machine-assisted
+vision.swapOrientation,Swap orientation (rotate board 180°),दिशा बदलें (बोर्ड 180° घुमाएँ),Screenshot import flow,51,,machine-assisted
+vision.tooManyPawns,{side} has {count} pawns — a side never has more than 8.,{side} के पास {count} प्यादे हैं — किसी पक्ष के पास कभी 8 से अधिक नहीं होते।,Screenshot import flow,77,,machine-assisted
+vision.tooManyPieces,{side} has {count} pieces — more than the 16 a side starts with.,"{side} के पास {count} मोहरे हैं — एक पक्ष जितने 16 मोहरों से शुरू करता है, उससे अधिक।",Screenshot import flow,88,,machine-assisted
+vision.uploadedAlt,Uploaded board screenshot: {name},अपलोड किया गया बोर्ड स्क्रीनशॉट: {name},Screenshot import flow,47,,machine-assisted
+vision.uploadedAltPlain,Uploaded board screenshot,अपलोड किया गया बोर्ड स्क्रीनशॉट,Screenshot import flow,37,,machine-assisted
+vision.workerFailed,The recognition worker failed to start.,पहचान वर्कर शुरू नहीं हो सका।,Screenshot import flow,55,,machine-assisted
+vision.working,Working…,कार्य जारी है…,Screenshot import flow,15,,machine-assisted

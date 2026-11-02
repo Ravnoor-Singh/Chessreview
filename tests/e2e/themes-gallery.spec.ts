@@ -9,6 +9,11 @@ import { expect, test, type Page } from '@playwright/test';
  * regression shows up as a visual diff. Each section is shot in dark
  * and light UI themes with animations disabled. Baselines were
  * generated on this platform (linux) and carry a 2% pixel tolerance.
+ *
+ * Post-Round-2 Prompt 3: the gallery is dev/test-only and 404s in
+ * production unless the server runs with ENABLE_THEME_GALLERY=1 —
+ * playwright.config.ts sets that flag on its :3100 webServer, which
+ * is what makes these tests pass against a production build.
  */
 
 const SHOT = { maxDiffPixelRatio: 0.02, animations: 'disabled', fullPage: true } as const;

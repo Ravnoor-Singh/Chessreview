@@ -19,6 +19,11 @@ test('security headers: CSP + standard set present, page still cross-origin isol
   // Client fallbacks + engine CDN mode.
   expect(csp).toContain('https://lichess.org');
   expect(csp).toContain('https://api.chess.com');
+  // CSP tightening: production connect-src has NO bare https: token
+  // (a named host's '//' does not match this pattern) and NO loopback.
+  expect(csp).not.toMatch(/(?:^|[\s;])https:(?=\s|;|$)/);
+  expect(csp).not.toContain('http://localhost');
+  expect(csp).not.toContain('http://127.0.0.1');
   // Image previews.
   expect(csp).toContain("img-src 'self' data: blob:");
   expect(csp).toContain("frame-ancestors 'none'");
@@ -38,4 +43,37 @@ test('security headers: CSP + standard set present, page still cross-origin isol
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   const isolated = await page.evaluate(() => self.crossOriginIsolated);
   expect(isolated).toBe(true);
+});
+
+// CSP tightening (post-Round-2 Prompt 1): the tightened connect-src must
+// actually bite in a production build — a fetch to an unlisted origin
+// from page context is blocked by the policy (rejection + a
+// securitypolicyviolation event naming connect-src), not merely absent
+// from the header text asserted above.
+test('CSP blocks a fetch to an unlisted origin (example.com) from page context', async ({
+  page,
+}) => {
+  await page.goto('/');
+  const result = await page.evaluate(async () => {
+    const violations: string[] = [];
+    const onViolation = (e: SecurityPolicyViolationEvent) => {
+      violations.push(e.effectiveDirective);
+    };
+    document.addEventListener('securitypolicyviolation', onViolation);
+    let fetchError: string | null = null;
+    try {
+      await fetch('https://example.com/');
+    } catch (err) {
+      fetchError = String(err);
+    }
+    // The violation event is dispatched asynchronously after the block.
+    await new Promise((resolve) => setTimeout(resolve, 100));
+    document.removeEventListener('securitypolicyviolation', onViolation);
+    return { fetchError, violations };
+  });
+  expect(result.fetchError, 'fetch to example.com must reject').not.toBeNull();
+  expect(
+    result.violations.some((d) => d.includes('connect-src')),
+    `expected a connect-src violation, got: ${result.violations.join(', ') || '(none)'}`,
+  ).toBe(true);
 });

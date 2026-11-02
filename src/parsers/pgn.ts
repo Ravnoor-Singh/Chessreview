@@ -380,6 +380,35 @@ function parseSingleGame(gameText: string, locale: Locale = 'en'): ParsedGameWit
   try {
     replay = new Chess(startFen);
   } catch {
+    // A Shredder-FEN Chess960 start (castling field like "HFhf") is
+    // rejected by chess.js itself, so the game can never be replayed —
+    // but it must still surface as a flagged Chess960 game (the UI
+    // shows the localized not-supported screen), not as a generic
+    // parse failure.
+    if (detectChess960(headers, startFen)) {
+      const result = headers.Result ?? '*';
+      const termMeta: TerminationMetadata | undefined = headers.Termination
+        ? { terminationTag: headers.Termination }
+        : undefined;
+      return {
+        headers,
+        moves: [],
+        fens: [startFen],
+        startFen,
+        clocksMs: [],
+        result,
+        pgn: gameText,
+        termination: resolveTermination({
+          finalFen: startFen,
+          fens: [startFen],
+          headers,
+          result,
+          meta: termMeta,
+        }),
+        terminationMeta: termMeta,
+        isChess960: true,
+      };
+    }
     throw new Error(
       t(locale, 'errors.pgnFailed', {
         detail: loadError instanceof Error ? loadError.message : String(loadError),
@@ -410,8 +439,15 @@ function parseSingleGame(gameText: string, locale: Locale = 'en'): ParsedGameWit
     // unusual header chess.js's strict tag parser refuses, e.g. an
     // escaped quote in a name) but every move replays legally: accept
     // the game from the manual replay + regex-parsed tags.
-    const resultToken = tokens.length > 0 ? (headers.Result ?? '*') : '*';
-    const result = headers.Result ?? resultToken;
+    // Same result derivation as the loadPgn success path: the header
+    // wins, otherwise the last result token in the movetext (so a
+    // duplicated trailing result token resolves identically on both
+    // paths instead of degrading to '*').
+    const resultToken = cleanedForLoad(gameText)
+      .split(/\s+/)
+      .filter((tok) => RESULT_TOKENS.has(tok))
+      .pop();
+    const result = headers.Result ?? resultToken ?? '*';
     const clocksMsFull: (number | null)[] = moves.map((_, i) => clocks[i] ?? null);
     const termMeta: TerminationMetadata | undefined = headers.Termination
       ? { terminationTag: headers.Termination }

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { shouldRegisterServiceWorker } from '@/lib/pwa';
+import { shouldRegisterServiceWorker, swRegistrationOptions } from '@/lib/pwa';
 import { useOnlineStatus } from '@/hooks/useOnlineStatus';
 import { useMessages } from '@/i18n/useMessages';
 
@@ -46,7 +46,7 @@ export default function PwaManager() {
     };
 
     void navigator.serviceWorker
-      .register('/sw.js')
+      .register('/sw.js', swRegistrationOptions())
       .then((reg) => {
         if (cancelled) return;
         if (reg.waiting) {

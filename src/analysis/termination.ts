@@ -255,6 +255,13 @@ export function resolveTermination(input: TerminationInput): GameTermination {
         return { kind: hit.kind, winner: null, result: '1/2-1/2', detail: hit.detail };
       }
       const winner = winnerFromResult ?? input.meta?.lichessWinner ?? null;
+      // Abandonment needs no winner: an aborted game (e.g. Lichess
+      // 'aborted', chess.com "Game abandoned" with a '*' result) is an
+      // abandonment even though nobody won it. The banner has an
+      // explicit no-winner abandonment rendering for exactly this case.
+      if (hit.kind === 'abandonment' && !winner) {
+        return { kind: 'abandonment', winner: null, result, detail: hit.detail };
+      }
       if (winner)
         return {
           kind: hit.kind,

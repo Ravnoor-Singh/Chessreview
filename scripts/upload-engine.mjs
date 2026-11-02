@@ -44,6 +44,13 @@ const CONTENT_TYPES = {
   '.json': 'application/json',
 };
 const CACHE_CONTROL = 'public, max-age=31536000, immutable';
+// Prompt 2: the manifest's URL never changes, so it must NOT be uploaded
+// with the immutable payload header — a cached manifest would hide every
+// future engine update on the CDN path too. Payload files keep the
+// immutable header (their names carry the Stockfish version).
+const MANIFEST_CACHE_CONTROL = 'no-cache';
+const cacheControlFor = (name) =>
+  name === 'engine-manifest.json' ? MANIFEST_CACHE_CONTROL : CACHE_CONTROL;
 
 function sourceOf(name) {
   const local = join(root, 'public', 'engine', name);
@@ -85,7 +92,10 @@ if (!endpoint || !bucket || !accessKey || !secretKey) {
   console.log(
     `\n  Content-Type: per file (.js → text/javascript, .wasm → application/wasm, .json → application/json)`,
   );
-  console.log(`  Cache-Control: ${CACHE_CONTROL}`);
+  console.log(`  Cache-Control: ${CACHE_CONTROL} for the payload files;`);
+  console.log(
+    `  Cache-Control: ${MANIFEST_CACHE_CONTROL} for engine-manifest.json (its URL never changes)`,
+  );
   console.log('  Access-Control-Allow-Origin: *');
   console.log('  The engine files must be served over HTTPS with those CORS headers;');
   console.log(
@@ -110,7 +120,7 @@ function signAndPut(file) {
     .join('/')
     .replace(/%252F/g, '/');
   const headers = {
-    'cache-control': CACHE_CONTROL,
+    'cache-control': cacheControlFor(file.name),
     'content-type': file.contentType,
     host,
     'x-amz-content-sha256': payloadHash,

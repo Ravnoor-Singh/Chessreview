@@ -345,7 +345,7 @@ export default function SettingsPage(): React.JSX.Element {
                     )}
                     <div className="relative">
                       <h2
-                        className="mb-3 text-xs font-bold uppercase tracking-wide"
+                        className="mb-3 text-xs font-semibold"
                         style={{
                           // The preview frame is painted with the draft
                           // background (dark for 'standard'), so the label

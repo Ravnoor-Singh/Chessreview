@@ -147,7 +147,7 @@ export default function PresetsPanel({ draft, patch, hover }: DraftProps): React
           onClick={() => applySelection(randomSelection())}
           className="rounded bg-accent px-3 py-2 text-sm font-semibold text-[#1c2b0d] transition hover:opacity-90"
         >
-          🎲 {t('settingsPage.surpriseMe')}
+          {t('settingsPage.surpriseMe')}
         </button>
         <span className="text-sm text-muted" role="status" aria-live="polite">
           {notice}

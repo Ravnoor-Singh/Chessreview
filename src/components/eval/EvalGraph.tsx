@@ -292,7 +292,7 @@ export function EvalGraph({
           <span>{formatEval(hoverPly.evalWhiteCp, hoverPly.mate)}</span>
           {hoverClassLabel && (
             <span
-              className="ml-1.5 rounded-sm px-1 py-px text-[10px] font-bold uppercase tracking-wide"
+              className="ml-1.5 rounded-sm px-1 py-px text-[10px] font-semibold"
               style={{
                 backgroundColor:
                   hoverPly.classification !== undefined

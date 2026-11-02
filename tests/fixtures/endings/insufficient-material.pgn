@@ -1,0 +1,9 @@
+[Event "Ending fixture"]
+[Site "Chess Review test fixtures"]
+[Date "2026.11.02"]
+[White "Alice"]
+[Black "Bob"]
+[Result "1/2-1/2"]
+[SetUp "1"]
+[FEN "8/8/4k3/8/8/4KB2/8/8 w - - 0 1"]
+1. Bg2 1/2-1/2

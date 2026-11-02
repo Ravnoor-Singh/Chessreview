@@ -1,0 +1,8 @@
+[Event "Ending fixture"]
+[Site "Chess Review test fixtures"]
+[Date "2026.11.02"]
+[White "Alice"]
+[Black "Bob"]
+[Result "0-1"]
+
+1. f3 e5 2. g4 Qh4# 0-1

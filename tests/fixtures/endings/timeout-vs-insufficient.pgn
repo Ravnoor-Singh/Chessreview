@@ -1,0 +1,8 @@
+[Event "Ending fixture"]
+[Site "Chess Review test fixtures"]
+[Date "2026.11.02"]
+[White "Alice"]
+[Black "Bob"]
+[Result "1/2-1/2"]
+[Termination "Game drawn by timeout vs insufficient material"]
+1. e4 e5 2. Nf3 Nc6 1/2-1/2

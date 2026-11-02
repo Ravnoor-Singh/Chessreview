@@ -26,6 +26,6 @@ npm run dev   # http://localhost:3000
 
 ## License
 
-Application code © Ravnoor Singh. Stockfish is GPLv3; third-party assets keep their own licenses — see `LICENSES.md`. Piece/board artwork provenance: `src/themes/PROVENANCE.md`.
+Application code © Ravnoor Singh, licensed under GPL-3.0 (see `LICENSE`). Stockfish is GPL-3.0; third-party assets keep their own licenses, see `LICENSES.md`. Security policy: `docs/SECURITY.md`. Piece/board artwork provenance: `src/themes/PROVENANCE.md`.
 
 > Not affiliated with chess.com; no chess.com trademarks or proprietary artwork are used.

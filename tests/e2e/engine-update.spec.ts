@@ -146,9 +146,7 @@ test('engine update: manifest B wins after redeploy and stale engine cache entri
             const names = await caches.keys();
             const engineName = names.find((n) => n.startsWith('chess-review-sw-engine-v'));
             const cache = engineName ? await caches.open(engineName) : null;
-            const keys = cache
-              ? (await cache.keys()).map((r) => new URL(r.url).pathname)
-              : [];
+            const keys = cache ? (await cache.keys()).map((r) => new URL(r.url).pathname) : [];
             return {
               hasOldCache: names.includes(oldCache),
               hasStaleEntry: keys.includes(staleEntry),

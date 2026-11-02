@@ -1,0 +1,4443 @@
+{
+"description": "Rating-vs-(accuracy, ACPL) dataset from Lichess analysed games (Prompt 5, requirement 3). Evidence for the qualitative-rating decision: see README \"How accuracy is computed\". Regenerate with scripts/make-rating-dataset.mjs.",
+"source": "GET https://lichess.org/api/games/user/{username}?analysed=true&accuracy=true for users thibault, Zhigalko_Sergei, DrNykterstein, opperwezen, lovlas, EricRosen (public analysed games), retrieved 2026-11-01. Filters: variant=standard, rated, >=20 plies, non-provisional rating, analysis accuracy+acpl present.",
+"samples": [
+{
+"rating": 2848,
+"accuracy": 79,
+"acpl": 65,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HqjDTU4A",
+"color": "black"
+},
+{
+"rating": 2230,
+"accuracy": 68,
+"acpl": 69,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "iVshKPMF",
+"color": "white"
+},
+{
+"rating": 2853,
+"accuracy": 62,
+"acpl": 44,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "J3C5rR4Z",
+"color": "white"
+},
+{
+"rating": 3254,
+"accuracy": 79,
+"acpl": 54,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "zR8HRccT",
+"color": "white"
+},
+{
+"rating": 3029,
+"accuracy": 60,
+"acpl": 70,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "zR8HRccT",
+"color": "black"
+},
+{
+"rating": 3031,
+"accuracy": 77,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "HmLzqg5C",
+"color": "white"
+},
+{
+"rating": 3243,
+"accuracy": 89,
+"acpl": 30,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "HmLzqg5C",
+"color": "black"
+},
+{
+"rating": 2752,
+"accuracy": 84,
+"acpl": 47,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "xKWdG1d1",
+"color": "black"
+},
+{
+"rating": 3029,
+"accuracy": 93,
+"acpl": 29,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "SnXhGC57",
+"color": "white"
+},
+{
+"rating": 3238,
+"accuracy": 97,
+"acpl": 13,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "SnXhGC57",
+"color": "black"
+},
+{
+"rating": 3232,
+"accuracy": 95,
+"acpl": 14,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "nrmBGiQF",
+"color": "white"
+},
+{
+"rating": 3032,
+"accuracy": 82,
+"acpl": 57,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "nrmBGiQF",
+"color": "black"
+},
+{
+"rating": 3035,
+"accuracy": 76,
+"acpl": 66,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "VOqkxbKK",
+"color": "white"
+},
+{
+"rating": 3226,
+"accuracy": 86,
+"acpl": 31,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "VOqkxbKK",
+"color": "black"
+},
+{
+"rating": 3219,
+"accuracy": 95,
+"acpl": 16,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "haRbNEM1",
+"color": "white"
+},
+{
+"rating": 3038,
+"accuracy": 80,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "haRbNEM1",
+"color": "black"
+},
+{
+"rating": 3041,
+"accuracy": 82,
+"acpl": 54,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "SNG5EiHV",
+"color": "white"
+},
+{
+"rating": 3212,
+"accuracy": 95,
+"acpl": 16,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "SNG5EiHV",
+"color": "black"
+},
+{
+"rating": 3232,
+"accuracy": 79,
+"acpl": 41,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ItgC9JQz",
+"color": "white"
+},
+{
+"rating": 3032,
+"accuracy": 61,
+"acpl": 57,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ItgC9JQz",
+"color": "black"
+},
+{
+"rating": 3035,
+"accuracy": 89,
+"acpl": 29,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uG80HxaK",
+"color": "white"
+},
+{
+"rating": 3225,
+"accuracy": 95,
+"acpl": 14,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uG80HxaK",
+"color": "black"
+},
+{
+"rating": 3247,
+"accuracy": 80,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "8vvzLvgP",
+"color": "white"
+},
+{
+"rating": 3026,
+"accuracy": 86,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "8vvzLvgP",
+"color": "black"
+},
+{
+"rating": 3029,
+"accuracy": 90,
+"acpl": 34,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "QvJtZdDG",
+"color": "white"
+},
+{
+"rating": 3240,
+"accuracy": 95,
+"acpl": 15,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "QvJtZdDG",
+"color": "black"
+},
+{
+"rating": 3264,
+"accuracy": 84,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Jhes4kvM",
+"color": "white"
+},
+{
+"rating": 3020,
+"accuracy": 89,
+"acpl": 28,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Jhes4kvM",
+"color": "black"
+},
+{
+"rating": 3023,
+"accuracy": 86,
+"acpl": 44,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "hQh8KffH",
+"color": "white"
+},
+{
+"rating": 3257,
+"accuracy": 94,
+"acpl": 17,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "hQh8KffH",
+"color": "black"
+},
+{
+"rating": 3284,
+"accuracy": 82,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Bz3c7N7D",
+"color": "white"
+},
+{
+"rating": 3013,
+"accuracy": 89,
+"acpl": 32,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Bz3c7N7D",
+"color": "black"
+},
+{
+"rating": 3015,
+"accuracy": 83,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "G3tGP3Qv",
+"color": "white"
+},
+{
+"rating": 3277,
+"accuracy": 92,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "G3tGP3Qv",
+"color": "black"
+},
+{
+"rating": 3289,
+"accuracy": 97,
+"acpl": 7,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "1fLwz7QO",
+"color": "white"
+},
+{
+"rating": 3012,
+"accuracy": 97,
+"acpl": 7,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "1fLwz7QO",
+"color": "black"
+},
+{
+"rating": 3014,
+"accuracy": 70,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "K30CV7h1",
+"color": "white"
+},
+{
+"rating": 3282,
+"accuracy": 89,
+"acpl": 16,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "K30CV7h1",
+"color": "black"
+},
+{
+"rating": 3276,
+"accuracy": 95,
+"acpl": 10,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "zO5ZaqI6",
+"color": "white"
+},
+{
+"rating": 3016,
+"accuracy": 84,
+"acpl": 26,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "zO5ZaqI6",
+"color": "black"
+},
+{
+"rating": 3268,
+"accuracy": 97,
+"acpl": 12,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "zUxV8GLr",
+"color": "white"
+},
+{
+"rating": 3099,
+"accuracy": 89,
+"acpl": 37,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "zUxV8GLr",
+"color": "black"
+},
+{
+"rating": 3097,
+"accuracy": 89,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "UEHX6oFD",
+"color": "white"
+},
+{
+"rating": 3275,
+"accuracy": 90,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "UEHX6oFD",
+"color": "black"
+},
+{
+"rating": 3266,
+"accuracy": 92,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "JrfNbeoz",
+"color": "white"
+},
+{
+"rating": 3100,
+"accuracy": 84,
+"acpl": 42,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "JrfNbeoz",
+"color": "black"
+},
+{
+"rating": 3103,
+"accuracy": 73,
+"acpl": 43,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fMIf8O0H",
+"color": "white"
+},
+{
+"rating": 3256,
+"accuracy": 97,
+"acpl": 9,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fMIf8O0H",
+"color": "black"
+},
+{
+"rating": 3246,
+"accuracy": 93,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "qqcAlGZe",
+"color": "white"
+},
+{
+"rating": 3107,
+"accuracy": 87,
+"acpl": 39,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "qqcAlGZe",
+"color": "black"
+},
+{
+"rating": 3111,
+"accuracy": 80,
+"acpl": 51,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OK63uLhA",
+"color": "white"
+},
+{
+"rating": 3233,
+"accuracy": 90,
+"acpl": 25,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OK63uLhA",
+"color": "black"
+},
+{
+"rating": 3015,
+"accuracy": 85,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "EOwvdMyl",
+"color": "white"
+},
+{
+"rating": 3225,
+"accuracy": 93,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "EOwvdMyl",
+"color": "black"
+},
+{
+"rating": 3218,
+"accuracy": 84,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "T0hqqeXL",
+"color": "white"
+},
+{
+"rating": 3018,
+"accuracy": 66,
+"acpl": 71,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "T0hqqeXL",
+"color": "black"
+},
+{
+"rating": 3109,
+"accuracy": 94,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "U7vJv1HU",
+"color": "white"
+},
+{
+"rating": 3226,
+"accuracy": 88,
+"acpl": 32,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "U7vJv1HU",
+"color": "black"
+},
+{
+"rating": 3234,
+"accuracy": 85,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "oPMO817E",
+"color": "white"
+},
+{
+"rating": 3072,
+"accuracy": 92,
+"acpl": 27,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "oPMO817E",
+"color": "black"
+},
+{
+"rating": 3108,
+"accuracy": 88,
+"acpl": 36,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ai4mXm5Q",
+"color": "white"
+},
+{
+"rating": 3230,
+"accuracy": 93,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ai4mXm5Q",
+"color": "black"
+},
+{
+"rating": 3223,
+"accuracy": 94,
+"acpl": 16,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MoasISt2",
+"color": "white"
+},
+{
+"rating": 3283,
+"accuracy": 88,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MoasISt2",
+"color": "black"
+},
+{
+"rating": 2998,
+"accuracy": 90,
+"acpl": 34,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "jdsZdqm4",
+"color": "white"
+},
+{
+"rating": 3220,
+"accuracy": 97,
+"acpl": 12,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "jdsZdqm4",
+"color": "black"
+},
+{
+"rating": 3217,
+"accuracy": 96,
+"acpl": 14,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "2WzTqTeg",
+"color": "white"
+},
+{
+"rating": 3020,
+"accuracy": 89,
+"acpl": 32,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "2WzTqTeg",
+"color": "black"
+},
+{
+"rating": 3210,
+"accuracy": 98,
+"acpl": 7,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "BdIlhVem",
+"color": "white"
+},
+{
+"rating": 3235,
+"accuracy": 80,
+"acpl": 38,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "BdIlhVem",
+"color": "black"
+},
+{
+"rating": 3084,
+"accuracy": 87,
+"acpl": 46,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "X2ooxxhO",
+"color": "white"
+},
+{
+"rating": 3205,
+"accuracy": 94,
+"acpl": 21,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "X2ooxxhO",
+"color": "black"
+},
+{
+"rating": 3201,
+"accuracy": 88,
+"acpl": 29,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "iYUxzt1g",
+"color": "white"
+},
+{
+"rating": 3080,
+"accuracy": 82,
+"acpl": 52,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "iYUxzt1g",
+"color": "black"
+},
+{
+"rating": 3201,
+"accuracy": 87,
+"acpl": 31,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "jsnf9Tyl",
+"color": "white"
+},
+{
+"rating": 3224,
+"accuracy": 83,
+"acpl": 44,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "jsnf9Tyl",
+"color": "black"
+},
+{
+"rating": 3004,
+"accuracy": 88,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ZZImaDvj",
+"color": "white"
+},
+{
+"rating": 3197,
+"accuracy": 91,
+"acpl": 21,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ZZImaDvj",
+"color": "black"
+},
+{
+"rating": 3266,
+"accuracy": 96,
+"acpl": 10,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uZ8Ugjbm",
+"color": "white"
+},
+{
+"rating": 3203,
+"accuracy": 79,
+"acpl": 42,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uZ8Ugjbm",
+"color": "black"
+},
+{
+"rating": 3200,
+"accuracy": 89,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fNUpn0oK",
+"color": "white"
+},
+{
+"rating": 2964,
+"accuracy": 82,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fNUpn0oK",
+"color": "black"
+},
+{
+"rating": 3195,
+"accuracy": 97,
+"acpl": 10,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MSkP4tKc",
+"color": "white"
+},
+{
+"rating": 3064,
+"accuracy": 82,
+"acpl": 41,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MSkP4tKc",
+"color": "black"
+},
+{
+"rating": 2857,
+"accuracy": 90,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ZjbAs7ai",
+"color": "white"
+},
+{
+"rating": 3193,
+"accuracy": 94,
+"acpl": 28,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ZjbAs7ai",
+"color": "black"
+},
+{
+"rating": 3187,
+"accuracy": 85,
+"acpl": 37,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3YrxyLMY",
+"color": "white"
+},
+{
+"rating": 3110,
+"accuracy": 78,
+"acpl": 60,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3YrxyLMY",
+"color": "black"
+},
+{
+"rating": 3118,
+"accuracy": 86,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fcmhc2GV",
+"color": "white"
+},
+{
+"rating": 3181,
+"accuracy": 94,
+"acpl": 22,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fcmhc2GV",
+"color": "black"
+},
+{
+"rating": 3176,
+"accuracy": 94,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "knxDYq5W",
+"color": "white"
+},
+{
+"rating": 3019,
+"accuracy": 86,
+"acpl": 56,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "knxDYq5W",
+"color": "black"
+},
+{
+"rating": 3213,
+"accuracy": 76,
+"acpl": 59,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "9vzrfIrv",
+"color": "white"
+},
+{
+"rating": 3184,
+"accuracy": 72,
+"acpl": 72,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "9vzrfIrv",
+"color": "black"
+},
+{
+"rating": 2477,
+"accuracy": 46,
+"acpl": 91,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "k8HFVdXk",
+"color": "white"
+},
+{
+"rating": 2602,
+"accuracy": 91,
+"acpl": 23,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "k8HFVdXk",
+"color": "black"
+},
+{
+"rating": 2610,
+"accuracy": 81,
+"acpl": 43,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "OrcHj6YF",
+"color": "white"
+},
+{
+"rating": 2481,
+"accuracy": 93,
+"acpl": 19,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "OrcHj6YF",
+"color": "black"
+},
+{
+"rating": 2603,
+"accuracy": 99,
+"acpl": 5,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "vESsJ43F",
+"color": "white"
+},
+{
+"rating": 2657,
+"accuracy": 98,
+"acpl": 5,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "vESsJ43F",
+"color": "black"
+},
+{
+"rating": 2565,
+"accuracy": 84,
+"acpl": 47,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "fani4tuJ",
+"color": "white"
+},
+{
+"rating": 2598,
+"accuracy": 89,
+"acpl": 29,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "fani4tuJ",
+"color": "black"
+},
+{
+"rating": 2593,
+"accuracy": 90,
+"acpl": 37,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8dhAriHt",
+"color": "white"
+},
+{
+"rating": 2556,
+"accuracy": 82,
+"acpl": 51,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8dhAriHt",
+"color": "black"
+},
+{
+"rating": 2531,
+"accuracy": 58,
+"acpl": 106,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "mA73pnQN",
+"color": "white"
+},
+{
+"rating": 2588,
+"accuracy": 71,
+"acpl": 98,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "mA73pnQN",
+"color": "black"
+},
+{
+"rating": 2584,
+"accuracy": 99,
+"acpl": 10,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "gNKVDsLN",
+"color": "white"
+},
+{
+"rating": 2489,
+"accuracy": 87,
+"acpl": 48,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "gNKVDsLN",
+"color": "black"
+},
+{
+"rating": 2579,
+"accuracy": 92,
+"acpl": 20,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Z33Swpsu",
+"color": "white"
+},
+{
+"rating": 2542,
+"accuracy": 71,
+"acpl": 60,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Z33Swpsu",
+"color": "black"
+},
+{
+"rating": 2604,
+"accuracy": 88,
+"acpl": 34,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ZAaOltMG",
+"color": "white"
+},
+{
+"rating": 2584,
+"accuracy": 84,
+"acpl": 43,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ZAaOltMG",
+"color": "black"
+},
+{
+"rating": 2595,
+"accuracy": 93,
+"acpl": 30,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "6cCcQiyN",
+"color": "white"
+},
+{
+"rating": 2590,
+"accuracy": 88,
+"acpl": 40,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "6cCcQiyN",
+"color": "black"
+},
+{
+"rating": 2504,
+"accuracy": 67,
+"acpl": 83,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "MgMJ16me",
+"color": "white"
+},
+{
+"rating": 2585,
+"accuracy": 74,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "MgMJ16me",
+"color": "black"
+},
+{
+"rating": 2586,
+"accuracy": 87,
+"acpl": 37,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "NcVa2ygN",
+"color": "white"
+},
+{
+"rating": 2516,
+"accuracy": 86,
+"acpl": 33,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "NcVa2ygN",
+"color": "black"
+},
+{
+"rating": 2581,
+"accuracy": 90,
+"acpl": 30,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ENg9ZMXM",
+"color": "white"
+},
+{
+"rating": 2541,
+"accuracy": 84,
+"acpl": 42,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ENg9ZMXM",
+"color": "black"
+},
+{
+"rating": 2740,
+"accuracy": 88,
+"acpl": 47,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "t2MCKIEM",
+"color": "white"
+},
+{
+"rating": 2585,
+"accuracy": 85,
+"acpl": 62,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "t2MCKIEM",
+"color": "black"
+},
+{
+"rating": 2581,
+"accuracy": 90,
+"acpl": 65,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "AvLmPg4l",
+"color": "white"
+},
+{
+"rating": 2468,
+"accuracy": 83,
+"acpl": 91,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "AvLmPg4l",
+"color": "black"
+},
+{
+"rating": 2438,
+"accuracy": 72,
+"acpl": 71,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "DNec0PFh",
+"color": "white"
+},
+{
+"rating": 2577,
+"accuracy": 87,
+"acpl": 28,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "DNec0PFh",
+"color": "black"
+},
+{
+"rating": 2514,
+"accuracy": 79,
+"acpl": 59,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Br9WOPAe",
+"color": "white"
+},
+{
+"rating": 2571,
+"accuracy": 92,
+"acpl": 20,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Br9WOPAe",
+"color": "black"
+},
+{
+"rating": 2567,
+"accuracy": 94,
+"acpl": 13,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Yf3QWoCG",
+"color": "white"
+},
+{
+"rating": 2437,
+"accuracy": 72,
+"acpl": 63,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Yf3QWoCG",
+"color": "black"
+},
+{
+"rating": 2481,
+"accuracy": 94,
+"acpl": 18,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "9xkhehNz",
+"color": "white"
+},
+{
+"rating": 2575,
+"accuracy": 86,
+"acpl": 47,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "9xkhehNz",
+"color": "black"
+},
+{
+"rating": 2572,
+"accuracy": 93,
+"acpl": 22,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "EgPnYK6v",
+"color": "white"
+},
+{
+"rating": 2372,
+"accuracy": 83,
+"acpl": 58,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "EgPnYK6v",
+"color": "black"
+},
+{
+"rating": 2566,
+"accuracy": 90,
+"acpl": 26,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8DyK5ULf",
+"color": "white"
+},
+{
+"rating": 2521,
+"accuracy": 70,
+"acpl": 88,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8DyK5ULf",
+"color": "black"
+},
+{
+"rating": 2623,
+"accuracy": 92,
+"acpl": 17,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "cgmnJl9r",
+"color": "white"
+},
+{
+"rating": 2572,
+"accuracy": 92,
+"acpl": 19,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "cgmnJl9r",
+"color": "black"
+},
+{
+"rating": 2549,
+"accuracy": 93,
+"acpl": 20,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ep4aTiRl",
+"color": "white"
+},
+{
+"rating": 2579,
+"accuracy": 85,
+"acpl": 40,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ep4aTiRl",
+"color": "black"
+},
+{
+"rating": 2574,
+"accuracy": 96,
+"acpl": 18,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "U9r2Noa0",
+"color": "white"
+},
+{
+"rating": 2489,
+"accuracy": 83,
+"acpl": 64,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "U9r2Noa0",
+"color": "black"
+},
+{
+"rating": 2540,
+"accuracy": 79,
+"acpl": 71,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "OCoJD0uY",
+"color": "white"
+},
+{
+"rating": 2567,
+"accuracy": 85,
+"acpl": 51,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "OCoJD0uY",
+"color": "black"
+},
+{
+"rating": 2711,
+"accuracy": 74,
+"acpl": 69,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rJDUZiAK",
+"color": "white"
+},
+{
+"rating": 2761,
+"accuracy": 80,
+"acpl": 54,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rJDUZiAK",
+"color": "black"
+},
+{
+"rating": 2560,
+"accuracy": 97,
+"acpl": 23,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "82fxgood",
+"color": "white"
+},
+{
+"rating": 2599,
+"accuracy": 85,
+"acpl": 54,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "82fxgood",
+"color": "black"
+},
+{
+"rating": 2637,
+"accuracy": 90,
+"acpl": 32,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Z0nuWgVj",
+"color": "white"
+},
+{
+"rating": 2774,
+"accuracy": 75,
+"acpl": 74,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Z0nuWgVj",
+"color": "black"
+},
+{
+"rating": 2760,
+"accuracy": 89,
+"acpl": 26,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "kbyo0Oa3",
+"color": "white"
+},
+{
+"rating": 2924,
+"accuracy": 80,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "kbyo0Oa3",
+"color": "black"
+},
+{
+"rating": 2556,
+"accuracy": 92,
+"acpl": 27,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "GqEaknPs",
+"color": "white"
+},
+{
+"rating": 2447,
+"accuracy": 88,
+"acpl": 40,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "GqEaknPs",
+"color": "black"
+},
+{
+"rating": 2473,
+"accuracy": 84,
+"acpl": 35,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "CgcYzKcY",
+"color": "white"
+},
+{
+"rating": 2552,
+"accuracy": 83,
+"acpl": 35,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "CgcYzKcY",
+"color": "black"
+},
+{
+"rating": 2548,
+"accuracy": 84,
+"acpl": 37,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ERjWgFHG",
+"color": "white"
+},
+{
+"rating": 2413,
+"accuracy": 75,
+"acpl": 55,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ERjWgFHG",
+"color": "black"
+},
+{
+"rating": 2590,
+"accuracy": 79,
+"acpl": 50,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "7qNaSQdu",
+"color": "white"
+},
+{
+"rating": 2541,
+"accuracy": 87,
+"acpl": 31,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "7qNaSQdu",
+"color": "black"
+},
+{
+"rating": 2547,
+"accuracy": 82,
+"acpl": 38,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "5booKX1Z",
+"color": "white"
+},
+{
+"rating": 2538,
+"accuracy": 95,
+"acpl": 13,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "5booKX1Z",
+"color": "black"
+},
+{
+"rating": 2544,
+"accuracy": 91,
+"acpl": 19,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sHIr9uFx",
+"color": "white"
+},
+{
+"rating": 2368,
+"accuracy": 75,
+"acpl": 60,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sHIr9uFx",
+"color": "black"
+},
+{
+"rating": 2504,
+"accuracy": 88,
+"acpl": 17,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "SNiE1HLk",
+"color": "white"
+},
+{
+"rating": 2551,
+"accuracy": 85,
+"acpl": 29,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "SNiE1HLk",
+"color": "black"
+},
+{
+"rating": 2550,
+"accuracy": 94,
+"acpl": 24,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "GhpyT1Oe",
+"color": "white"
+},
+{
+"rating": 2573,
+"accuracy": 95,
+"acpl": 17,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "mX0wBJM3",
+"color": "white"
+},
+{
+"rating": 2070,
+"accuracy": 90,
+"acpl": 39,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "mX0wBJM3",
+"color": "black"
+},
+{
+"rating": 1126,
+"accuracy": 75,
+"acpl": 65,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "eHUrRWun",
+"color": "white"
+},
+{
+"rating": 2550,
+"accuracy": 93,
+"acpl": 20,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "eHUrRWun",
+"color": "black"
+},
+{
+"rating": 2557,
+"accuracy": 83,
+"acpl": 41,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ssmBEZa0",
+"color": "white"
+},
+{
+"rating": 2523,
+"accuracy": 98,
+"acpl": 17,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ssmBEZa0",
+"color": "black"
+},
+{
+"rating": 2553,
+"accuracy": 87,
+"acpl": 27,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "JX78N9co",
+"color": "white"
+},
+{
+"rating": 2439,
+"accuracy": 88,
+"acpl": 26,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "JX78N9co",
+"color": "black"
+},
+{
+"rating": 2473,
+"accuracy": 62,
+"acpl": 75,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "kHH2yR7H",
+"color": "white"
+},
+{
+"rating": 2548,
+"accuracy": 80,
+"acpl": 62,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "kHH2yR7H",
+"color": "black"
+},
+{
+"rating": 3139,
+"accuracy": 71,
+"acpl": 70,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "TwEZVWOq",
+"color": "white"
+},
+{
+"rating": 3181,
+"accuracy": 85,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "TwEZVWOq",
+"color": "black"
+},
+{
+"rating": 3301,
+"accuracy": 77,
+"acpl": 62,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "DPHiVAvT",
+"color": "white"
+},
+{
+"rating": 3134,
+"accuracy": 77,
+"acpl": 64,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "DPHiVAvT",
+"color": "black"
+},
+{
+"rating": 3118,
+"accuracy": 87,
+"acpl": 58,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Y5qFwRH6",
+"color": "white"
+},
+{
+"rating": 3061,
+"accuracy": 74,
+"acpl": 115,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Y5qFwRH6",
+"color": "black"
+},
+{
+"rating": 3095,
+"accuracy": 86,
+"acpl": 28,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fLpFXr9F",
+"color": "white"
+},
+{
+"rating": 3173,
+"accuracy": 91,
+"acpl": 18,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fLpFXr9F",
+"color": "black"
+},
+{
+"rating": 3085,
+"accuracy": 90,
+"acpl": 30,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "0Z6Tx9uS",
+"color": "white"
+},
+{
+"rating": 3271,
+"accuracy": 85,
+"acpl": 46,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "0Z6Tx9uS",
+"color": "black"
+},
+{
+"rating": 3080,
+"accuracy": 86,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uyR3QMln",
+"color": "white"
+},
+{
+"rating": 3052,
+"accuracy": 82,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uyR3QMln",
+"color": "black"
+},
+{
+"rating": 3256,
+"accuracy": 88,
+"acpl": 27,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "1owiXTWS",
+"color": "white"
+},
+{
+"rating": 3083,
+"accuracy": 79,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "1owiXTWS",
+"color": "black"
+},
+{
+"rating": 3086,
+"accuracy": 78,
+"acpl": 68,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "HGvKejlc",
+"color": "white"
+},
+{
+"rating": 3255,
+"accuracy": 82,
+"acpl": 53,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "HGvKejlc",
+"color": "black"
+},
+{
+"rating": 3362,
+"accuracy": 96,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "s6XDah7t",
+"color": "white"
+},
+{
+"rating": 3076,
+"accuracy": 91,
+"acpl": 52,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "s6XDah7t",
+"color": "black"
+},
+{
+"rating": 3061,
+"accuracy": 77,
+"acpl": 44,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "7zbMhX9e",
+"color": "white"
+},
+{
+"rating": 3050,
+"accuracy": 55,
+"acpl": 72,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "7zbMhX9e",
+"color": "black"
+},
+{
+"rating": 3179,
+"accuracy": 75,
+"acpl": 34,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Y2PhH8Ce",
+"color": "white"
+},
+{
+"rating": 3065,
+"accuracy": 45,
+"acpl": 105,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Y2PhH8Ce",
+"color": "black"
+},
+{
+"rating": 3009,
+"accuracy": 83,
+"acpl": 57,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rQ5BxLWD",
+"color": "white"
+},
+{
+"rating": 3060,
+"accuracy": 95,
+"acpl": 16,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rQ5BxLWD",
+"color": "black"
+},
+{
+"rating": 2680,
+"accuracy": 80,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "gk1wIzkf",
+"color": "white"
+},
+{
+"rating": 3079,
+"accuracy": 65,
+"acpl": 83,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "gk1wIzkf",
+"color": "black"
+},
+{
+"rating": 3017,
+"accuracy": 87,
+"acpl": 43,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Vvp0LrhO",
+"color": "white"
+},
+{
+"rating": 3074,
+"accuracy": 94,
+"acpl": 21,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Vvp0LrhO",
+"color": "black"
+},
+{
+"rating": 3084,
+"accuracy": 77,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "SJaOXFLj",
+"color": "white"
+},
+{
+"rating": 2762,
+"accuracy": 87,
+"acpl": 26,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "SJaOXFLj",
+"color": "black"
+},
+{
+"rating": 3165,
+"accuracy": 81,
+"acpl": 67,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "pgIOdxWr",
+"color": "white"
+},
+{
+"rating": 3093,
+"accuracy": 55,
+"acpl": 91,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "pgIOdxWr",
+"color": "black"
+},
+{
+"rating": 3107,
+"accuracy": 75,
+"acpl": 69,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "tJdu12N2",
+"color": "white"
+},
+{
+"rating": 3056,
+"accuracy": 84,
+"acpl": 40,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "tJdu12N2",
+"color": "black"
+},
+{
+"rating": 3113,
+"accuracy": 82,
+"acpl": 58,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "mr2ahRaf",
+"color": "white"
+},
+{
+"rating": 3157,
+"accuracy": 86,
+"acpl": 43,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "mr2ahRaf",
+"color": "black"
+},
+{
+"rating": 3089,
+"accuracy": 77,
+"acpl": 72,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "DwfBX4I6",
+"color": "white"
+},
+{
+"rating": 3128,
+"accuracy": 90,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "DwfBX4I6",
+"color": "black"
+},
+{
+"rating": 3135,
+"accuracy": 96,
+"acpl": 22,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3oxFVuzb",
+"color": "white"
+},
+{
+"rating": 3347,
+"accuracy": 89,
+"acpl": 41,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3oxFVuzb",
+"color": "black"
+},
+{
+"rating": 3109,
+"accuracy": 74,
+"acpl": 67,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Hgxlbl8r",
+"color": "white"
+},
+{
+"rating": 3132,
+"accuracy": 94,
+"acpl": 15,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Hgxlbl8r",
+"color": "black"
+},
+{
+"rating": 3122,
+"accuracy": 80,
+"acpl": 58,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "mdbR947B",
+"color": "white"
+},
+{
+"rating": 3150,
+"accuracy": 88,
+"acpl": 39,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "mdbR947B",
+"color": "black"
+},
+{
+"rating": 3123,
+"accuracy": 89,
+"acpl": 27,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "qt0YDDg0",
+"color": "white"
+},
+{
+"rating": 3116,
+"accuracy": 78,
+"acpl": 65,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "qt0YDDg0",
+"color": "black"
+},
+{
+"rating": 2790,
+"accuracy": 80,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "t3sHTuPA",
+"color": "white"
+},
+{
+"rating": 3136,
+"accuracy": 89,
+"acpl": 30,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "t3sHTuPA",
+"color": "black"
+},
+{
+"rating": 3238,
+"accuracy": 94,
+"acpl": 18,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "egE2ZAe1",
+"color": "white"
+},
+{
+"rating": 3153,
+"accuracy": 79,
+"acpl": 51,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "egE2ZAe1",
+"color": "black"
+},
+{
+"rating": 2819,
+"accuracy": 84,
+"acpl": 30,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "IfOi3DO1",
+"color": "white"
+},
+{
+"rating": 3158,
+"accuracy": 76,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "IfOi3DO1",
+"color": "black"
+},
+{
+"rating": 2849,
+"accuracy": 86,
+"acpl": 42,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "HMxg0jpk",
+"color": "white"
+},
+{
+"rating": 3174,
+"accuracy": 55,
+"acpl": 68,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "HMxg0jpk",
+"color": "black"
+},
+{
+"rating": 3184,
+"accuracy": 47,
+"acpl": 127,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "gnMOI11N",
+"color": "white"
+},
+{
+"rating": 3311,
+"accuracy": 45,
+"acpl": 146,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "gnMOI11N",
+"color": "black"
+},
+{
+"rating": 3307,
+"accuracy": 93,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "enknQAIb",
+"color": "white"
+},
+{
+"rating": 3188,
+"accuracy": 87,
+"acpl": 41,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "enknQAIb",
+"color": "black"
+},
+{
+"rating": 3192,
+"accuracy": 84,
+"acpl": 36,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "pxSv29NK",
+"color": "white"
+},
+{
+"rating": 3303,
+"accuracy": 90,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "pxSv29NK",
+"color": "black"
+},
+{
+"rating": 3311,
+"accuracy": 80,
+"acpl": 54,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "DHLo4XCl",
+"color": "white"
+},
+{
+"rating": 3184,
+"accuracy": 86,
+"acpl": 39,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "DHLo4XCl",
+"color": "black"
+},
+{
+"rating": 3188,
+"accuracy": 91,
+"acpl": 32,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "0ftAvbyD",
+"color": "white"
+},
+{
+"rating": 3307,
+"accuracy": 95,
+"acpl": 18,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "0ftAvbyD",
+"color": "black"
+},
+{
+"rating": 3303,
+"accuracy": 82,
+"acpl": 44,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "U3Ba9nn7",
+"color": "white"
+},
+{
+"rating": 3192,
+"accuracy": 68,
+"acpl": 56,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "U3Ba9nn7",
+"color": "black"
+},
+{
+"rating": 3196,
+"accuracy": 77,
+"acpl": 54,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "FUhKxjLj",
+"color": "white"
+},
+{
+"rating": 3299,
+"accuracy": 83,
+"acpl": 37,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "FUhKxjLj",
+"color": "black"
+},
+{
+"rating": 3295,
+"accuracy": 86,
+"acpl": 44,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "CdUAcMQn",
+"color": "white"
+},
+{
+"rating": 3200,
+"accuracy": 94,
+"acpl": 25,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "CdUAcMQn",
+"color": "black"
+},
+{
+"rating": 3193,
+"accuracy": 85,
+"acpl": 26,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "BFHOGaXS",
+"color": "white"
+},
+{
+"rating": 3302,
+"accuracy": 73,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "BFHOGaXS",
+"color": "black"
+},
+{
+"rating": 3298,
+"accuracy": 90,
+"acpl": 39,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "cniCeGmC",
+"color": "white"
+},
+{
+"rating": 3197,
+"accuracy": 77,
+"acpl": 93,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "cniCeGmC",
+"color": "black"
+},
+{
+"rating": 3201,
+"accuracy": 53,
+"acpl": 84,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "aGOZ3WT6",
+"color": "white"
+},
+{
+"rating": 3294,
+"accuracy": 79,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "aGOZ3WT6",
+"color": "black"
+},
+{
+"rating": 3295,
+"accuracy": 82,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "QcWlm9V7",
+"color": "white"
+},
+{
+"rating": 3200,
+"accuracy": 86,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "QcWlm9V7",
+"color": "black"
+},
+{
+"rating": 3204,
+"accuracy": 79,
+"acpl": 61,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uV02bfee",
+"color": "white"
+},
+{
+"rating": 3291,
+"accuracy": 87,
+"acpl": 40,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "uV02bfee",
+"color": "black"
+},
+{
+"rating": 3287,
+"accuracy": 80,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "lsXraHNV",
+"color": "white"
+},
+{
+"rating": 3209,
+"accuracy": 74,
+"acpl": 59,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "lsXraHNV",
+"color": "black"
+},
+{
+"rating": 3205,
+"accuracy": 91,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "1PYoY8GI",
+"color": "white"
+},
+{
+"rating": 3110,
+"accuracy": 82,
+"acpl": 74,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "1PYoY8GI",
+"color": "black"
+},
+{
+"rating": 3206,
+"accuracy": 72,
+"acpl": 65,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MvfiPsKW",
+"color": "white"
+},
+{
+"rating": 3109,
+"accuracy": 67,
+"acpl": 83,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MvfiPsKW",
+"color": "black"
+},
+{
+"rating": 3221,
+"accuracy": 53,
+"acpl": 104,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "bhSFieMq",
+"color": "white"
+},
+{
+"rating": 3093,
+"accuracy": 66,
+"acpl": 95,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "bhSFieMq",
+"color": "black"
+},
+{
+"rating": 3184,
+"accuracy": 94,
+"acpl": 28,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "dICtoGDM",
+"color": "white"
+},
+{
+"rating": 3128,
+"accuracy": 89,
+"acpl": 44,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "dICtoGDM",
+"color": "black"
+},
+{
+"rating": 3134,
+"accuracy": 53,
+"acpl": 77,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OMBNTicp",
+"color": "white"
+},
+{
+"rating": 3179,
+"accuracy": 81,
+"acpl": 31,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OMBNTicp",
+"color": "black"
+},
+{
+"rating": 3145,
+"accuracy": 76,
+"acpl": 84,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Duy3LvYh",
+"color": "white"
+},
+{
+"rating": 3167,
+"accuracy": 84,
+"acpl": 60,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Duy3LvYh",
+"color": "black"
+},
+{
+"rating": 3144,
+"accuracy": 71,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fwjIFVjy",
+"color": "white"
+},
+{
+"rating": 3168,
+"accuracy": 87,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "fwjIFVjy",
+"color": "black"
+},
+{
+"rating": 2571,
+"accuracy": 76,
+"acpl": 57,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HQRCNicq",
+"color": "white"
+},
+{
+"rating": 2539,
+"accuracy": 72,
+"acpl": 73,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HQRCNicq",
+"color": "black"
+},
+{
+"rating": 2568,
+"accuracy": 82,
+"acpl": 41,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sgZ96mt4",
+"color": "white"
+},
+{
+"rating": 2414,
+"accuracy": 73,
+"acpl": 77,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sgZ96mt4",
+"color": "black"
+},
+{
+"rating": 2553,
+"accuracy": 79,
+"acpl": 62,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "JiJirnql",
+"color": "white"
+},
+{
+"rating": 2562,
+"accuracy": 84,
+"acpl": 45,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "JiJirnql",
+"color": "black"
+},
+{
+"rating": 2570,
+"accuracy": 59,
+"acpl": 70,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "VKgkcKRd",
+"color": "white"
+},
+{
+"rating": 2470,
+"accuracy": 62,
+"acpl": 87,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "VKgkcKRd",
+"color": "black"
+},
+{
+"rating": 2390,
+"accuracy": 85,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ftwxLs62",
+"color": "white"
+},
+{
+"rating": 2567,
+"accuracy": 92,
+"acpl": 31,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ftwxLs62",
+"color": "black"
+},
+{
+"rating": 2507,
+"accuracy": 74,
+"acpl": 71,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8hgooaDS",
+"color": "white"
+},
+{
+"rating": 2562,
+"accuracy": 81,
+"acpl": 46,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8hgooaDS",
+"color": "black"
+},
+{
+"rating": 2558,
+"accuracy": 93,
+"acpl": 16,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "C1VnGz1X",
+"color": "white"
+},
+{
+"rating": 2404,
+"accuracy": 86,
+"acpl": 25,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "C1VnGz1X",
+"color": "black"
+},
+{
+"rating": 2565,
+"accuracy": 84,
+"acpl": 38,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "OYYKYJ7s",
+"color": "white"
+},
+{
+"rating": 2519,
+"accuracy": 91,
+"acpl": 23,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "OYYKYJ7s",
+"color": "black"
+},
+{
+"rating": 2564,
+"accuracy": 75,
+"acpl": 73,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ZxqTmCPP",
+"color": "white"
+},
+{
+"rating": 2559,
+"accuracy": 83,
+"acpl": 44,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "ZxqTmCPP",
+"color": "black"
+},
+{
+"rating": 1531,
+"accuracy": 59,
+"acpl": 109,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "IsDy3ATL",
+"color": "white"
+},
+{
+"rating": 2559,
+"accuracy": 68,
+"acpl": 72,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "IsDy3ATL",
+"color": "black"
+},
+{
+"rating": 2559,
+"accuracy": 92,
+"acpl": 23,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HKmPOUuK",
+"color": "white"
+},
+{
+"rating": 1607,
+"accuracy": 83,
+"acpl": 42,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HKmPOUuK",
+"color": "black"
+},
+{
+"rating": 1818,
+"accuracy": 82,
+"acpl": 53,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "pmtLCQon",
+"color": "white"
+},
+{
+"rating": 2559,
+"accuracy": 91,
+"acpl": 25,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "pmtLCQon",
+"color": "black"
+},
+{
+"rating": 1029,
+"accuracy": 89,
+"acpl": 45,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "XUsAWmzo",
+"color": "white"
+},
+{
+"rating": 2559,
+"accuracy": 97,
+"acpl": 19,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "XUsAWmzo",
+"color": "black"
+},
+{
+"rating": 2559,
+"accuracy": 94,
+"acpl": 15,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sMD4Af4F",
+"color": "white"
+},
+{
+"rating": 1553,
+"accuracy": 70,
+"acpl": 73,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sMD4Af4F",
+"color": "black"
+},
+{
+"rating": 2559,
+"accuracy": 85,
+"acpl": 50,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "UxZArw4I",
+"color": "white"
+},
+{
+"rating": 949,
+"accuracy": 66,
+"acpl": 129,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "UxZArw4I",
+"color": "black"
+},
+{
+"rating": 2564,
+"accuracy": 58,
+"acpl": 125,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "RVxPF7dF",
+"color": "white"
+},
+{
+"rating": 2585,
+"accuracy": 61,
+"acpl": 77,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "RVxPF7dF",
+"color": "black"
+},
+{
+"rating": 2457,
+"accuracy": 65,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "auo4K9a0",
+"color": "white"
+},
+{
+"rating": 2560,
+"accuracy": 82,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "auo4K9a0",
+"color": "black"
+},
+{
+"rating": 2554,
+"accuracy": 88,
+"acpl": 30,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "3TibX2PI",
+"color": "white"
+},
+{
+"rating": 2563,
+"accuracy": 80,
+"acpl": 53,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "3TibX2PI",
+"color": "black"
+},
+{
+"rating": 2551,
+"accuracy": 95,
+"acpl": 14,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "SNJJn8oF",
+"color": "white"
+},
+{
+"rating": 2422,
+"accuracy": 81,
+"acpl": 36,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "SNJJn8oF",
+"color": "black"
+},
+{
+"rating": 2545,
+"accuracy": 83,
+"acpl": 44,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "DwDYO2PH",
+"color": "white"
+},
+{
+"rating": 2542,
+"accuracy": 75,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "DwDYO2PH",
+"color": "black"
+},
+{
+"rating": 2483,
+"accuracy": 76,
+"acpl": 54,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "1c8h6VvL",
+"color": "white"
+},
+{
+"rating": 2540,
+"accuracy": 89,
+"acpl": 27,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "1c8h6VvL",
+"color": "black"
+},
+{
+"rating": 2545,
+"accuracy": 77,
+"acpl": 38,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "qNTgtcpC",
+"color": "white"
+},
+{
+"rating": 2632,
+"accuracy": 92,
+"acpl": 20,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "qNTgtcpC",
+"color": "black"
+},
+{
+"rating": 2549,
+"accuracy": 84,
+"acpl": 59,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "5Ql7Wygh",
+"color": "white"
+},
+{
+"rating": 2675,
+"accuracy": 97,
+"acpl": 24,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "5Ql7Wygh",
+"color": "black"
+},
+{
+"rating": 2551,
+"accuracy": 88,
+"acpl": 33,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "XyTfGcwE",
+"color": "white"
+},
+{
+"rating": 2554,
+"accuracy": 85,
+"acpl": 41,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "XyTfGcwE",
+"color": "black"
+},
+{
+"rating": 2387,
+"accuracy": 73,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "e2VReOlq",
+"color": "white"
+},
+{
+"rating": 2551,
+"accuracy": 89,
+"acpl": 28,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "e2VReOlq",
+"color": "black"
+},
+{
+"rating": 2558,
+"accuracy": 87,
+"acpl": 38,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "dSKITF0x",
+"color": "white"
+},
+{
+"rating": 2497,
+"accuracy": 93,
+"acpl": 23,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "dSKITF0x",
+"color": "black"
+},
+{
+"rating": 2418,
+"accuracy": 93,
+"acpl": 19,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "63Tbtpxf",
+"color": "white"
+},
+{
+"rating": 2565,
+"accuracy": 81,
+"acpl": 56,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "63Tbtpxf",
+"color": "black"
+},
+{
+"rating": 2566,
+"accuracy": 91,
+"acpl": 16,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Ntd3QSgV",
+"color": "white"
+},
+{
+"rating": 2550,
+"accuracy": 91,
+"acpl": 15,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Ntd3QSgV",
+"color": "black"
+},
+{
+"rating": 2529,
+"accuracy": 78,
+"acpl": 41,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "qLEmDTpr",
+"color": "white"
+},
+{
+"rating": 2572,
+"accuracy": 64,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "qLEmDTpr",
+"color": "black"
+},
+{
+"rating": 2572,
+"accuracy": 73,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "nHqMvfFm",
+"color": "white"
+},
+{
+"rating": 2596,
+"accuracy": 76,
+"acpl": 63,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "nHqMvfFm",
+"color": "black"
+},
+{
+"rating": 2562,
+"accuracy": 90,
+"acpl": 21,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "brnccbfb",
+"color": "white"
+},
+{
+"rating": 2572,
+"accuracy": 90,
+"acpl": 21,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "brnccbfb",
+"color": "black"
+},
+{
+"rating": 2578,
+"accuracy": 78,
+"acpl": 77,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "MSloKsEy",
+"color": "white"
+},
+{
+"rating": 2568,
+"accuracy": 83,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "MSloKsEy",
+"color": "black"
+},
+{
+"rating": 2574,
+"accuracy": 81,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Uw1sEI3d",
+"color": "white"
+},
+{
+"rating": 2572,
+"accuracy": 94,
+"acpl": 34,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Uw1sEI3d",
+"color": "black"
+},
+{
+"rating": 2568,
+"accuracy": 81,
+"acpl": 57,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "5gwxLRJm",
+"color": "white"
+},
+{
+"rating": 2429,
+"accuracy": 74,
+"acpl": 72,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "5gwxLRJm",
+"color": "black"
+},
+{
+"rating": 2531,
+"accuracy": 76,
+"acpl": 62,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "N3n1qTUU",
+"color": "white"
+},
+{
+"rating": 2563,
+"accuracy": 81,
+"acpl": 54,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "N3n1qTUU",
+"color": "black"
+},
+{
+"rating": 2571,
+"accuracy": 79,
+"acpl": 54,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "MPGHOiRc",
+"color": "white"
+},
+{
+"rating": 2454,
+"accuracy": 82,
+"acpl": 27,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "MPGHOiRc",
+"color": "black"
+},
+{
+"rating": 2535,
+"accuracy": 87,
+"acpl": 39,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "zu0U5AxQ",
+"color": "white"
+},
+{
+"rating": 2577,
+"accuracy": 82,
+"acpl": 60,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "zu0U5AxQ",
+"color": "black"
+},
+{
+"rating": 2917,
+"accuracy": 83,
+"acpl": 63,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "oHI2rEh4",
+"color": "black"
+},
+{
+"rating": 2800,
+"accuracy": 90,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "kS0cHmv4",
+"color": "white"
+},
+{
+"rating": 2925,
+"accuracy": 83,
+"acpl": 57,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "kS0cHmv4",
+"color": "black"
+},
+{
+"rating": 2573,
+"accuracy": 83,
+"acpl": 51,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "RF0JBAsD",
+"color": "white"
+},
+{
+"rating": 2499,
+"accuracy": 74,
+"acpl": 81,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "RF0JBAsD",
+"color": "black"
+},
+{
+"rating": 2573,
+"accuracy": 80,
+"acpl": 57,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "38Z3rkYx",
+"color": "white"
+},
+{
+"rating": 2570,
+"accuracy": 84,
+"acpl": 43,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "38Z3rkYx",
+"color": "black"
+},
+{
+"rating": 2569,
+"accuracy": 87,
+"acpl": 30,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Q72XJWTW",
+"color": "white"
+},
+{
+"rating": 2476,
+"accuracy": 70,
+"acpl": 54,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "Q72XJWTW",
+"color": "black"
+},
+{
+"rating": 2455,
+"accuracy": 96,
+"acpl": 41,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "UkF0D0tV",
+"color": "white"
+},
+{
+"rating": 2576,
+"accuracy": 86,
+"acpl": 70,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "UkF0D0tV",
+"color": "black"
+},
+{
+"rating": 2580,
+"accuracy": 80,
+"acpl": 56,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "YR93YnK7",
+"color": "white"
+},
+{
+"rating": 2732,
+"accuracy": 92,
+"acpl": 27,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "YR93YnK7",
+"color": "black"
+},
+{
+"rating": 2992,
+"accuracy": 57,
+"acpl": 102,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "PvSkYiMR",
+"color": "white"
+},
+{
+"rating": 2908,
+"accuracy": 55,
+"acpl": 117,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "PvSkYiMR",
+"color": "black"
+},
+{
+"rating": 2524,
+"accuracy": 93,
+"acpl": 28,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "4a0pNVfJ",
+"color": "white"
+},
+{
+"rating": 2586,
+"accuracy": 83,
+"acpl": 55,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "4a0pNVfJ",
+"color": "black"
+},
+{
+"rating": 2592,
+"accuracy": 85,
+"acpl": 51,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8Ido4s96",
+"color": "white"
+},
+{
+"rating": 2590,
+"accuracy": 94,
+"acpl": 24,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "8Ido4s96",
+"color": "black"
+},
+{
+"rating": 2591,
+"accuracy": 84,
+"acpl": 46,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "WeWBpm5f",
+"color": "white"
+},
+{
+"rating": 2660,
+"accuracy": 82,
+"acpl": 48,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "WeWBpm5f",
+"color": "black"
+},
+{
+"rating": 2599,
+"accuracy": 79,
+"acpl": 50,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "QSdTtT5k",
+"color": "white"
+},
+{
+"rating": 2483,
+"accuracy": 91,
+"acpl": 18,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "QSdTtT5k",
+"color": "black"
+},
+{
+"rating": 2418,
+"accuracy": 83,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "1DNNiYFN",
+"color": "white"
+},
+{
+"rating": 2596,
+"accuracy": 89,
+"acpl": 34,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "1DNNiYFN",
+"color": "black"
+},
+{
+"rating": 3039,
+"accuracy": 84,
+"acpl": 35,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "JDW0LIvN",
+"color": "white"
+},
+{
+"rating": 2506,
+"accuracy": 94,
+"acpl": 17,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "JDW0LIvN",
+"color": "black"
+},
+{
+"rating": 2575,
+"accuracy": 82,
+"acpl": 42,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "T0a2KwWf",
+"color": "white"
+},
+{
+"rating": 3039,
+"accuracy": 91,
+"acpl": 22,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "T0a2KwWf",
+"color": "black"
+},
+{
+"rating": 2669,
+"accuracy": 82,
+"acpl": 47,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3K7w609G",
+"color": "white"
+},
+{
+"rating": 3036,
+"accuracy": 87,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3K7w609G",
+"color": "black"
+},
+{
+"rating": 3034,
+"accuracy": 85,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "69WHr29j",
+"color": "white"
+},
+{
+"rating": 2753,
+"accuracy": 79,
+"acpl": 71,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "69WHr29j",
+"color": "black"
+},
+{
+"rating": 3034,
+"accuracy": 93,
+"acpl": 25,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "V67Lna7Z",
+"color": "white"
+},
+{
+"rating": 2305,
+"accuracy": 85,
+"acpl": 58,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "V67Lna7Z",
+"color": "black"
+},
+{
+"rating": 2669,
+"accuracy": 83,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OGg0oxr9",
+"color": "white"
+},
+{
+"rating": 3032,
+"accuracy": 93,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OGg0oxr9",
+"color": "black"
+},
+{
+"rating": 3032,
+"accuracy": 98,
+"acpl": 12,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Z6J1VID5",
+"color": "white"
+},
+{
+"rating": 2402,
+"accuracy": 86,
+"acpl": 37,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "Z6J1VID5",
+"color": "black"
+},
+{
+"rating": 2490,
+"accuracy": 76,
+"acpl": 77,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "hT8yw54J",
+"color": "white"
+},
+{
+"rating": 3032,
+"accuracy": 82,
+"acpl": 39,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "hT8yw54J",
+"color": "black"
+},
+{
+"rating": 2432,
+"accuracy": 68,
+"acpl": 105,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "do7RyUIm",
+"color": "white"
+},
+{
+"rating": 3043,
+"accuracy": 63,
+"acpl": 92,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "do7RyUIm",
+"color": "black"
+},
+{
+"rating": 3042,
+"accuracy": 93,
+"acpl": 26,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "r4WCijI7",
+"color": "white"
+},
+{
+"rating": 2673,
+"accuracy": 88,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "r4WCijI7",
+"color": "black"
+},
+{
+"rating": 2455,
+"accuracy": 73,
+"acpl": 72,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "CTqMW2Ad",
+"color": "white"
+},
+{
+"rating": 3041,
+"accuracy": 80,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "CTqMW2Ad",
+"color": "black"
+},
+{
+"rating": 3041,
+"accuracy": 93,
+"acpl": 26,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "6CVjJYoL",
+"color": "white"
+},
+{
+"rating": 2312,
+"accuracy": 85,
+"acpl": 53,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "6CVjJYoL",
+"color": "black"
+},
+{
+"rating": 3041,
+"accuracy": 81,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "PUvCl3sE",
+"color": "white"
+},
+{
+"rating": 2478,
+"accuracy": 66,
+"acpl": 117,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "PUvCl3sE",
+"color": "black"
+},
+{
+"rating": 2141,
+"accuracy": 89,
+"acpl": 29,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OuzUg35D",
+"color": "white"
+},
+{
+"rating": 3040,
+"accuracy": 79,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "OuzUg35D",
+"color": "black"
+},
+{
+"rating": 3040,
+"accuracy": 95,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "nBD0JjKl",
+"color": "white"
+},
+{
+"rating": 2417,
+"accuracy": 89,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "nBD0JjKl",
+"color": "black"
+},
+{
+"rating": 2457,
+"accuracy": 88,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ZXhVUHN3",
+"color": "white"
+},
+{
+"rating": 3040,
+"accuracy": 92,
+"acpl": 24,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ZXhVUHN3",
+"color": "black"
+},
+{
+"rating": 3039,
+"accuracy": 94,
+"acpl": 18,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "hVdP95uu",
+"color": "white"
+},
+{
+"rating": 2426,
+"accuracy": 86,
+"acpl": 38,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "hVdP95uu",
+"color": "black"
+},
+{
+"rating": 2676,
+"accuracy": 85,
+"acpl": 58,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3mj50kWr",
+"color": "white"
+},
+{
+"rating": 3038,
+"accuracy": 96,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3mj50kWr",
+"color": "black"
+},
+{
+"rating": 3038,
+"accuracy": 95,
+"acpl": 10,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "VhmnSTBf",
+"color": "white"
+},
+{
+"rating": 2432,
+"accuracy": 55,
+"acpl": 81,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "VhmnSTBf",
+"color": "black"
+},
+{
+"rating": 2308,
+"accuracy": 84,
+"acpl": 42,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "xCxwjCvI",
+"color": "white"
+},
+{
+"rating": 3037,
+"accuracy": 93,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "xCxwjCvI",
+"color": "black"
+},
+{
+"rating": 3037,
+"accuracy": 97,
+"acpl": 7,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "XUdPaqA5",
+"color": "white"
+},
+{
+"rating": 2479,
+"accuracy": 92,
+"acpl": 29,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "XUdPaqA5",
+"color": "black"
+},
+{
+"rating": 2691,
+"accuracy": 82,
+"acpl": 48,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "wGewdHdI",
+"color": "white"
+},
+{
+"rating": 3036,
+"accuracy": 86,
+"acpl": 34,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "wGewdHdI",
+"color": "black"
+},
+{
+"rating": 3032,
+"accuracy": 92,
+"acpl": 27,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "StjWVyGz",
+"color": "white"
+},
+{
+"rating": 2685,
+"accuracy": 83,
+"acpl": 64,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "StjWVyGz",
+"color": "black"
+},
+{
+"rating": 3042,
+"accuracy": 87,
+"acpl": 53,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "tg0FlGQ9",
+"color": "white"
+},
+{
+"rating": 2668,
+"accuracy": 95,
+"acpl": 27,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "tg0FlGQ9",
+"color": "black"
+},
+{
+"rating": 2686,
+"accuracy": 86,
+"acpl": 49,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "JZl9yEib",
+"color": "white"
+},
+{
+"rating": 3041,
+"accuracy": 93,
+"acpl": 25,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "JZl9yEib",
+"color": "black"
+},
+{
+"rating": 3040,
+"accuracy": 85,
+"acpl": 43,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3biqLdJF",
+"color": "white"
+},
+{
+"rating": 2678,
+"accuracy": 74,
+"acpl": 71,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "3biqLdJF",
+"color": "black"
+},
+{
+"rating": 2684,
+"accuracy": 86,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "bcHoxGF0",
+"color": "white"
+},
+{
+"rating": 3038,
+"accuracy": 93,
+"acpl": 19,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "bcHoxGF0",
+"color": "black"
+},
+{
+"rating": 3037,
+"accuracy": 94,
+"acpl": 15,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "h7IpUPud",
+"color": "white"
+},
+{
+"rating": 2679,
+"accuracy": 81,
+"acpl": 46,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "h7IpUPud",
+"color": "black"
+},
+{
+"rating": 2520,
+"accuracy": 79,
+"acpl": 61,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "GsrLEfVk",
+"color": "white"
+},
+{
+"rating": 3036,
+"accuracy": 84,
+"acpl": 33,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "GsrLEfVk",
+"color": "black"
+},
+{
+"rating": 3036,
+"accuracy": 92,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "AICc4l1i",
+"color": "white"
+},
+{
+"rating": 2469,
+"accuracy": 83,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "AICc4l1i",
+"color": "black"
+},
+{
+"rating": 3035,
+"accuracy": 88,
+"acpl": 24,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rTWSPSDU",
+"color": "white"
+},
+{
+"rating": 2677,
+"accuracy": 81,
+"acpl": 42,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rTWSPSDU",
+"color": "black"
+},
+{
+"rating": 2693,
+"accuracy": 80,
+"acpl": 61,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "9e8kT1JQ",
+"color": "white"
+},
+{
+"rating": 3025,
+"accuracy": 89,
+"acpl": 34,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "9e8kT1JQ",
+"color": "black"
+},
+{
+"rating": 3023,
+"accuracy": 90,
+"acpl": 31,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rWPtqFhh",
+"color": "white"
+},
+{
+"rating": 2692,
+"accuracy": 82,
+"acpl": 60,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "rWPtqFhh",
+"color": "black"
+},
+{
+"rating": 3022,
+"accuracy": 92,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "IumR8jIS",
+"color": "white"
+},
+{
+"rating": 2700,
+"accuracy": 84,
+"acpl": 45,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "IumR8jIS",
+"color": "black"
+},
+{
+"rating": 2462,
+"accuracy": 82,
+"acpl": 50,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "YyvjTqdI",
+"color": "white"
+},
+{
+"rating": 3021,
+"accuracy": 94,
+"acpl": 24,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "YyvjTqdI",
+"color": "black"
+},
+{
+"rating": 1576,
+"accuracy": 71,
+"acpl": 69,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MVPaIuSu",
+"color": "white"
+},
+{
+"rating": 2990,
+"accuracy": 81,
+"acpl": 36,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "MVPaIuSu",
+"color": "black"
+},
+{
+"rating": 2322,
+"accuracy": 77,
+"acpl": 59,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "jzEqfi1T",
+"color": "white"
+},
+{
+"rating": 2976,
+"accuracy": 99,
+"acpl": 17,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "jzEqfi1T",
+"color": "black"
+},
+{
+"rating": 2961,
+"accuracy": 90,
+"acpl": 23,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "EAB4kjFZ",
+"color": "white"
+},
+{
+"rating": 2175,
+"accuracy": 82,
+"acpl": 55,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "EAB4kjFZ",
+"color": "black"
+},
+{
+"rating": 2289,
+"accuracy": 86,
+"acpl": 40,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "FyNtrrVQ",
+"color": "white"
+},
+{
+"rating": 2957,
+"accuracy": 94,
+"acpl": 16,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "FyNtrrVQ",
+"color": "black"
+},
+{
+"rating": 2956,
+"accuracy": 92,
+"acpl": 20,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "FuhSnHCh",
+"color": "white"
+},
+{
+"rating": 2133,
+"accuracy": 89,
+"acpl": 36,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "FuhSnHCh",
+"color": "black"
+},
+{
+"rating": 2099,
+"accuracy": 88,
+"acpl": 38,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ovyRh5fP",
+"color": "white"
+},
+{
+"rating": 2955,
+"accuracy": 98,
+"acpl": 10,
+"perf": "bullet",
+"speed": "bullet",
+"gameId": "ovyRh5fP",
+"color": "black"
+},
+{
+"rating": 1823,
+"accuracy": 90,
+"acpl": 58,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "k8OVq8Y5",
+"color": "white"
+},
+{
+"rating": 1867,
+"accuracy": 83,
+"acpl": 85,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "k8OVq8Y5",
+"color": "black"
+},
+{
+"rating": 1805,
+"accuracy": 50,
+"acpl": 111,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "aDN8u0zd",
+"color": "white"
+},
+{
+"rating": 1811,
+"accuracy": 67,
+"acpl": 72,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "aDN8u0zd",
+"color": "black"
+},
+{
+"rating": 1798,
+"accuracy": 73,
+"acpl": 74,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "QgBb1l8L",
+"color": "white"
+},
+{
+"rating": 1813,
+"accuracy": 55,
+"acpl": 139,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "QgBb1l8L",
+"color": "black"
+},
+{
+"rating": 1695,
+"accuracy": 87,
+"acpl": 36,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "fPQMtU5T",
+"color": "white"
+},
+{
+"rating": 1787,
+"accuracy": 98,
+"acpl": 15,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "fPQMtU5T",
+"color": "black"
+},
+{
+"rating": 1778,
+"accuracy": 94,
+"acpl": 22,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "N1SQKS1V",
+"color": "white"
+},
+{
+"rating": 1788,
+"accuracy": 85,
+"acpl": 48,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "N1SQKS1V",
+"color": "black"
+},
+{
+"rating": 1802,
+"accuracy": 64,
+"acpl": 119,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "iDM3fRbj",
+"color": "white"
+},
+{
+"rating": 1832,
+"accuracy": 72,
+"acpl": 80,
+"perf": "rapid",
+"speed": "rapid",
+"gameId": "iDM3fRbj",
+"color": "black"
+},
+{
+"rating": 1749,
+"accuracy": 73,
+"acpl": 65,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "PndlSDZg",
+"color": "white"
+},
+{
+"rating": 1800,
+"accuracy": 89,
+"acpl": 30,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "PndlSDZg",
+"color": "black"
+},
+{
+"rating": 1726,
+"accuracy": 94,
+"acpl": 19,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HK6LnPBQ",
+"color": "white"
+},
+{
+"rating": 1755,
+"accuracy": 85,
+"acpl": 40,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "HK6LnPBQ",
+"color": "black"
+},
+{
+"rating": 1749,
+"accuracy": 81,
+"acpl": 46,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "oP2E9naV",
+"color": "white"
+},
+{
+"rating": 1780,
+"accuracy": 72,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "oP2E9naV",
+"color": "black"
+},
+{
+"rating": 1744,
+"accuracy": 87,
+"acpl": 39,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "AfOSXTLe",
+"color": "white"
+},
+{
+"rating": 1730,
+"accuracy": 81,
+"acpl": 56,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "AfOSXTLe",
+"color": "black"
+},
+{
+"rating": 1666,
+"accuracy": 66,
+"acpl": 88,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "bKi4MXMJ",
+"color": "white"
+},
+{
+"rating": 1739,
+"accuracy": 72,
+"acpl": 72,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "bKi4MXMJ",
+"color": "black"
+},
+{
+"rating": 1840,
+"accuracy": 87,
+"acpl": 33,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sgLDzWna",
+"color": "white"
+},
+{
+"rating": 1737,
+"accuracy": 88,
+"acpl": 32,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "sgLDzWna",
+"color": "black"
+},
+{
+"rating": 1756,
+"accuracy": 87,
+"acpl": 55,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "29nNSKqR",
+"color": "white"
+},
+{
+"rating": 1742,
+"accuracy": 71,
+"acpl": 100,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "29nNSKqR",
+"color": "black"
+},
+{
+"rating": 1749,
+"accuracy": 84,
+"acpl": 47,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "KLc0KzAy",
+"color": "white"
+},
+{
+"rating": 1702,
+"accuracy": 88,
+"acpl": 30,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "KLc0KzAy",
+"color": "black"
+},
+{
+"rating": 1767,
+"accuracy": 69,
+"acpl": 99,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "suiYKU4c",
+"color": "white"
+},
+{
+"rating": 1749,
+"accuracy": 70,
+"acpl": 95,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "suiYKU4c",
+"color": "black"
+},
+{
+"rating": 1753,
+"accuracy": 74,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "BDBqWj6C",
+"color": "white"
+},
+{
+"rating": 1740,
+"accuracy": 39,
+"acpl": 107,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "xBWsawNP",
+"color": "white"
+},
+{
+"rating": 1748,
+"accuracy": 74,
+"acpl": 52,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "xBWsawNP",
+"color": "black"
+},
+{
+"rating": 1753,
+"accuracy": 78,
+"acpl": 56,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "zOxaTH18",
+"color": "white"
+},
+{
+"rating": 1791,
+"accuracy": 95,
+"acpl": 18,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "zOxaTH18",
+"color": "black"
+},
+{
+"rating": 1749,
+"accuracy": 78,
+"acpl": 54,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "wY2uFwVB",
+"color": "white"
+},
+{
+"rating": 1662,
+"accuracy": 70,
+"acpl": 81,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "wY2uFwVB",
+"color": "black"
+},
+{
+"rating": 1723,
+"accuracy": 63,
+"acpl": 78,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "xwjGabbQ",
+"color": "white"
+},
+{
+"rating": 1743,
+"accuracy": 79,
+"acpl": 45,
+"perf": "blitz",
+"speed": "blitz",
+"gameId": "xwjGabbQ",
+"color": "black"
+}
+]
+}

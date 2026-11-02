@@ -1,0 +1,945 @@
+{
+ "id": "visual-fixture-opera",
+ "pgn": "[Event \"Opera Game\"]\n[Site \"Paris FRA\"]\n[Date \"1858.??.??\"]\n[Round \"-\"]\n[White \"Paul Morphy\"]\n[Black \"Duke Karl / Count Isouard\"]\n[Result \"1-0\"]\n[ECO \"C41\"]\n[Opening \"Philidor Defense\"]\n\n1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 5. Qxf3 dxe5 6. Bc4 Nf6 7. Qb3 Qe7\n8. Nc3 c6 9. Bg5 b5 10. Nxb5 cxb5 11. Bxb5+ Nbd7 12. O-O-O Rd8 13. Rxd7 Rxd7\n14. Rd1 Qe6 15. Bxd7+ Nxd7 16. Qb8+ Nxb8 17. Rd8# 1-0\n",
+ "headers": {
+  "Event": "Opera Game",
+  "Site": "Paris FRA",
+  "Date": "1858.??.??",
+  "Round": "-",
+  "White": "Paul Morphy",
+  "Black": "Duke Karl / Count Isouard",
+  "Result": "1-0",
+  "ECO": "C41",
+  "Opening": "Philidor Defense"
+ },
+ "plies": [
+  {
+   "ply": 0,
+   "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "evalWhiteCp": 25,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e2e4"
+     ],
+     "scoreCp": 30
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 52.29967635676993
+  },
+  {
+   "ply": 1,
+   "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+   "san": "e4",
+   "uci": "e2e4",
+   "color": "w",
+   "evalWhiteCp": 30,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7e5"
+     ],
+     "scoreCp": -25
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 52.75875538925041,
+   "epl": 5,
+   "accuracy": 95,
+   "classification": "book",
+   "feedback": "A known book move.",
+   "bestMoveSan": "e4",
+   "bestMoveUci": "e2e4"
+  },
+  {
+   "ply": 2,
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+   "san": "e5",
+   "uci": "e7e5",
+   "color": "b",
+   "evalWhiteCp": 25,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g1f3"
+     ],
+     "scoreCp": 35
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 52.29967635676993,
+   "epl": 5,
+   "accuracy": 95,
+   "classification": "book",
+   "feedback": "A known book move.",
+   "bestMoveSan": "e5",
+   "bestMoveUci": "e7e5"
+  },
+  {
+   "ply": 3,
+   "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+   "san": "Nf3",
+   "uci": "g1f3",
+   "color": "w",
+   "evalWhiteCp": 35,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d7d6"
+     ],
+     "scoreCp": -20
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 53.21736834106171,
+   "epl": 5,
+   "accuracy": 95,
+   "classification": "book",
+   "feedback": "A known book move.",
+   "bestMoveSan": "Nf3",
+   "bestMoveUci": "g1f3"
+  },
+  {
+   "ply": 4,
+   "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+   "san": "d6",
+   "uci": "d7d6",
+   "color": "b",
+   "evalWhiteCp": 20,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d2d4"
+     ],
+     "scoreCp": 45
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 51.84020844121936,
+   "epl": 5,
+   "accuracy": 95,
+   "classification": "book",
+   "feedback": "A known book move.",
+   "bestMoveSan": "d6",
+   "bestMoveUci": "d7d6"
+  },
+  {
+   "ply": 5,
+   "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+   "san": "d4",
+   "uci": "d2d4",
+   "color": "w",
+   "evalWhiteCp": 45,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c8g4"
+     ],
+     "scoreCp": -60
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 54.132888835792336,
+   "epl": 5,
+   "accuracy": 95,
+   "classification": "book",
+   "feedback": "A known book move.",
+   "bestMoveSan": "d4",
+   "bestMoveUci": "d2d4"
+  },
+  {
+   "ply": 6,
+   "fen": "rn1qkbnr/ppp2ppp/3p4/4p3/3PP1b1/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4",
+   "san": "Bg4",
+   "uci": "c8g4",
+   "color": "b",
+   "evalWhiteCp": 60,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d4e5"
+     ],
+     "scoreCp": 40
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 55.50076484124536,
+   "epl": 32,
+   "accuracy": 65,
+   "classification": "inaccuracy",
+   "feedback": "A slight inaccuracy — a more precise move was available.",
+   "bestMoveSan": "Bg4",
+   "bestMoveUci": "c8g4"
+  },
+  {
+   "ply": 7,
+   "fen": "rn1qkbnr/ppp2ppp/3p4/4P3/4P1b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+   "san": "dxe5",
+   "uci": "d4e5",
+   "color": "w",
+   "evalWhiteCp": 40,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g4f3"
+     ],
+     "scoreCp": -55
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 53.675438329054,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "dxe5",
+   "bestMoveUci": "d4e5"
+  },
+  {
+   "ply": 8,
+   "fen": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5b2/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+   "san": "Bxf3",
+   "uci": "g4f3",
+   "color": "b",
+   "evalWhiteCp": 55,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d1f3"
+     ],
+     "scoreCp": 50
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 55.04562746820834,
+   "epl": 9,
+   "accuracy": 90,
+   "classification": "excellent",
+   "feedback": "An excellent move, keeping the pressure on.",
+   "bestMoveSan": "Bxf3",
+   "bestMoveUci": "g4f3"
+  },
+  {
+   "ply": 9,
+   "fen": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5Q2/PPP2PPP/RNB1KB1R b KQkq - 0 5",
+   "san": "Qxf3",
+   "uci": "d1f3",
+   "color": "w",
+   "evalWhiteCp": 50,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d6e5"
+     ],
+     "scoreCp": -65
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 54.5896437602999,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Qxf3",
+   "bestMoveUci": "d1f3"
+  },
+  {
+   "ply": 10,
+   "fen": "rn1qkbnr/ppp2ppp/8/4p3/4P3/5Q2/PPP2PPP/RNB1KB1R w KQkq - 0 6",
+   "san": "dxe5",
+   "uci": "d6e5",
+   "color": "b",
+   "evalWhiteCp": 65,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f1c4"
+     ],
+     "scoreCp": 60
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 55.95498132599205,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "dxe5",
+   "bestMoveUci": "d6e5"
+  },
+  {
+   "ply": 11,
+   "fen": "rn1qkbnr/ppp2ppp/8/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R b KQkq - 1 6",
+   "san": "Bc4",
+   "uci": "f1c4",
+   "color": "w",
+   "evalWhiteCp": 60,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "g8f6"
+     ],
+     "scoreCp": -70
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 55.50076484124536,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Bc4",
+   "bestMoveUci": "f1c4"
+  },
+  {
+   "ply": 12,
+   "fen": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R w KQkq - 2 7",
+   "san": "Nf6",
+   "uci": "g8f6",
+   "color": "b",
+   "evalWhiteCp": 70,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f3b3"
+     ],
+     "scoreCp": 85
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 56.40820298184349,
+   "epl": 9,
+   "accuracy": 90,
+   "classification": "excellent",
+   "feedback": "An excellent move, keeping the pressure on.",
+   "bestMoveSan": "Nf6",
+   "bestMoveUci": "g8f6"
+  },
+  {
+   "ply": 13,
+   "fen": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R b KQkq - 3 7",
+   "san": "Qb3",
+   "uci": "f3b3",
+   "color": "w",
+   "evalWhiteCp": 85,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d8e7"
+     ],
+     "scoreCp": -80
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 57.76116974476763,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Qb3",
+   "bestMoveUci": "f3b3"
+  },
+  {
+   "ply": 14,
+   "fen": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R w KQkq - 4 8",
+   "san": "Qe7",
+   "uci": "d8e7",
+   "color": "b",
+   "evalWhiteCp": 80,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b1c3"
+     ],
+     "scoreCp": 110
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 57.31136939018822,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Qe7",
+   "bestMoveUci": "d8e7"
+  },
+  {
+   "ply": 15,
+   "fen": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R b KQkq - 5 8",
+   "san": "Nc3",
+   "uci": "b1c3",
+   "color": "w",
+   "evalWhiteCp": 110,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c7c6"
+     ],
+     "scoreCp": -130
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 59.98952814867482,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "Nc3",
+   "bestMoveUci": "b1c3"
+  },
+  {
+   "ply": 16,
+   "fen": "rn2kb1r/pp2qppp/2p2n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R w KQkq - 0 9",
+   "san": "c6",
+   "uci": "c7c6",
+   "color": "b",
+   "evalWhiteCp": 130,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c1g5"
+     ],
+     "scoreCp": 120
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 61.743385997576716,
+   "epl": 32,
+   "accuracy": 65,
+   "classification": "inaccuracy",
+   "feedback": "A slight inaccuracy — a more precise move was available.",
+   "bestMoveSan": "c6",
+   "bestMoveUci": "c7c6"
+  },
+  {
+   "ply": 17,
+   "fen": "rn2kb1r/pp2qppp/2p2n2/4p1B1/2B1P3/1QN5/PPP2PPP/R3K2R b KQkq - 1 9",
+   "san": "Bg5",
+   "uci": "c1g5",
+   "color": "w",
+   "evalWhiteCp": 120,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b7b5"
+     ],
+     "scoreCp": -150
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 60.86996650452808,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Bg5",
+   "bestMoveUci": "c1g5"
+  },
+  {
+   "ply": 18,
+   "fen": "rn2kb1r/p3qppp/2p2n2/1p2p1B1/2B1P3/1QN5/PPP2PPP/R3K2R w KQkq - 0 10",
+   "san": "b5",
+   "uci": "b7b5",
+   "color": "b",
+   "evalWhiteCp": 150,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c3b5"
+     ],
+     "scoreCp": 420
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 63.46718261450347,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "b5",
+   "bestMoveUci": "b7b5"
+  },
+  {
+   "ply": 19,
+   "fen": "rn2kb1r/p3qppp/2p2n2/1N2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 10",
+   "san": "Nxb5",
+   "uci": "c3b5",
+   "color": "w",
+   "evalWhiteCp": 420,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c6b5"
+     ],
+     "scoreCp": -380
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 82.4403826412894,
+   "epl": 0,
+   "accuracy": 100,
+   "classification": "brilliant",
+   "feedback": "A brilliant sacrifice — the engine agrees this is the strongest idea.",
+   "bestMoveSan": "Nxb5",
+   "bestMoveUci": "c3b5"
+  },
+  {
+   "ply": 20,
+   "fen": "rn2kb1r/p3qppp/5n2/1p2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R w KQkq - 0 11",
+   "san": "cxb5",
+   "uci": "c6b5",
+   "color": "b",
+   "evalWhiteCp": 380,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "c4b5"
+     ],
+     "scoreCp": 460
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 80.2055385834644,
+   "epl": 50,
+   "accuracy": 45,
+   "classification": "mistake",
+   "feedback": "A mistake that gives the opponent chances.",
+   "bestMoveSan": "cxb5",
+   "bestMoveUci": "c6b5"
+  },
+  {
+   "ply": 21,
+   "fen": "rn2kb1r/p3qppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 11",
+   "san": "Bxb5+",
+   "uci": "c4b5",
+   "color": "w",
+   "evalWhiteCp": 460,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b8d7"
+     ],
+     "scoreCp": -520
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 84.4717576963408,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "Bxb5+",
+   "bestMoveUci": "c4b5"
+  },
+  {
+   "ply": 22,
+   "fen": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R w KQkq - 1 12",
+   "san": "Nbd7",
+   "uci": "b8d7",
+   "color": "b",
+   "evalWhiteCp": 520,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e1c1"
+     ],
+     "scoreCp": 480
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 87.15441882967353,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Nbd7",
+   "bestMoveUci": "b8d7"
+  },
+  {
+   "ply": 23,
+   "fen": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R b kq - 2 12",
+   "san": "O-O-O",
+   "uci": "e1c1",
+   "color": "w",
+   "evalWhiteCp": 480,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "a8d8"
+     ],
+     "scoreCp": -560
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 85.4133838270865,
+   "epl": 9,
+   "accuracy": 90,
+   "classification": "excellent",
+   "feedback": "An excellent move, keeping the pressure on.",
+   "bestMoveSan": "O-O-O",
+   "bestMoveUci": "e1c1"
+  },
+  {
+   "ply": 24,
+   "fen": "3rkb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R w k - 3 13",
+   "san": "Rd8",
+   "uci": "a8d8",
+   "color": "b",
+   "evalWhiteCp": 560,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d1d7"
+     ],
+     "scoreCp": 900
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 88.71510237600677,
+   "epl": 32,
+   "accuracy": 65,
+   "classification": "inaccuracy",
+   "feedback": "A slight inaccuracy — a more precise move was available.",
+   "bestMoveSan": "Rd8",
+   "bestMoveUci": "a8d8"
+  },
+  {
+   "ply": 25,
+   "fen": "3rkb1r/p2Rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R b k - 0 13",
+   "san": "Rxd7",
+   "uci": "d1d7",
+   "color": "w",
+   "evalWhiteCp": 900,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d8d7"
+     ],
+     "scoreCp": -850
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 96.49016480280658,
+   "epl": 0,
+   "accuracy": 100,
+   "classification": "brilliant",
+   "feedback": "A brilliant sacrifice — the engine agrees this is the strongest idea.",
+   "bestMoveSan": "Rxd7",
+   "bestMoveUci": "d1d7"
+  },
+  {
+   "ply": 26,
+   "fen": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R w k - 0 14",
+   "san": "Rxd7",
+   "uci": "d8d7",
+   "color": "b",
+   "evalWhiteCp": 850,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "h1d1"
+     ],
+     "scoreCp": 980
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 95.81040813009304,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Rxd7",
+   "bestMoveUci": "d8d7"
+  },
+  {
+   "ply": 27,
+   "fen": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 1 14",
+   "san": "Rd1",
+   "uci": "h1d1",
+   "color": "w",
+   "evalWhiteCp": 980,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "e7e6"
+     ],
+     "scoreCp": -1050
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 97.36206026323285,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "Rd1",
+   "bestMoveUci": "h1d1"
+  },
+  {
+   "ply": 28,
+   "fen": "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15",
+   "san": "Qe6",
+   "uci": "e7e6",
+   "color": "b",
+   "evalWhiteCp": 1050,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b5d7"
+     ],
+     "scoreCp": 990
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 97.94912966070754,
+   "epl": 9,
+   "accuracy": 90,
+   "classification": "excellent",
+   "feedback": "An excellent move, keeping the pressure on.",
+   "bestMoveSan": "Qe6",
+   "bestMoveUci": "e7e6"
+  },
+  {
+   "ply": 29,
+   "fen": "4kb1r/p2B1ppp/4qn2/4p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 0 15",
+   "san": "Bxd7+",
+   "uci": "b5d7",
+   "color": "w",
+   "evalWhiteCp": 990,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "f6d7"
+     ],
+     "scoreCp": -1200
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 97.45499780996089,
+   "epl": 16,
+   "accuracy": 82,
+   "classification": "good",
+   "feedback": "A good, solid move.",
+   "bestMoveSan": "Bxd7+",
+   "bestMoveUci": "b5d7"
+  },
+  {
+   "ply": 30,
+   "fen": "4kb1r/p2n1ppp/4q3/4p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 0 16",
+   "san": "Nxd7",
+   "uci": "f6d7",
+   "color": "b",
+   "evalWhiteCp": 1200,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "b3b8"
+     ],
+     "scoreCp": 2400
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 98.80911837785409,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "Nxd7",
+   "bestMoveUci": "f6d7"
+  },
+  {
+   "ply": 31,
+   "fen": "1Q2kb1r/p2n1ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 b k - 1 16",
+   "san": "Qb8+",
+   "uci": "b3b8",
+   "color": "w",
+   "evalWhiteCp": 2400,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d7b8"
+     ],
+     "scoreCp": -2600
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 99.9854762067776,
+   "epl": 0,
+   "accuracy": 100,
+   "classification": "brilliant",
+   "feedback": "A brilliant sacrifice — the engine agrees this is the strongest idea.",
+   "bestMoveSan": "Qb8+",
+   "bestMoveUci": "b3b8"
+  },
+  {
+   "ply": 32,
+   "fen": "1n2kb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 w k - 0 17",
+   "san": "Nxb8",
+   "uci": "d7b8",
+   "color": "b",
+   "evalWhiteCp": 2600,
+   "lines": [
+    {
+     "multipv": 1,
+     "depth": 18,
+     "pv": [
+      "d1d8"
+     ],
+     "scoreCp": 99999
+    }
+   ],
+   "depth": 18,
+   "winProbWhite": 99.99304508980187,
+   "epl": 68,
+   "accuracy": 25,
+   "classification": "blunder",
+   "feedback": "A blunder — this loses material by force.",
+   "bestMoveSan": "Nxb8",
+   "bestMoveUci": "d7b8"
+  },
+  {
+   "ply": 33,
+   "fen": "1n1Rkb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2K5 b k - 1 17",
+   "san": "Rd8#",
+   "uci": "d1d8",
+   "color": "w",
+   "evalWhiteCp": 99999,
+   "lines": [],
+   "depth": 18,
+   "winProbWhite": 100,
+   "epl": 4,
+   "accuracy": 96,
+   "classification": "best",
+   "feedback": "The best move in the position.",
+   "bestMoveSan": "Rd8#",
+   "bestMoveUci": "d1d8"
+  }
+ ],
+ "accuracy": {
+  "white": 91.3,
+  "black": 74.6
+ },
+ "counts": {
+  "white": {
+   "brilliant": 3,
+   "great": 0,
+   "best": 5,
+   "excellent": 1,
+   "good": 5,
+   "book": 3,
+   "inaccuracy": 0,
+   "mistake": 0,
+   "blunder": 0,
+   "miss": 0,
+   "forced": 0
+  },
+  "black": {
+   "brilliant": 0,
+   "great": 0,
+   "best": 3,
+   "excellent": 3,
+   "good": 3,
+   "book": 2,
+   "inaccuracy": 3,
+   "mistake": 1,
+   "blunder": 1,
+   "miss": 0,
+   "forced": 0
+  }
+ },
+ "opening": {
+  "eco": "C41",
+  "name": "Philidor Defense",
+  "sequenceSan": [
+   "e4",
+   "e5",
+   "Nf3",
+   "d6"
+  ]
+ },
+ "performance": {
+  "white": {
+   "band": "master",
+   "label": "Master-level play"
+  },
+  "black": {
+   "band": "club",
+   "label": "Club-level play"
+  }
+ },
+ "acpl": {
+  "white": 18,
+  "black": 42
+ },
+ "engine": {
+  "name": "Stockfish 19",
+  "depth": 18,
+  "mode": "single"
+ },
+ "createdAt": 1761955200000
+}

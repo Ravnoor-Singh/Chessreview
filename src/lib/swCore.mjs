@@ -35,6 +35,19 @@ export const ENGINE_VERSION = '19.0.1';
  */
 export const ENGINE_FINGERPRINT = 'dev';
 
+/**
+ * File names the current engine manifest lists (Prompt 2 cache purge).
+ * `scripts/build-sw.mjs` REPLACES this literal with the manifest's file
+ * list when generating public/sw.js, the same way it stamps
+ * ENGINE_FINGERPRINT above. On activation the worker deletes every entry
+ * in its current engine cache whose file is not in this list (see
+ * engineEntriesToPurge), so bytes from an older payload cannot survive
+ * inside a cache whose name did not change. Empty only when the worker
+ * was generated without a manifest (unit tests import this file raw and
+ * pass the list explicitly).
+ */
+export const ENGINE_FILE_NAMES = [];
+
 export const APP_CACHE = 'chess-review-app-v' + SW_VERSION;
 export const RUNTIME_CACHE = 'chess-review-runtime-v' + SW_VERSION;
 export const ENGINE_CACHE_PREFIX = 'chess-review-sw-engine-v';
@@ -62,6 +75,55 @@ export function isEngineCacheName(name) {
     typeof name === 'string' &&
     (name.startsWith(ENGINE_CACHE_PREFIX) || name.startsWith(LOADER_ENGINE_CACHE_PREFIX))
   );
+}
+
+/** Basename of the engine manifest — the one /engine/ entry that is an index, not a payload file. */
+export const ENGINE_MANIFEST_BASENAME = 'engine-manifest.json';
+
+/**
+ * File name of a cached /engine/ entry ('/engine/stockfish-19.wasm' or a
+ * full URL → 'stockfish-19.wasm'); null for non-engine or unparseable
+ * URLs. Query strings never reach the file name (pathname only).
+ */
+export function engineEntryFileName(rawUrl, origin) {
+  try {
+    const url = new URL(String(rawUrl), origin || 'http://sw.invalid');
+    if (!url.pathname.startsWith('/engine/')) return null;
+    const name = url.pathname.slice('/engine/'.length);
+    if (!name || name.includes('/')) return null;
+    return decodeURIComponent(name);
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Engine-cache entries to purge on activate (Prompt 2, pure; unit-tested):
+ * given the CURRENT engine cache's entry URLs and the file names the
+ * current manifest lists, return the URLs whose file is not listed —
+ * stale payload bytes from an older engine build. The manifest itself is
+ * always kept (it is the index, and the SW keeps a copy as its offline
+ * fallback for the network-first manifest route). An empty/unknown
+ * current list purges NOTHING: without a manifest there is no basis for
+ * calling an entry stale, and deleting the whole engine cache on a
+ * guess would cost a ~95 MB re-download. Non-engine or unparseable
+ * entries inside the engine cache are purged (they cannot be current
+ * payload by construction).
+ */
+export function engineEntriesToPurge(cachedUrls, currentFileNames) {
+  if (!Array.isArray(currentFileNames) || currentFileNames.length === 0) return [];
+  const allowed = new Set(currentFileNames);
+  allowed.add(ENGINE_MANIFEST_BASENAME);
+  const purge = [];
+  const seen = new Set();
+  for (const raw of cachedUrls || []) {
+    const url = String(raw);
+    if (seen.has(url)) continue;
+    seen.add(url);
+    const name = engineEntryFileName(url);
+    if (name === null || !allowed.has(name)) purge.push(url);
+  }
+  return purge;
 }
 
 /**
@@ -160,7 +222,11 @@ export function precacheUrls() {
 /**
  * Request classification for the fetch handler (pure; unit-tested):
  * - 'network-only': /api/* and non-GET — never cached, never intercepted.
- * - 'engine': /engine/* — cache-first in the dedicated versioned cache.
+ * - 'engine-manifest': /engine/engine-manifest.json — network-FIRST
+ *   (Prompt 2): the manifest's URL never changes, so cache-first would
+ *   serve a stale manifest (and with it stale SHA-256 expectations)
+ *   forever; the cached copy is only the offline fallback.
+ * - 'engine': other /engine/* — cache-first in the dedicated versioned cache.
  * - 'static': /_next/static/* — cache-first in the runtime cache.
  * - 'navigation': document navigations — network-first, cache fallback.
  * - 'runtime': any other same-origin GET — cache-first (precache hits land
@@ -181,6 +247,7 @@ export function classifyRequest(rawUrl, options) {
   }
   const path = url.pathname;
   if (path === '/api' || path.startsWith('/api/')) return 'network-only';
+  if (path === '/engine/engine-manifest.json') return 'engine-manifest';
   if (path.startsWith('/engine/')) return 'engine';
   if (path.startsWith('/_next/static/')) return 'static';
   if (opts.mode === 'navigate') return 'navigation';
@@ -189,11 +256,13 @@ export function classifyRequest(rawUrl, options) {
 
 /**
  * Content-Security-Policy for SW-served responses (Prompt 11). MUST stay
- * byte-identical to the CSP in next.config.js (the single source of
- * truth) — tests/unit/sw-core.test.ts asserts the two are equal.
+ * byte-identical to the PRODUCTION CSP in next.config.js (the single
+ * source of truth; dev builds additionally allow loopback connect-src,
+ * which a shipped service worker must never carry) —
+ * tests/unit/sw-core.test.ts asserts the two are equal.
  */
 export const SW_CONTENT_SECURITY_POLICY =
-  "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob:; connect-src 'self' https://lichess.org https://api.chess.com https: http://localhost:* http://127.0.0.1:*; media-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'";
+  "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; font-src 'self'; worker-src 'self' blob:; child-src 'self' blob:; connect-src 'self' https://lichess.org https://api.chess.com; media-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'";
 
 /** Isolation headers every SW-served response must carry (see sw.js header). */
 export const ISOLATION_HEADERS = {

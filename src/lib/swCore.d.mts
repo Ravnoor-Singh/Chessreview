@@ -15,6 +15,14 @@ export function currentCacheNames(): string[];
 export function isEngineCacheName(name: string): boolean;
 export function cachesToDelete(existingNames: readonly string[]): string[];
 
+export const ENGINE_FILE_NAMES: string[];
+export const ENGINE_MANIFEST_BASENAME: string;
+export function engineEntryFileName(rawUrl: string, origin?: string): string | null;
+export function engineEntriesToPurge(
+  cachedUrls: readonly string[],
+  currentFileNames: readonly string[],
+): string[];
+
 export const PIECE_SET_IDS: string[];
 export const PIECE_CODES: string[];
 export const SOUND_FILES: string[];
@@ -24,7 +32,13 @@ export const ICON_FILES: string[];
 export function precacheUrls(): string[];
 
 export type SwRequestKind =
-  'network-only' | 'engine' | 'static' | 'navigation' | 'runtime' | 'passthrough';
+  | 'network-only'
+  | 'engine'
+  | 'engine-manifest'
+  | 'static'
+  | 'navigation'
+  | 'runtime'
+  | 'passthrough';
 
 export function classifyRequest(
   rawUrl: string,

@@ -65,6 +65,18 @@ export function shouldRegisterServiceWorker(nodeEnv: string | undefined): boolea
   return nodeEnv === 'production';
 }
 
+/**
+ * Registration options for /sw.js (Prompt 2): `updateViaCache: 'none'`
+ * makes the browser bypass the HTTP cache entirely when checking for a
+ * service-worker update, so a new worker can never hide behind a cached
+ * copy of the old script — the HTTP-level `Cache-Control: no-cache` on
+ * /sw.js (see next.config.js) is the second half of the same guard for
+ * the initial registration fetch. Pure / constant so it is unit-tested.
+ */
+export function swRegistrationOptions(): { updateViaCache: 'none' } {
+  return { updateViaCache: 'none' };
+}
+
 /** True once per waiting worker: the page should offer the update reload. */
 export function registrationHasWaitingUpdate(reg: { waiting: ServiceWorker | null }): boolean {
   return reg.waiting != null;

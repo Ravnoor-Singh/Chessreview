@@ -373,11 +373,11 @@ export default function HomePage() {
       </header>
 
       <main className="mx-auto max-w-3xl px-4 pb-16 pt-6">
-        <h1 className="text-center text-3xl font-extrabold sm:text-4xl">
+        <h1 className="text-balance text-center text-3xl font-extrabold sm:text-4xl">
           {t('input.heroTitlePrefix')}{' '}
           <span className="text-accent">{t('input.heroTitleAccent')}</span>
         </h1>
-        <p className="mx-auto mt-2 max-w-xl text-center text-sm text-muted">
+        <p className="mx-auto mt-2 max-w-xl text-pretty text-center text-sm text-muted">
           {t('input.heroSubtitle')}
         </p>
 
@@ -515,9 +515,7 @@ export default function HomePage() {
             className="mt-6 scroll-mt-4 rounded-base bg-panel p-4"
             aria-label={t('input.recentReviewsLabel')}
           >
-            <h2 className="mb-2 text-sm font-bold uppercase tracking-wide text-muted">
-              {t('input.recentReviews')}
-            </h2>
+            <h2 className="mb-2 text-sm font-semibold text-muted">{t('input.recentReviews')}</h2>
             <ul className="divide-y divide-line">
               {recent.map((r) => (
                 <li key={r.id} className="flex items-center gap-2 py-2">
@@ -526,10 +524,9 @@ export default function HomePage() {
                     className="flex-1 truncate text-left text-sm hover:underline"
                     onClick={() => goReview({ reviewId: r.id })}
                   >
-                    {r.white} vs {r.black}{' '}
-                    <span className="text-muted">
-                      · {r.result} · {r.date}
-                    </span>
+                    {r.white} vs {r.black}
+                    <span className="ml-2.5 font-medium">{r.result}</span>
+                    <span className="ml-2.5 text-muted">{r.date}</span>
                   </button>
                   <button
                     type="button"

@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './tokens.css';
+
+/* Script coverage for Hindi (Devanagari) and Punjabi (Gurmukhi): Inter
+   has no glyphs for either script, so without these faces hi/pa text
+   fell back to whatever the OS offered. Self-hosted Noto Sans variable
+   subsets (SIL OFL 1.1 — see public/fonts/NOTO-LICENSE.txt and
+   LICENSES.md), restricted by unicode-range so browsers download them
+   ONLY when Devanagari/Gurmukhi text is actually rendered — Latin-only
+   sessions never fetch either file. */
+@font-face {
+  font-family: 'Noto Sans Devanagari Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/noto-sans-devanagari-devanagari-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF,
+    U+11B00-11B09;
+}
+
+@font-face {
+  font-family: 'Noto Sans Gurmukhi Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/noto-sans-gurmukhi-gurmukhi-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+0951-0952, U+0964-0965, U+0A01-0A76, U+200C-200D, U+20B9, U+25CC, U+262C, U+A830-A839;
+}
+
+html,
+body {
+  background: var(--bg-page);
+  color: var(--text);
+  font-family:
+    var(--font-inter),
+    Inter,
+    'Noto Sans Devanagari Variable',
+    'Noto Sans Gurmukhi Variable',
+    'Noto Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Page background layer (Themes & Presets). BackgroundLayer sets the
+   --page-bg-* custom properties on <body> from the selected background
+   definition and makes --bg-page transparent; the pseudo-elements then
+   paint the background (and its fixed readability scrim) behind all
+   content. With no properties set — the 'standard' background —
+   nothing is painted and the built-in --bg-page shows as before. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--page-bg-color, transparent);
+  background-image: var(--page-bg-image, none);
+  background-size: var(--page-bg-size, cover);
+  background-position: center;
+}
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--page-scrim, transparent);
+}
+
+/* Animated page backgrounds (Themes & Presets, Stage B). BackgroundLayer
+   only sets data-bg-anim when the definition is animated AND the user
+   has not requested reduced motion AND low-power backgrounds are off;
+   the animation also pauses while the tab is hidden. Space drifts its
+   tiled star field (background-size 260px makes the loop seamless);
+   Cosmos slowly pans via a slight scale/translate so no edge shows. */
+@keyframes bg-drift {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 260px;
+  }
+}
+@keyframes bg-pan {
+  from {
+    transform: scale(1.06) translate(0, 0);
+  }
+  to {
+    transform: scale(1.06) translate(-1.6%, 1.2%);
+  }
+}
+body[data-bg-anim='space']::before {
+  animation: bg-drift 70s linear infinite;
+}
+body[data-bg-anim='cosmos']::before {
+  animation: bg-pan 46s ease-in-out infinite alternate;
+}
+body[data-bg-paused='1']::before {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-bg-anim]::before {
+    animation: none;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@keyframes badge-pop {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.badge-pop {
+  animation: badge-pop 180ms ease-out;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 1.1s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-panel-2) 25%,
+    var(--bg-hover) 50%,
+    var(--bg-panel-2) 75%
+  );
+  background-size: 800px 100%;
+  animation: skeleton-shimmer 1.4s infinite linear;
+}
+
+/* Touch targets (Round 2, Prompt 6): on coarse pointers, buttons get a
+   44px minimum height (WCAG target-size guidance). Desktop (fine
+   pointer) layouts are untouched; board squares are gridcells, not
+   buttons, and keep their board-relative size. */
+@media (pointer: coarse) {
+  button {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

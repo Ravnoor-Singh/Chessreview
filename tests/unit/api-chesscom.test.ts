@@ -79,6 +79,36 @@ describe('GET /api/chesscom?user= (success path preserved)', () => {
     expect(res.headers.get('cache-control')).toContain('s-maxage=3600');
   });
 
+  // Security audit 2026-11-02 (chesscom-user-cache-key-variant): the
+  // cache key must partition by variant — month09 holds 0 games and the
+  // default (recent-two) scope holds 1, so a poisoned bare key is
+  // observable in both directions.
+  it('cache is partitioned by variant: explicit month does not poison the default scope', async () => {
+    useArchives();
+    const ip = freshIp();
+    const explicit = await GET(apiRequest('/api/chesscom?user=testuser&year=2026&month=9', ip));
+    expect(explicit.status).toBe(200);
+    expect(((await explicit.json()) as { games: unknown[] }).games).toHaveLength(0);
+    const callsAfterExplicit = upstreamCalls.length;
+    const recent = await GET(apiRequest('/api/chesscom?user=testuser', ip));
+    expect(recent.status).toBe(200);
+    expect(((await recent.json()) as { games: unknown[] }).games).toHaveLength(1);
+    // The default scope was fetched fresh, not served the explicit entry.
+    expect(upstreamCalls.length).toBeGreaterThan(callsAfterExplicit);
+    expect(upstreamCalls).toContain('month10');
+  });
+
+  it('cache is partitioned by variant: default scope does not poison an explicit month', async () => {
+    useArchives();
+    const ip = freshIp();
+    const recent = await GET(apiRequest('/api/chesscom?user=testuser', ip));
+    expect(recent.status).toBe(200);
+    expect(((await recent.json()) as { games: unknown[] }).games).toHaveLength(1);
+    const explicit = await GET(apiRequest('/api/chesscom?user=testuser&year=2026&month=9', ip));
+    expect(explicit.status).toBe(200);
+    expect(((await explicit.json()) as { games: unknown[] }).games).toHaveLength(0);
+  });
+
   it('404 user → USER_NOT_FOUND (localized message)', async () => {
     mswServer.use(http.get(ARCHIVES_URL, () => new HttpResponse(null, { status: 404 })));
     const res = await GET(apiRequest('/api/chesscom?user=testuser'));

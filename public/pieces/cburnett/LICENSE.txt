@@ -1,0 +1,4 @@
+The cburnett chess piece SVGs in this folder are by Colin M.L. Burnett,
+as distributed with Lichess (lila). They are dual-licensed by the author
+under the GNU Free Documentation License (GFDL) and the BSD license.
+See the project LICENSES.md for the full attribution record.

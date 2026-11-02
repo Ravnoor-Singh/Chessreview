@@ -55,11 +55,23 @@ export function shareUrlForPgn(pgn: string, origin: string): string {
   return `${origin}/review#pgn=${compressToEncodedURIComponent(pgn)}`;
 }
 
+/**
+ * Share-link budget: a fragment may identify ONE bounded game. The cap
+ * sits far above any legitimate single-game PGN (a long game with
+ * comments is a few tens of KB) while stopping a crafted link from
+ * making the recipient's browser decompress, parse and auto-analyze an
+ * unbounded payload on page load (security audit 2026-11-02,
+ * share-link-unbounded-pgn-autoload).
+ */
+export const MAX_SHARE_PGN_CHARS = 200_000;
+
 export function pgnFromShareHash(hash: string): string | null {
   const m = hash.match(/[#&]pgn=([^&]+)/);
   if (!m) return null;
   try {
-    return decompressFromEncodedURIComponent(m[1]) || null;
+    const pgn = decompressFromEncodedURIComponent(m[1]);
+    if (!pgn || pgn.length > MAX_SHARE_PGN_CHARS) return null;
+    return pgn;
   } catch {
     return null;
   }

@@ -304,9 +304,7 @@ export default function BoardEditor({
         {/* Controls */}
         <div className="min-w-[220px] flex-1 space-y-4">
           <fieldset>
-            <legend className="text-xs font-bold uppercase tracking-wide text-muted">
-              {t('editor.sideToMove')}
-            </legend>
+            <legend className="text-xs font-semibold text-muted">{t('editor.sideToMove')}</legend>
             <div className="mt-1.5 flex gap-1">
               {(['w', 'b'] as const).map((c) => (
                 <button
@@ -327,7 +325,7 @@ export default function BoardEditor({
           </fieldset>
 
           <fieldset>
-            <legend className="text-xs font-bold uppercase tracking-wide text-muted">
+            <legend className="text-xs font-semibold text-muted">
               {t('editor.castlingRights')}
             </legend>
             <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1">

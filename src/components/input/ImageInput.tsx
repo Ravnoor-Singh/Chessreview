@@ -166,7 +166,7 @@ export default function ImageInput({ onOpenEditor, onAnalyzeFen }: ImageInputPro
     <div className="rounded-base border border-line bg-panel p-4">
       <div className="flex items-center gap-2">
         <h3 className="text-sm font-bold text-ink">{t('vision.importTitle')}</h3>
-        <span className="rounded-full border border-line bg-panel2 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-muted">
+        <span className="rounded-full border border-line bg-panel2 px-2 py-0.5 text-[11px] font-semibold text-muted">
           {t('vision.betaLabel')}
         </span>
       </div>

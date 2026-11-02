@@ -1,0 +1,32 @@
+# Dependabot (Round 2, Prompt 9): package.json is pinned to exact
+# versions, so updates arrive as reviewed PRs instead of silent range
+# drift. Weekly, grouped by dependency type to keep PR volume low.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 6
+    groups:
+      production:
+        dependency-type: production
+        patterns:
+          - '*'
+      development:
+        dependency-type: development
+        patterns:
+          - '*'
+      types:
+        patterns:
+          - '@types/*'
+    commit-message:
+      prefix: deps
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: ci

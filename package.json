@@ -37,7 +37,7 @@
     "vitest": "3.2.7"
   },
   "engines": {
-    "node": ">=20.11"
+    "node": ">=22"
   },
   "license": "GPL-3.0-or-later",
   "name": "chess-review",
@@ -91,7 +91,6 @@
   },
   "version": "1.0.0",
   "overrides": {
-    "undici": "6.21.3",
     "postcss": "8.5.32"
   }
 }

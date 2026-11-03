@@ -11,7 +11,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [20, 22]
+        # The unit-test toolchain (jsdom 30) declares engines
+        # ^22.22.2 || ^24.15.0 || >=26 — Node 20 is outside its
+        # supported range (it crashes on the global Iterator helpers
+        # and on undici's zstd path). The app itself still runs on the
+        # .nvmrc baseline (Node 22) exercised by the e2e jobs.
+        node: [22, 24]
     steps:
       - name: Checkout
         uses: actions/checkout@v4

@@ -2026,3 +2026,20 @@ with bundle budgets unchanged (/ 161.4 KB ≤ 170 KB, /review 199.9 KB
 ≤ 220 KB); targeted e2e ✅ (security 2/2, engine-update 2/2, visual
 4/4). `npm audit` cannot run in the sandbox (registry policy); the CI
 audit step is the verification for fix 2.
+
+**Follow-up (2026-11-03, after CI run #156).** Run #156 verified most
+of the repair: Node 22 job ✅ (the audit step now passes), Playwright
+light ✅, Playwright heavy ✅ (new baselines hold in CI), Lighthouse ✅.
+The Node 20 leg still failed in "Unit tests", one layer deeper: the
+undici crash was gone, but jsdom 30 itself then threw
+`ReferenceError: Iterator is not defined` from
+`jsdom/lib/jsdom/living/helpers/dom-tree.js` — jsdom 30 uses the global
+Iterator helpers, and its declared engines are
+`^22.22.2 || ^24.15.0 || >=26.0.0`: Node 20 is simply outside the
+test toolchain's supported range, so no override can fix that leg.
+Resolution: the project's Node baseline moves to 22 — CI matrix
+`[20, 22]` → `[22, 24]`, `.nvmrc` 20 → 22, `engines` → `>=22` — and
+the undici override is reverted (on Node 22+, jsdom 30's natural
+undici 8 is the supported combination). The postcss override and the
+zod 4.6.7 upgrade stand. The production app was never the problem:
+the e2e jobs run the built app, and they passed throughout.

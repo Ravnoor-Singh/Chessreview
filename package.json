@@ -1,10 +1,10 @@
 {
   "dependencies": {
     "chess.js": "1.4.0",
-    "framer-motion": "12.43.0",
+    "framer-motion": "14.9.0",
     "idb": "8.0.4",
     "lz-string": "1.5.0",
-    "next": "15.5.28",
+    "next": "16.4.3",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "stockfish": "19.0.1",

@@ -24,8 +24,9 @@ test('security headers: CSP + standard set present, page still cross-origin isol
   expect(csp).not.toMatch(/(?:^|[\s;])https:(?=\s|;|$)/);
   expect(csp).not.toContain('http://localhost');
   expect(csp).not.toContain('http://127.0.0.1');
-  // Image previews.
-  expect(csp).toContain("img-src 'self' data: blob:");
+  // Image previews use blob: object URLs only — the tightened policy
+  // (post-Round-2 Prompt 1) has no data: in img-src.
+  expect(csp).toContain("img-src 'self' blob:");
   expect(csp).toContain("frame-ancestors 'none'");
 
   expect(headers['x-content-type-options']).toBe('nosniff');

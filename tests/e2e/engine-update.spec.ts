@@ -21,9 +21,10 @@ import { join } from 'node:path';
  *    are gone; the current payload entries survive.
  *
  * The manifest fetches in (2) are made from page context and pass
- * through the SW's network-first handler; Playwright routing covers
- * the SW's own network fetch in Chromium, which is what lets the route
- * stand in for the new deploy.
+ * through the SW's network-first handler; the route is registered on
+ * the browser CONTEXT (not the page), because page-level routing does
+ * not intercept the service worker's own network fetch — the context
+ * route is what lets the route stand in for the new deploy.
  */
 
 interface ManifestFile {
@@ -83,7 +84,11 @@ test('engine update: manifest B wins after redeploy and stale engine cache entri
   test.setTimeout(240_000);
 
   let phase: 'A' | 'B' = 'A';
-  await page.route('**/engine/engine-manifest.json', async (route) => {
+  // Context-level routing: page.route does not intercept requests the
+  // service worker itself makes, and the manifest fetch this test cares
+  // about is the SW's network-first subrequest. A context route covers
+  // both page-context and service-worker requests.
+  await page.context().route('**/engine/engine-manifest.json', async (route) => {
     await route.fulfill({
       status: 200,
       contentType: 'application/json',

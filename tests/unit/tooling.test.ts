@@ -92,7 +92,10 @@ describe('tooling contract', () => {
   });
 
   it('declares the supported Node range', () => {
-    expect(pkg.engines?.node).toBe('>=20.11');
-    expect(read('.nvmrc').trim()).toBe('20');
+    // Node 22 baseline (2026-11-03): the test toolchain (jsdom 30)
+    // declares engines ^22.22.2 || ^24.15.0 || >=26, so Node 20 is
+    // outside the supported range for developing/testing this repo.
+    expect(pkg.engines?.node).toBe('>=22');
+    expect(read('.nvmrc').trim()).toBe('22');
   });
 });

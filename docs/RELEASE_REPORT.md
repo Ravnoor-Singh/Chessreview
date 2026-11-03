@@ -1973,3 +1973,56 @@ prompt did not touch); `npm run i18n:check` ✅ (817 keys × 4 locales). No prod
 script or i18n file was changed in this prompt — documentation only
 (`PERFORMANCE_BASELINE.md`, this section, and the README Performance note).
 `public/pieces/neo/wP.svg` untouched (825 B).
+
+## CI repair — 2026-11-03
+
+CI run #152 (commit `5a9358e`) failed in four jobs for four unrelated
+reasons; all four are fixed here and verified locally before pushing.
+
+1. **Node 20 unit-test leg — undici load crash.** Every test passed but
+   the step failed with 16 unhandled errors:
+   `TypeError: Cannot read properties of undefined (reading 'bind')` at
+   `undici/lib/interceptor/decompress.js`. jsdom 30 pulls undici 8,
+   whose decompress interceptor calls `zlib.createZstdDecompress` at
+   module load; that API exists only on Node ≥ 22.15, so on Node 20 the
+   module throws before tests start. Fix: `overrides.undici = 6.21.3`
+   (no zstd code path, supports Node 20; jsdom uses only the stable
+   fetch/Agent surface). The Node 22 leg and local Node 24 were never
+   affected.
+2. **Dependency-audit step — postcss + zod highs.** `npm audit
+--omit=dev --audit-level=high` flagged postcss ≤ 8.5.22 (GHSA-qx2v-
+   qp2m-jg93 et al.; the copy bundled inside next 15.5 was 8.4.31) and
+   zod < 4.6.6 (GHSA-mrhx-c7xc-m3w5). Fixes: `overrides.postcss =
+8.5.32` (the version the app already pins directly; every consumer
+   now dedupes to it) and zod 3.25.76 → 4.6.7. Zod usage in this
+   codebase is three files (server validation schemas, preset transfer
+   envelope, API-route `safeParse` calls); typecheck and the full unit
+   suite pass unchanged on v4.
+3. **Light e2e — stale CSP expectation.** `tests/e2e/security.spec.ts`
+   still expected `img-src 'self' data: blob:` from before the
+   post-Round-2 Prompt 1 tightening; the served policy is
+   `img-src 'self' blob:` on every config surface and in the unit drift
+   guard. The e2e expectation now matches the intended policy.
+4. **Light e2e — engine-update redeploy simulation never engaged.**
+   The test registered its manifest route with `page.route`, which
+   does not intercept requests the service worker itself makes, so the
+   simulated "manifest B" deploy was never served and the test read
+   the real manifest back. The app's network-first manifest handling
+   was correct; the route is now registered on the browser context
+   (`page.context().route`), which covers SW requests. Both
+   engine-update tests pass locally.
+5. **Heavy e2e — stale visual baselines.** Four screenshot baselines
+   predated the Hallmark design pass (sentence-case labels, un-joined
+   meta strings). Regenerated locally for exactly those four tests
+   (input page — mobile; review summary — desktop; review walkthrough
+   mid-game; review summary — mobile); changed-pixel ratios 2.6–5.0%,
+   confined to the redesigned text. The other four baselines re-render
+   byte-identical in the same environment, and the four tests pass
+   against the new baselines.
+
+Local gate after the fixes: typecheck ✅; lint ✅ (0 errors, 1 known
+warning); unit tests ✅ 1062/1062 (92 files); i18n ✅ 817 × 4; build ✅
+with bundle budgets unchanged (/ 161.4 KB ≤ 170 KB, /review 199.9 KB
+≤ 220 KB); targeted e2e ✅ (security 2/2, engine-update 2/2, visual
+4/4). `npm audit` cannot run in the sandbox (registry policy); the CI
+audit step is the verification for fix 2.
